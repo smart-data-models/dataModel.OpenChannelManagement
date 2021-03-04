@@ -1,2 +1,0 @@
-
-This data model is being created in the incubated repository [link](https://github.com/smart-data-models/incubated/tree/master/RawWaterManagement/ForecastModelOutput)
