@@ -1,2 +1,6 @@
-# dataModel.RawWaterManagement
-Data models related to the management of raw water
+# dataModel.OpenChannelManagement
+
+
+### List of data models
+
+The following entity types are available:
