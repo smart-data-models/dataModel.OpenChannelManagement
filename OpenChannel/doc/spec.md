@@ -6,7 +6,7 @@ Entity: OpenChannel
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `bottomSlope`: The bottom slope of the channel. All units are accepted in CEFACT code.  - `bottomWidth`: The bottom width of the channel (for 'Trapezoidal' geometry). All units are accepted in CEFACT code.  - `celerity`: Velocity of a surge propagated along the channel after the opening or close of a sluice gate.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `diameter`: The diameter of a circular channel. All units are accepted in CEFACT code.  - `downstreamNode`: A relationship indicating the ID of the downstream node (e.g., Junction, Regulation Structure), where the channel ends.  - `flowType`: Text defining the type of flow in the channel. Enum:'Free-Surface flow'.  - `geometryType`: The geometry of the channel. Enum:'Trapezoidal, Circular'].  - `id`: Unique identifier of the entity  - `leftSideSlope`: The slope of the left bank of the channel (for 'Trapezoidal' geometry). All units are accepted in CEFACT code.  - `length`: The length of the channel. All units are accepted in CEFACT code.  - `location`:   - `maxWaterDepth`: The maximum allowable water depth in the channel. All units are accepted in CEFACT code.  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rightSideSlope`: The slope of the right bank of the channel (for 'Trapezoidal' geometry). All units are accepted in CEFACT code.  - `roughnessCoefficient`: The Manning’s roughness coefficient.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tag`: An optional text string used to qualify an item  - `travelDuration`: The duration of the surge travelling from the downstream node (i.e., Regulation Structure) to the upstream node.  - `type`: NGSI-LD Entity Type. it has to be OpenChannel  - `upstreamNode`: A relationship indicating the ID of the upstream node (e.g., Junction, Regulation Structure), where the channel begins.  - `waterLoss`: Water leakages/losses from the channel - percentage of flow of the channel or a number (flow).    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `bottomSlope`: The bottom slope of the channel. All units are accepted in CEFACT code.  - `bottomWidth`: The bottom width of the channel (for 'Trapezoidal' geometry). All units are accepted in CEFACT code.  - `celerity`: Velocity of a surge propagated along the channel after the opening or close of a sluice gate.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `diameter`: The diameter of a circular channel. All units are accepted in CEFACT code.  - `downstreamNode`: A relationship indicating the ID of the downstream node (e.g., Junction, Regulation Structure), where the channel ends.  - `flowType`: Text defining the type of flow in the channel. Enum:'Free-Surface flow'.  - `geometryType`: The geometry of the channel. Enum:'Trapezoidal, Circular'].  - `id`: Unique identifier of the entity  - `leftSideSlope`: The slope of the left bank of the channel (for 'Trapezoidal' geometry). All units are accepted in CEFACT code.  - `length`: The length of the channel. All units are accepted in CEFACT code.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `maxWaterDepth`: The maximum allowable water depth in the channel. All units are accepted in CEFACT code.  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rightSideSlope`: The slope of the right bank of the channel (for 'Trapezoidal' geometry). All units are accepted in CEFACT code.  - `roughnessCoefficient`: The Manning’s roughness coefficient.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tag`: An optional text string used to qualify an item  - `travelDuration`: The duration of the surge travelling from the downstream node (i.e., Regulation Structure) to the upstream node.  - `type`: NGSI-LD Entity Type. it has to be OpenChannel  - `upstreamNode`: A relationship indicating the ID of the upstream node (e.g., Junction, Regulation Structure), where the channel begins.  - `waterLoss`: Water leakages/losses from the channel - percentage of flow of the channel or a number (flow).    
 Required properties  
 - `id`  - `type`  ## Data Model description of properties  
 Sorted alphabetically (click for details)  
@@ -121,10 +121,10 @@ OpenChannel:
       minimum: 0    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -144,7 +144,8 @@ OpenChannel:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -167,7 +168,8 @@ OpenChannel:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -192,7 +194,8 @@ OpenChannel:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -214,7 +217,8 @@ OpenChannel:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -239,7 +243,8 @@ OpenChannel:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -266,7 +271,7 @@ OpenChannel:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     maxWaterDepth:    
       description: 'The maximum allowable water depth in the channel. All units are accepted in CEFACT code.'    
       minimum: 0    
