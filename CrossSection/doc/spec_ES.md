@@ -6,7 +6,7 @@ Entidad: Sección transversal
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `attachedTo`: Relación con el ID del canal en el que "vive" la sección transversal. Referencia a una entidad de tipo Canal.  - `bottomSlope`: La pendiente del fondo del canal donde "vive" la sección transversal. Todas las unidades se aceptan en el código CEFACT.  - `bottomWidth`: La anchura inferior de la sección transversal (para la geometría "Trapezoidal"). Todas las unidades se aceptan en el código CEFACT.  - `crossSectionGeometry`: La geometría de la sección transversal. Enum:'Circular, Trapezoidal'.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `diameter`: El diámetro de una sección circular.  - `energyHead`: La cabeza de energía total en la sección transversal.  - `id`: Identificador único de la entidad  - `inheritsFrom`: URI de un componente del Canal del que se obtiene el valor de una propiedad.  - `leftSideSlope`: La pendiente de la orilla izquierda de la sección transversal (para la geometría "Trapezoidal"). Se aceptan todas las unidades en código CEFACT.  - `location`:   - `maxWaterDepth`: La máxima profundidad de agua permitida en la sección transversal. Todas las unidades se aceptan en el código CEFACT.  - `name`: El nombre de este artículo.  - `observedBy`: Una relación con el ID del dispositivo que controla las propiedades del agua bruta  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `position`: Objeto que proporciona información sobre la distancia con el resto de los elementos y una relación con ellos.  - `rightSideSlope`: La pendiente de la orilla derecha de la sección transversal (para la geometría "Trapezoidal"). Todas las unidades se aceptan en el código CEFACT.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `specificConductivity`: Conductividad del agua en la sección transversal.  - `tag`: Una cadena de texto opcional utilizada para calificar un artículo  - `turbidity`: Turbidez del agua en la sección transversal.  - `type`: Tipo de entidad NGSI-LD. Tiene que ser CrossSection.  - `waterFlow`: Flujo de agua en la sección transversal.  - `waterLevel`: Nivel de agua en la sección transversal.  - `waterTemperature`: Temperatura del agua en la sección transversal.  - `waterVelocity`: Velocidad del agua en la sección transversal.    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `attachedTo`: Relación con el ID del canal en el que "vive" la sección transversal. Referencia a una entidad de tipo Canal.  - `bottomSlope`: La pendiente del fondo del canal donde "vive" la sección transversal. Todas las unidades se aceptan en el código CEFACT.  - `bottomWidth`: La anchura inferior de la sección transversal (para la geometría "Trapezoidal"). Todas las unidades se aceptan en el código CEFACT.  - `crossSectionGeometry`: La geometría de la sección transversal. Enum:'Circular, Trapezoidal'.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `diameter`: El diámetro de una sección circular.  - `energyHead`: La cabeza de energía total en la sección transversal.  - `id`: Identificador único de la entidad  - `inheritsFrom`: URI de un componente del Canal del que se obtiene el valor de una propiedad.  - `leftSideSlope`: La pendiente de la orilla izquierda de la sección transversal (para la geometría "Trapezoidal"). Se aceptan todas las unidades en código CEFACT.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `maxWaterDepth`: La máxima profundidad de agua permitida en la sección transversal. Todas las unidades se aceptan en el código CEFACT.  - `name`: El nombre de este artículo.  - `observedBy`: Una relación con el ID del dispositivo que controla las propiedades del agua bruta  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `position`: Objeto que proporciona información sobre la distancia con el resto de los elementos y una relación con ellos.  - `rightSideSlope`: La pendiente de la orilla derecha de la sección transversal (para la geometría "Trapezoidal"). Todas las unidades se aceptan en el código CEFACT.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `specificConductivity`: Conductividad del agua en la sección transversal.  - `tag`: Una cadena de texto opcional utilizada para calificar un artículo  - `turbidity`: Turbidez del agua en la sección transversal.  - `type`: Tipo de entidad NGSI-LD. Tiene que ser CrossSection.  - `waterFlow`: Flujo de agua en la sección transversal.  - `waterLevel`: Nivel de agua en la sección transversal.  - `waterTemperature`: Temperatura del agua en la sección transversal.  - `waterVelocity`: Velocidad del agua en la sección transversal.    
 Propiedades requeridas  
 - `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
@@ -123,10 +123,10 @@ CrossSection:
       minimum: 0    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -146,7 +146,8 @@ CrossSection:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -169,7 +170,8 @@ CrossSection:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -194,7 +196,8 @@ CrossSection:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -216,7 +219,8 @@ CrossSection:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -241,7 +245,8 @@ CrossSection:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -268,7 +273,7 @@ CrossSection:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     maxWaterDepth:    
       description: 'The maximum allowable water depth at the cross-section. All units are accepted in CEFACT code.'    
       minimum: 0    
