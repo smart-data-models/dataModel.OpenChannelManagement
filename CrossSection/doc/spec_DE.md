@@ -6,7 +6,7 @@ Entität: CrossSection
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `attachedTo`: Eine Beziehung zur ID des Kanals, in dem der Querschnitt "wohnt". Verweis auf eine Entität vom Typ Kanal.  - `bottomSlope`: Die Bodenneigung des Gerinnes, in dem der Querschnitt "wohnt". Alle Einheiten werden im CEFACT-Code akzeptiert.  - `bottomWidth`: Die untere Breite des Querschnitts (bei 'Trapez'-Geometrie). Alle Einheiten werden im CEFACT-Code akzeptiert.  - `crossSectionGeometry`: Die Geometrie des Querschnitts. Enum:'Kreisförmig, Trapezförmig'.  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `diameter`: Der Durchmesser eines kreisförmigen Querschnitts.  - `energyHead`: Die Gesamtenergiehöhe am Querschnitt.  - `id`: Eindeutiger Bezeichner der Entität  - `inheritsFrom`: URI einer Channel-Komponente, aus der der Wert einer Eigenschaft bezogen wird.  - `leftSideSlope`: Die Neigung des linken Ufers des Querschnitts (für 'Trapez'-Geometrie). Alle Einheiten werden im CEFACT-Code akzeptiert.  - `location`:   - `maxWaterDepth`: Die maximal zulässige Wassertiefe am Querschnitt. Alle Einheiten werden im CEFACT-Code akzeptiert.  - `name`: Der Name dieses Elements.  - `observedBy`: Eine Beziehung zur ID des Geräts, das die Rohwassereigenschaften überwacht  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `position`: Objekt, das Informationen über den Abstand zu den übrigen Elementen und eine Beziehung zu ihnen liefert.  - `rightSideSlope`: Die Neigung des rechten Ufers des Querschnitts (für 'Trapez'-Geometrie). Alle Einheiten werden im CEFACT-Code akzeptiert.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `specificConductivity`: Wasserleitfähigkeit am Querschnitt.  - `tag`: Eine optionale Textzeichenfolge, die zur Qualifizierung eines Elements verwendet wird  - `turbidity`: Wassertrübung am Querschnitt.  - `type`: NGSI-LD Entity Type. Es muss CrossSection sein.  - `waterFlow`: Wasserdurchfluss am Querschnitt.  - `waterLevel`: Wasserstand am Querschnitt.  - `waterTemperature`: Wassertemperatur am Querschnitt.  - `waterVelocity`: Wassergeschwindigkeit am Querschnitt.    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `attachedTo`: Eine Beziehung zur ID des Kanals, in dem der Querschnitt "wohnt". Verweis auf eine Entität vom Typ Kanal.  - `bottomSlope`: Die Bodenneigung des Gerinnes, in dem der Querschnitt "wohnt". Alle Einheiten werden im CEFACT-Code akzeptiert.  - `bottomWidth`: Die untere Breite des Querschnitts (bei 'Trapez'-Geometrie). Alle Einheiten werden im CEFACT-Code akzeptiert.  - `crossSectionGeometry`: Die Geometrie des Querschnitts. Enum:'Kreisförmig, Trapezförmig'.  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `diameter`: Der Durchmesser eines kreisförmigen Querschnitts.  - `energyHead`: Die Gesamtenergiehöhe am Querschnitt.  - `id`: Eindeutiger Bezeichner der Entität  - `inheritsFrom`: URI einer Channel-Komponente, aus der der Wert einer Eigenschaft bezogen wird.  - `leftSideSlope`: Die Neigung des linken Ufers des Querschnitts (für 'Trapez'-Geometrie). Alle Einheiten werden im CEFACT-Code akzeptiert.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `maxWaterDepth`: Die maximal zulässige Wassertiefe am Querschnitt. Alle Einheiten werden im CEFACT-Code akzeptiert.  - `name`: Der Name dieses Elements.  - `observedBy`: Eine Beziehung zur ID des Geräts, das die Rohwassereigenschaften überwacht  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `position`: Objekt, das Informationen über den Abstand zu den übrigen Elementen und eine Beziehung zu ihnen liefert.  - `rightSideSlope`: Die Neigung des rechten Ufers des Querschnitts (für 'Trapez'-Geometrie). Alle Einheiten werden im CEFACT-Code akzeptiert.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `specificConductivity`: Wasserleitfähigkeit am Querschnitt.  - `tag`: Eine optionale Textzeichenfolge, die zur Qualifizierung eines Elements verwendet wird  - `turbidity`: Wassertrübung am Querschnitt.  - `type`: NGSI-LD Entity Type. Es muss CrossSection sein.  - `waterFlow`: Wasserdurchfluss am Querschnitt.  - `waterLevel`: Wasserstand am Querschnitt.  - `waterTemperature`: Wassertemperatur am Querschnitt.  - `waterVelocity`: Wassergeschwindigkeit am Querschnitt.    
 Erforderliche Eigenschaften  
 - `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -123,10 +123,10 @@ CrossSection:
       minimum: 0    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -146,7 +146,8 @@ CrossSection:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -169,7 +170,8 @@ CrossSection:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -194,7 +196,8 @@ CrossSection:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -216,7 +219,8 @@ CrossSection:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -241,7 +245,8 @@ CrossSection:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -268,7 +273,7 @@ CrossSection:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     maxWaterDepth:    
       description: 'The maximum allowable water depth at the cross-section. All units are accepted in CEFACT code.'    
       minimum: 0    
