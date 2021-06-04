@@ -6,7 +6,7 @@ Entity: CrossSection
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `attachedTo`: A relationship to the ID of the channel where the cross-section 'lives in'. Reference to an entity of type Channel.  - `bottomSlope`: The bottom slope of the channel where the cross-section 'lives in'. All units are accepted in CEFACT code.  - `bottomWidth`: The bottom width of the cross-section (for 'Trapezoidal' geometry). All units are accepted in CEFACT code.  - `crossSectionGeometry`: The geometry of the cross-section. Enum:'Circular, Trapezoidal'.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `diameter`: The diameter of a circular cross-section.  - `energyHead`: The total energy head at the cross-section.  - `id`: Unique identifier of the entity  - `inheritsFrom`: URI of a Channel component from which the value of a property is obtained.  - `leftSideSlope`: The slope of the left bank of the cross-section (for 'Trapezoidal' geometry). All units are accepted in CEFACT code.  - `location`:   - `maxWaterDepth`: The maximum allowable water depth at the cross-section. All units are accepted in CEFACT code.  - `name`: The name of this item.  - `observedBy`: A relationship to the ID of the device that monitors raw-water properties  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `position`: Object providing information about the distance with the rest of the elements and a relationship with them.  - `rightSideSlope`: The slope of the right bank of the cross-section (for 'Trapezoidal' geometry). All units are accepted in CEFACT code.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `specificConductivity`: Water conductivity at the cross-section.  - `tag`: An optional text string used to qualify an item  - `turbidity`: Water turbidity at the cross-section.  - `type`: NGSI-LD Entity Type. It has to be CrossSection.  - `waterFlow`: Water flow at the cross-section.  - `waterLevel`: Water level at the cross-section.  - `waterTemperature`: Water temperature at the cross-section.  - `waterVelocity`: Water Velocity at the cross-section.    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `attachedTo`: A relationship to the ID of the channel where the cross-section 'lives in'. Reference to an entity of type Channel.  - `bottomSlope`: The bottom slope of the channel where the cross-section 'lives in'. All units are accepted in CEFACT code.  - `bottomWidth`: The bottom width of the cross-section (for 'Trapezoidal' geometry). All units are accepted in CEFACT code.  - `crossSectionGeometry`: The geometry of the cross-section. Enum:'Circular, Trapezoidal'.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `diameter`: The diameter of a circular cross-section.  - `energyHead`: The total energy head at the cross-section.  - `id`: Unique identifier of the entity  - `inheritsFrom`: URI of a Channel component from which the value of a property is obtained.  - `leftSideSlope`: The slope of the left bank of the cross-section (for 'Trapezoidal' geometry). All units are accepted in CEFACT code.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `maxWaterDepth`: The maximum allowable water depth at the cross-section. All units are accepted in CEFACT code.  - `name`: The name of this item.  - `observedBy`: A relationship to the ID of the device that monitors raw-water properties  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `position`: Object providing information about the distance with the rest of the elements and a relationship with them.  - `rightSideSlope`: The slope of the right bank of the cross-section (for 'Trapezoidal' geometry). All units are accepted in CEFACT code.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `specificConductivity`: Water conductivity at the cross-section.  - `tag`: An optional text string used to qualify an item  - `turbidity`: Water turbidity at the cross-section.  - `type`: NGSI-LD Entity Type. It has to be CrossSection.  - `waterFlow`: Water flow at the cross-section.  - `waterLevel`: Water level at the cross-section.  - `waterTemperature`: Water temperature at the cross-section.  - `waterVelocity`: Water Velocity at the cross-section.    
 Required properties  
 - `id`  - `type`  ## Data Model description of properties  
 Sorted alphabetically (click for details)  
@@ -123,10 +123,10 @@ CrossSection:
       minimum: 0    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -146,7 +146,8 @@ CrossSection:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -169,7 +170,8 @@ CrossSection:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -194,7 +196,8 @@ CrossSection:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -216,7 +219,8 @@ CrossSection:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -241,7 +245,8 @@ CrossSection:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -268,7 +273,7 @@ CrossSection:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     maxWaterDepth:    
       description: 'The maximum allowable water depth at the cross-section. All units are accepted in CEFACT code.'    
       minimum: 0    
