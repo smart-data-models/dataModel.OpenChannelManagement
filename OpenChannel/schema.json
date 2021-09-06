@@ -59,8 +59,8 @@
           "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/tag"
         },
         "geometryType": {
-          "description": "Property. The geometry of the channel. Enum:'Trapezoidal, Circular'].",
           "type": "string",
+          "description": "Property. The geometry of the channel. Enum:'Trapezoidal, Circular'].",
           "enum": [
             "Circular",
             "Trapezoidal"
