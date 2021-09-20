@@ -1,0 +1,47 @@
+{
+  "id": "urn:ngsi-ld:HydraulicSimulationResult:id:AXXR:47634334",
+  "type": "HydraulicSimulationResult",
+  "dateCreated": "2020-01-31T13:52:47Z",
+  "dateModified": "2021-01-07T07:40:26Z",
+  "source": "",
+  "name": "",
+  "alternateName": "",
+  "description": "Simulation results of open Chhnnel v2",
+  "dataProvider": "CB 0001",
+  "owner": [
+    "urn:ngsi-ld:HydraulicSimulationResult:items:RNEG:15369825",
+    "urn:ngsi-ld:HydraulicSimulationResult:items:PXYR:27950798"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:HydraulicSimulationResult:items:PDYS:35197058",
+    "urn:ngsi-ld:HydraulicSimulationResult:items:ACML:17854953"
+  ],
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        72.389615,
+        -107.125032
+      ]
+    }
+  },
+  "address": {
+    "streetAddress": "12 Satovriandou str",
+    "addressLocality": "Athens",
+    "addressRegion": "Athens",
+    "addressCountry": "Greece",
+    "postalCode": "10432",
+    "postOfficeBoxNumber": "",
+    "areaServed": "Athens metropolitan area."
+  },
+  "areaServed": "Athens metropolitan area..",
+  "createdBy": "urn:ngsi-ld:HydraulicSimulationResult:createdBy:YAHQ:81095884",
+  "hasInputOpenChannelSystem": "urn:ngsi-ld:HydraulicSimulationResult:hasInputOpenChannelSystem:DIHU:72940433"
+  ,
+  "computedBy": "urn:ngsi-ld:HydraulicSimulationResult:computedBy:MZZX:53457875"
+  ,
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}
