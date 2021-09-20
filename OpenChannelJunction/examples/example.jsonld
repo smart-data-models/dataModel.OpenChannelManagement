@@ -1,0 +1,51 @@
+{
+  "id": "urn:ngsi-ld:OpenChannelJunction:id:PTOM:78370074",
+  "type": "OpenChannelJunction",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -65.2981945,
+      -22.649102
+    ]
+  },
+  "address": {
+    "streetAddress": "",
+    "addressLocality": "",
+    "addressRegion": "",
+    "addressCountry": "",
+    "postalCode": "",
+    "postOfficeBoxNumber": "",
+    "areaServed": ""
+  },
+  "areaServed": "value"
+  :
+  "",
+  "dateCreated": "1983-10-11T21:04:39Z",
+  "dateModified": "1982-03-03T08:37:57Z",
+  "source": "",
+  "name": "J1",
+  "alternateName": "Thivae",
+  "Open Channel Junction",
+  "dataProvider": "EYDAP",
+  "owner": [
+    "urn:ngsi-ld:OpenChannelJunction:items:QPEH:03184806",
+    "urn:ngsi-ld:OpenChannelJunction:items:PUHR:34031741"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:OpenChannelJunction:items:KTWJ:61564622",
+    "urn:ngsi-ld:OpenChannelJunction:items:JOMY:24566116"
+  ],
+  "position": {
+    "distance": 864.6,
+    "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647",
+    "downstreamNode": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924",
+    "upstreamNode": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938",
+    "observedBy": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975",
+    "uniqueName": "J1",
+    "tag": "",
+    "waterOutflow": 0.12,
+    "waterInflow": 0.15,
+    "@context": [
+      "https://smartdatamodels.org/context.jsonld"
+    ]
+  }
