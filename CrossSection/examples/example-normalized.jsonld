@@ -49,7 +49,7 @@
     ]
   },
   "location": {
-    "type": "Property",
+    "type": "Geoproperty",
     "value": {
       "type": "Point",
       "coordinates": [

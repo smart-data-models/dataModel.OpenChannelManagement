@@ -1,13 +1,13 @@
 {
-  "id": "urn:ngsi-ld:SluiceGate:id:OZDE:42332657",
-  "type": "SluiceGate",
+  "id": "urn:ngsi-ld:Spillway:id:FFPG:06271993",
+  "type": "Spillway",
   "location": {
     "type": "Geoproperty",
     "value": {
       "type": "Point",
       "coordinates": [
-        -7.578066,
-        -25.535857
+        60.3603485,
+        -129.682253
       ]
     }
   },
@@ -31,14 +31,14 @@
     "type": "Property",
     "value": {
       "@type": "DateTime",
-      "@value": "1972-01-13T19:49:28Z"
+      "@value": "2020-10-12T04:27:47Z"
     }
   },
   "dateModified": {
     "type": "Property",
     "value": {
       "@type": "DateTime",
-      "@value": "2000-05-11T14:06:00Z"
+      "@value": "2021-09-26T16:22:05Z"
     }
   },
   "source": {
@@ -47,15 +47,15 @@
   },
   "name": {
     "type": "Property",
-    "value": "SG01"
+    "value": "SP01"
   },
   "alternateName": {
     "type": "Property",
-    "value": "SG01 - Thivae"
+    "value": "SP01 - Thivae"
   },
   "description": {
     "type": "Property",
-    "value": "Sluic Gate 01 - Thivae"
+    "value": "Spillway 01 - Thivae"
   },
   "dataProvider": {
     "type": "Property",
@@ -64,80 +64,84 @@
   "owner": {
     "type": "Property",
     "value": [
-      "urn:ngsi-ld:SluiceGate:items:LXOX:42416570",
-      "urn:ngsi-ld:SluiceGate:items:FSOL:83758025"
+      "urn:ngsi-ld:Spillway:items:OFPV:04640010",
+      "urn:ngsi-ld:Spillway:items:BFAT:33357858"
     ]
   },
   "seeAlso": {
     "type": "Property",
     "value": [
-      "urn:ngsi-ld:SluiceGate:items:ETJS:41829811",
-      "urn:ngsi-ld:SluiceGate:items:IKTE:29167907"
+      "urn:ngsi-ld:Spillway:items:VLIF:47226224",
+      "urn:ngsi-ld:Spillway:items:BDSZ:68275691"
     ]
   },
   "tag": {
     "type": "Property",
     "value": ""
   },
-  "gateType": {
+  "spillwayType": {
     "type": "Property",
-    "value": "Sluice Gate"
+    "value": "Ogee"
   },
-  "gateWidth": {
+  "crestElevation": {
     "type": "Property",
-    "value": 2.5
+    "value": 26.4
   },
-  "gateOpening": {
+  "crestLength": {
     "type": "Property",
-    "value": 0.5
+    "value": 5
   },
-  "gateBottomElevation": {
+  "spillwayWidth": {
     "type": "Property",
-    "value": 52.3
+    "value": 5
   },
-  "gateDischargeCoefficient": {
+  "numberAbutments": {
     "type": "Property",
-    "value": 0.5
+    "value": 2
   },
-  "orificeDischargeCoefficient": {
+  "apronElevation": {
     "type": "Property",
-    "value": 0.5
+    "value": 22
   },
-  "waterDischarge": {
+  "apronLength": {
     "type": "Property",
-    "value": 9
+    "value": 5
   },
-  "headDifference": {
+  "dischargeCoefficient": {
     "type": "Property",
-    "value": 1.5
+    "value": 5
   },
-  "flowType": {
+  "designHead": {
     "type": "Property",
-    "value": "Submerged Flow"
+    "value": 30.4
   },
-  "upstreamEndControlPoint": {
+  "designDischarge": {
+    "type": "Property",
+    "value": 20
+  },
+  "designDischargeCoefficient": {
+    "type": "Property",
+    "value": 0.4
+  },
+  "maxFloodElevation": {
+    "type": "Property",
+    "value": 4
+  },
+  "controlCrossSection": {
     "type": "object",
-    "value": "urn:ngsi-ld:SluiceGate:upstreamEndControlPoint:JXFD:60487647"
+    "value": "urn:ngsi-ld:Spillway:controlCrossSection:JXFD:60487647"
   },
-  "downstreamEndControlPoint": {
+  "curveElevationDischarge": {
     "type": "object",
-    "value": "urn:ngsi-ld:SluiceGate:downstreamEndControlPoint:CBWI:21948924"
-  },
-  "upstreamControlPoint": {
-    "type": "object",
-    "value": "urn:ngsi-ld:SluiceGate:upstreamControlPoint:MWGU:81565938"
-  },
-  "downstreamControlPoint": {
-    "type": "object",
-    "value": "urn:ngsi-ld:SluiceGate:downstreamControlPoint:GIWE:80160975"
-  },
-  "observedBy": {
-    "type": "object",
-    "value": "urn:ngsi-ld:SluiceGate:observedBy:ZWZM:93328711"
+    "value": "urn:ngsi-ld:Spillway:curveElevationDischarge:CBWI:21948924"
   },
   "curveDischargeCoefficient": {
     "type": "object",
-    "value": "urn:ngsi-ld:SluiceGate:curveDischargeCoefficient:ZPPL:48418583"
+    "value": "urn:ngsi-ld:Spillway:curveDischargeCoefficient:MWGU:81565938"
+  },
+  "curveDesignDischargeCoefficient": {
+    "type": "object",
+    "value": "urn:ngsi-ld:Spillway:curveDesignDischargeCoefficient:GIWE:80160975"
   },
   "@context": [
     "https://smartdatamodels.org/context.jsonld"
