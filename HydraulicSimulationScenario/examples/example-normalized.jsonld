@@ -1,0 +1,147 @@
+{
+  "id": "urn:ngsi-ld:HydraulicSimulationScenario:id:QKEA:37762240",
+  "type": "HydraulicSimulationScenario",
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2021-06-03T10:46:57Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2021-06-03T10:46:57Z"
+    }
+  },
+  "source": {
+    "type": "Property",
+    "value": ""
+  },
+  "name": {
+    "type": "Property",
+    "value": ""
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": ""
+  },
+  "description": {
+    "type": "Property",
+    "value": ""
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": ""
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:HydraulicSimulationScenario:items:FZKW:15892841",
+      "urn:ngsi-ld:HydraulicSimulationScenario:items:ANWO:23854918"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:HydraulicSimulationScenario:items:RTPM:24422747",
+      "urn:ngsi-ld:HydraulicSimulationScenario:items:IVOZ:19579365"
+    ]
+  },
+  "location": {
+    "type": "Property",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        77.6219125,
+        -150.908218
+      ]
+    }
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "",
+      "addressLocality": "",
+      "addressRegion": "",
+      "addressCountry": "",
+      "postalCode": "",
+      "postOfficeBoxNumber": "",
+      "areaServed": ""
+    }
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": ""
+  },
+  "hasInputOpenChannelSystem": {
+    "type": "Property",
+    "value": "urn:ngsi-ld:HydraulicSimulationScenario:hasInputOpenChannelSystem:DFTQ:49585452"
+  },
+  "hasSimulationResult": {
+    "type": "Property",
+    "value": "urn:ngsi-ld:HydraulicSimulationScenario:hasSimulationResult:QHIM:01254265"
+  },
+  "targetValues": {
+    "type": "Property",
+    "value": [
+      {
+        "waterAttribute": 64.6,
+        "targetURI": "urn:ngsi-ld:HydraulicSimulationScenario:targetURI:JXFD:60487647"
+      },
+      {
+        "waterAttribute": 864.6,
+        "targetURI": "urn:ngsi-ld:HydraulicSimulationScenario:targetURI:JXFD:60487647"
+      }
+    ]
+  },
+  "inputParameters": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:HydraulicSimulationScenario:items:CBWI:21948924",
+      "urn:ngsi-ld:HydraulicSimulationScenario:items:MWGU:81565938"
+    ]
+  },
+  "createdBy": {
+    "type": "Property",
+    "value": ""
+  },
+  "duration": {
+    "type": "Property",
+    "value": 6
+  },
+  "hydraulicTimeStep": {
+    "type": "Property",
+    "value": 4
+  },
+  "flowUnits": {
+    "type": "Property",
+    "value": "LPS"
+  },
+  "startSimulationTime": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2020-08-15T08:43:22Z"
+    }
+  },
+  "endSimulationTime": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2020-08-15T09:52:26Z"
+    }
+  },
+  "flowConvergenceAccuracy": {
+    "type": "Property",
+    "value": 0.5
+  },
+  "modelParameters": {
+    "type": "Property",
+    "value": ""
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}
