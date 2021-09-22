@@ -36,7 +36,7 @@
     "urn:ngsi-ld:OpenChannelJunction:items:JOMY:24566116"
   ],
   "position": {
-    "distance": 864.6,
+    "distance": 160.6,
     "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647",
     "downstreamNode": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924",
     "upstreamNode": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938",

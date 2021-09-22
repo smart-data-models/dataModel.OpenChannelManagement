@@ -34,15 +34,15 @@
     "urn:ngsi-ld:RegulationStructure:items:IZVF:62633698"
   ],
   "tag": "",
-  "numberOfGates": 2,
-  "numberOfSpillways": 2,
+  "numberOfGates": 1,
+  "numberOfSpillways": 1,
   "teleCommand": [
     true
   ],
   "hasSluiceGate": "urn:ngsi-ld:RegulationStructure:hasSluiceGate:JXFD:60487647",
   "hasSpillway": "urn:ngsi-ld:RegulationStructure:hasSpillway:CBWI:21948924",
   "position": {
-    "distance": 864.6,
+    "distance": 160.6,
     "refPoint": "urn:ngsi-ld:RegulationStructure:refPoint:JXFD:60487647"
   },
   "@context": [
