@@ -81,11 +81,11 @@
   },
   "numberOfGates": {
     "type": "Property",
-    "value": 2
+    "value": 1
   },
   "numberOfSpillways": {
     "type": "Property",
-    "value": 2
+    "value": 1
   },
   "teleCommand": {
     "type": "Property",
@@ -104,7 +104,7 @@
   "position": {
     "type": "Property",
     "value": {
-      "distance": 864.6,
+      "distance": 160.6,
       "refPoint": "urn:ngsi-ld:RegulationStructure:refPoint:JXFD:60487647"
     }
   },

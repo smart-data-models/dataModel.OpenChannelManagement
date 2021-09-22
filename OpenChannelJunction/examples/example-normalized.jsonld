@@ -78,7 +78,7 @@
   "position": {
     "type": "Property",
     "value": {
-      "distance": 864.6,
+      "distance": 160.6,
       "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647"
     }
   },

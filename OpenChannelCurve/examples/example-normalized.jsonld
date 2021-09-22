@@ -54,7 +54,7 @@
   },
   "description": {
     "type": "Property",
-    "value": "Open Channel Curve for elavation - discharge"
+    "value": "Open Channel Curve for a/H ~ C"
   },
   "dataProvider": {
     "type": "Property",
@@ -77,26 +77,36 @@
   "type": "OpenChannelCurve",
   "tag": {
     "type": "Property",
-    "value": "Elavation discharge curve"
+    "value": "a/H ~ C curve"
   },
   "curveType": {
     "type": "Property",
-    "value": "Elevation-Discharge"
+    "value": "a/H ~ C"
   },
   "xData": {
     "type": "Property",
     "value": [
-      203,
-      203.20,
-      203.40
+      0.001,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7
     ]
   },
   "yData": {
     "type": "Property",
     "value": [
-      0,
-      4.31,
-      12.49
+      0.61,
+      0.5930,
+      0.5942,
+      0.5988,
+      0.6070,
+      0.6209,
+      0.6395,
+      0.6628
     ]
   },
   "@context": [
