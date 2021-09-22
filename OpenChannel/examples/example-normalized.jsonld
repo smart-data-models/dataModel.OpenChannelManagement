@@ -50,7 +50,7 @@
     ]
   },
   "location": {
-    "type": "Property",
+    "type": "Georoperty",
     "value": {
       "type": "Point",
       "coordinates": [

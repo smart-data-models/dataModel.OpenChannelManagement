@@ -1,11 +1,13 @@
 {
+  "id": "urn:ngsi-ld:OpenChannelSystem:id:EHTH:11109231",
+  "type": "OpenChannelSystem",
   "location": {
     "type": "Geoproperty",
     "value": {
       "type": "Point",
       "coordinates": [
-        -71.481035,
-        -148.255307
+        59.820118,
+        -157.397178
       ]
     }
   },
@@ -25,19 +27,18 @@
     "type": "Property",
     "value": ""
   },
-  "id": "urn:ngsi-ld:OpenChannelCurve:id:FMCV:30717942",
   "dateCreated": {
     "type": "Property",
     "value": {
       "@type": "DateTime",
-      "@value": "2003-09-09T04:19:40Z"
+      "@value": "2020-12-07T21:37:19Z"
     }
   },
   "dateModified": {
     "type": "Property",
     "value": {
       "@type": "DateTime",
-      "@value": "2019-04-13T13:45:31Z"
+      "@value": "2021-07-14T01:06:03Z"
     }
   },
   "source": {
@@ -46,7 +47,7 @@
   },
   "name": {
     "type": "Property",
-    "value": "Curve_1"
+    "value": "L7 - L11"
   },
   "alternateName": {
     "type": "Property",
@@ -54,50 +55,41 @@
   },
   "description": {
     "type": "Property",
-    "value": "Open Channel Curve for elavation - discharge"
+    "value": "Conveyance System near Thivae"
   },
   "dataProvider": {
     "type": "Property",
-    "value": "NTUA"
+    "value": "EYDAP"
   },
   "owner": {
     "type": "Property",
     "value": [
-      "urn:ngsi-ld:OpenChannelCurve:items:EXUV:99745990",
-      "urn:ngsi-ld:OpenChannelCurve:items:HXOV:60683026"
+      "urn:ngsi-ld:OpenChannelSystem:items:WPHN:07387656",
+      "urn:ngsi-ld:OpenChannelSystem:items:JNVF:94407376"
     ]
   },
   "seeAlso": {
     "type": "Property",
     "value": [
-      "urn:ngsi-ld:OpenChannelCurve:items:IZFN:20714900",
-      "urn:ngsi-ld:OpenChannelCurve:items:RDSS:63995745"
+      "urn:ngsi-ld:OpenChannelSystem:items:EZUE:70603867",
+      "urn:ngsi-ld:OpenChannelSystem:items:MWLT:38533440"
     ]
   },
-  "type": "OpenChannelCurve",
-  "tag": {
-    "type": "Property",
-    "value": "Elavation discharge curve"
+  "isComposedOf": {
+    "type": "object",
+    "value": "urn:ngsi-ld:OpenChannelSystem:isComposedOf:UMLF:11032914"
   },
-  "curveType": {
-    "type": "Property",
-    "value": "Elevation-Discharge"
+  "hasSubSystem": {
+    "type": "object",
+    "value": "urn:ngsi-ld:OpenChannelSystem:hasSubSystem:BYUP:86302765"
   },
-  "xData": {
-    "type": "Property",
-    "value": [
-      203,
-      203.20,
-      203.40
-    ]
+  "mostUpstreamPoint": {
+    "type": "object",
+    "value": "urn:ngsi-ld:OpenChannelSystem:mostUpstreamPoint:YUHY:75075828"
   },
-  "yData": {
-    "type": "Property",
-    "value": [
-      0,
-      4.31,
-      12.49
-    ]
+  "mostDownstreamPoint": {
+    "type": "object",
+    "value": "urn:ngsi-ld:OpenChannelSystem:mostDownstreamPoint:IXHM:68215414"
   },
   "@context": [
     "https://smartdatamodels.org/context.jsonld"

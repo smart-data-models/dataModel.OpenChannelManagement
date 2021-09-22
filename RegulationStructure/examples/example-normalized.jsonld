@@ -1,6 +1,8 @@
 {
+  "id": "urn:ngsi-ld:RegulationStructure:id:IXHN:40075061",
+  "type": "RegulationStructure",
   "location": {
-    "type": "Property",
+    "type": "Geoproperty",
     "value": {
       "type": "Point",
       "coordinates": [
@@ -25,7 +27,6 @@
     "type": "Property",
     "value": ""
   },
-  "id": "urn:ngsi-ld:RegulationStructure:id:IXHN:40075061",
   "dateCreated": {
     "type": "Property",
     "value": {
@@ -74,7 +75,6 @@
       "urn:ngsi-ld:RegulationStructure:items:IZVF:62633698"
     ]
   },
-  "type": "RegulationStructure",
   "tag": {
     "type": "Property",
     "value": ""
