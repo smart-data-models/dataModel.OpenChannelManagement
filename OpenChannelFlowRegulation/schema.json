@@ -72,7 +72,7 @@
           ],
           "description": "Relationship. The ID of who created/triggered the simulation. Reference to an entity of type User"
         }
-      } // properties
+      }
     }
   ],
   "required": [
