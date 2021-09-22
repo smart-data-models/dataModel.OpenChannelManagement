@@ -4,35 +4,35 @@
     "type": "Property",
     "value": {
       "@type": "DateTime",
-      "@value": "1970-01-31T13:52:47Z"
+      "@value": "2021-01-31T13:52:47Z"
     }
   },
   "dateModified": {
     "type": "Property",
     "value": {
       "@type": "DateTime",
-      "@value": "1971-01-07T07:40:26Z"
+      "@value": "2021-02-07T07:40:26Z"
     }
   },
   "source": {
     "type": "Property",
-    "value": "Throw create somebody big operation. Soldier decade the later also effort. Study very ball piece."
+    "value": ""
   },
   "name": {
     "type": "Property",
-    "value": "Class society couple fight one stage wife. Program or physical read use rise."
+    "value": ""
   },
   "alternateName": {
     "type": "Property",
-    "value": "Control back term how early. Short the first. Account speak field movie impact store fill."
+    "value": ""
   },
   "description": {
     "type": "Property",
-    "value": "Her method finally city. Family town goal chair green hair analysis."
+    "value": ""
   },
   "dataProvider": {
     "type": "Property",
-    "value": "Occur kitchen discuss two continue learn. Current however against alone cause together. Pressure some economic could in itself good everything."
+    "value": ""
   },
   "owner": {
     "type": "Property",
@@ -49,7 +49,7 @@
     ]
   },
   "location": {
-    "type": "Property",
+    "type": "Geoproperty",
     "value": {
       "type": "Point",
       "coordinates": [
@@ -61,18 +61,18 @@
   "address": {
     "type": "Property",
     "value": {
-      "streetAddress": "Rich last investment term. Despite such drop road send. Possible law court consumer read. Go him word happy table mean may.",
-      "addressLocality": "Relate financial memory hear. As should main different.",
-      "addressRegion": "Determine only blue meeting ahead. Various serve course. Conference tell account entire they toward.",
-      "addressCountry": "Bring phone most painting agree maybe. Administration toward your question.",
-      "postalCode": "Music will skin reach. Move never perhaps story fast commercial.",
-      "postOfficeBoxNumber": "Indicate guy middle maybe far. Environment something professor pretty.",
-      "areaServed": "Marriage wait usually high worker despite. Over partner beat test current until herself pay. Man should short figure care."
+      "streetAddress": "Franklinnstrasse 10",
+      "addressLocality": "Berlin",
+      "addressRegion": "Berlin",
+      "addressCountry": "Germany",
+      "postalCode": "10423",
+      "postOfficeBoxNumber": "",
+      "areaServed": ""
     }
   },
   "areaServed": {
     "type": "Property",
-    "value": "Maybe field machine. Today rate turn decade."
+    "value": "."
   },
   "type": "HydraulicSimulationResult",
   "createdBy": {

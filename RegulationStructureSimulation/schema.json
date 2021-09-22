@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/schema#",
   "$id": "https://smart-data-models.github.io/data-models.OpenChannelManagement/RegulationStructureSimulation/schema.json",
   "$schemaVersion": "0.0.1",
+  "modelTags": "FIWARE4WATER",
   "title": "Smart Data Models - RegulationStructureSimulation",
   "description": "This entity contains a harmonised description of a data model for regulation structure simulation, for Raw-Water (Open Channels) System Management domain.",
   "type": "object",
@@ -23,11 +24,11 @@
         },
         "startSimulationTime":{
           "type": "string",
-          "description": "Property. Time of day in ISO8601 UTCformat at which the simulation begins."
+          "description": "Property. Time of day in ISO8601 UTC format at which the simulation begins."
         },
         "endSimulationTime":{
           "type": "string",
-          "description": "Property. Time of day in ISO8601 UTCformat at which the simulation ends."
+          "description": "Property. Time of day in ISO8601 UTC format at which the simulation ends."
         },
         "modelError":{
           "type": "number",
@@ -60,7 +61,7 @@
         "simulationOutput":{
           "properties": {
             "waterAttribute": {
-              "type": "string"
+              "type": "string",
               "description": "Property: An attribute issued from the data models for Open Channel Management. It follows fully this data model and it could be a property or a relationship. It contains the values for specified properties, as derive from the simulation."
             },
             "targetURI":{
@@ -80,13 +81,13 @@
               ],
               "description": "Relationship. A relationship indicating the network component with a simulated property value."
             }
-          }
+          },
           "description": "Property. Description of the set of results of simulation of the regulation structure."
         },
         "inputParameters":{
           "properties": {
             "waterAttribute": {
-              "type": "string"
+              "type": "string",
               "description": "Property: An attribute issued from the data models for Open Channel Management. It follows fully this data model and it could be a property or a relationship. It contains the values for specified properties, as derive from the simulation."
             },
             "targetURI":{
@@ -106,13 +107,13 @@
               ],
               "description": "Relationship. A relationship indicating the network component with a simulated property value."
             }
-          }
+          },
           "description": "Property. Description of the set of modifications to be applied to the open channel system for the simulation."
         },
-        "initalConditions":{
+        "initialConditions":{
           "properties": {
             "waterAttribute": {
-              "type": "string"
+              "type": "string",
               "description": "Property: An attribute issued from the data models for Open Channel Management. It follows fully this data model and it could be a property or a relationship. It contains the values for specified properties, as derive from the simulation."
             },
             "targetURI":{
@@ -132,10 +133,10 @@
               ],
               "description": "Relationship. A relationship indicating the network component with a simulated property value."
             }
-          }
+          },
           "description": "Property. Description of the set of initial conditions (discharge, water-level etc.) of the open channel system just before the simulation."
         }
-      } // properties
+      }
     }
   ],
   "required": [

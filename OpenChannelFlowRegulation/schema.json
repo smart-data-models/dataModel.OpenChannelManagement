@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/schema#",
   "$id": "https://smart-data-models.github.io/data-models.OpenChannelManagement/OpenChannelFlowRegulation/schema.json",
   "$schemaVersion": "0.0.1",
+  "modelTags": "FIWARE4WATER",
   "title": "Smart Data Models - OpenChannelFlowRegulation",
   "description": "This entity contains a harmonised description of a generic simulation of a series of independent regulation structures to establish specific flow conditions in the conveyance system. It is made for Raw-Water (Open Channels) System Management domain.",
   "type": "object",
