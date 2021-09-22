@@ -25,7 +25,7 @@
   "source": "",
   "name": "Curve_1",
   "alternateName": "",
-  "description": "Open Channel Curve for elavation - discharge",
+  "description": "Open Channel Curve for a/H ~ C",
   "dataProvider": "NTUA",
   "owner": [
     "urn:ngsi-ld:OpenChannelCurve:items:EXUV:99745990",
@@ -35,17 +35,27 @@
     "urn:ngsi-ld:OpenChannelCurve:items:IZFN:20714900",
     "urn:ngsi-ld:OpenChannelCurve:items:RDSS:63995745"
   ],
-  "tag": "Elavation discharge curve",
-  "curveType": "Elevation-Discharge",
+  "tag": "a/H ~ C curve",
+  "curveType": "a/H ~ C",
   "xData": [
-    203,
-    203.20,
-    203.40
+    0.001,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7
   ],
   "yData": [
-    0,
-    4.31,
-    12.49
+    0.61,
+    0.5930,
+    0.5942,
+    0.5988,
+    0.6070,
+    0.6209,
+    0.6395,
+    0.6628
   ],
   "@context": [
     "https://smartdatamodels.org/context.jsonld"

@@ -49,7 +49,7 @@
     ]
   },
   "location": {
-    "type": "Geoproperty",
+    "type": "Property",
     "value": {
       "type": "Point",
       "coordinates": [
@@ -76,16 +76,16 @@
   },
   "type": "HydraulicSimulationResult",
   "createdBy": {
-    "createdBy": "Version 0.1 not implemented",
-    "value": "urn:ngsi-ld:HydraulicSimulationResult:createdBy:YAHQ:81095884"
+    "type": "Property",
+    "value": ""
   },
   "hasInputOpenChannelSystem": {
-    "type": "object",
-    "value": "urn:ngsi-ld:HydraulicSimulationResult:hasInputOpenChannelSystem:DIHU:72940433"
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:HydraulicSimulationResult:hasInputOpenChannelSystem:DIHU:72940433"
   },
   "computedBy": {
-    "type": "object",
-    "value": "urn:ngsi-ld:HydraulicSimulationResult:computedBy:MZZX:53457875"
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:HydraulicSimulationResult:computedBy:MZZX:53457875"
   },
   "@context": [
     "https://smartdatamodels.org/context.jsonld"

@@ -77,7 +77,7 @@
           "properties": {
             "distance": {
               "type": "number",
-              "description": "Property. The distance between this Entity and a reference point (e.g., the most upstream point of the system)."
+              "description": "Property. The distance between this Entity and a reference point (e.g., the most upstream point of the system). Units:'Km' "
             },
             "refPoint": {
               "anyOf": [
