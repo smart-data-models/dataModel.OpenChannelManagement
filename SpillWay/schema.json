@@ -90,6 +90,11 @@
           "minimum": 0,
           "description": "Property. The maximum elevation of water that can pass the spillway."
         },
+        "waterDischarge": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. The discharge over the spillway (Q). Units: 'm^3/s'"
+        },
         "controlCrossSection": {
           "anyOf": [
             {

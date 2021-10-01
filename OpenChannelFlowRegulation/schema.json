@@ -23,38 +23,56 @@
           "description": "Property. NGSI-LD Entity Type. It has to be OpenChannelFlowRegulation."
         },
         "hasRegulationStructures":{
-          "anyOf": [
-              {
-                  "type": "string",
-                  "minLength": 1,
-                  "maxLength": 256,
-                  "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-                  "description": "Property. Identifier format of any NGSI entity"
-              },
-              {
-                "type": "string",
-                "format": "uri",
-                "description": "Property. Identifier format of any NGSI entity"
+          "type": "array",
+          "description": "Property. Reference to the ID of an entity of type Regulation structure"
+          "items": {
+            "type": "object",
+            "properties": {
+              "targetURI":{
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 256,
+                        "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                        "description": "Property. Identifier format of any NGSI entity"
+                    },
+                    {
+                      "type": "string",
+                      "format": "uri",
+                      "description": "Property. Identifier format of any NGSI entity"
+                    }
+                ],
+                "description": "Relationship. Reference to the ID of an entity of type Regulation structure"
               }
-          ],
-          "description": "Relationship. Reference to the ID of an entity of type Regulation structure"
+            }
+          }
         },
         "hasStructuresSimulations":{
-          "anyOf": [
-              {
-                  "type": "string",
-                  "minLength": 1,
-                  "maxLength": 256,
-                  "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-                  "description": "Property. Identifier format of any NGSI entity"
-              },
-              {
-                "type": "string",
-                "format": "uri",
-                "description": "Property. Identifier format of any NGSI entity"
+          "type": "array",
+          "description": "Property. Reference to the ID of an entity of type Regulation Structure Simulation"
+          "items": {
+            "type": "object",
+            "properties": {
+              "targetURI":{
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 256,
+                        "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                        "description": "Property. Identifier format of any NGSI entity"
+                    },
+                    {
+                      "type": "string",
+                      "format": "uri",
+                      "description": "Property. Identifier format of any NGSI entity"
+                    }
+                ],
+                "description": "Relationship. Reference to the ID of an entity of type Regulation Structure Simulation"
               }
-          ],
-          "description": "Relationship. Reference to the ID of an entity of type Regulation Structure Simulation"
+            }
+          }
         },
         "runBy":{
           "anyOf": [

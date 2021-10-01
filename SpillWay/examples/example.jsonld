@@ -46,6 +46,7 @@
   "designDischarge": 20,
   "designDischargeCoefficient": 0.4,
   "maxFloodElevation": 4,
+  "waterDischarge": 9,
   "controlCrossSection": "urn:ngsi-ld:Spillway:controlCrossSection:JXFD:60487647",
   "curveElevationDischarge": "urn:ngsi-ld:Spillway:curveElevationDischarge:CBWI:21948924",
   "curveDischargeCoefficient": "urn:ngsi-ld:Spillway:curveDischargeCoefficient:MWGU:81565938",

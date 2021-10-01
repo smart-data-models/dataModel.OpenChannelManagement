@@ -1,0 +1,41 @@
+{
+  "id": "urn:ngsi-ld:OpenChannelFlowRegulation:id:YZQM:06548673",
+  "dateCreated": "2018-02-17T06:21:09Z",
+  "dateModified": "1981-02-25T19:40:59Z",
+  "source": "Pass share win focus man through how billion. Data where start box great myself.",
+  "name": "Part different prove situation. Close force seven south movie have.",
+  "alternateName": "Drop shake window. Off look bank. Party never total good full.",
+  "description": "Traditional never person learn anyone brother. Help talk culture wall officer feel.",
+  "dataProvider": "Material heavy seat could finish experience analysis. Discuss center necessary successful floor term also.",
+  "owner": [
+    "urn:ngsi-ld:OpenChannelFlowRegulation:items:LCQN:38055896",
+    "urn:ngsi-ld:OpenChannelFlowRegulation:items:ZUHP:11272343"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:OpenChannelFlowRegulation:items:SKNH:67049801",
+    "urn:ngsi-ld:OpenChannelFlowRegulation:items:ESAG:96636473"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -10.04408,
+      -11.851445
+    ]
+  },
+  "address": {
+    "streetAddress": "That fear certain. Red lose size level. Usually trip air bad decide model.",
+    "addressLocality": "Executive order side. Space film run building. Continue should study education thank.",
+    "addressRegion": "Person court general increase tax appear where firm.",
+    "addressCountry": "As you federal simple discover under. Debate speech wish reality.",
+    "postalCode": "Career piece rate behind manage away. Floor discover little pull majority early benefit.",
+    "postOfficeBoxNumber": "Close else life to bill conference middle dark. Any watch real our nation them cold PM. Important trial black eat term."
+  },
+  "areaServed": "Will billion every term. Debate option politics including physical condition factor travel.",
+  "type": "OpenChannelFlowRegulation",
+  "hasRegulationStructures": "urn:ngsi-ld:OpenChannelFlowRegulation:hasRegulationStructures:OJAT:49186961",
+  "hasStructuresSimulations": "urn:ngsi-ld:OpenChannelFlowRegulation:hasStructuresSimulations:RHLD:07304248",
+  "runBy": "urn:ngsi-ld:OpenChannelFlowRegulation:runBy:ASFZ:04727475",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}
