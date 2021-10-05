@@ -8,10 +8,16 @@ The following entity types are available:
 
 - [OpenChannel](https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/OpenChannel/README.md). This entity contains a harmonised description of a generic Channel made for Raw-Water (Open Channels) System Management domain.
 
+- [OpenChannelFlowRegulation](https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/OpenChannelFlowRegulation/README.md). This entity contains a harmonised description of a generic simulation of a series of independent regulation structures to establish specific flow conditions in the conveyance system. It is made for Raw-Water (Open Channels) System Management domain.
+
+- [RegulationStructureSimulation](https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/RegulationStructureSimulation/README.md). This entity contains a harmonised description of a data model for regulation structure simulation, for Raw-Water (Open Channels) System Management domain.
+
+- [Spillway](https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/Spillway/README.md). This entity contains a harmonised description for a generic Spillway made for Raw-Water (Open Channels) System Management domain. Spillway represents a junction-type object, controlling the release of water from a dam or regulation structure downstream.
+
 
 
 ### Contributors
-[Link](https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/CONTRIBUTORS.yaml) to the 1 current contributors of the data models of this Subject.
+[Link](https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/CONTRIBUTORS.yaml) to the 2 current contributors of the data models of this Subject.
 
 
 ### Contribution
