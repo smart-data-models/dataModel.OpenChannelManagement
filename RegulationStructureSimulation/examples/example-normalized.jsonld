@@ -1,17 +1,17 @@
 {
-  "id": "urn:ngsi-ld:HydraulicSimulationResult:id:AXXR:47634334",
+  "id": "urn:ngsi-ld:RegulationStructureSimulation:id:SCAU:96103454",
   "dateCreated": {
     "type": "Property",
     "value": {
       "@type": "DateTime",
-      "@value": "2021-01-31T13:52:47Z"
+      "@value": "2020-09-09T09:53:49Z"
     }
   },
   "dateModified": {
     "type": "Property",
     "value": {
       "@type": "DateTime",
-      "@value": "2021-02-07T07:40:26Z"
+      "@value": "1978-02-07T04:20:08Z"
     }
   },
   "source": {
@@ -20,73 +20,182 @@
   },
   "name": {
     "type": "Property",
-    "value": ""
+    "value": "Regulation_Structure_Simulation_1"
   },
   "alternateName": {
     "type": "Property",
-    "value": ""
+    "value": "Regulation Structure Simulation 1"
   },
   "description": {
     "type": "Property",
-    "value": ""
+    "value": "Regulation Structure Simulation"
   },
   "dataProvider": {
     "type": "Property",
-    "value": ""
+    "value": "NTUA"
   },
   "owner": {
     "type": "Property",
     "value": [
-      "urn:ngsi-ld:HydraulicSimulationResult:items:RNEG:15369825",
-      "urn:ngsi-ld:HydraulicSimulationResult:items:PXYR:27950798"
+      "urn:ngsi-ld:RegulationStructureSimulation:items:XYXQ:62496984",
+      "urn:ngsi-ld:RegulationStructureSimulation:items:ZHVH:90072950"
     ]
   },
   "seeAlso": {
     "type": "Property",
     "value": [
-      "urn:ngsi-ld:HydraulicSimulationResult:items:PDYS:35197058",
-      "urn:ngsi-ld:HydraulicSimulationResult:items:ACML:17854953"
+      "urn:ngsi-ld:RegulationStructureSimulation:items:HQQG:85737160",
+      "urn:ngsi-ld:RegulationStructureSimulation:items:PCHL:09983431"
     ]
   },
   "location": {
-    "type": "Geoproperty",
+    "type": "Property",
     "value": {
       "type": "Point",
       "coordinates": [
-        72.389615,
-        -107.125032
+        -27.391838,
+        -16.801411
       ]
     }
   },
   "address": {
     "type": "Property",
     "value": {
-      "streetAddress": "Franklinnstrasse 10",
-      "addressLocality": "Berlin",
-      "addressRegion": "Berlin",
-      "addressCountry": "Germany",
-      "postalCode": "10423",
-      "postOfficeBoxNumber": "",
-      "areaServed": ""
+      "streetAddress": "",
+      "addressLocality": "",
+      "addressRegion": "",
+      "addressCountry": "",
+      "postalCode": "",
+      "postOfficeBoxNumber": ""
     }
   },
   "areaServed": {
     "type": "Property",
-    "value": "."
-  },
-  "type": "HydraulicSimulationResult",
-  "createdBy": {
-    "type": "Property",
     "value": ""
   },
-  "hasInputOpenChannelSystem": {
-    "type": "Relationship",
-    "object": "urn:ngsi-ld:HydraulicSimulationResult:hasInputOpenChannelSystem:DIHU:72940433"
+  "type": "RegulationStructureSimulation",
+  "startSimulationTime": {
+    "type": "Property",
+    "value": "2020-12-19T09:55:49Z"
   },
-  "computedBy": {
-    "type": "Relationship",
-    "object": "urn:ngsi-ld:HydraulicSimulationResult:computedBy:MZZX:53457875"
+  "endSimulationTime": {
+    "type": "Property",
+    "value": "2020-12-19T09:56:49Z"
   },
+  "modelError": {
+    "type": "Property",
+    "value": 0.004
+  },
+  "targetDischarge": {
+    "type": "Property",
+    "value": 14
+  },
+  "modelledDischarge": {
+    "type": "Property",
+    "value": 14
+  },
+  "spillwayFlow": {
+    "type": "Property",
+    "value": 0
+  },
+  "estimatedGateDischargeCoefficient": {
+    "type": "Property",
+    "value": 0.401
+  },
+  "equivalentSluiceOpening": {
+    "type": "Property",
+    "value": 490
+  },
+  "simulationOutput": [
+      {
+        "type": "Property",
+        "value": "Output Parameter 1",
+        "waterLevel": {
+          "type": "Property",
+          "value": 3.50,
+          "targetURI": {
+            "type": "Property",
+            "value": "urn:ngsi-ld:CrossSection:CS01"
+          }
+        }
+      },
+      {
+        "type": "Property",
+        "value": "Output Parameter 2",
+        "gateOpening": {
+          "type": "Property",
+          "value": 450,
+          "targetURI": {
+            "type": "Property",
+            "value": "urn:ngsi-ld:SluiceGate:SG01"
+          }
+        }
+      }
+  ],
+  "inputParameters": [
+    {
+      "type": "Property",
+      "value": "Parameter 1",
+      "dischargeCoefficient": {
+        "type": "Property",
+        "value": 1.90,
+        "targetURI": {
+          "type": "Property",
+          "value": "urn:ngsi-ld:Spillway:SP01"
+        }
+      }
+    },
+    {
+      "type": "Property",
+      "value": "Parameter 2",
+      "gateDischargeCoefficient": {
+        "type": "Property",
+        "value": 0.45,
+        "targetURI": {
+          "type": "Property",
+          "value": "urn:ngsi-ld:SluiceGate:SG01"
+        }
+      }
+    }
+  ],
+  "initialConditions": [
+    {
+      "type": "Property",
+      "value": "discharge",
+      "waterFlow": {
+        "type": "Property",
+        "value": 13.29,
+        "targetURI": {
+          "type": "Property",
+          "value": "urn:ngsi-ld:CrossSection:CS01"
+        }
+      }
+    },
+    {
+      "type": "Property",
+      "value": "Upstream Depth",
+      "waterLevel": {
+        "type": "Property",
+        "value": 2.37,
+        "targetURI": {
+          "type": "Property",
+          "value": "urn:ngsi-ld:CrossSection:CS02"
+        }
+      }
+    },
+    {
+      "type": "Property",
+      "value": "Gate Opening 1",
+      "gateOpening": {
+        "type": "Property",
+        "value": 515,
+        "targetURI": {
+          "type": "Property",
+          "value": "urn:ngsi-ld:SluiceGate:SG01"
+        }
+      }
+    }
+  ],
   "@context": [
     "https://smartdatamodels.org/context.jsonld"
   ]

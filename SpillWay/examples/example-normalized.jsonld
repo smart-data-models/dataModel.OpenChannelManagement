@@ -127,6 +127,10 @@
     "type": "Property",
     "value": 4
   },
+  "waterDischarge": {
+    "type": "Property",
+    "value": 9
+  },  
   "controlCrossSection": {
     "type": "object",
     "value": "urn:ngsi-ld:Spillway:controlCrossSection:JXFD:60487647"
