@@ -2,7 +2,7 @@
   "id": "urn:ngsi-ld:Spillway:id:FFPG:06271993",
   "type": "Spillway",
   "location": {
-    "type": "Geoproperty",
+    "type": "geo:json",
     "value": {
       "type": "Point",
       "coordinates": [
@@ -12,7 +12,7 @@
     }
   },
   "address": {
-    "type": "Property",
+    "type": "PostalAddress",
     "value": {
       "streetAddress": "",
       "addressLocality": "",
@@ -27,108 +27,105 @@
     "type": "Property",
     "value": ""
   },
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2020-10-12T04:27:47Z"
-    }
+  "dateCreated":{
+      "type": "DateTime",
+      "value": "2020-10-12T04:27:47Z"
+
   },
   "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2021-09-26T16:22:05Z"
-    }
+
+      "type": "DateTime",
+      "value": "2021-09-26T16:22:05Z"
+
   },
   "source": {
-    "type": "Property",
+    "type": "Text",
     "value": ""
   },
   "name": {
-    "type": "Property",
+    "type": "Text",
     "value": "SP01"
   },
   "alternateName": {
-    "type": "Property",
+    "type": "Text",
     "value": "SP01 - Thivae"
   },
   "description": {
-    "type": "Property",
+    "type": "Text",
     "value": "Spillway 01 - Thivae"
   },
   "dataProvider": {
-    "type": "Property",
+    "type": "Text",
     "value": "EYDAP"
   },
   "owner": {
-    "type": "Property",
+    "type": "array",
     "value": [
       "urn:ngsi-ld:Spillway:items:OFPV:04640010",
       "urn:ngsi-ld:Spillway:items:BFAT:33357858"
     ]
   },
   "seeAlso": {
-    "type": "Property",
+    "type": "array",
     "value": [
       "urn:ngsi-ld:Spillway:items:VLIF:47226224",
       "urn:ngsi-ld:Spillway:items:BDSZ:68275691"
     ]
   },
   "tag": {
-    "type": "Property",
+    "type": "Text",
     "value": ""
   },
   "spillwayType": {
-    "type": "Property",
+    "type": "Text",
     "value": "Ogee"
   },
   "crestElevation": {
-    "type": "Property",
+    "type": "Number",
     "value": 26.4
   },
   "crestLength": {
-    "type": "Property",
+    "type": "Number",
     "value": 5
   },
   "spillwayWidth": {
-    "type": "Property",
+    "type": "Number",
     "value": 5
   },
   "numberAbutments": {
-    "type": "Property",
+    "type": "Number",
     "value": 2
   },
   "apronElevation": {
-    "type": "Property",
+    "type": "Number",
     "value": 22
   },
   "apronLength": {
-    "type": "Property",
+    "type": "Number",
     "value": 5
   },
   "dischargeCoefficient": {
-    "type": "Property",
+    "type": "Number",
     "value": 5
   },
   "designHead": {
-    "type": "Property",
+    "type": "Number",
     "value": 30.4
   },
   "designDischarge": {
-    "type": "Property",
+    "type": "Number",
     "value": 20
   },
   "designDischargeCoefficient": {
-    "type": "Property",
+    "type": "Number",
     "value": 0.4
   },
   "maxFloodElevation": {
-    "type": "Property",
+    "type": "Number",
     "value": 4
   },
   "waterDischarge": {
-    "type": "Property",
+    "type": "Number",
     "value": 9
   },  
   "controlCrossSection": {

@@ -80,8 +80,5 @@
       "value": 515,
       "targetURI": "urn:ngsi-ld:SluiceGate:SG01"
     }
-  ],
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
   ]
 }

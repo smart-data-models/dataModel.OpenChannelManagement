@@ -2,55 +2,49 @@
   "id": "urn:ngsi-ld:RegulationStructureSimulation:id:SCAU:96103454",
   "type": "RegulationStructureSimulation",
   "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2020-09-09T09:53:49Z"
-    }
+    "type": "DateTime",
+    "value": "2020-09-09T09:53:49Z"
   },
   "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1978-02-07T04:20:08Z"
-    }
+    "type": "DateTime",
+    "value": "1978-02-07T04:20:08Z"
   },
   "source": {
-    "type": "Property",
+    "type": "Text",
     "value": ""
   },
   "name": {
-    "type": "Property",
+    "type": "Text",
     "value": "Regulation_Structure_Simulation_1"
   },
   "alternateName": {
-    "type": "Property",
+    "type": "Text",
     "value": "Regulation Structure Simulation 1"
   },
   "description": {
-    "type": "Property",
+    "type": "Text",
     "value": "Regulation Structure Simulation"
   },
   "dataProvider": {
-    "type": "Property",
+    "type": "Text",
     "value": "NTUA"
   },
   "owner": {
-    "type": "Property",
+    "type": "array",
     "value": [
       "urn:ngsi-ld:RegulationStructureSimulation:items:XYXQ:62496984",
       "urn:ngsi-ld:RegulationStructureSimulation:items:ZHVH:90072950"
     ]
   },
   "seeAlso": {
-    "type": "Property",
+    "type": "array",
     "value": [
       "urn:ngsi-ld:RegulationStructureSimulation:items:HQQG:85737160",
       "urn:ngsi-ld:RegulationStructureSimulation:items:PCHL:09983431"
     ]
   },
   "location": {
-    "type": "Geoproperty",
+    "type": "geo:json",
     "value": {
       "type": "Point",
       "coordinates": [
@@ -60,7 +54,7 @@
     }
   },
   "address": {
-    "type": "Property",
+    "type": "PostalAddress",
     "value": {
       "streetAddress": "",
       "addressLocality": "",
@@ -71,49 +65,43 @@
     }
   },
   "areaServed": {
-    "type": "Property",
+    "type": "Text",
     "value": ""
   },
   "startSimulationTime": {
-    "type": "Property",
-    "value": {
-      "@type": "Datetime",
-      "@value": "2020-12-19T09:55:49Z"
-    }
+    "type": "Datetime",
+    "value": "2020-12-19T09:55:49Z"
   },
   "endSimulationTime": {
-    "type": "Property",
-    "value": {
-      "@type": "Datetime",
-      "@value": "2020-12-19T09:56:49Z"
-    }
+    "type": "Datetime",
+    "value": "2020-12-19T09:56:49Z"
   },
   "modelError": {
-    "type": "Property",
+    "type": "Number",
     "value": 0.004
   },
   "targetDischarge": {
-    "type": "Property",
+    "type": "Number",
     "value": 14
   },
   "modelledDischarge": {
-    "type": "Property",
+    "type": "Number",
     "value": 14
   },
   "spillwayFlow": {
-    "type": "Property",
+    "type": "Number",
     "value": 0
   },
   "estimatedGateDischargeCoefficient": {
-    "type": "Property",
+    "type": "Number",
     "value": 0.401
   },
   "equivalentSluiceOpening": {
-    "type": "Property",
+    "type": "Number",
     "value": 490
   },
   "simulationOutput": {
-    "type": "Property",
+    "type": "array",
     "value": [
       {
         "waterAttribute": "waterLevel",
@@ -128,7 +116,7 @@
     ]
   },
   "inputParameters": {
-    "type": "Property",
+    "type": "array",
     "value": [
       {
         "waterAttribute": "dischargeCoefficient",
@@ -143,7 +131,7 @@
     ]
   },
   "initialConditions": {
-    "type": "Property",
+    "type": "array",
     "value": [
       {
         "waterAttribute": "WaterFlow",

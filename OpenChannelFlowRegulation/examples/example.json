@@ -42,8 +42,5 @@
       "targetUri": "urn:ngsi-ld:OpenChannelFlowRegulation:hasStructuresSimulations:VPDG:92530159"
     }
   ],
-  "runBy": "urn:ngsi-ld:OpenChannelFlowRegulation:runBy:CMJE:69885698",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
+  "runBy": "urn:ngsi-ld:OpenChannelFlowRegulation:runBy:CMJE:69885698"
 }

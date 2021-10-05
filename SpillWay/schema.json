@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$id": "https://smart-data-models.github.io/data-models.OpenChannelManagement/Spillway/schema.json",
-  "$schemaVersion": "0.0",
+  "$schemaVersion": "0.0.1",
   "modelTags": "FIWARE4WATER",
   "title": "Open Channel Management - Spillway",
   "description": "This entity contains a harmonised description for a generic Spillway made for Raw-Water (Open Channels) System Management domain. Spillway represents a junction-type object, controlling the release of water from a dam or regulation structure downstream.",
@@ -38,12 +38,12 @@
         "crestElevation": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. The crest elevation of the Spillway. Required only for 'Broad-Crested', 'Ogee' and 'Sharp-Crested'. Units:'meters'."
+          "description": "Property. The crest elevation of the Spillway. Required only for 'Broad-Crested', 'Ogee' and 'Sharp-Crested'. Units:'meters'"
         },
         "crestLength": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. The length of the Spillway equals to the total length through which water passes. Required only for 'Broad-Crested', 'Ogee' and 'Sharp-Crested'. Units:'meters'."
+          "description": "Property. The length of the Spillway equals to the total length through which water passes. Required only for 'Broad-Crested', 'Ogee' and 'Sharp-Crested'. Units:'meters'"
         },
         "spillwayWidth": {
           "type": "number",
@@ -68,12 +68,12 @@
         "dischargeCoefficient": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. The discharge coefficient for energy losses as water enters, flows amnd exits the spillway. Units:'m^0.5/s'."
+          "description": "Property. The discharge coefficient for energy losses as water enters, flows and exits the spillway. Units:'m^0.5/s'."
         },
         "designHead": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. The total upstream energy head for which the spillway is designed (Ho) for 'Ogee Spillway'. Units:'meters'."
+          "description": "Property. The total upstream energy head for which the spillway is designed (Ho) for 'Ogee Spillway'. Units:'meters'"
         },
         "designDischarge": {
           "type": "number",
