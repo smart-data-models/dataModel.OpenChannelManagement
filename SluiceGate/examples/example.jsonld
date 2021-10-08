@@ -41,7 +41,7 @@
   "orificeDischargeCoefficient": 0.5,
   "waterDischarge": 9,
   "headDifference": 1.5,
-  "flowType": "Submerged Flow",
+  "flowType": "Submerged-Flow",
   "upstreamEndControlPoint": "urn:ngsi-ld:SluiceGate:upstreamEndControlPoint:JXFD:60487647",
   "downstreamEndControlPoint": "urn:ngsi-ld:SluiceGate:downstreamEndControlPoint:CBWI:21948924",
   "upstreamControlPoint": "urn:ngsi-ld:SluiceGate:upstreamControlPoint:MWGU:81565938",

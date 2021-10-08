@@ -2,6 +2,8 @@
   "$schema": "http://json-schema.org/schema#",
   "$id": "https://smart-data-models.github.io/data-models.OpenChannelManagement/RegulationStructure/schema.json",
   "title": "Open Channel Management - RegulationStructure",
+  "modelTags": "FIWARE4WATER",
+  "$schemaVersion": "0.0.1",
   "description": "This entity contains a harmonised description of a generic Regulation Structure made for Raw-Water (Open Channels) System Management domain. Regulation structure represents a junction-type object, controlling the water flow in the raw-water system.",
   "type": "object",
   "allOf": [

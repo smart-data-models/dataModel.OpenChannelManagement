@@ -2,7 +2,7 @@
   "id": "urn:ngsi-ld:RegulationStructure:id:IXHN:40075061",
   "type": "RegulationStructure",
   "location": {
-    "type": "Geoproperty",
+    "type": "geo:json",
     "value": {
       "type": "Point",
       "coordinates": [
@@ -12,7 +12,7 @@
     }
   },
   "address": {
-    "type": "Property",
+    "type": "PostalAddress",
     "value": {
       "streetAddress": "",
       "addressLocality": "",
@@ -24,37 +24,31 @@
     }
   },
   "areaServed": {
-    "type": "Property",
+    "type": "Text",
     "value": ""
   },
   "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1986-07-26T02:43:28Z"
-    }
+    "type": "DateTime",
+    "value": "1986-07-26T02:43:28Z"
   },
   "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2021-03-21T17:56:26Z"
-    }
+    "type": "DateTime",
+    "value": "2021-03-21T17:56:26Z"
   },
   "source": {
-    "type": "Property",
+    "type": "Text",
     "value": ""
   },
   "name": {
-    "type": "Property",
+    "type": "Text",
     "value": "RS01"
   },
   "alternateName": {
-    "type": "Property",
+    "type": "Text",
     "value": "RS01 Thivae"
   },
   "description": {
-    "type": "Property",
+    "type": "Text",
     "value": "Regulation Structure Thivae"
   },
   "dataProvider": {
@@ -62,51 +56,48 @@
     "value": "EYDAP"
   },
   "owner": {
-    "type": "Property",
+    "type": "array",
     "value": [
       "urn:ngsi-ld:RegulationStructure:items:ASWJ:21246595",
       "urn:ngsi-ld:RegulationStructure:items:NHFZ:56673870"
     ]
   },
   "seeAlso": {
-    "type": "Property",
+    "type": "array",
     "value": [
       "urn:ngsi-ld:RegulationStructure:items:PLEL:78574823",
       "urn:ngsi-ld:RegulationStructure:items:IZVF:62633698"
     ]
   },
   "tag": {
-    "type": "Property",
+    "type": "Text",
     "value": ""
   },
   "numberOfGates": {
-    "type": "Property",
+    "type": "Number",
     "value": 1
   },
   "numberOfSpillways": {
-    "type": "Property",
+    "type": "Number",
     "value": 1
   },
   "teleCommand": {
-    "type": "Property",
-    "value": true
+    "type": "Boolean",
+    "value": "true"
   },
   "hasSluiceGate": {
     "type": "Relationship",
-    "object": "urn:ngsi-ld:RegulationStructure:hasSluiceGate:JXFD:60487647"
+    "value": "urn:ngsi-ld:RegulationStructure:hasSluiceGate:JXFD:60487647"
   },
   "hasSpillway": {
     "type": "Relationship",
-    "object": "urn:ngsi-ld:RegulationStructure:hasSpillway:CBWI:21948924"
+    "value": "urn:ngsi-ld:RegulationStructure:hasSpillway:CBWI:21948924"
   },
   "position": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "distance": 160.6,
       "refPoint": "urn:ngsi-ld:RegulationStructure:refPoint:JXFD:60487647"
     }
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
+  }
 }

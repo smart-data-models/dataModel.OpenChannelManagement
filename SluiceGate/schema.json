@@ -2,7 +2,8 @@
   "$schema": "http://json-schema.org/schema#",
   "$id": "https://smart-data-models.github.io/data-models.OpenChannelManagement/SluiceGate/schema.json",
   "modelTags": "FIWARE4WATER",
-  "$schemaVersion": "0.0",
+  "$schemaVersion": "0.0.1",
+  "modelTags": "FIWARE4WATER",
   "title": "Open Channel Management - SluiceGate ",
   "description": "This entity contains a harmonised description of a generic Sluice Gate made for Raw-Water (Open Channels) System Management domain.",
   "type": "object",
@@ -65,9 +66,9 @@
           "enum": [
             "Free-Flow",
             "Overflow",
-            "Submerged Flow"
+            "Submerged-Flow"
           ],
-          "description": "Property. It defines the flow conditions in the gate. It takes the values: 'Overflow' (upstream water level exceeds the weir crest level), 'Free-Flow' (water level is lower than gate edge), 'Submerged Flow' (the rate of flow passing through the gate is regulated by the opening of the gate). Enum:'Overflow, Free-Flow, Submerged Flow'."
+          "description": "Property. It defines the flow conditions in the gate. It takes the values: 'Overflow' (upstream water level exceeds the weir crest level), 'Free-Flow' (water level is lower than gate edge), 'Submerged Flow' (the rate of flow passing through the gate is regulated by the opening of the gate). Enum:'Overflow, Free-Flow, Submerged-Flow'."
         },
         "upstreamEndControlPoint": {
           "anyOf": [
@@ -153,7 +154,6 @@
             }
           ],
           "description": "Relationship. A relationship to the ID of the device that monitors raw-water properties. Model:'https://smart-data-models.github.io/dataModel.Device/device-schema.json'",
-          "format": "uri"
         },
         "curveDischargeCoefficient": {
           "anyOf": [

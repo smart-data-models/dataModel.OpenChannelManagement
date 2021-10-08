@@ -113,31 +113,31 @@
   },
   "flowType": {
     "type": "Property",
-    "value": "Submerged Flow"
+    "value": "Submerged-Flow"
   },
   "upstreamEndControlPoint": {
-    "type": "object",
-    "value": "urn:ngsi-ld:SluiceGate:upstreamEndControlPoint:JXFD:60487647"
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:SluiceGate:upstreamEndControlPoint:JXFD:60487647"
   },
   "downstreamEndControlPoint": {
-    "type": "object",
-    "value": "urn:ngsi-ld:SluiceGate:downstreamEndControlPoint:CBWI:21948924"
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:SluiceGate:downstreamEndControlPoint:CBWI:21948924"
   },
   "upstreamControlPoint": {
-    "type": "object",
-    "value": "urn:ngsi-ld:SluiceGate:upstreamControlPoint:MWGU:81565938"
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:SluiceGate:upstreamControlPoint:MWGU:81565938"
   },
   "downstreamControlPoint": {
-    "type": "object",
-    "value": "urn:ngsi-ld:SluiceGate:downstreamControlPoint:GIWE:80160975"
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:SluiceGate:downstreamControlPoint:GIWE:80160975"
   },
   "observedBy": {
-    "type": "object",
-    "value": "urn:ngsi-ld:SluiceGate:observedBy:ZWZM:93328711"
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:SluiceGate:observedBy:ZWZM:93328711"
   },
   "curveDischargeCoefficient": {
-    "type": "object",
-    "value": "urn:ngsi-ld:SluiceGate:curveDischargeCoefficient:ZPPL:48418583"
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:SluiceGate:curveDischargeCoefficient:ZPPL:48418583"
   },
   "@context": [
     "https://smartdatamodels.org/context.jsonld"
