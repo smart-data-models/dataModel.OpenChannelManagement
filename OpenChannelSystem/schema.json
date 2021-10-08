@@ -2,6 +2,8 @@
   "$schema": "http://json-schema.org/schema#",
   "$id": "https://smart-data-models.github.io/data-models.OpenChannelManagement/OpenChannelSystem/schema.json",
   "title": "Open Channel Management - OpenChannelSystem",
+  "modelTags": "FIWARE4WATER",
+  "$schemaVersion": "0.0.1",
   "description": "This entity contains a harmonised description of a generic system made for Raw-Water (Open Channels) System Management domain. This entity represents either a system composed of different components (e.g., channels, junctions, cross-sections etc.) or just a component (e.g., a SluiceGate).",
   "type": "object",
   "allOf": [
@@ -18,7 +20,7 @@
           "enum": [
             "OpenChannelSystem"
           ],
-          "description": "NGSI-LD Entity Type"
+          "description": "Property. NGSI-LD Entity Type. It has to be OpenChannelSystem"
         },
         "isComposedOf": {
           "anyOf": [

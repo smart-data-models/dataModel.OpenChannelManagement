@@ -54,8 +54,5 @@
     0.6209,
     0.6395,
     0.6628
-  ],
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
   ]
 }

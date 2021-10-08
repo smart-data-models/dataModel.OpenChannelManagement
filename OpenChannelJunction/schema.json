@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$id": "https://smart-data-models.github.io/data-models.OpenChannelManagement/OpenChannelJunction/schema.json",
-  "$schemaVersion": "0.0",
+  "$schemaVersion": "0.0.1",
   "modelTags": "FIWARE4WATER",
   "title": "Open Channel Management - OpenChannelJunction",
   "description": "This entity contains a harmonised description of a generic Junction made for Raw-Water (Open Channels) System Management domain. A Junction defines a location where the characteristics of the channel changes, two or more channels come together or split apart, amounts of water are abstracted or inserted to the system etc.",

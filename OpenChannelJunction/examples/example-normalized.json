@@ -2,7 +2,7 @@
   "id": "urn:ngsi-ld:OpenChannelJunction:id:PTOM:78370074",
   "type": "OpenChannelJunction",
   "location": {
-    "type": "Geoproperty",
+    "type": "geo:json",
     "value": {
       "type": "Point",
       "coordinates": [
@@ -12,7 +12,7 @@
     }
   },
   "address": {
-    "type": "Property",
+    "type": "PostalAddress",
     "value": {
       "streetAddress": "",
       "addressLocality": "",
@@ -24,59 +24,53 @@
     }
   },
   "areaServed": {
-    "type": "Property",
+    "type": "Text",
     "value": ""
   },
   "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1983-10-11T21:04:39Z"
-    }
+    "type": "DateTime",
+    "value": "1983-10-11T21:04:39Z"
   },
   "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1982-03-03T08:37:57Z"
-    }
+    "type": "DateTime",
+    "value": "1982-03-03T08:37:57Z"
   },
   "source": {
-    "type": "Property",
+    "type": "Text",
     "value": ""
   },
   "name": {
-    "type": "Property",
+    "type": "Text",
     "value": "J1"
   },
   "alternateName": {
-    "type": "Property",
+    "type": "Text",
     "value": "Thivae"
   },
   "description": {
-    "type": "Property",
+    "type": "Text",
     "value": "Open Channel Junction"
   },
   "dataProvider": {
-    "type": "Property",
+    "type": "Text",
     "value": "EYDAP"
   },
   "owner": {
-    "type": "Property",
+    "type": "array",
     "value": [
       "urn:ngsi-ld:OpenChannelJunction:items:QPEH:03184806",
       "urn:ngsi-ld:OpenChannelJunction:items:PUHR:34031741"
     ]
   },
   "seeAlso": {
-    "type": "Property",
+    "type": "array",
     "value": [
       "urn:ngsi-ld:OpenChannelJunction:items:KTWJ:61564622",
       "urn:ngsi-ld:OpenChannelJunction:items:JOMY:24566116"
     ]
   },
   "position": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "distance": 160.6,
       "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647"
@@ -84,30 +78,30 @@
   },
   "downstreamNode": {
     "type": "Relationship",
-    "object": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924"
+    "value": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924"
   },
   "upstreamNode": {
     "type": "Relationship",
-    "object": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938"
+    "value": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938"
   },
   "observedBy": {
     "type": "Relationship",
-    "object": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975"
+    "value": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975"
   },
   "uniqueName": {
-    "type": "Property",
+    "type": "Text",
     "value": "J1"
   },
   "tag": {
-    "type": "Property",
+    "type": "Text",
     "value": ""
   },
   "waterOutflow": {
-    "type": "Property",
+    "type": "Number",
     "value": 0.12
   },
   "waterInflow": {
-    "type": "Property",
+    "type": "Number",
     "value": 0.15
   },
   "@context": [

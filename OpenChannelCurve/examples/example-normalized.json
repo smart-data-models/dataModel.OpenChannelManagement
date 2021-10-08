@@ -1,0 +1,106 @@
+{
+  "id": "urn:ngsi-ld:OpenChannelCurve:id:FMCV:30717942",
+  "type": "OpenChannelCurve",
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -71.481035,
+        -148.255307
+      ]
+    }
+  },
+  "address": {
+    "type": "PostalAddress",
+    "value": {
+      "streetAddress": "",
+      "addressLocality": "",
+      "addressRegion": "",
+      "addressCountry": "",
+      "postalCode": "",
+      "postOfficeBoxNumber": "",
+      "areaServed": ""
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": ""
+  },
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "2003-09-09T04:19:40Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2019-04-13T13:45:31Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": ""
+  },
+  "name": {
+    "type": "Text",
+    "value": "Curve_1"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": ""
+  },
+  "description": {
+    "type": "Text",
+    "value": "Open Channel Curve for a/H-C"
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "NTUA"
+  },
+  "owner": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:OpenChannelCurve:items:EXUV:99745990",
+      "urn:ngsi-ld:OpenChannelCurve:items:HXOV:60683026"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:OpenChannelCurve:items:IZFN:20714900",
+      "urn:ngsi-ld:OpenChannelCurve:items:RDSS:63995745"
+    ]
+  },
+  "tag": {
+    "type": "Text",
+    "value": "a/H-C curve"
+  },
+  "curveType": {
+    "type": "Text",
+    "value": "a/H-C"
+  },
+  "xData": {
+    "type": "array",
+    "value": [
+      0.001,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7
+    ]
+  },
+  "yData": {
+    "type": "array",
+    "value": [
+      0.61,
+      0.5930,
+      0.5942,
+      0.5988,
+      0.6070,
+      0.6209,
+      0.6395,
+      0.6628
+    ]
+  }
+}

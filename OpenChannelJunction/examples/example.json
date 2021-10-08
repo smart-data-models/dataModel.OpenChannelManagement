@@ -41,8 +41,5 @@
     "tag": "",
     "waterOutflow": 0.12,
     "waterInflow": 0.15
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
+  }
 }
