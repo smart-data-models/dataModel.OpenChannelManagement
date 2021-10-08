@@ -153,7 +153,7 @@
               "description": "Property. Identifier format of any NGSI entity"
             }
           ],
-          "description": "Relationship. A relationship to the ID of the device that monitors raw-water properties. Model:'https://smart-data-models.github.io/dataModel.Device/device-schema.json'",
+          "description": "Relationship. A relationship to the ID of the device that monitors raw-water properties. Model:'https://smart-data-models.github.io/dataModel.Device/device-schema.json'"
         },
         "curveDischargeCoefficient": {
           "anyOf": [
