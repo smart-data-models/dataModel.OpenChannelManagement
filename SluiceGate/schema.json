@@ -3,7 +3,6 @@
   "$id": "https://smart-data-models.github.io/data-models.OpenChannelManagement/SluiceGate/schema.json",
   "modelTags": "FIWARE4WATER",
   "$schemaVersion": "0.0.1",
-  "modelTags": "FIWARE4WATER",
   "title": "Open Channel Management - SluiceGate ",
   "description": "This entity contains a harmonised description of a generic Sluice Gate made for Raw-Water (Open Channels) System Management domain.",
   "type": "object",
