@@ -309,10 +309,12 @@ OpenChannelJunction:
         model: https://schema.org/Text
         type: Property
     type:
-      description: 'property. NGSI Entity Type. it has to be OpenChannelJunction'
+      description: 'NGSI Entity Type. it has to be OpenChannelJunction'
       enum:
         - OpenChannelJunction
       type: string
+      x-ngsi:
+        type: Property
     uniqueName:
       description: 'The name of the junction.'
       type: string
