@@ -78,7 +78,7 @@
         "spillwayType": "https://smartdatamodels.org/dataModel.OpenChannelManagement/spillwayType",
         "spillwayWidth": "https://smartdatamodels.org/dataModel.OpenChannelManagement/spillwayWidth",
         "startSimulationTime": "https://smartdatamodels.org/dataModel.OpenChannelManagement/startSimulationTime",
-        "tag": "https://smartdatamodels.org/dataModel.OpenChannelManagement/tag",
+        "tag": "https://smartdatamodels.org/tag",
         "targetDischarge": "https://smartdatamodels.org/dataModel.OpenChannelManagement/targetDischarge",
         "teleCommand": "https://smartdatamodels.org/dataModel.OpenChannelManagement/teleCommand",
         "travelDuration": "https://smartdatamodels.org/dataModel.OpenChannelManagement/travelDuration",
