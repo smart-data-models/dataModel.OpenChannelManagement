@@ -20,7 +20,7 @@
           "enum": [
             "OpenChannelJunction"
           ],
-          "description": "property. NGSI Entity Type. it has to be OpenChannelJunction"
+          "description": "Property. NGSI Entity Type. it has to be OpenChannelJunction"
         },
         "position": {
           "type": "object",
