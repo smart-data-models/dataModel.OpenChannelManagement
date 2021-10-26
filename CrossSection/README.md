@@ -6,7 +6,7 @@ Version: 0.0.1
 This entity contains a harmonised description of a generic Cross-Section made for Raw-Water (Open Channels) System Management domain. A CrossSection defines any point of the system where raw-water properties are monitored by a device and/or computed via simulation.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/CrossSection/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/CrossSection/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/CrossSection/doc/spec.md)
 
