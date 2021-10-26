@@ -6,7 +6,7 @@ Version: 0.0.1
 This entity contains a harmonised description for a generic Spillway made for Raw-Water (Open Channels) System Management domain. Spillway represents a junction-type object, controlling the release of water from a dam or regulation structure downstream.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/Spillway/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/Spillway/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/Spillway/doc/spec.md)
 
