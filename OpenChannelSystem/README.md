@@ -6,7 +6,7 @@ Version: 0.0.1
 This entity contains a harmonised description of a generic system made for Raw-Water (Open Channels) System Management domain. This entity represents either a system composed of different components (e.g., channels, junctions, cross-sections etc.) or just a component (e.g., a SluiceGate).
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/OpenChannelSystem/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/OpenChannelSystem/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/OpenChannelSystem/doc/spec.md)
 
