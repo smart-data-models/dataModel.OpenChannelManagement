@@ -36,47 +36,67 @@ OpenChannel:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     bottomSlope:    
       description: 'The bottom slope of the channel. All units are accepted in CEFACT code.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     bottomWidth:    
       description: 'The bottom width of the channel (for ''Trapezoidal'' geometry). All units are accepted in CEFACT code.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     celerity:    
       description: 'Velocity of a surge propagated along the channel after the opening or close of a sluice gate.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     diameter:    
       description: 'The diameter of a circular channel. All units are accepted in CEFACT code.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     downstreamNode:    
       anyOf:    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -88,18 +108,23 @@ OpenChannel:
           format: uri    
           type: string    
       description: 'A relationship indicating the ID of the downstream node (e.g., Junction, Regulation Structure), where the channel ends.'    
-      type: Relationship    
+      x-ngsi:    
+        type: Relationship    
     flowType:    
       description: 'Text defining the type of flow in the channel. Enum:''Free-Surface flow''.'    
       enum:    
         - 'Free-Surface flow'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     geometryType:    
       description: 'The geometry of the channel. Enum:''Trapezoidal, Circular''].'    
       enum:    
         - Circular    
         - Trapezoidal    
       type: string    
+      x-ngsi:    
+        type: Property    
     id:    
       anyOf: &openchannel_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -111,15 +136,20 @@ OpenChannel:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     leftSideSlope:    
       description: 'The slope of the left bank of the channel (for ''Trapezoidal'' geometry). All units are accepted in CEFACT code.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     length:    
       description: 'The length of the channel. All units are accepted in CEFACT code.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -271,28 +301,39 @@ OpenChannel:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     maxWaterDepth:    
       description: 'The maximum allowable water depth in the channel. All units are accepted in CEFACT code.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *openchannel_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     rightSideSlope:    
       description: 'The slope of the right bank of the channel (for ''Trapezoidal'' geometry). All units are accepted in CEFACT code.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     roughnessCoefficient:    
       description: 'The Manning’s roughness coefficient.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -303,24 +344,32 @@ OpenChannel:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     tag:    
       description: 'An optional text string used to qualify an item'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     travelDuration:    
       description: 'The duration of the surge travelling from the downstream node (i.e., Regulation Structure) to the upstream node.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     type:    
       description: 'NGSI-LD Entity Type. it has to be OpenChannel'    
       enum:    
         - OpenChannel    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     upstreamNode:    
       anyOf:    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -332,11 +381,14 @@ OpenChannel:
           format: uri    
           type: string    
       description: 'A relationship indicating the ID of the upstream node (e.g., Junction, Regulation Structure), where the channel begins.'    
-      type: Relationship    
+      x-ngsi:    
+        type: Relationship    
     waterLoss:    
       description: 'Water leakages/losses from the channel - percentage of flow of the channel or a number (flow).'    
       minimum: 0    
-      type: Property    
+      type: object    
+      x-ngsi:    
+        type: Property    
   required:    
     - id    
     - type    
@@ -511,7 +563,7 @@ OpenChannel:
   ]  
 }  
 ```  
-#### Exemple de valeurs clés NGSI-LD d'OpenChannel  
+#### Exemple de valeurs de clés NGSI-LD d'OpenChannel  
 Voici un exemple d'un OpenChannel au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
@@ -627,7 +679,7 @@ OpenChannel:
     ]  
   },  
   "location": {  
-    "type": "Property",  
+    "type": "Georoperty",  
     "value": {  
       "type": "Point",  
       "coordinates": [  
