@@ -642,7 +642,7 @@ Spillway:
   ]  
 }  
 ```  
-#### Déversoir Valeurs clés NGSI-LD Exemple  
+#### Déversoir Valeurs-clés NGSI-LD Exemple  
 Voici un exemple de déversoir au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
