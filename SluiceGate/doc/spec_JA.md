@@ -424,7 +424,7 @@ SluiceGate:
 </details>    
 ## ペイロードの例  
 #### SluiceGate NGSI-v2 のキーバリューの例。  
-SluiceGateをkey-valuesとしてJSON-LD形式で表示した例です。これはNGSI-v2で`options=keyValues`を使用した場合と互換性があり、個々のエンティティのコンテキストデータを返します。  
+SluiceGateをkey-valuesとしてJSON-LD形式で表示した例です。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:SluiceGate:id:OZDE:42332657",  
