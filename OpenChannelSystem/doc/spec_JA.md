@@ -338,7 +338,7 @@ OpenChannelSystem:
 </details>    
 ## ペイロードの例  
 #### OpenChannelSystem NGSI-v2 のキーバリューの例。  
-OpenChannelSystemをkey-valuesとしてJSON-LD形式で出力した例です。これは`options=keyValues`を使った場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+OpenChannelSystemをkey-valuesとしてJSON-LD形式で表現した例を示します。これは`options=keyValues`を使った場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:OpenChannelSystem:id:EHTH:11109231",  
