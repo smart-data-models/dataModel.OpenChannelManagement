@@ -1,12 +1,12 @@
-Entität: CrossSection  
-=====================  
+Entität: Querschnitt  
+====================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.OpenChannelManagement/blob/master/CrossSection/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Dieses Element enthält eine harmonisierte Beschreibung eines generischen Querschnitts für die Systemmanagement-Domäne Rohwasser (offene Kanäle). Ein CrossSection definiert einen beliebigen Punkt des Systems, an dem Rohwasser-Eigenschaften von einem Gerät überwacht und/oder durch Simulation berechnet werden.**  
+Globale Beschreibung: **Dieses Element enthält eine harmonisierte Beschreibung eines generischen Querschnitts für die Systemmanagementdomäne Rohwasser (offene Kanäle). Ein Querschnitt definiert einen beliebigen Punkt des Systems, an dem die Rohwassereigenschaften von einem Gerät überwacht und/oder durch Simulation berechnet werden.**  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `attachedTo`: Eine Beziehung zur ID des Kanals, in dem der Querschnitt "wohnt". Verweis auf eine Entität vom Typ Kanal.  - `bottomSlope`: Die Bodenneigung des Gerinnes, in dem der Querschnitt "wohnt". Alle Einheiten werden im CEFACT-Code akzeptiert.  - `bottomWidth`: Die untere Breite des Querschnitts (bei 'Trapez'-Geometrie). Alle Einheiten werden im CEFACT-Code akzeptiert.  - `crossSectionGeometry`: Die Geometrie des Querschnitts. Enum:'Kreisförmig, Trapezförmig'.  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `diameter`: Der Durchmesser eines kreisförmigen Querschnitts.  - `energyHead`: Die Gesamtenergiehöhe am Querschnitt.  - `id`: Eindeutiger Bezeichner der Entität  - `inheritsFrom`: URI einer Channel-Komponente, aus der der Wert einer Eigenschaft bezogen wird.  - `leftSideSlope`: Die Neigung des linken Ufers des Querschnitts (für 'Trapez'-Geometrie). Alle Einheiten werden im CEFACT-Code akzeptiert.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `maxWaterDepth`: Die maximal zulässige Wassertiefe am Querschnitt. Alle Einheiten werden im CEFACT-Code akzeptiert.  - `name`: Der Name dieses Elements.  - `observedBy`: Eine Beziehung zur ID des Geräts, das die Rohwassereigenschaften überwacht  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `position`: Objekt, das Informationen über den Abstand zu den übrigen Elementen und eine Beziehung zu ihnen liefert.  - `rightSideSlope`: Die Neigung des rechten Ufers des Querschnitts (für 'Trapez'-Geometrie). Alle Einheiten werden im CEFACT-Code akzeptiert.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `specificConductivity`: Wasserleitfähigkeit am Querschnitt.  - `tag`: Eine optionale Textzeichenfolge, die zur Qualifizierung eines Elements verwendet wird  - `turbidity`: Wassertrübung am Querschnitt.  - `type`: NGSI-LD Entity Type. Es muss CrossSection sein.  - `waterFlow`: Wasserdurchfluss am Querschnitt.  - `waterLevel`: Wasserstand am Querschnitt.  - `waterTemperature`: Wassertemperatur am Querschnitt.  - `waterVelocity`: Wassergeschwindigkeit am Querschnitt.    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `attachedTo`: Eine Beziehung zur ID des Kanals, in dem der Querschnitt "wohnt". Verweis auf eine Entität vom Typ Kanal.  - `bottomSlope`: Die Sohlenneigung des Gerinnes, in dem der Querschnitt "wohnt". Alle Einheiten werden im CEFACT-Code akzeptiert.  - `bottomWidth`: Die untere Breite des Querschnitts (bei "trapezförmiger" Geometrie). Alle Einheiten werden im CEFACT-Code akzeptiert.  - `crossSectionGeometry`: Die Geometrie des Querschnitts. Enum:'Kreisförmig, Trapezförmig'.  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `diameter`: Der Durchmesser eines kreisförmigen Querschnitts.  - `energyHead`: Die Gesamtenergiehöhe am Querschnitt.  - `id`: Eindeutiger Bezeichner der Entität  - `inheritsFrom`: URI einer Channel-Komponente, aus der der Wert einer Eigenschaft bezogen wird.  - `leftSideSlope`: Die Neigung der linken Seite des Querschnitts (bei "trapezförmiger" Geometrie). Alle Einheiten werden im CEFACT-Code akzeptiert.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `maxWaterDepth`: Die maximal zulässige Wassertiefe am Querschnitt. Alle Einheiten werden im CEFACT-Code akzeptiert.  - `name`: Der Name dieses Artikels.  - `observedBy`: Eine Beziehung zur ID des Geräts, das die Rohwassereigenschaften überwacht  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `position`: Objekt, das Informationen über den Abstand zu den übrigen Elementen und eine Beziehung zu ihnen liefert.  - `rightSideSlope`: Die Neigung der rechten Seite des Querschnitts (bei "trapezförmiger" Geometrie). Alle Einheiten werden im CEFACT-Code akzeptiert.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `specificConductivity`: Wasserleitfähigkeit im Querschnitt.  - `tag`: Eine optionale Textzeichenfolge, die zur Qualifizierung einer Position verwendet wird  - `turbidity`: Wassertrübung im Querschnitt.  - `type`: NGSI-LD Entitätstyp. Es muss CrossSection sein.  - `waterFlow`: Wasserdurchfluss im Querschnitt.  - `waterLevel`: Wasserstand am Querschnitt.  - `waterTemperature`: Wassertemperatur am Querschnitt.  - `waterVelocity`: Wassergeschwindigkeit im Querschnitt.    
 Erforderliche Eigenschaften  
 - `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -36,17 +36,21 @@ CrossSection:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     attachedTo:    
       anyOf:    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -58,42 +62,61 @@ CrossSection:
           format: uri    
           type: string    
       description: 'A relationship to the ID of the channel where the cross-section ''lives in''. Reference to an entity of type Channel.'    
-      type: Relationship    
+      x-ngsi:    
+        type: Relationship    
     bottomSlope:    
       description: 'The bottom slope of the channel where the cross-section ''lives in''. All units are accepted in CEFACT code.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     bottomWidth:    
       description: 'The bottom width of the cross-section (for ''Trapezoidal'' geometry). All units are accepted in CEFACT code.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     crossSectionGeometry:    
       description: 'The geometry of the cross-section. Enum:''Circular, Trapezoidal''.'    
       enum:    
         - Circular    
         - Trapezoidal    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     diameter:    
       description: 'The diameter of a circular cross-section.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     energyHead:    
       description: 'The total energy head at the cross-section.'    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     id:    
       anyOf: &crosssection_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -105,7 +128,8 @@ CrossSection:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     inheritsFrom:    
       anyOf:    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -117,11 +141,14 @@ CrossSection:
           format: uri    
           type: string    
       description: 'URI of a Channel component from which the value of a property is obtained.'    
-      type: Relationship    
+      x-ngsi:    
+        type: Relationship    
     leftSideSlope:    
       description: 'The slope of the left bank of the cross-section (for ''Trapezoidal'' geometry). All units are accepted in CEFACT code.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -273,14 +300,19 @@ CrossSection:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     maxWaterDepth:    
       description: 'The maximum allowable water depth at the cross-section. All units are accepted in CEFACT code.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     observedBy:    
       anyOf:    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -292,15 +324,17 @@ CrossSection:
           format: uri    
           type: string    
       description: 'A relationship to the ID of the device that monitors raw-water properties'    
-      type: Relationship    
       x-ngsi:    
         model: https://smart-data-models.github.io/dataModel.Device/device-schema.json    
+        type: Relationship    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *crosssection_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     position:    
       description: 'Object providing information about the distance with the rest of the elements and a relationship with them.'    
       properties:    
@@ -318,11 +352,15 @@ CrossSection:
               format: uri    
               type: string    
           description: 'Relationship. The reference point distance is measured from.'    
-      type: Property    
+      type: object    
+      x-ngsi:    
+        type: Property    
     rightSideSlope:    
       description: 'The slope of the right bank of the cross-section (for ''Trapezoidal'' geometry). All units are accepted in CEFACT code.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -333,43 +371,61 @@ CrossSection:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     specificConductivity:    
       description: 'Water conductivity at the cross-section.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     tag:    
       description: 'An optional text string used to qualify an item'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     turbidity:    
       description: 'Water turbidity at the cross-section.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     type:    
       description: 'NGSI-LD Entity Type. It has to be CrossSection.'    
       enum:    
         - CrossSection    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     waterFlow:    
       description: 'Water flow at the cross-section.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     waterLevel:    
       description: 'Water level at the cross-section.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     waterTemperature:    
       description: 'Water temperature at the cross-section.'    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     waterVelocity:    
       description: 'Water Velocity at the cross-section.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
   required:    
     - id    
     - type    
@@ -378,7 +434,7 @@ CrossSection:
 </details>    
 ## Beispiel-Nutzlasten  
 #### Querschnitt NGSI-v2 Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen CrossSection im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen CrossSection im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:CrossSection:id:COGE:70479090",  
@@ -440,7 +496,7 @@ CrossSection:
 }  
 ```  
 #### Querschnitt NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für einen CrossSection im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen CrossSection im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:CrossSection:id:COGE:70479090",  
@@ -595,7 +651,7 @@ CrossSection:
 }  
 ```  
 #### Querschnitt NGSI-LD Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen CrossSection im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen CrossSection im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:CrossSection:id:COGE:70479090",  
@@ -660,7 +716,7 @@ CrossSection:
 }  
 ```  
 #### Querschnitt NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für einen CrossSection im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen CrossSection im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:CrossSection:id:COGE:70479090",  
@@ -713,7 +769,7 @@ CrossSection:
     ]  
   },  
   "location": {  
-    "type": "Property",  
+    "type": "Geoproperty",  
     "value": {  
       "type": "Point",  
       "coordinates": [  
