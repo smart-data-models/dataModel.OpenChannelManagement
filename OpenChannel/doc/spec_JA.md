@@ -2,7 +2,7 @@
 =================  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OpenChannelManagement/blob/master/OpenChannel/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このエンティティには、生水（オープンチャネル）システム管理ドメインのために作られた一般的なチャネルの調和された記述が含まれています。  
+グローバルな記述。**このエンティティには、生水（オープンチャンネル）システム管理ドメインのために作られた一般的なチャンネルの調和された記述が含まれています。  
 
 ## プロパティのリスト  
 
