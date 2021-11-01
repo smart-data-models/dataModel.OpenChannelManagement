@@ -2,7 +2,7 @@
 ======================  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OpenChannelManagement/blob/master/OpenChannelCurve/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このエンティティには、Raw-Water (Open Channels) System Managementドメインのために作成された一般的な曲線の調和された記述が含まれている。  
+グローバルな記述。**このエンティティには、Raw-Water (Open Channels) System Managementドメインのために作成された一般的な曲線の調和された記述が含まれています。  
 バージョン: 0.0.1  
 
 ## プロパティのリスト  
@@ -317,7 +317,7 @@ OpenChannelCurve:
 </details>    
 ## ペイロードの例  
 #### OpenChannelCurve NGSI-v2 のキーバリューの例。  
-OpenChannelCurveをkey-valuesとしてJSON-LD形式で出力した例です。これは、`options=keyValues`を使うとNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返すことができます。  
+OpenChannelCurveをkey-valuesとしてJSON-LD形式で出力した例です。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:OpenChannelCurve:id:FMCV:30717942",  
