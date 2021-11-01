@@ -563,7 +563,7 @@ OpenChannel:
   ]  
 }  
 ```  
-#### Exemple de valeurs clés NGSI-LD d'OpenChannel  
+#### Exemple de valeurs de clés NGSI-LD d'OpenChannel  
 Voici un exemple d'un OpenChannel au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
