@@ -337,7 +337,7 @@ OpenChannelFlowRegulation:
 </details>    
 ## Beispiel-Nutzlasten  
 #### OpenChannelFlowRegulation NGSI-v2 key-values Beispiel  
-Hier ist ein Beispiel für eine OpenChannelFlowRegulation im JSON-LD-Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine OpenChannelFlowRegulation im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:OpenChannelFlowRegulation:id:YLKZ:61350129",  
