@@ -60,6 +60,7 @@
         "mostDownstreamPoint": "https://smartdatamodels.org/dataModel.OpenChannelManagement/mostDownstreamPoint",
         "mostUpstreamPoint": "https://smartdatamodels.org/dataModel.OpenChannelManagement/mostUpstreamPoint",
         "name": "https://smartdatamodels.org/name",
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "numberAbutments": "https://smartdatamodels.org/dataModel.OpenChannelManagement/numberAbutments",
         "numberOfGates": "https://smartdatamodels.org/dataModel.OpenChannelManagement/numberOfGates",
         "numberOfSpillways": "https://smartdatamodels.org/dataModel.OpenChannelManagement/numberOfSpillways",
