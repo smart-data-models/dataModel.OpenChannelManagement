@@ -1,0 +1,270 @@
+{
+    "@id": "dtmi:com:ngsi-ld:SluiceGate;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Open Channel Management - SluiceGate  adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/SluiceGate/schema.json",
+    "description": "This entity contains a harmonised description of a generic Sluice Gate made for Raw-Water (Open Channels) System Management domain.",
+    "displayName": "SluiceGate",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "curveDischargeCoefficient",
+            "writable": true,
+            "displayName": "curveDischargeCoefficient"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "downstreamControlPoint",
+            "writable": true,
+            "displayName": "downstreamControlPoint"
+        },
+        {
+            "name": "downstreamEndControlPoint",
+            "writable": true,
+            "displayName": "downstreamEndControlPoint"
+        },
+        {
+            "name": "gateBottomElevation",
+            "writable": true,
+            "displayName": "gateBottomElevation",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Elevation of the bottom (crest) of the gate."
+        },
+        {
+            "name": "gateDischargeCoefficient",
+            "writable": true,
+            "displayName": "gateDischargeCoefficient",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Discharge coefficient of the gate that accounts for energy losses as water passes under the gate."
+        },
+        {
+            "name": "gateOpening",
+            "writable": true,
+            "displayName": "gateOpening",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The height of gate opening."
+        },
+        {
+            "name": "gateWidth",
+            "writable": true,
+            "displayName": "gateWidth",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The width of the sluice gate"
+        },
+        {
+            "name": "headDifference",
+            "writable": true,
+            "displayName": "headDifference",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The difference between the upstream depth and the depth just downstream."
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "observedBy",
+            "writable": true,
+            "displayName": "observedBy"
+        },
+        {
+            "name": "orificeDischargeCoefficient",
+            "writable": true,
+            "displayName": "orificeDischargeCoefficient",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Orifice discharge coefficient that accounts for energy losses as water passes under the gate, and the downstream tailwater increases so that the gate is no longer flowing freely."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "tag",
+            "writable": true,
+            "displayName": "tag",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An optional text string used to qualify an item"
+        },
+        {
+            "name": "upstreamControlPoint",
+            "writable": true,
+            "displayName": "upstreamControlPoint"
+        },
+        {
+            "name": "upstreamEndControlPoint",
+            "writable": true,
+            "displayName": "upstreamEndControlPoint"
+        },
+        {
+            "name": "waterDischarge",
+            "writable": true,
+            "displayName": "waterDischarge",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The discharge that passes the weir (Q)."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "flowType",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "Free-Flow",
+                        "displayName": "Free-Flow",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "Overflow",
+                        "displayName": "Overflow",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "Submerged-Flow",
+                        "displayName": "Submerged-Flow",
+                        "enumValue": 3
+                    }
+                ]
+            }
+        }
+    ]
+}
