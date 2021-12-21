@@ -1,87 +1,87 @@
 {
-  "id": "urn:ngsi-ld:RegulationStructureSimulation:id:SCAU:96103454",
-  "type": "RegulationStructureSimulation",
-  "dateCreated": "2020-09-09T09:53:49Z",
-  "dateModified": "1978-02-07T04:20:08Z",
-  "source": "",
-  "name": "Regulation_Structure_Simulation_1",
-  "alternateName": "Regulation Structure Simulation 1",
-  "description": "Regulation Structure Simulation",
-  "dataProvider": "NTUA",
-  "owner": [
-    "urn:ngsi-ld:RegulationStructureSimulation:items:XYXQ:62496984",
-    "urn:ngsi-ld:RegulationStructureSimulation:items:ZHVH:90072950"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:RegulationStructureSimulation:items:HQQG:85737160",
-    "urn:ngsi-ld:RegulationStructureSimulation:items:PCHL:09983431"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      -27.391838,
-      -16.801411
+    "id": "urn:ngsi-ld:RegulationStructureSimulation:id:SCAU:96103454",
+    "type": "RegulationStructureSimulation",
+    "address": {
+        "streetAddress": "",
+        "addressLocality": "",
+        "addressRegion": "",
+        "addressCountry": "",
+        "postalCode": "",
+        "postOfficeBoxNumber": ""
+    },
+    "alternateName": "Regulation Structure Simulation 1",
+    "areaServed": "",
+    "dataProvider": "NTUA",
+    "dateCreated": "2020-09-09T09:53:49Z",
+    "dateModified": "1978-02-07T04:20:08Z",
+    "description": "Regulation Structure Simulation",
+    "endSimulationTime": "2020-12-19T09:56:49Z",
+    "equivalentSluiceOpening": 490,
+    "estimatedGateDischargeCoefficient": 0.401,
+    "initialConditions": [
+        {
+            "waterAttribute": "WaterFlow",
+            "value": 13.29,
+            "targetURI": "urn:ngsi-ld:CrossSection:CS01"
+        },
+        {
+            "waterAttribute": "Upstream Depth",
+            "value": 21,
+            "targetURI": "urn:ngsi-ld:CrossSection:CS02"
+        },
+        {
+            "waterAttribute": "GateOpening",
+            "value": 515,
+            "targetURI": "urn:ngsi-ld:SluiceGate:SG01"
+        }
+    ],
+    "inputParameters": [
+        {
+            "waterAttribute": "dischargeCoefficient",
+            "value": 1.9,
+            "targetURI": "urn:ngsi-ld:Spillway:SP01"
+        },
+        {
+            "waterAttribute": "gateDischargeCoefficient",
+            "value": 0.45,
+            "targetURI": "urn:ngsi-ld:SluiceGate:SG01"
+        }
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -27.391838,
+            -16.801411
+        ]
+    },
+    "modelError": 0.004,
+    "modelledDischarge": 14,
+    "name": "Regulation_Structure_Simulation_1",
+    "owner": [
+        "urn:ngsi-ld:RegulationStructureSimulation:items:XYXQ:62496984",
+        "urn:ngsi-ld:RegulationStructureSimulation:items:ZHVH:90072950"
+    ],
+    "seeAlso": [
+        "urn:ngsi-ld:RegulationStructureSimulation:items:HQQG:85737160",
+        "urn:ngsi-ld:RegulationStructureSimulation:items:PCHL:09983431"
+    ],
+    "simulationOutput": [
+        {
+            "waterAttribute": "waterLevel",
+            "value": 3.5,
+            "targetURI": "urn:ngsi-ld:CrossSection:CS01"
+        },
+        {
+            "waterAttribute": "gateOpening",
+            "value": 450,
+            "targetURI": "urn:ngsi-ld:SluiceGate:SG01"
+        }
+    ],
+    "source": "",
+    "spillwayFlow": 0,
+    "startSimulationTime": "2020-12-19T09:55:49Z",
+    "targetDischarge": 14,
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"
     ]
-  },
-  "address": {
-    "streetAddress": "",
-    "addressLocality": "",
-    "addressRegion": "",
-    "addressCountry": "",
-    "postalCode": "",
-    "postOfficeBoxNumber": ""
-  },
-  "areaServed": "",
-  "startSimulationTime": "2020-12-19T09:55:49Z",
-  "endSimulationTime": "2020-12-19T09:56:49Z",
-  "modelError": 0.004,
-  "targetDischarge": 14,
-  "modelledDischarge": 14,
-  "spillwayFlow": 0,
-  "estimatedGateDischargeCoefficient": 0.401,
-  "equivalentSluiceOpening": 490,
-  "simulationOutput": [
-    {
-      "waterAttribute": "waterLevel",
-      "value": 3.50,
-      "targetURI": "urn:ngsi-ld:CrossSection:CS01"
-    },
-    {
-      "waterAttribute": "gateOpening",
-      "value": 450,
-      "targetURI": "urn:ngsi-ld:SluiceGate:SG01"
-    }
-  ],
-  "inputParameters": [
-    {
-      "waterAttribute": "dischargeCoefficient",
-      "value": 1.9,
-      "targetURI": "urn:ngsi-ld:Spillway:SP01"
-    },
-    {
-      "waterAttribute": "gateDischargeCoefficient",
-      "value": 0.45,
-      "targetURI": "urn:ngsi-ld:SluiceGate:SG01"
-    }
-  ],
-  "initialConditions": [
-    {
-      "waterAttribute": "WaterFlow",
-      "value": 13.29,
-      "targetURI": "urn:ngsi-ld:CrossSection:CS01"
-    },
-    {
-      "waterAttribute": "Upstream Depth",
-      "value": 21,
-      "targetURI": "urn:ngsi-ld:CrossSection:CS02"
-    },
-    {
-      "waterAttribute": "GateOpening",
-      "value": 515,
-      "targetURI": "urn:ngsi-ld:SluiceGate:SG01"
-    }
-  ],
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
