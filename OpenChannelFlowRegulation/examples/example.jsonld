@@ -1,49 +1,49 @@
 {
-  "id": "urn:ngsi-ld:OpenChannelFlowRegulation:id:YLKZ:61350129",
-  "type": "OpenChannelFlowRegulation",
-  "dateCreated": "2017-05-04T03:59:29Z",
-  "dateModified": "2005-01-20T20:06:38Z",
-  "source": "",
-  "name": "Simulation_Scenario_1",
-  "alternateName": "Simulation Scenario 1",
-  "description": "Results of Simulation Scenario 1",
-  "dataProvider": "NTUA",
-  "owner": [
-    "urn:ngsi-ld:OpenChannelFlowRegulation:items:XTSQ:90231127",
-    "urn:ngsi-ld:OpenChannelFlowRegulation:items:ULWE:26707834"
-  ],
-  "seeAlso": [
-    "urn:ngsi-ld:OpenChannelFlowRegulation:items:HJOC:81615506",
-    "urn:ngsi-ld:OpenChannelFlowRegulation:items:BHCJ:50756499"
-  ],
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      57.412865,
-      -128.395711
+    "id": "urn:ngsi-ld:OpenChannelFlowRegulation:id:YLKZ:61350129",
+    "type": "OpenChannelFlowRegulation",
+    "address": {
+        "streetAddress": "",
+        "addressLocality": "",
+        "addressRegion": "",
+        "addressCountry": "",
+        "postalCode": "",
+        "postOfficeBoxNumber": ""
+    },
+    "alternateName": "Simulation Scenario 1",
+    "areaServed": "",
+    "dataProvider": "NTUA",
+    "dateCreated": "2017-05-04T03:59:29Z",
+    "dateModified": "2005-01-20T20:06:38Z",
+    "description": "Results of Simulation Scenario 1",
+    "hasRegulationStructures": [
+        {
+            "targetUri": "urn:ngsi-ld:OpenChannelFlowRegulation:hasRegulationStructures:XWXB:83840274"
+        }
+    ],
+    "hasStructuresSimulations": [
+        {
+            "targetUri": "urn:ngsi-ld:OpenChannelFlowRegulation:hasStructuresSimulations:VPDG:92530159"
+        }
+    ],
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            57.412865,
+            -128.395711
+        ]
+    },
+    "name": "Simulation_Scenario_1",
+    "owner": [
+        "urn:ngsi-ld:OpenChannelFlowRegulation:items:XTSQ:90231127",
+        "urn:ngsi-ld:OpenChannelFlowRegulation:items:ULWE:26707834"
+    ],
+    "runBy": "urn:ngsi-ld:OpenChannelFlowRegulation:runBy:CMJE:69885698",
+    "seeAlso": [
+        "urn:ngsi-ld:OpenChannelFlowRegulation:items:HJOC:81615506",
+        "urn:ngsi-ld:OpenChannelFlowRegulation:items:BHCJ:50756499"
+    ],
+    "source": "",
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"
     ]
-  },
-  "address": {
-    "streetAddress": "",
-    "addressLocality": "",
-    "addressRegion": "",
-    "addressCountry": "",
-    "postalCode": "",
-    "postOfficeBoxNumber": ""
-  },
-  "areaServed": "",
-  "hasRegulationStructures": [
-    {
-      "targetUri": "urn:ngsi-ld:OpenChannelFlowRegulation:hasRegulationStructures:XWXB:83840274"
-    }
-  ],
-  "hasStructuresSimulations": [
-    {
-      "targetUri": "urn:ngsi-ld:OpenChannelFlowRegulation:hasStructuresSimulations:VPDG:92530159"
-    }
-  ],
-  "runBy": "urn:ngsi-ld:OpenChannelFlowRegulation:runBy:CMJE:69885698",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }
