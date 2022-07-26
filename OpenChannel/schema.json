@@ -3,7 +3,7 @@
   "$id": "https://smart-data-models.github.io/data-models.OpenChannelManagement/Channel/schema.json",
   "title": "Open Channel Management - Channel",
   "description": "This entity contains a harmonised description of a generic Channel made for Raw-Water (Open Channels) System Management domain.",
-  "$schemaVersion": "0.0.2",
+  "$schemaVersion": "0.0.3",
   "modelTags": "",
   "type": "object",
   "allOf": [
@@ -120,7 +120,7 @@
           "description": "Property. The duration of the surge travelling from the downstream node (i.e., Regulation Structure) to the upstream node."
         },
         "waterLoss": {
-          "type": "object",
+          "type": "number",
           "minimum": 0,
           "description": "Property. Water leakages/losses from the channel - percentage of flow of the channel or a number (flow)."
         },
