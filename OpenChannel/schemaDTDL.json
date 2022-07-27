@@ -1,0 +1,292 @@
+{
+    "@id": "dtmi:com:ngsi-ld:OpenChannel;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Open Channel Management - Channel adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/OpenChannel/schema.json",
+    "description": "This entity contains a harmonised description of a generic Channel made for Raw-Water (Open Channels) System Management domain.",
+    "displayName": "OpenChannel",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "bottomSlope",
+            "writable": true,
+            "displayName": "bottomSlope",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The bottom slope of the channel. All units are accepted in CEFACT code."
+        },
+        {
+            "name": "bottomWidth",
+            "writable": true,
+            "displayName": "bottomWidth",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The bottom width of the channel (for 'Trapezoidal' geometry). All units are accepted in CEFACT code."
+        },
+        {
+            "name": "celerity",
+            "writable": true,
+            "displayName": "celerity",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Velocity of a surge propagated along the channel after the opening or close of a sluice gate."
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "diameter",
+            "writable": true,
+            "displayName": "diameter",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The diameter of a circular channel. All units are accepted in CEFACT code."
+        },
+        {
+            "name": "downstreamNode",
+            "writable": true,
+            "displayName": "downstreamNode"
+        },
+        {
+            "name": "leftSideSlope",
+            "writable": true,
+            "displayName": "leftSideSlope",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The slope of the left bank of the channel (for 'Trapezoidal' geometry). All units are accepted in CEFACT code."
+        },
+        {
+            "name": "length",
+            "writable": true,
+            "displayName": "length",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The length of the channel. All units are accepted in CEFACT code."
+        },
+        {
+            "name": "maxWaterDepth",
+            "writable": true,
+            "displayName": "maxWaterDepth",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The maximum allowable water depth in the channel. All units are accepted in CEFACT code."
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "rightSideSlope",
+            "writable": true,
+            "displayName": "rightSideSlope",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The slope of the right bank of the channel (for 'Trapezoidal' geometry). All units are accepted in CEFACT code."
+        },
+        {
+            "name": "roughnessCoefficient",
+            "writable": true,
+            "displayName": "roughnessCoefficient",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The Manning\u2019s roughness coefficient."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "tag",
+            "writable": true,
+            "displayName": "tag",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An optional text string used to qualify an item"
+        },
+        {
+            "name": "travelDuration",
+            "writable": true,
+            "displayName": "travelDuration",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The duration of the surge travelling from the downstream node (i.e., Regulation Structure) to the upstream node."
+        },
+        {
+            "name": "upstreamNode",
+            "writable": true,
+            "displayName": "upstreamNode"
+        },
+        {
+            "name": "waterLoss",
+            "writable": true,
+            "displayName": "waterLoss",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Water leakages/losses from the channel - percentage of flow of the channel or a number (flow)."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "flowType",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "Free-Surface flow",
+                        "displayName": "Free-Surface flow",
+                        "enumValue": 1
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "geometryType",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "Circular",
+                        "displayName": "Circular",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "Trapezoidal",
+                        "displayName": "Trapezoidal",
+                        "enumValue": 2
+                    }
+                ]
+            }
+        }
+    ]
+}
