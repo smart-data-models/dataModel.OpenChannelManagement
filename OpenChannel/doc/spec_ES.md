@@ -1,8 +1,10 @@
-Entidad: OpenChannel  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: OpenChannel  
 ====================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.OpenChannelManagement/blob/master/OpenChannel/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **Esta entidad contiene una descripción armonizada de un Canal genérico realizado para el dominio de Gestión de Sistemas de Agua Cruda (Canales Abiertos).**  
+versión: 0.0.3  
 
 ## Lista de propiedades  
 
@@ -386,13 +388,19 @@ OpenChannel:
     waterLoss:    
       description: 'Water leakages/losses from the channel - percentage of flow of the channel or a number (flow).'    
       minimum: 0    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
   required:    
     - id    
     - type    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/OpenChannel/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models.OpenChannelManagement/Channel/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.3    
 ```  
 </details>    
 ## Ejemplo de carga útil  
@@ -567,176 +575,174 @@ OpenChannel:
 Aquí hay un ejemplo de un OpenChannel en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:Channel:id:IXPY:98787462",  
-  "type": "OpenChannel",  
-  "dateCreated": "2021-04-13T21:22:33Z",  
-  "dateModified": "2021-04-13T23:34:18Z",  
-  "source": "",  
-  "name": "Section 3",  
-  "alternateName": "S-3",  
-  "description": "Description of the channel S-3",  
-  "dataProvider": "",  
-  "owner": [  
-    "urn:ngsi-ld:Channel:items:ZOOU:49614637",  
-    "urn:ngsi-ld:Channel:items:ODUZ:33451005"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Channel:items:YJSD:41528487",  
-    "urn:ngsi-ld:Channel:items:MROT:86526209"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -14.2004135,  
-      -147.354695  
+    "id": "urn:ngsi-ld:Channel:id:IXPY:98787462",  
+    "type": "OpenChannel",  
+    "address": {  
+        "streetAddress": "",  
+        "addressLocality": "Thesalonikii",  
+        "addressRegion": "",  
+        "addressCountry": "HELLAS",  
+        "postalCode": "",  
+        "postOfficeBoxNumber": "",  
+        "areaServed": "."  
+    },  
+    "alternateName": "S-3",  
+    "areaServed": "",  
+    "dataProvider": "",  
+    "dateCreated": "2021-04-13T21:22:33Z",  
+    "dateModified": "2021-04-13T23:34:18Z",  
+    "description": "Description of the channel S-3",  
+    "downstreamNode": "urn:ngsi-ld:Channel:downstreamNode:DQUS:63966588",  
+    "geometry": {  
+        "geometryType": "Trapezoidal",  
+        "bottomSlope": 12,  
+        "leftSideSlope": 14,  
+        "rightSideSlope": 3,  
+        "bottomWidth": 5,  
+        "diameter": 0,  
+        "maxWaterDepth": 4,  
+        "roughnessCoefficient": 0.6,  
+        "flowType": "Free-Surface flow",  
+        "celerity": 5,  
+        "travelDuration": 22,  
+        "waterLoss": 0.12,  
+        "length": 15  
+    },  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -14.2004135,  
+            -147.354695  
+        ]  
+    },  
+    "name": "Section 3",  
+    "owner": [  
+        "urn:ngsi-ld:Channel:items:ZOOU:49614637",  
+        "urn:ngsi-ld:Channel:items:ODUZ:33451005"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Channel:items:YJSD:41528487",  
+        "urn:ngsi-ld:Channel:items:MROT:86526209"  
+    ],  
+    "source": "",  
+    "tag": "Something special enjoy research institution past western. System spring clearly impact policy.",  
+    "upstreamNode": "urn:ngsi-ld:Channel:upstreamNode:MBQH:53312123",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "",  
-    "addressLocality": "Thesalonikii",  
-    "addressRegion": "",  
-    "addressCountry": "HELLAS",  
-    "postalCode": "",  
-    "postOfficeBoxNumber": "",  
-    "areaServed": "."  
-  },  
-  "areaServed": "",  
-  "downstreamNode": "urn:ngsi-ld:Channel:downstreamNode:DQUS:63966588",  
-  "upstreamNode": "urn:ngsi-ld:Channel:upstreamNode:MBQH:53312123",  
-  "tag": "Something special enjoy research institution past western. System spring clearly impact policy.",  
-  "geometry": {  
-    "geometryType": "Trapezoidal",  
-    "bottomSlope": 12,  
-    "leftSideSlope": 14,  
-    "rightSideSlope": 3,  
-    "bottomWidth": 5,  
-    "diameter": 0,  
-    "maxWaterDepth": 4,  
-    "roughnessCoefficient": 0.6,  
-    "flowType": "Free-Surface flow",  
-    "celerity": 5,  
-    "travelDuration": 22,  
-    "waterLoss": 0.12,  
-    "length": 15  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
 #### OpenChannel NGSI-LD normalizado Ejemplo  
 Aquí hay un ejemplo de un OpenChannel en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:Channel:id:IXPY:98787462",  
-  "type": "OpenChannel",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-04-13T21:22:33Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-04-13T23:34:18Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Section 3"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "S-3"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Description of the channel S-3"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Channel:items:ZOOU:49614637",  
-      "urn:ngsi-ld:Channel:items:ODUZ:33451005"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Channel:items:YJSD:41528487",  
-      "urn:ngsi-ld:Channel:items:MROT:86526209"  
-    ]  
-  },  
-  "location": {  
-    "type": "Georoperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -14.2004135,  
-        -147.354695  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "",  
-      "addressLocality": "Thesalonikii",  
-      "addressRegion": "",  
-      "addressCountry": "HELLAS",  
-      "postalCode": "",  
-      "postOfficeBoxNumber": "",  
-      "areaServed": "."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "downstreamNode": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Channel:downstreamNode:DQUS:63966588"  
-  },  
-  "upstreamNode": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Channel:upstreamNode:MBQH:53312123"  
-  },  
-  "tag": {  
-    "type": "Property",  
-    "value": "Something special enjoy research institution past western. System spring clearly impact policy."  
-  },  
-  "geometry": {  
-    "type": "Property",  
-    "value": {  
-      "geometryType": "Trapezoidal",  
-      "bottomSlope": 12,  
-      "leftSideSlope": 14,  
-      "rightSideSlope": 3,  
-      "bottomWidth": 5,  
-      "diameter": 0,  
-      "maxWaterDepth": 4,  
-      "roughnessCoefficient": 0.6,  
-      "flowType": "Free-Surface flow",  
-      "celerity": 5,  
-      "travelDuration": 22,  
-      "waterLoss": 0.12,  
-      "length": 15  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:Channel:id:IXPY:98787462",  
+    "type": "OpenChannel",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "",  
+            "addressLocality": "Thesalonikii",  
+            "addressRegion": "",  
+            "addressCountry": "HELLAS",  
+            "postalCode": "",  
+            "postOfficeBoxNumber": "",  
+            "areaServed": "."  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "S-3"  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-04-13T21:22:33Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-04-13T23:34:18Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Description of the channel S-3"  
+    },  
+    "downstreamNode": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Channel:downstreamNode:DQUS:63966588"  
+    },  
+    "geometry": {  
+        "type": "Property",  
+        "value": {  
+            "geometryType": "Trapezoidal",  
+            "bottomSlope": 12,  
+            "leftSideSlope": 14,  
+            "rightSideSlope": 3,  
+            "bottomWidth": 5,  
+            "diameter": 0,  
+            "maxWaterDepth": 4,  
+            "roughnessCoefficient": 0.6,  
+            "flowType": "Free-Surface flow",  
+            "celerity": 5,  
+            "travelDuration": 22,  
+            "waterLoss": 0.12,  
+            "length": 15  
+        }  
+    },  
+    "location": {  
+        "type": "Georoperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -14.2004135,  
+                -147.354695  
+            ]  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Section 3"  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Channel:items:ZOOU:49614637",  
+            "urn:ngsi-ld:Channel:items:ODUZ:33451005"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Channel:items:YJSD:41528487",  
+            "urn:ngsi-ld:Channel:items:MROT:86526209"  
+        ]  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "tag": {  
+        "type": "Property",  
+        "value": "Something special enjoy research institution past western. System spring clearly impact policy."  
+    },  
+    "upstreamNode": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Channel:upstreamNode:MBQH:53312123"  
+    },  
+    "@context": []  
 }  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
