@@ -372,7 +372,7 @@ OpenChannel:
     waterLoss:
       description: 'Water leakages/losses from the channel - percentage of flow of the channel or a number (flow).'
       minimum: 0
-      type: object
+      type: number
       x-ngsi:
         type: Property
   required:
@@ -384,4 +384,4 @@ OpenChannel:
   x-license-url: https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/OpenChannel/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/data-models.OpenChannelManagement/Channel/schema.json
   x-model-tags: ""
-  x-version: 0.0.1
+  x-version: 0.0.3
