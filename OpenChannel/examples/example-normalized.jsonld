@@ -105,5 +105,7 @@
         "type": "Relationship",
         "object": "urn:ngsi-ld:Channel:upstreamNode:MBQH:53312123"
     },
-    "@context": []
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"
+    ]
 }
