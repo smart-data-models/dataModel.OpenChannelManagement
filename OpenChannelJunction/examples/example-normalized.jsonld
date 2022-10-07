@@ -110,5 +110,7 @@
         "type": "Property",
         "value": 0.12
     },
-    "@context": []
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"
+    ]
 }
