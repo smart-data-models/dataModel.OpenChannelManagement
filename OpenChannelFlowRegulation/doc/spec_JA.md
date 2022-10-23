@@ -1,16 +1,31 @@
-エンティティOpenChannelFlowRegulation  
-===============================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティOpenChannelFlowRegulation  
+===============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OpenChannelManagement/blob/master/OpenChannelFlowRegulation/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このエンティティは、輸送システム内の特定の流量条件を確立するための一連の独立した規制構造の一般的なシミュレーションの調和された記述を含んでいる。これは、原水（オープンチャンネル）システム管理ドメインのために作られている。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**このエンティティは、輸送システムにおける特定の流量条件を確立するための、一連の独立した規制構造の一般的なシミュレーショ ンの調和された記述を含んでいる。原水（開水路）システム管理領域用に作成されている。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `hasRegulationStructures`: 規制構造タイプのエンティティのIDへの参照  - `hasStructuresSimulations`: 規制構造シミュレーションタイプのエンティティのIDへの参照  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `runBy`: シミュレーションを作成した人、またはシミュレーションを開始した人のID。User型のエンティティへの参照  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSI-LD エンティティタイプ。OpenChannelFlowRegulationでなければならない。    
-必須項目  
-- `id`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `hasRegulationStructures[array]`: 型規制構造のエンティティの ID を参照する。  - `hasStructuresSimulations[array]`: Regulation Structure Simulation 型のエンティティの ID を参照する。  - `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `runBy[*]`: シミュレーションを作成/起動した人のID。User型のエンティティへの参照  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSI-LD Entity Type。OpenChannelFlowRegulationでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 OpenChannelFlowRegulation:    
@@ -332,12 +347,22 @@ OpenChannelFlowRegulation:
     - id    
     - type    
   type: object    
-  version: 0.0.1    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/OpenChannelFlowRegulation/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models.OpenChannelManagement/OpenChannelFlowRegulation/schema.json    
+  x-model-tags: FIWARE4WATER    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### OpenChannelFlowRegulation NGSI-v2 key-valuesの例。  
-OpenChannelFlowRegulationをkey-valuesとしてJSON-LD形式で出力した例です。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### OpenChannelFlowRegulation NGSI-v2 key-value の例。  
+OpenChannelFlowRegulationをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OpenChannelFlowRegulation:id:YLKZ:61350129",  
@@ -386,8 +411,10 @@ OpenChannelFlowRegulation:
   "runBy": "urn:ngsi-ld:OpenChannelFlowRegulation:runBy:CMJE:69885698"  
 }  
 ```  
-#### OpenChannelFlowRegulation NGSI-v2の正規化された例。  
-正規化されたJSON-LD形式のOpenChannelFlowRegulationの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### OpenChannelFlowRegulation NGSI-v2 正規化例  
+OpenChannelFlowRegulationをJSON-LD形式で正規化した例です。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OpenChannelFlowRegulation:id:YLKZ:61350129",  
@@ -481,161 +508,173 @@ OpenChannelFlowRegulation:
   }  
 }  
 ```  
-#### OpenChannelFlowRegulation NGSI-LDのキーバリューの例。  
-OpenChannelFlowRegulationをkey-valuesとしてJSON-LD形式で表現した例です。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### OpenChannelFlowRegulation NGSI-LD key-value の例。  
+OpenChannelFlowRegulationをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:OpenChannelFlowRegulation:id:YLKZ:61350129",  
-  "type": "OpenChannelFlowRegulation",  
-  "dateCreated": "2017-05-04T03:59:29Z",  
-  "dateModified": "2005-01-20T20:06:38Z",  
-  "source": "",  
-  "name": "Simulation_Scenario_1",  
-  "alternateName": "Simulation Scenario 1",  
-  "description": "Results of Simulation Scenario 1",  
-  "dataProvider": "NTUA",  
-  "owner": [  
-    "urn:ngsi-ld:OpenChannelFlowRegulation:items:XTSQ:90231127",  
-    "urn:ngsi-ld:OpenChannelFlowRegulation:items:ULWE:26707834"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:OpenChannelFlowRegulation:items:HJOC:81615506",  
-    "urn:ngsi-ld:OpenChannelFlowRegulation:items:BHCJ:50756499"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      57.412865,  
-      -128.395711  
+    "id": "urn:ngsi-ld:OpenChannelFlowRegulation:id:YLKZ:61350129",  
+    "type": "OpenChannelFlowRegulation",  
+    "address": {  
+        "streetAddress": "",  
+        "addressLocality": "",  
+        "addressRegion": "",  
+        "addressCountry": "",  
+        "postalCode": "",  
+        "postOfficeBoxNumber": ""  
+    },  
+    "alternateName": "Simulation Scenario 1",  
+    "areaServed": "",  
+    "dataProvider": "NTUA",  
+    "dateCreated": "2017-05-04T03:59:29Z",  
+    "dateModified": "2005-01-20T20:06:38Z",  
+    "description": "Results of Simulation Scenario 1",  
+    "hasRegulationStructures": [  
+        {  
+            "targetUri": "urn:ngsi-ld:OpenChannelFlowRegulation:hasRegulationStructures:XWXB:83840274"  
+        }  
+    ],  
+    "hasStructuresSimulations": [  
+        {  
+            "targetUri": "urn:ngsi-ld:OpenChannelFlowRegulation:hasStructuresSimulations:VPDG:92530159"  
+        }  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            57.412865,  
+            -128.395711  
+        ]  
+    },  
+    "name": "Simulation_Scenario_1",  
+    "owner": [  
+        "urn:ngsi-ld:OpenChannelFlowRegulation:items:XTSQ:90231127",  
+        "urn:ngsi-ld:OpenChannelFlowRegulation:items:ULWE:26707834"  
+    ],  
+    "runBy": "urn:ngsi-ld:OpenChannelFlowRegulation:runBy:CMJE:69885698",  
+    "seeAlso": [  
+        "urn:ngsi-ld:OpenChannelFlowRegulation:items:HJOC:81615506",  
+        "urn:ngsi-ld:OpenChannelFlowRegulation:items:BHCJ:50756499"  
+    ],  
+    "source": "",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "",  
-    "addressLocality": "",  
-    "addressRegion": "",  
-    "addressCountry": "",  
-    "postalCode": "",  
-    "postOfficeBoxNumber": ""  
-  },  
-  "areaServed": "",  
-  "hasRegulationStructures": [  
-    {  
-      "targetUri": "urn:ngsi-ld:OpenChannelFlowRegulation:hasRegulationStructures:XWXB:83840274"  
-    }  
-  ],  
-  "hasStructuresSimulations": [  
-    {  
-      "targetUri": "urn:ngsi-ld:OpenChannelFlowRegulation:hasStructuresSimulations:VPDG:92530159"  
-    }  
-  ],  
-  "runBy": "urn:ngsi-ld:OpenChannelFlowRegulation:runBy:CMJE:69885698",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### OpenChannelFlowRegulation NGSI-LDの正規化例  
-正規化されたJSON-LD形式のOpenChannelFlowRegulationの例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### OpenChannelFlowRegulation NGSI-LD 正規化例  
+OpenChannelFlowRegulationをJSON-LD形式で正規化した例です。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:OpenChannelFlowRegulation:id:YLKZ:61350129",  
-  "type": "OpenChannelFlowRegulation",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2017-05-04T03:59:29Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2005-01-20T20:06:38Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Simulation_Scenario_1"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Simulation Scenario 1"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Results of Simulation Scenario 1"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "NTUA"  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:OpenChannelFlowRegulation:items:XTSQ:90231127",  
-      "urn:ngsi-ld:OpenChannelFlowRegulation:items:ULWE:26707834"  
+    "id": "urn:ngsi-ld:OpenChannelFlowRegulation:id:YLKZ:61350129",  
+    "type": "OpenChannelFlowRegulation",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "",  
+            "addressLocality": "",  
+            "addressRegion": "",  
+            "addressCountry": "",  
+            "postalCode": "",  
+            "postOfficeBoxNumber": ""  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Simulation Scenario 1"  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "NTUA"  
+    },  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2017-05-04T03:59:29Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2005-01-20T20:06:38Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Results of Simulation Scenario 1"  
+    },  
+    "hasRegulationStructures": {  
+        "type": "Property",  
+        "value": [  
+            {  
+                "targetUri": "urn:ngsi-ld:OpenChannelFlowRegulation:hasRegulationStructures:XWXB:83840274"  
+            }  
+        ]  
+    },  
+    "hasStructuresSimulations": {  
+        "type": "Property",  
+        "value": [  
+            {  
+                "targetUri": "urn:ngsi-ld:OpenChannelFlowRegulation:hasStructuresSimulations:VPDG:92530159"  
+            }  
+        ]  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                57.412865,  
+                -128.395711  
+            ]  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Simulation_Scenario_1"  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:OpenChannelFlowRegulation:items:XTSQ:90231127",  
+            "urn:ngsi-ld:OpenChannelFlowRegulation:items:ULWE:26707834"  
+        ]  
+    },  
+    "runBy": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:OpenChannelFlowRegulation:runBy:CMJE:69885698"  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:OpenChannelFlowRegulation:items:HJOC:81615506",  
+            "urn:ngsi-ld:OpenChannelFlowRegulation:items:BHCJ:50756499"  
+        ]  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:OpenChannelFlowRegulation:items:HJOC:81615506",  
-      "urn:ngsi-ld:OpenChannelFlowRegulation:items:BHCJ:50756499"  
-    ]  
-  },  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        57.412865,  
-        -128.395711  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "",  
-      "addressLocality": "",  
-      "addressRegion": "",  
-      "addressCountry": "",  
-      "postalCode": "",  
-      "postOfficeBoxNumber": ""  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "hasRegulationStructures": {  
-    "type": "Property",  
-    "value": [  
-      {  
-        "targetUri": "urn:ngsi-ld:OpenChannelFlowRegulation:hasRegulationStructures:XWXB:83840274"  
-      }  
-    ]  
-  },  
-  "hasStructuresSimulations": {  
-    "type": "Property",  
-    "value": [  
-      {  
-        "targetUri": "urn:ngsi-ld:OpenChannelFlowRegulation:hasStructuresSimulations:VPDG:92530159"  
-      }  
-    ]  
-  },  
-  "runBy": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:OpenChannelFlowRegulation:runBy:CMJE:69885698"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
