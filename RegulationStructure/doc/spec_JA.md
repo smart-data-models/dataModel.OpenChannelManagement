@@ -1,16 +1,31 @@
-エンティティレギュレーションストラクチャー  
-=====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+事業者レギュレーションストラクチャー  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OpenChannelManagement/blob/master/RegulationStructure/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このエンティティには、原水（オープンチャンネル）システム管理ドメインで作成された一般的な規制構造の調和された記述が含まれています。規制構造は、ジャンクションタイプのオブジェクトを表し、原水システムの水流を制御する。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**このエンティティは、Raw-Water (Open Channels) System Management ドメインのために作成された汎用 Regulation Structure の調和された記述を含んでいる。規制構造は、原水系統の水流を制御する接合型オブジェクトを表す。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `hasSluiceGate`: 水門のタイプのエンティティへの参照。  - `hasSpillway`: Sluice gate Spillway（水門・水路）タイプのエンティティへの参照。  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `numberOfGates`: レギュレーション構造に取り付けられているコントロールゲートの数を定義する整数値です。  - `numberOfSpillways`: 規制構造に取り付けられている放水路の数を定義する整数値。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `position`: 残りの要素との距離や関係性に関する情報を提供するオブジェクト。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tag`: アイテムを修飾するための任意のテキスト文字列  - `teleCommand`: 規制構造をリモートで制御するか、マニュアルで制御するかを定義する。真/偽の値を指定します。  - `type`: NGSI-LD エンティティタイプ。これはRegulationStructureでなければならない。    
-必須項目  
-- `id`  - `name`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `hasSluiceGate[*]`: Sluice gate 型のエンティティへの参照。  - `hasSpillway[*]`: Sluice gate Spillway 型のエンティティへの参照。  - `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `numberOfGates[number]`: レギュレーション機構に付属する制御ゲートの個数を定義する整数値。  - `numberOfSpillways[number]`: 調節構造体に付属する放水路の数を定義する整数値。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `position[object]`: 残りの要素との距離や関係などの情報を提供するオブジェクト。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tag[string]`: 項目を修飾するためのオプションのテキスト文字列  . Model: [https://schema.org/Text](https://schema.org/Text)- `teleCommand[boolean]`: 規制構造をリモートで制御するか、手動で制御するかを定義する。True/Falseの値を指定する。  - `type[string]`: NGSI-LDのEntity Type。RegulationStructureでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `name`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 RegulationStructure:    
@@ -351,12 +366,22 @@ RegulationStructure:
     - type    
     - name    
   type: object    
-  version: 0.0.1    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/RegulationStructure/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models.OpenChannelManagement/RegulationStructure/schema.json    
+  x-model-tags: FIWARE4WATER    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### RegulationStructure NGSI-v2 key-valuesの例。  
-ここでは、JSON-LD形式でkey-valuesとしてRegulationStructureの例を示します。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### RegulationStructure NGSI-v2 key-value 例．  
+RegulationStructureをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:RegulationStructure:id:IXHN:40075061",  
@@ -408,8 +433,10 @@ RegulationStructure:
   ]  
 }  
 ```  
+</details>  
 #### RegulationStructure NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のRegulationStructureの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+RegulationStructure を JSON-LD 形式で正規化した例を示す。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:RegulationStructure:id:IXHN:40075061",  
@@ -515,173 +542,185 @@ RegulationStructure:
   }  
 }  
 ```  
-#### RegulationStructure NGSI-LDのキーバリューの例  
-ここでは、JSON-LD形式のRegulationStructureをkey-valuesとして表した例を示します。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### RegulationStructure NGSI-LD key-value 例  
+RegulationStructureをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:RegulationStructure:id:IXHN:40075061",  
-  "type": "RegulationStructure",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -72.3447045,  
-      44.679442  
+    "id": "urn:ngsi-ld:RegulationStructure:id:IXHN:40075061",  
+    "type": "RegulationStructure",  
+    "address": {  
+        "streetAddress": "",  
+        "addressLocality": "",  
+        "addressRegion": "",  
+        "addressCountry": "",  
+        "postalCode": "",  
+        "postOfficeBoxNumber": "",  
+        "areaServed": ""  
+    },  
+    "alternateName": "RS01 Thivae",  
+    "areaServed": "",  
+    "dataProvider": "EYDAP",  
+    "dateCreated": "1986-07-26T02:43:28Z",  
+    "dateModified": "2021-03-21T17:56:26Z",  
+    "description": "Regulation Structure Thivae",  
+    "hasSluiceGate": "urn:ngsi-ld:RegulationStructure:hasSluiceGate:JXFD:60487647",  
+    "hasSpillway": "urn:ngsi-ld:RegulationStructure:hasSpillway:CBWI:21948924",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -72.3447045,  
+            44.679442  
+        ]  
+    },  
+    "name": "RS01",  
+    "numberOfGates": 1,  
+    "numberOfSpillways": 1,  
+    "owner": [  
+        "urn:ngsi-ld:RegulationStructure:items:ASWJ:21246595",  
+        "urn:ngsi-ld:RegulationStructure:items:NHFZ:56673870"  
+    ],  
+    "position": {  
+        "distance": 160.6,  
+        "refPoint": "urn:ngsi-ld:RegulationStructure:refPoint:JXFD:60487647"  
+    },  
+    "seeAlso": [  
+        "urn:ngsi-ld:RegulationStructure:items:PLEL:78574823",  
+        "urn:ngsi-ld:RegulationStructure:items:IZVF:62633698"  
+    ],  
+    "source": "",  
+    "tag": "",  
+    "teleCommand": true,  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "",  
-    "addressLocality": "",  
-    "addressRegion": "",  
-    "addressCountry": "",  
-    "postalCode": "",  
-    "postOfficeBoxNumber": "",  
-    "areaServed": ""  
-  },  
-  "areaServed": "",  
-  "dateCreated": "1986-07-26T02:43:28Z",  
-  "dateModified": "2021-03-21T17:56:26Z",  
-  "source": "",  
-  "name": "RS01",  
-  "alternateName": "RS01 Thivae",  
-  "description": "Regulation Structure Thivae",  
-  "dataProvider": "EYDAP",  
-  "owner": [  
-    "urn:ngsi-ld:RegulationStructure:items:ASWJ:21246595",  
-    "urn:ngsi-ld:RegulationStructure:items:NHFZ:56673870"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:RegulationStructure:items:PLEL:78574823",  
-    "urn:ngsi-ld:RegulationStructure:items:IZVF:62633698"  
-  ],  
-  "tag": "",  
-  "numberOfGates": 1,  
-  "numberOfSpillways": 1,  
-  "teleCommand": true,  
-  "hasSluiceGate": "urn:ngsi-ld:RegulationStructure:hasSluiceGate:JXFD:60487647",  
-  "hasSpillway": "urn:ngsi-ld:RegulationStructure:hasSpillway:CBWI:21948924",  
-  "position": {  
-    "distance": 160.6,  
-    "refPoint": "urn:ngsi-ld:RegulationStructure:refPoint:JXFD:60487647"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### RegulationStructure NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のRegulationStructureの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### RegulationStructure NGSI-LD 正規化例  
+RegulationStructure を JSON-LD 形式で正規化した例を示す。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:RegulationStructure:id:IXHN:40075061",  
-  "type": "RegulationStructure",  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -72.3447045,  
-        44.679442  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "",  
-      "addressLocality": "",  
-      "addressRegion": "",  
-      "addressCountry": "",  
-      "postalCode": "",  
-      "postOfficeBoxNumber": "",  
-      "areaServed": ""  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1986-07-26T02:43:28Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-03-21T17:56:26Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "RS01"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "RS01 Thivae"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Regulation Structure Thivae"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "EYDAP"  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:RegulationStructure:items:ASWJ:21246595",  
-      "urn:ngsi-ld:RegulationStructure:items:NHFZ:56673870"  
+    "id": "urn:ngsi-ld:RegulationStructure:id:IXHN:40075061",  
+    "type": "RegulationStructure",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "",  
+            "addressLocality": "",  
+            "addressRegion": "",  
+            "addressCountry": "",  
+            "postalCode": "",  
+            "postOfficeBoxNumber": "",  
+            "areaServed": ""  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "RS01 Thivae"  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "EYDAP"  
+    },  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1986-07-26T02:43:28Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-03-21T17:56:26Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Regulation Structure Thivae"  
+    },  
+    "hasSluiceGate": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:RegulationStructure:hasSluiceGate:JXFD:60487647"  
+    },  
+    "hasSpillway": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:RegulationStructure:hasSpillway:CBWI:21948924"  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -72.3447045,  
+                44.679442  
+            ]  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "RS01"  
+    },  
+    "numberOfGates": {  
+        "type": "Property",  
+        "value": 1  
+    },  
+    "numberOfSpillways": {  
+        "type": "Property",  
+        "value": 1  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:RegulationStructure:items:ASWJ:21246595",  
+            "urn:ngsi-ld:RegulationStructure:items:NHFZ:56673870"  
+        ]  
+    },  
+    "position": {  
+        "type": "Property",  
+        "value": {  
+            "distance": 160.6,  
+            "refPoint": "urn:ngsi-ld:RegulationStructure:refPoint:JXFD:60487647"  
+        }  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:RegulationStructure:items:PLEL:78574823",  
+            "urn:ngsi-ld:RegulationStructure:items:IZVF:62633698"  
+        ]  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "tag": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "teleCommand": {  
+        "type": "Property",  
+        "value": true  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:RegulationStructure:items:PLEL:78574823",  
-      "urn:ngsi-ld:RegulationStructure:items:IZVF:62633698"  
-    ]  
-  },  
-  "tag": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "numberOfGates": {  
-    "type": "Property",  
-    "value": 1  
-  },  
-  "numberOfSpillways": {  
-    "type": "Property",  
-    "value": 1  
-  },  
-  "teleCommand": {  
-    "type": "Property",  
-    "value": true  
-  },  
-  "hasSluiceGate": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:RegulationStructure:hasSluiceGate:JXFD:60487647"  
-  },  
-  "hasSpillway": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:RegulationStructure:hasSpillway:CBWI:21948924"  
-  },  
-  "position": {  
-    "type": "Property",  
-    "value": {  
-      "distance": 160.6,  
-      "refPoint": "urn:ngsi-ld:RegulationStructure:refPoint:JXFD:60487647"  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
