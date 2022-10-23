@@ -1,16 +1,31 @@
-Entità: OpenChannelJunction  
-===========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: OpenChannelJunction  
+===========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OpenChannelManagement/blob/master/OpenChannelJunction/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Questa entità contiene una descrizione armonizzata di una generica giunzione fatta per il dominio Raw-Water (Open Channels) System Management. Una Junction definisce un luogo dove le caratteristiche del canale cambiano, due o più canali si uniscono o si separano, quantità di acqua vengono estratte o inserite nel sistema, ecc.**.  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Questa entità contiene una descrizione armonizzata di una giunzione generica realizzata per il dominio di gestione del sistema delle acque grezze (canali aperti). Una giunzione definisce un punto in cui le caratteristiche del canale cambiano, due o più canali si uniscono o si separano, quantità di acqua vengono estratte o inserite nel sistema, ecc.**.  
 versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `downstreamNode`: Una relazione che indica l'ID del nodo a valle (ad esempio, Junction, Regulation Structure), dove finisce il canale.  - `id`: Identificatore unico dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: Il nome di questo articolo.  - `observedBy`: Una relazione con l'ID del dispositivo che controlla le proprietà dell'acqua grezza  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `position`: Oggetto che fornisce informazioni sulla distanza con il resto degli elementi e una relazione con essi.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `tag`: Una stringa di testo opzionale usata per qualificare un elemento  - `type`: NGSI Entity Type. deve essere OpenChannelJunction  - `uniqueName`: Il nome della giunzione.  - `upstreamNode`: Una relazione che indica l'ID del nodo a monte (ad esempio, Junction, Regulation Structure), dove inizia il canale.  - `waterInflow`: Flusso d'acqua inserito nella giunzione  - `waterOutflow`: Flusso d'acqua estratto dal raccordo o deviato verso un'altra fonte    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `downstreamNode[*]`: Una relazione che indica l'ID del nodo a valle (ad esempio, Giunzione, Struttura di regolazione), dove termina il canale.  - `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento.  - `observedBy[*]`: Una relazione con l'ID del dispositivo che monitora le proprietà dell'acqua grezza.  . Model: [https://smart-data-models.github.io/dataModel.Device/device-schema.json](https://smart-data-models.github.io/dataModel.Device/device-schema.json)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `position[object]`: Oggetto che fornisce informazioni sulla distanza con gli altri elementi e sulla relazione con essi.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `tag[string]`: Una stringa di testo opzionale utilizzata per qualificare un elemento.  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Tipo di entità NGSI. deve essere OpenChannelJunction.  - `uniqueName[string]`: Il nome della giunzione.  - `upstreamNode[*]`: Una relazione che indica l'ID del nodo a monte (ad es., nodo, struttura di regolazione), dove inizia il canale.  - `waterInflow[number]`: Flusso d'acqua inserito nella giunzione  - `waterOutflow[number]`: Flusso d'acqua prelevato dal raccordo o deviato verso un'altra fonte  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`  ## Descrizione del modello di dati delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 OpenChannelJunction:    
@@ -366,12 +381,22 @@ OpenChannelJunction:
     - id    
     - type    
   type: object    
-  version: 0.0.1    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/OpenChannelJunction/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models.OpenChannelManagement/OpenChannelJunction/schema.json    
+  x-model-tags: FIWARE4WATER    
+  x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### OpenChannelJunction NGSI-v2 valori chiave Esempio  
-Ecco un esempio di una OpenChannelJunction in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### OpenChannelJunction NGSI-v2 valori-chiave Esempio  
+Ecco un esempio di OpenChannelJunction in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OpenChannelJunction:id:PTOM:78370074",  
@@ -419,8 +444,10 @@ OpenChannelJunction:
   }  
 }  
 ```  
+</details>  
 #### OpenChannelJunction NGSI-v2 normalizzato Esempio  
-Ecco un esempio di una OpenChannelJunction in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di OpenChannelJunction in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OpenChannelJunction:id:PTOM:78370074",  
@@ -533,176 +560,188 @@ OpenChannelJunction:
   ]  
 }  
 ```  
-#### OpenChannelJunction NGSI-LD valori-chiave Esempio  
-Ecco un esempio di una OpenChannelJunction in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### OpenChannelJunction Valori chiave NGSI-LD Esempio  
+Ecco un esempio di OpenChannelJunction in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:OpenChannelJunction:id:PTOM:78370074",  
-  "type": "OpenChannelJunction",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -65.2981945,  
-      -22.649102  
+    "id": "urn:ngsi-ld:OpenChannelJunction:id:PTOM:78370074",  
+    "type": "OpenChannelJunction",  
+    "address": {  
+        "streetAddress": "",  
+        "addressLocality": "",  
+        "addressRegion": "",  
+        "addressCountry": "",  
+        "postalCode": "",  
+        "postOfficeBoxNumber": ""  
+    },  
+    "alternateName": "Thivae",  
+    "areaServed": "",  
+    "dataProvider": "EYDAP",  
+    "dateCreated": "1983-10-11T21:04:39Z",  
+    "dateModified": "1982-03-03T08:37:57Z",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -65.2981945,  
+            -22.649102  
+        ]  
+    },  
+    "name": "J1",  
+    "owner": [  
+        "urn:ngsi-ld:OpenChannelJunction:items:QPEH:03184806",  
+        "urn:ngsi-ld:OpenChannelJunction:items:PUHR:34031741"  
+    ],  
+    "position": {  
+        "distance": 160.6,  
+        "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647",  
+        "downstreamNode": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924",  
+        "upstreamNode": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938",  
+        "observedBy": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975",  
+        "uniqueName": "J1",  
+        "tag": "",  
+        "waterOutflow": 0.12,  
+        "waterInflow": 0.15  
+    },  
+    "seeAlso": [  
+        "urn:ngsi-ld:OpenChannelJunction:items:KTWJ:61564622",  
+        "urn:ngsi-ld:OpenChannelJunction:items:JOMY:24566116"  
+    ],  
+    "source": "",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "",  
-    "addressLocality": "",  
-    "addressRegion": "",  
-    "addressCountry": "",  
-    "postalCode": "",  
-    "postOfficeBoxNumber": ""  
-  },  
-  "areaServed": "",  
-  "dateCreated": "1983-10-11T21:04:39Z",  
-  "dateModified": "1982-03-03T08:37:57Z",  
-  "source": "",  
-  "name": "J1",  
-  "alternateName": "Thivae",  
-  "dataProvider": "EYDAP",  
-  "owner": [  
-    "urn:ngsi-ld:OpenChannelJunction:items:QPEH:03184806",  
-    "urn:ngsi-ld:OpenChannelJunction:items:PUHR:34031741"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:OpenChannelJunction:items:KTWJ:61564622",  
-    "urn:ngsi-ld:OpenChannelJunction:items:JOMY:24566116"  
-  ],  
-  "position": {  
-    "distance": 160.6,  
-    "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647",  
-    "downstreamNode": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924",  
-    "upstreamNode": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938",  
-    "observedBy": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975",  
-    "uniqueName": "J1",  
-    "tag": "",  
-    "waterOutflow": 0.12,  
-    "waterInflow": 0.15  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### OpenChannelJunction NGSI-LD normalizzato Esempio  
-Ecco un esempio di una OpenChannelJunction in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di OpenChannelJunction in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:OpenChannelJunction:id:PTOM:78370074",  
-  "type": "OpenChannelJunction",  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -65.2981945,  
-        -22.649102  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "",  
-      "addressLocality": "",  
-      "addressRegion": "",  
-      "addressCountry": "",  
-      "postalCode": "",  
-      "postOfficeBoxNumber": "",  
-      "areaServed": ""  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1983-10-11T21:04:39Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1982-03-03T08:37:57Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "J1"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Thivae"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Open Channel Junction"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "EYDAP"  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:OpenChannelJunction:items:QPEH:03184806",  
-      "urn:ngsi-ld:OpenChannelJunction:items:PUHR:34031741"  
+    "id": "urn:ngsi-ld:OpenChannelJunction:id:PTOM:78370074",  
+    "type": "OpenChannelJunction",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "",  
+            "addressLocality": "",  
+            "addressRegion": "",  
+            "addressCountry": "",  
+            "postalCode": "",  
+            "postOfficeBoxNumber": "",  
+            "areaServed": ""  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Thivae"  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "EYDAP"  
+    },  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1983-10-11T21:04:39Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1982-03-03T08:37:57Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Open Channel Junction"  
+    },  
+    "downstreamNode": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924"  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -65.2981945,  
+                -22.649102  
+            ]  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "J1"  
+    },  
+    "observedBy": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975"  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:OpenChannelJunction:items:QPEH:03184806",  
+            "urn:ngsi-ld:OpenChannelJunction:items:PUHR:34031741"  
+        ]  
+    },  
+    "position": {  
+        "type": "Property",  
+        "value": {  
+            "distance": 160.6,  
+            "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647"  
+        }  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:OpenChannelJunction:items:KTWJ:61564622",  
+            "urn:ngsi-ld:OpenChannelJunction:items:JOMY:24566116"  
+        ]  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "tag": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "uniqueName": {  
+        "type": "Property",  
+        "value": "J1"  
+    },  
+    "upstreamNode": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938"  
+    },  
+    "waterInflow": {  
+        "type": "Property",  
+        "value": 0.15  
+    },  
+    "waterOutflow": {  
+        "type": "Property",  
+        "value": 0.12  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:OpenChannelJunction:items:KTWJ:61564622",  
-      "urn:ngsi-ld:OpenChannelJunction:items:JOMY:24566116"  
-    ]  
-  },  
-  "position": {  
-    "type": "Property",  
-    "value": {  
-      "distance": 160.6,  
-      "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647"  
-    }  
-  },  
-  "downstreamNode": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924"  
-  },  
-  "upstreamNode": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938"  
-  },  
-  "observedBy": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975"  
-  },  
-  "uniqueName": {  
-    "type": "Property",  
-    "value": "J1"  
-  },  
-  "tag": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "waterOutflow": {  
-    "type": "Property",  
-    "value": 0.12  
-  },  
-  "waterInflow": {  
-    "type": "Property",  
-    "value": 0.15  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
