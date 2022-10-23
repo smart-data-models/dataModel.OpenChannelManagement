@@ -1,15 +1,31 @@
-Entité : CrossSection  
-=====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : CrossSection  
+=====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.OpenChannelManagement/blob/master/CrossSection/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Cette entité contient une description harmonisée d'une section transversale générique réalisée pour le domaine de la gestion des systèmes d'eau brute (canaux ouverts). Une section transversale définit tout point du système où les propriétés de l'eau brute sont surveillées par un dispositif et/ou calculées par simulation**.  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `attachedTo`: Une relation avec l'ID du canal dans lequel la section transversale "vit". Référence à une entité de type Canal.  - `bottomSlope`: La pente du fond du canal où la section transversale "vit". Toutes les unités sont acceptées en code CEFACT.  - `bottomWidth`: La largeur inférieure de la section transversale (pour la géométrie "trapézoïdale"). Toutes les unités sont acceptées dans le code CEFACT.  - `crossSectionGeometry`: La géométrie de la section transversale. Enum : 'Circulaire, Trapézoïdale'.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `diameter`: Le diamètre d'une section transversale circulaire.  - `energyHead`: La tête d'énergie totale à la section transversale.  - `id`: Identifiant unique de l'entité  - `inheritsFrom`: URI d'un composant du canal à partir duquel la valeur d'une propriété est obtenue.  - `leftSideSlope`: La pente de la rive gauche de la section transversale (pour la géométrie "trapézoïdale"). Toutes les unités sont acceptées en code CEFACT.  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `maxWaterDepth`: La profondeur d'eau maximale admissible au niveau de la section transversale. Toutes les unités sont acceptées en code CEFACT.  - `name`: Le nom de cet élément.  - `observedBy`: Une relation avec l'ID du dispositif qui surveille les propriétés des eaux brutes.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `position`: Objet fournissant des informations sur la distance avec le reste des éléments et une relation avec eux.  - `rightSideSlope`: La pente de la rive droite de la section transversale (pour la géométrie "trapézoïdale"). Toutes les unités sont acceptées en code CEFACT.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `specificConductivity`: Conductivité de l'eau au niveau de la section transversale.  - `tag`: Une chaîne de texte facultative utilisée pour qualifier un élément  - `turbidity`: Turbidité de l'eau à la section transversale.  - `type`: Type d'entité NGSI-LD. Il doit s'agir de CrossSection.  - `waterFlow`: Ecoulement de l'eau au niveau de la section transversale.  - `waterLevel`: Niveau d'eau à la section transversale.  - `waterTemperature`: Température de l'eau au niveau de la section transversale.  - `waterVelocity`: Vitesse de l'eau à la section transversale.    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `attachedTo[*]`: Une relation avec l'ID du canal dans lequel la section transversale "vit". Référence à une entité de type Canal.  - `bottomSlope[number]`: La pente du fond du canal où la section transversale "vit". Toutes les unités sont acceptées en code CEFACT.  - `bottomWidth[number]`: La largeur inférieure de la section transversale (pour la géométrie "trapézoïdale"). Toutes les unités sont acceptées dans le code CEFACT.  - `crossSectionGeometry[string]`: La géométrie de la section transversale. Enum : 'Circulaire, Trapézoïdale'.  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `diameter[number]`: Le diamètre d'une section transversale circulaire.  - `energyHead[number]`: La tête d'énergie totale à la section transversale.  - `id[*]`: Identifiant unique de l'entité  - `inheritsFrom[*]`: URI d'un composant du canal à partir duquel la valeur d'une propriété est obtenue.  - `leftSideSlope[number]`: La pente de la rive gauche de la section transversale (pour la géométrie "trapézoïdale"). Toutes les unités sont acceptées en code CEFACT.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `maxWaterDepth[number]`: La profondeur d'eau maximale admissible au niveau de la section transversale. Toutes les unités sont acceptées en code CEFACT.  - `name[string]`: Le nom de cet élément.  - `observedBy[*]`: Une relation avec l'ID du dispositif qui surveille les propriétés des eaux brutes.  . Model: [https://smart-data-models.github.io/dataModel.Device/device-schema.json](https://smart-data-models.github.io/dataModel.Device/device-schema.json)- `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `position[object]`: Objet fournissant des informations sur la distance avec le reste des éléments et une relation avec eux.  - `rightSideSlope[number]`: La pente de la rive droite de la section transversale (pour la géométrie "trapézoïdale"). Toutes les unités sont acceptées en code CEFACT.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `specificConductivity[number]`: Conductivité de l'eau au niveau de la section transversale.  - `tag[string]`: Une chaîne de texte facultative utilisée pour qualifier un élément  . Model: [https://schema.org/Text](https://schema.org/Text)- `turbidity[number]`: Turbidité de l'eau à la section transversale.  - `type[string]`: Type d'entité NGSI-LD. Il doit s'agir de CrossSection.  - `waterFlow[number]`: Ecoulement de l'eau au niveau de la section transversale.  - `waterLevel[number]`: Niveau d'eau à la section transversale.  - `waterTemperature[number]`: Température de l'eau au niveau de la section transversale.  - `waterVelocity[number]`: Vitesse de l'eau à la section transversale.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `id`  - `type`  ## Description des propriétés du modèle de données  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 CrossSection:    
@@ -430,11 +446,22 @@ CrossSection:
     - id    
     - type    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/CrossSection/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models.OpenChannelManagement/CrossSection/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### CrossSection NGSI-v2 valeurs-clés Exemple  
 Voici un exemple de CrossSection au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:CrossSection:id:COGE:70479090",  
@@ -495,8 +522,10 @@ CrossSection:
   "inheritsFrom": "urn:ngsi-ld:CrossSection:inheritsFrom:JXFD:60487647"  
 }  
 ```  
+</details>  
 #### Section transversale normalisée NGSI-v2 Exemple  
 Voici un exemple de CrossSection au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:CrossSection:id:COGE:70479090",  
@@ -650,233 +679,245 @@ CrossSection:
   }  
 }  
 ```  
+</details>  
 #### Section transversale des valeurs clés NGSI-LD Exemple  
 Voici un exemple de CrossSection au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:CrossSection:id:COGE:70479090",  
-  "type": "CrossSection",  
-  "dateCreated": "1990-11-25T18:54:15Z",  
-  "dateModified": "1999-04-24T10:03:17Z",  
-  "source": "",  
-  "name": "L3",  
-  "alternateName": "Giona",  
-  "description": "Giona 1",  
-  "dataProvider": "",  
-  "owner": [  
-    "urn:ngsi-ld:CrossSection:items:ILNP:15826171",  
-    "urn:ngsi-ld:CrossSection:items:RUEP:96519173"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:CrossSection:items:GEPQ:35001404",  
-    "urn:ngsi-ld:CrossSection:items:YRBN:14719571"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      28.7415145,  
-      -31.163341  
+    "id": "urn:ngsi-ld:CrossSection:id:COGE:70479090",  
+    "type": "CrossSection",  
+    "address": {  
+        "streetAddress": "",  
+        "addressLocality": "",  
+        "addressRegion": "",  
+        "addressCountry": "",  
+        "postalCode": "",  
+        "postOfficeBoxNumber": "",  
+        "areaServed": ""  
+    },  
+    "alternateName": "Giona",  
+    "areaServed": "",  
+    "attachedTo": "urn:ngsi-ld:CrossSection:attachedTo:CTHP:74683243",  
+    "bottomSlope": 0.02,  
+    "bottomWidth": 5,  
+    "crossSectionGeometry": "Trapezoidal",  
+    "dataProvider": "",  
+    "dateCreated": "1990-11-25T18:54:15Z",  
+    "dateModified": "1999-04-24T10:03:17Z",  
+    "description": "Giona 1",  
+    "diameter": 0,  
+    "energyHead": 0.032,  
+    "inheritsFrom": "urn:ngsi-ld:CrossSection:inheritsFrom:JXFD:60487647",  
+    "leftSideSlope": 0.02,  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            28.7415145,  
+            -31.163341  
+        ]  
+    },  
+    "maxWaterDepth": 4,  
+    "name": "L3",  
+    "observedBy": "urn:ngsi-ld:CrossSection:observedBy:WJTI:74120377",  
+    "owner": [  
+        "urn:ngsi-ld:CrossSection:items:ILNP:15826171",  
+        "urn:ngsi-ld:CrossSection:items:RUEP:96519173"  
+    ],  
+    "position": {  
+        "distance": 864.6,  
+        "refPoint": "urn:ngsi-ld:CrossSection:refPoint:JXFD:60487647"  
+    },  
+    "rightSideSlope": 0.02,  
+    "seeAlso": [  
+        "urn:ngsi-ld:CrossSection:items:GEPQ:35001404",  
+        "urn:ngsi-ld:CrossSection:items:YRBN:14719571"  
+    ],  
+    "source": "",  
+    "specificConductivity": 260,  
+    "tag": "",  
+    "turbidity": 11.8,  
+    "waterFlow": 12,  
+    "waterLevel": 2.9,  
+    "waterTemperature": 9.6,  
+    "waterVelocity": 0.082,  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "",  
-    "addressLocality": "",  
-    "addressRegion": "",  
-    "addressCountry": "",  
-    "postalCode": "",  
-    "postOfficeBoxNumber": "",  
-    "areaServed": ""  
-  },  
-  "areaServed": "",  
-  "attachedTo": "urn:ngsi-ld:CrossSection:attachedTo:CTHP:74683243",  
-  "observedBy": "urn:ngsi-ld:CrossSection:observedBy:WJTI:74120377",  
-  "tag": "",  
-  "position": {  
-    "distance": 864.6,  
-    "refPoint": "urn:ngsi-ld:CrossSection:refPoint:JXFD:60487647"  
-  },  
-  "waterFlow": 12,  
-  "waterVelocity": 0.082,  
-  "waterTemperature": 9.6,  
-  "turbidity": 11.8,  
-  "specificConductivity": 260,  
-  "waterLevel": 2.9,  
-  "energyHead": 0.032,  
-  "crossSectionGeometry": "Trapezoidal",  
-  "bottomSlope": 0.02,  
-  "leftSideSlope": 0.02,  
-  "rightSideSlope": 0.02,  
-  "bottomWidth": 5,  
-  "diameter": 0,  
-  "maxWaterDepth": 4,  
-  "inheritsFrom": "urn:ngsi-ld:CrossSection:inheritsFrom:JXFD:60487647",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Section transversale normalisée NGSI-LD Exemple  
 Voici un exemple de CrossSection au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:CrossSection:id:COGE:70479090",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1990-11-25T18:54:15Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1999-04-24T10:03:17Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "L3"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Giona"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Giona 1"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:CrossSection:items:ILNP:15826171",  
-      "urn:ngsi-ld:CrossSection:items:RUEP:96519173"  
+    "id": "urn:ngsi-ld:CrossSection:id:COGE:70479090",  
+    "type": "CrossSection",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "",  
+            "addressLocality": "",  
+            "addressRegion": "",  
+            "addressCountry": "",  
+            "postalCode": "",  
+            "postOfficeBoxNumber": "",  
+            "areaServed": ""  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Giona"  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "attachedTo": {  
+        "type": "object",  
+        "value": "urn:ngsi-ld:CrossSection:attachedTo:CTHP:74683243"  
+    },  
+    "bottomSlope": {  
+        "type": "Property",  
+        "value": 0.02  
+    },  
+    "bottomWidth": {  
+        "type": "Property",  
+        "value": 5  
+    },  
+    "crossSectionGeometry": {  
+        "type": "Property",  
+        "value": "Trapezoidal"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1990-11-25T18:54:15Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1999-04-24T10:03:17Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Giona 1"  
+    },  
+    "diameter": {  
+        "type": "Property",  
+        "value": 0  
+    },  
+    "energyHead": {  
+        "type": "Property",  
+        "value": 0.032  
+    },  
+    "inheritsFrom": {  
+        "type": "object",  
+        "value": "urn:ngsi-ld:CrossSection:inheritsFrom:JXFD:60487647"  
+    },  
+    "leftSideSlope": {  
+        "type": "Property",  
+        "value": 0.02  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                28.7415145,  
+                -31.163341  
+            ]  
+        }  
+    },  
+    "maxWaterDepth": {  
+        "type": "Property",  
+        "value": 4  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "L3"  
+    },  
+    "observedBy": {  
+        "type": "object",  
+        "value": "urn:ngsi-ld:CrossSection:observedBy:WJTI:74120377"  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:CrossSection:items:ILNP:15826171",  
+            "urn:ngsi-ld:CrossSection:items:RUEP:96519173"  
+        ]  
+    },  
+    "position": {  
+        "type": "Property",  
+        "value": {  
+            "distance": 864.6,  
+            "refPoint": "urn:ngsi-ld:CrossSection:refPoint:JXFD:60487647"  
+        }  
+    },  
+    "rightSideSlope": {  
+        "type": "Property",  
+        "value": 0.02  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:CrossSection:items:GEPQ:35001404",  
+            "urn:ngsi-ld:CrossSection:items:YRBN:14719571"  
+        ]  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "specificConductivity": {  
+        "type": "Property",  
+        "value": 260  
+    },  
+    "tag": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "turbidity": {  
+        "type": "Property",  
+        "value": 11.8  
+    },  
+    "waterFlow": {  
+        "type": "Property",  
+        "value": 12  
+    },  
+    "waterLevel": {  
+        "type": "Property",  
+        "value": 2.9  
+    },  
+    "waterTemperature": {  
+        "type": "Property",  
+        "value": 9.6  
+    },  
+    "waterVelocity": {  
+        "type": "Property",  
+        "value": 0.082  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:CrossSection:items:GEPQ:35001404",  
-      "urn:ngsi-ld:CrossSection:items:YRBN:14719571"  
-    ]  
-  },  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        28.7415145,  
-        -31.163341  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "",  
-      "addressLocality": "",  
-      "addressRegion": "",  
-      "addressCountry": "",  
-      "postalCode": "",  
-      "postOfficeBoxNumber": "",  
-      "areaServed": ""  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "type": "CrossSection",  
-  "attachedTo": {  
-    "type": "object",  
-    "value": "urn:ngsi-ld:CrossSection:attachedTo:CTHP:74683243"  
-  },  
-  "observedBy": {  
-    "type": "object",  
-    "value": "urn:ngsi-ld:CrossSection:observedBy:WJTI:74120377"  
-  },  
-  "tag": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "position": {  
-    "type": "Property",  
-    "value": {  
-      "distance": 864.6,  
-      "refPoint": "urn:ngsi-ld:CrossSection:refPoint:JXFD:60487647"  
-    }  
-  },  
-  "waterFlow": {  
-    "type": "Property",  
-    "value": 12  
-  },  
-  "waterVelocity": {  
-    "type": "Property",  
-    "value": 0.082  
-  },  
-  "waterTemperature": {  
-    "type": "Property",  
-    "value": 9.6  
-  },  
-  "turbidity": {  
-    "type": "Property",  
-    "value": 11.8  
-  },  
-  "specificConductivity": {  
-    "type": "Property",  
-    "value": 260  
-  },  
-  "waterLevel": {  
-    "type": "Property",  
-    "value": 2.9  
-  },  
-  "energyHead": {  
-    "type": "Property",  
-    "value": 0.032  
-  },  
-  "crossSectionGeometry": {  
-    "type": "Property",  
-    "value": "Trapezoidal"  
-  },  
-  "bottomSlope": {  
-    "type": "Property",  
-    "value": 0.02  
-  },  
-  "leftSideSlope": {  
-    "type": "Property",  
-    "value": 0.02  
-  },  
-  "rightSideSlope": {  
-    "type": "Property",  
-    "value": 0.02  
-  },  
-  "bottomWidth": {  
-    "type": "Property",  
-    "value": 5  
-  },  
-  "diameter": {  
-    "type": "Property",  
-    "value": 0  
-  },  
-  "maxWaterDepth": {  
-    "type": "Property",  
-    "value": 4  
-  },  
-  "inheritsFrom": {  
-    "type": "object",  
-    "value": "urn:ngsi-ld:CrossSection:inheritsFrom:JXFD:60487647"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
