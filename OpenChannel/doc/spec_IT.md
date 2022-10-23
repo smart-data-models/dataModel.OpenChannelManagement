@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entità: OpenChannel  
-===================  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OpenChannelManagement/blob/master/OpenChannel/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descrizione globale: **Questa entità contiene una descrizione armonizzata di un canale generico realizzato per il dominio di gestione del sistema di acqua grezza (canali aperti) **.  
 versione: 0.0.3  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `bottomSlope`: La pendenza inferiore del canale. Tutte le unità sono accettate nel codice CEFACT.  - `bottomWidth`: Larghezza del fondo del canale (per la geometria "trapezoidale"). Tutte le unità sono accettate nel codice CEFACT.  - `celerity`: Velocità di propagazione di un'ondata lungo il canale dopo l'apertura o la chiusura di una paratoia.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description`: Descrizione dell'articolo  - `diameter`: Diametro di un canale circolare. Tutte le unità sono accettate nel codice CEFACT.  - `downstreamNode`: Una relazione che indica l'ID del nodo a valle (ad esempio, Giunzione, Struttura di regolazione), dove termina il canale.  - `flowType`: Testo che definisce il tipo di flusso nel canale. Enum: "Flusso a superficie libera".  - `geometryType`: La geometria del canale. Enum:'Trapezoidale, circolare'].  - `id`: Identificatore univoco dell'entità  - `leftSideSlope`: La pendenza della sponda sinistra del canale (per la geometria "Trapezoidale"). Tutte le unità sono accettate in codice CEFACT.  - `length`: La lunghezza del canale. Tutte le unità sono accettate in codice CEFACT.  - `location`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `maxWaterDepth`: La massima profondità d'acqua consentita nel canale. Tutte le unità sono accettate in codice CEFACT.  - `name`: Il nome di questo elemento.  - `owner`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rightSideSlope`: La pendenza della sponda destra del canale (per la geometria "trapezoidale"). Tutte le unità sono accettate in codice CEFACT.  - `roughnessCoefficient`: Il coefficiente di rugosità di Manning.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `tag`: Una stringa di testo opzionale utilizzata per qualificare un elemento.  - `travelDuration`: La durata della sovracorrente che viaggia dal nodo a valle (cioè la Struttura di regolazione) al nodo a monte.  - `type`: Tipo di entità NGSI-LD. deve essere OpenChannel.  - `upstreamNode`: Una relazione che indica l'ID del nodo a monte (ad es., nodo, struttura di regolazione), dove inizia il canale.  - `waterLoss`: Perdite d'acqua dal canale - percentuale del flusso del canale o un numero (flusso).    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `bottomSlope[number]`: La pendenza inferiore del canale. Tutte le unità sono accettate nel codice CEFACT.  - `bottomWidth[number]`: Larghezza del fondo del canale (per la geometria "trapezoidale"). Tutte le unità sono accettate nel codice CEFACT.  - `celerity[number]`: Velocità di propagazione di un'ondata lungo il canale dopo l'apertura o la chiusura di una paratoia.  - `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `diameter[number]`: Diametro di un canale circolare. Tutte le unità sono accettate nel codice CEFACT.  - `downstreamNode[*]`: Una relazione che indica l'ID del nodo a valle (ad esempio, Giunzione, Struttura di regolazione), dove termina il canale.  - `flowType[string]`: Testo che definisce il tipo di flusso nel canale. Enum: "Flusso a superficie libera".  - `geometryType[string]`: La geometria del canale. Enum:'Trapezoidale, circolare'].  - `id[*]`: Identificatore univoco dell'entità  - `leftSideSlope[number]`: La pendenza della sponda sinistra del canale (per la geometria "Trapezoidale"). Tutte le unità sono accettate in codice CEFACT.  - `length[number]`: La lunghezza del canale. Tutte le unità sono accettate in codice CEFACT.  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `maxWaterDepth[number]`: La massima profondità d'acqua consentita nel canale. Tutte le unità sono accettate in codice CEFACT.  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rightSideSlope[number]`: La pendenza della sponda destra del canale (per la geometria "Trapezoidale"). Tutte le unità sono accettate in codice CEFACT.  - `roughnessCoefficient[number]`: Il coefficiente di rugosità di Manning.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `tag[string]`: Una stringa di testo opzionale utilizzata per qualificare un elemento.  . Model: [https://schema.org/Text](https://schema.org/Text)- `travelDuration[number]`: La durata della sovracorrente che viaggia dal nodo a valle (cioè la Struttura di regolazione) al nodo a monte.  - `type[string]`: Tipo di entità NGSI-LD. deve essere OpenChannel.  - `upstreamNode[*]`: Una relazione che indica l'ID del nodo a monte (ad es., nodo, struttura di regolazione), dove inizia il canale.  - `waterLoss[number]`: Perdite d'acqua dal canale - percentuale del flusso del canale o un numero (flusso).  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`  ## Modello di dati descrizione delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 OpenChannel:    
@@ -403,9 +417,14 @@ OpenChannel:
   x-version: 0.0.3    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Esempi di payload  
 #### OpenChannel NGSI-v2 Esempio di valori chiave  
 Ecco un esempio di OpenChannel in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Channel:id:IXPY:98787462",  
@@ -462,8 +481,10 @@ OpenChannel:
   }  
 }  
 ```  
+</details>  
 #### OpenChannel NGSI-v2 normalizzato Esempio  
 Ecco un esempio di OpenChannel in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "IXPY.98787462",  
@@ -571,8 +592,10 @@ OpenChannel:
   ]  
 }  
 ```  
+</details>  
 #### OpenChannel NGSI-LD valori chiave Esempio  
 Ecco un esempio di OpenChannel in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:Channel:id:IXPY:98787462",  
@@ -632,8 +655,10 @@ OpenChannel:
     ]  
 }  
 ```  
+</details>  
 #### OpenChannel NGSI-LD normalizzato Esempio  
 Ecco un esempio di OpenChannel in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:Channel:id:IXPY:98787462",  
@@ -742,7 +767,17 @@ OpenChannel:
         "type": "Relationship",  
         "object": "urn:ngsi-ld:Channel:upstreamNode:MBQH:53312123"  
     },  
-    "@context": []  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
