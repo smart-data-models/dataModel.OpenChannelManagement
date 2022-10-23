@@ -1,16 +1,31 @@
-Entità: OpenChannelSystem  
-=========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: OpenChannelSystem  
+=========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.OpenChannelManagement/blob/master/OpenChannelSystem/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Questa entità contiene una descrizione armonizzata di un sistema generico fatto per il dominio Raw-Water (Open Channels) System Management. Questa entità rappresenta sia un sistema composto da diversi componenti (ad esempio, canali, giunzioni, sezioni trasversali ecc.) o solo un componente (ad esempio, una SluiceGate).**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Questa entità contiene una descrizione armonizzata di un sistema generico realizzato per il dominio di gestione del sistema delle acque grezze (canali aperti). Questa entità rappresenta un sistema composto da diversi componenti (ad esempio, canali, giunzioni, sezioni trasversali, ecc.) o solo un componente (ad esempio, una SluiceGate).**  
 versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `hasSubSystem`: Riferimento a un'entità di tipo OpenChannelSystem - un sottosistema a canale aperto.  - `id`: Identificatore unico dell'entità  - `isComposedOf`: Riferimento alle entità componenti del sistema a canale aperto, di tipo Channel, Cross-Section, Junction, Regulation Structure, SluiceGate, Spillway.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `mostDownstreamPoint`: Una relazione che indica l'ID del nodo più a valle (ad esempio, una giunzione o una sezione trasversale) del sistema.  - `mostUpstreamPoint`: Una relazione che indica l'ID del nodo più a monte (ad esempio, una giunzione o una sezione trasversale) del sistema.  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `type`: Tipo di entità NGSI-LD. Deve essere OpenChannelSystem    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `hasSubSystem[*]`: Riferimento a un'entità di tipo OpenChannelSystem - un sottosistema a canale aperto.  - `id[*]`: Identificatore univoco dell'entità  - `isComposedOf[*]`: Riferimento alle entità componenti del sistema di canali aperti, del tipo Canale, Sezione trasversale, Giunzione, Struttura di regolazione, Paratoia, Sfioratore.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `mostDownstreamPoint[*]`: Una relazione che indica l'ID del nodo più a valle (ad esempio, una giunzione o una sezione trasversale) del sistema.  - `mostUpstreamPoint[*]`: Una relazione che indica l'ID del nodo più a monte (ad esempio, una giunzione o una sezione trasversale) del sistema.  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Tipo di entità NGSI-LD. Deve essere OpenChannelSystem  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`  ## Descrizione del modello di dati delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 OpenChannelSystem:    
@@ -333,12 +348,22 @@ OpenChannelSystem:
     - id    
     - type    
   type: object    
-  version: 0.0.1    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/OpenChannelSystem/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models.OpenChannelManagement/OpenChannelSystem/schema.json    
+  x-model-tags: FIWARE4WATER    
+  x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### OpenChannelSystem NGSI-v2 valori chiave Esempio  
-Ecco un esempio di un OpenChannelSystem in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### OpenChannelSystem NGSI-v2 Valori chiave Esempio  
+Ecco un esempio di OpenChannelSystem in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OpenChannelSystem:id:EHTH:11109231",  
@@ -381,8 +406,10 @@ OpenChannelSystem:
   "mostDownstreamPoint": "urn:ngsi-ld:OpenChannelSystem:mostDownstreamPoint:IXHM:68215414"  
 }  
 ```  
+</details>  
 #### OpenChannelSystem NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un OpenChannelSystem in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di OpenChannelSystem in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OpenChannelSystem:id:EHTH:11109231",  
@@ -473,152 +500,164 @@ OpenChannelSystem:
   }  
 }  
 ```  
-#### OpenChannelSystem NGSI-LD valori chiave Esempio  
-Ecco un esempio di un OpenChannelSystem in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### OpenChannelSystem Valori chiave NGSI-LD Esempio  
+Ecco un esempio di OpenChannelSystem in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:OpenChannelSystem:id:EHTH:11109231",  
-  "type": "OpenChannelSystem",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      59.820118,  
-      -157.397178  
+    "id": "urn:ngsi-ld:OpenChannelSystem:id:EHTH:11109231",  
+    "type": "OpenChannelSystem",  
+    "address": {  
+        "streetAddress": "",  
+        "addressLocality": "",  
+        "addressRegion": "",  
+        "addressCountry": "",  
+        "postalCode": "",  
+        "postOfficeBoxNumber": "",  
+        "areaServed": ""  
+    },  
+    "alternateName": "",  
+    "areaServed": "",  
+    "dataProvider": "EYDAP",  
+    "dateCreated": "2020-12-07T21:37:19Z",  
+    "dateModified": "2021-07-14T01:06:03Z",  
+    "description": "Conveyance System near Thivae",  
+    "hasSubSystem": "urn:ngsi-ld:OpenChannelSystem:hasSubSystem:BYUP:86302765",  
+    "isComposedOf": "urn:ngsi-ld:OpenChannelSystem:isComposedOf:UMLF:11032914",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            59.820118,  
+            -157.397178  
+        ]  
+    },  
+    "mostDownstreamPoint": "urn:ngsi-ld:OpenChannelSystem:mostDownstreamPoint:IXHM:68215414",  
+    "mostUpstreamPoint": "urn:ngsi-ld:OpenChannelSystem:mostUpstreamPoint:YUHY:75075828",  
+    "name": "L7 - L11",  
+    "owner": [  
+        "urn:ngsi-ld:OpenChannelSystem:items:WPHN:07387656",  
+        "urn:ngsi-ld:OpenChannelSystem:items:JNVF:94407376"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:OpenChannelSystem:items:EZUE:70603867",  
+        "urn:ngsi-ld:OpenChannelSystem:items:MWLT:38533440"  
+    ],  
+    "source": "",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "",  
-    "addressLocality": "",  
-    "addressRegion": "",  
-    "addressCountry": "",  
-    "postalCode": "",  
-    "postOfficeBoxNumber": "",  
-    "areaServed": ""  
-  },  
-  "areaServed": "",  
-  "dateCreated": "2020-12-07T21:37:19Z",  
-  "dateModified": "2021-07-14T01:06:03Z",  
-  "source": "",  
-  "name": "L7 - L11",  
-  "alternateName": "",  
-  "description": "Conveyance System near Thivae",  
-  "dataProvider": "EYDAP",  
-  "owner": [  
-    "urn:ngsi-ld:OpenChannelSystem:items:WPHN:07387656",  
-    "urn:ngsi-ld:OpenChannelSystem:items:JNVF:94407376"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:OpenChannelSystem:items:EZUE:70603867",  
-    "urn:ngsi-ld:OpenChannelSystem:items:MWLT:38533440"  
-  ],  
-  "isComposedOf": "urn:ngsi-ld:OpenChannelSystem:isComposedOf:UMLF:11032914",  
-  "hasSubSystem": "urn:ngsi-ld:OpenChannelSystem:hasSubSystem:BYUP:86302765",  
-  "mostUpstreamPoint": "urn:ngsi-ld:OpenChannelSystem:mostUpstreamPoint:YUHY:75075828",  
-  "mostDownstreamPoint": "urn:ngsi-ld:OpenChannelSystem:mostDownstreamPoint:IXHM:68215414",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### OpenChannelSystem NGSI-LD normalizzato Esempio  
-Ecco un esempio di un OpenChannelSystem in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di OpenChannelSystem in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:OpenChannelSystem:id:EHTH:11109231",  
-  "type": "OpenChannelSystem",  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        59.820118,  
-        -157.397178  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "",  
-      "addressLocality": "",  
-      "addressRegion": "",  
-      "addressCountry": "",  
-      "postalCode": "",  
-      "postOfficeBoxNumber": "",  
-      "areaServed": ""  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2020-12-07T21:37:19Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-07-14T01:06:03Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "L7 - L11"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Conveyance System near Thivae"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "EYDAP"  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:OpenChannelSystem:items:WPHN:07387656",  
-      "urn:ngsi-ld:OpenChannelSystem:items:JNVF:94407376"  
+    "id": "urn:ngsi-ld:OpenChannelSystem:id:EHTH:11109231",  
+    "type": "OpenChannelSystem",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "",  
+            "addressLocality": "",  
+            "addressRegion": "",  
+            "addressCountry": "",  
+            "postalCode": "",  
+            "postOfficeBoxNumber": "",  
+            "areaServed": ""  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "EYDAP"  
+    },  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2020-12-07T21:37:19Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-07-14T01:06:03Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Conveyance System near Thivae"  
+    },  
+    "hasSubSystem": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:OpenChannelSystem:hasSubSystem:BYUP:86302765"  
+    },  
+    "isComposedOf": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:OpenChannelSystem:isComposedOf:UMLF:11032914"  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                59.820118,  
+                -157.397178  
+            ]  
+        }  
+    },  
+    "mostDownstreamPoint": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:OpenChannelSystem:mostDownstreamPoint:IXHM:68215414"  
+    },  
+    "mostUpstreamPoint": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:OpenChannelSystem:mostUpstreamPoint:YUHY:75075828"  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "L7 - L11"  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:OpenChannelSystem:items:WPHN:07387656",  
+            "urn:ngsi-ld:OpenChannelSystem:items:JNVF:94407376"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:OpenChannelSystem:items:EZUE:70603867",  
+            "urn:ngsi-ld:OpenChannelSystem:items:MWLT:38533440"  
+        ]  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:OpenChannelSystem:items:EZUE:70603867",  
-      "urn:ngsi-ld:OpenChannelSystem:items:MWLT:38533440"  
-    ]  
-  },  
-  "isComposedOf": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:OpenChannelSystem:isComposedOf:UMLF:11032914"  
-  },  
-  "hasSubSystem": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:OpenChannelSystem:hasSubSystem:BYUP:86302765"  
-  },  
-  "mostUpstreamPoint": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:OpenChannelSystem:mostUpstreamPoint:YUHY:75075828"  
-  },  
-  "mostDownstreamPoint": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:OpenChannelSystem:mostDownstreamPoint:IXHM:68215414"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
