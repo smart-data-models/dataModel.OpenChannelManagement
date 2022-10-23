@@ -1,16 +1,31 @@
-エンティティOpenChannelJunction  
-=========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティOpenChannelJunction  
+=========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OpenChannelManagement/blob/master/OpenChannelJunction/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このエンティティは、Raw-Water (Open Channels) System Managementドメインのために作られた一般的なジャンクションの調和された記述を含む。ジャンクションは、チャネルの特性が変化する場所を定義し、2つ以上のチャネルが一緒になったり分かれたり、水の量がシステムに取り込まれたり挿入されたりします。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**このエンティティは、原水（開水路）システム管理領域で作成された汎用ジャンクションの調和された記述を含んでいる。ジャンクションは、水路の特性が変化する場所、2つ以上の水路が一緒になったり離れたりする場所、水量がシステムに抽出されたり挿入されたりする場所などを定義する**。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `downstreamNode`: チャネルが終了する下流のノード（Junction、Regulation Structureなど）のIDを示す関係。  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `observedBy`: 原水の特性をモニターする装置のIDとの関係  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `position`: 残りの要素との距離や関係性に関する情報を提供するオブジェクト。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tag`: アイテムを修飾するための任意のテキスト文字列  - `type`: NGSI Entity Type. OpenChannelJunctionである必要があります。  - `uniqueName`: ジャンクションの名前です。  - `upstreamNode`: チャネルの始点となる上流のノード（Junction、Regulation Structureなど）のIDを示す関係です。  - `waterInflow`: ジャンクションに挿入された水流  - `waterOutflow`: ジャンクションから抽出された水流、または別の水源に転用された水流    
-必須項目  
-- `id`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `downstreamNode[*]`: チャネルが終了する下流ノード（例：Junction、Regulation Structure）のIDを示す関係である。  - `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `observedBy[*]`: 原水性状を監視する装置のIDとの関係  . Model: [https://smart-data-models.github.io/dataModel.Device/device-schema.json](https://smart-data-models.github.io/dataModel.Device/device-schema.json)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `position[object]`: 残りの要素との距離や関係などの情報を提供するオブジェクト。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tag[string]`: 項目を修飾するために使用されるオプションのテキスト文字列  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI Entity Type。OpenChannelJunctionでなければならない。  - `uniqueName[string]`: ジャンクションの名称です。  - `upstreamNode[*]`: チャネルが始まる上流ノード（例：Junction、Regulation Structure）のIDを示す関係である。  - `waterInflow[number]`: ジャンクションに挿入された水流  - `waterOutflow[number]`: 分岐点から抽出された水流、または別の水源に迂回された水流  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 OpenChannelJunction:    
@@ -366,12 +381,22 @@ OpenChannelJunction:
     - id    
     - type    
   type: object    
-  version: 0.0.1    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/OpenChannelJunction/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models.OpenChannelManagement/OpenChannelJunction/schema.json    
+  x-model-tags: FIWARE4WATER    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### OpenChannelJunction NGSI-v2 のキーバリューの例。  
-OpenChannelJunctionをkey-valuesとしてJSON-LD形式で記述した例を示します。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### OpenChannelJunction NGSI-v2 key-value の例  
+OpenChannelJunctionをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OpenChannelJunction:id:PTOM:78370074",  
@@ -419,8 +444,10 @@ OpenChannelJunction:
   }  
 }  
 ```  
+</details>  
 #### OpenChannelJunction NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のOpenChannelJunctionの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+OpenChannelJunctionをJSON-LD形式で正規化した例です。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OpenChannelJunction:id:PTOM:78370074",  
@@ -533,176 +560,188 @@ OpenChannelJunction:
   ]  
 }  
 ```  
-#### OpenChannelJunction NGSI-LDのキーバリューの例。  
-ここでは、OpenChannelJunctionをkey-valuesとしてJSON-LD形式にした例を紹介します。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### OpenChannelJunction NGSI-LD key-value の例  
+OpenChannelJunctionをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使ったときに NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:OpenChannelJunction:id:PTOM:78370074",  
-  "type": "OpenChannelJunction",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -65.2981945,  
-      -22.649102  
+    "id": "urn:ngsi-ld:OpenChannelJunction:id:PTOM:78370074",  
+    "type": "OpenChannelJunction",  
+    "address": {  
+        "streetAddress": "",  
+        "addressLocality": "",  
+        "addressRegion": "",  
+        "addressCountry": "",  
+        "postalCode": "",  
+        "postOfficeBoxNumber": ""  
+    },  
+    "alternateName": "Thivae",  
+    "areaServed": "",  
+    "dataProvider": "EYDAP",  
+    "dateCreated": "1983-10-11T21:04:39Z",  
+    "dateModified": "1982-03-03T08:37:57Z",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -65.2981945,  
+            -22.649102  
+        ]  
+    },  
+    "name": "J1",  
+    "owner": [  
+        "urn:ngsi-ld:OpenChannelJunction:items:QPEH:03184806",  
+        "urn:ngsi-ld:OpenChannelJunction:items:PUHR:34031741"  
+    ],  
+    "position": {  
+        "distance": 160.6,  
+        "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647",  
+        "downstreamNode": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924",  
+        "upstreamNode": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938",  
+        "observedBy": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975",  
+        "uniqueName": "J1",  
+        "tag": "",  
+        "waterOutflow": 0.12,  
+        "waterInflow": 0.15  
+    },  
+    "seeAlso": [  
+        "urn:ngsi-ld:OpenChannelJunction:items:KTWJ:61564622",  
+        "urn:ngsi-ld:OpenChannelJunction:items:JOMY:24566116"  
+    ],  
+    "source": "",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "",  
-    "addressLocality": "",  
-    "addressRegion": "",  
-    "addressCountry": "",  
-    "postalCode": "",  
-    "postOfficeBoxNumber": ""  
-  },  
-  "areaServed": "",  
-  "dateCreated": "1983-10-11T21:04:39Z",  
-  "dateModified": "1982-03-03T08:37:57Z",  
-  "source": "",  
-  "name": "J1",  
-  "alternateName": "Thivae",  
-  "dataProvider": "EYDAP",  
-  "owner": [  
-    "urn:ngsi-ld:OpenChannelJunction:items:QPEH:03184806",  
-    "urn:ngsi-ld:OpenChannelJunction:items:PUHR:34031741"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:OpenChannelJunction:items:KTWJ:61564622",  
-    "urn:ngsi-ld:OpenChannelJunction:items:JOMY:24566116"  
-  ],  
-  "position": {  
-    "distance": 160.6,  
-    "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647",  
-    "downstreamNode": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924",  
-    "upstreamNode": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938",  
-    "observedBy": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975",  
-    "uniqueName": "J1",  
-    "tag": "",  
-    "waterOutflow": 0.12,  
-    "waterInflow": 0.15  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### OpenChannelJunction NGSI-LDの正規化例  
-OpenChannelJunctionを正規化したJSON-LD形式の例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### OpenChannelJunction NGSI-LD 正規化例  
+OpenChannelJunctionをJSON-LD形式で正規化した例を示します。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:OpenChannelJunction:id:PTOM:78370074",  
-  "type": "OpenChannelJunction",  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -65.2981945,  
-        -22.649102  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "",  
-      "addressLocality": "",  
-      "addressRegion": "",  
-      "addressCountry": "",  
-      "postalCode": "",  
-      "postOfficeBoxNumber": "",  
-      "areaServed": ""  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1983-10-11T21:04:39Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1982-03-03T08:37:57Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "J1"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Thivae"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Open Channel Junction"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "EYDAP"  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:OpenChannelJunction:items:QPEH:03184806",  
-      "urn:ngsi-ld:OpenChannelJunction:items:PUHR:34031741"  
+    "id": "urn:ngsi-ld:OpenChannelJunction:id:PTOM:78370074",  
+    "type": "OpenChannelJunction",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "",  
+            "addressLocality": "",  
+            "addressRegion": "",  
+            "addressCountry": "",  
+            "postalCode": "",  
+            "postOfficeBoxNumber": "",  
+            "areaServed": ""  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Thivae"  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "EYDAP"  
+    },  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1983-10-11T21:04:39Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1982-03-03T08:37:57Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Open Channel Junction"  
+    },  
+    "downstreamNode": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924"  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -65.2981945,  
+                -22.649102  
+            ]  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "J1"  
+    },  
+    "observedBy": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975"  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:OpenChannelJunction:items:QPEH:03184806",  
+            "urn:ngsi-ld:OpenChannelJunction:items:PUHR:34031741"  
+        ]  
+    },  
+    "position": {  
+        "type": "Property",  
+        "value": {  
+            "distance": 160.6,  
+            "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647"  
+        }  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:OpenChannelJunction:items:KTWJ:61564622",  
+            "urn:ngsi-ld:OpenChannelJunction:items:JOMY:24566116"  
+        ]  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "tag": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "uniqueName": {  
+        "type": "Property",  
+        "value": "J1"  
+    },  
+    "upstreamNode": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938"  
+    },  
+    "waterInflow": {  
+        "type": "Property",  
+        "value": 0.15  
+    },  
+    "waterOutflow": {  
+        "type": "Property",  
+        "value": 0.12  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:OpenChannelJunction:items:KTWJ:61564622",  
-      "urn:ngsi-ld:OpenChannelJunction:items:JOMY:24566116"  
-    ]  
-  },  
-  "position": {  
-    "type": "Property",  
-    "value": {  
-      "distance": 160.6,  
-      "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647"  
-    }  
-  },  
-  "downstreamNode": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924"  
-  },  
-  "upstreamNode": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938"  
-  },  
-  "observedBy": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975"  
-  },  
-  "uniqueName": {  
-    "type": "Property",  
-    "value": "J1"  
-  },  
-  "tag": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "waterOutflow": {  
-    "type": "Property",  
-    "value": 0.12  
-  },  
-  "waterInflow": {  
-    "type": "Property",  
-    "value": 0.15  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
