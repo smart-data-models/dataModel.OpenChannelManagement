@@ -1,15 +1,31 @@
-エンティティクロスセクション  
-==============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティクロスセクション  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OpenChannelManagement/blob/master/CrossSection/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このエンティティは、原水（オープンチャンネル）システム管理ドメインのために作成された一般的な横断面の調和された記述を含む。クロスセクションは、原水の特性が装置によって監視され、かつ／またはシミュレーションによって計算されるシステムの任意のポイントを定義する。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**このエンティティは、原水（開水路）システム管理領域で作成された一般的な横断面の調和された記述を含んでいる。CrossSection は、原水の特性が装置によってモニターされ、シミュレーションによって計算される、システムの任意のポイントを定義する。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `attachedTo`: 断面が「住んでいる」チャネルのIDとの関係。Channelタイプのエンティティへの参照。  - `bottomSlope`: 断面が「住み分け」されている水路の底面の傾斜のこと。単位はすべてCEFACTコードで受け付けます。  - `bottomWidth`: 断面の底面の幅（「台形」形状の場合）。単位はすべてCEFACTコードで受け付けます。  - `crossSectionGeometry`: 断面の形状を表します。Enum:'Circular, Trapezoidal'.  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `diameter`: 断面が円形の場合の直径。  - `energyHead`: 断面における全エネルギーヘッド。  - `id`: エンティティのユニークな識別子  - `inheritsFrom`: プロパティの値を取得するチャネルコンポーネントのURI。  - `leftSideSlope`: 断面の左岸の傾斜（「Trapezoidal」ジオメトリの場合）。単位はすべてCEFACTコードで受け付けます。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `maxWaterDepth`: 断面における最大許容水深。単位はすべてCEFACTコードで受け付けます。  - `name`: このアイテムの名前です。  - `observedBy`: 原水の特性をモニターする装置のIDとの関係  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `position`: 残りの要素との距離や関係性に関する情報を提供するオブジェクト。  - `rightSideSlope`: 断面の右岸の傾斜（「台形」形状の場合）。単位はすべてCEFACTコードで受け付けます。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `specificConductivity`: 断面における水の伝導率。  - `tag`: アイテムを修飾するための任意のテキスト文字列  - `turbidity`: 断面の水の濁り。  - `type`: NGSI-LD エンティティタイプ。これはCrossSectionでなければならない。  - `waterFlow`: 断面での水の流れ。  - `waterLevel`: 断面の水位。  - `waterTemperature`: 断面の水の温度。  - `waterVelocity`: 断面での水流速度。    
-必須項目  
-- `id`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `attachedTo[*]`: 断面が「住んでいる」水路のIDとの関係。Channel 型のエンティティへの参照。  - `bottomSlope[number]`: 断面が「住んでいる」水路の底面勾配。単位はすべてCEFACTコードで受け付けています。  - `bottomWidth[number]`: 断面の底幅（「台形」ジオメトリの場合）。すべての単位は、CEFACTコードで受け入れられます。  - `crossSectionGeometry[string]`: 断面の幾何学的形状。Enum:'Circular, Trapezoidal'（円形、台形）。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `diameter[number]`: 円形断面の直径。  - `energyHead[number]`: 断面における全エネルギーヘッド。  - `id[*]`: エンティティの一意な識別子  - `inheritsFrom[*]`: プロパティの値を取得するチャンネルコンポーネントのURI。  - `leftSideSlope[number]`: 断面の左岸の勾配（「台形」ジオメトリの場合）。すべての単位は、CEFACTコードで受け入れられます。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `maxWaterDepth[number]`: 断面における最大許容水深。単位はすべてCEFACTコードで受け付けます。  - `name[string]`: このアイテムの名称です。  - `observedBy[*]`: 原水性状を監視する装置のIDとの関係  . Model: [https://smart-data-models.github.io/dataModel.Device/device-schema.json](https://smart-data-models.github.io/dataModel.Device/device-schema.json)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `position[object]`: 残りの要素との距離や関係などの情報を提供するオブジェクト。  - `rightSideSlope[number]`: 断面の右岸の勾配（「台形」ジオメトリの場合）。すべての単位は、CEFACTコードで受け入れられます。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `specificConductivity[number]`: 断面における水の伝導率。  - `tag[string]`: 項目を修飾するためのオプションのテキスト文字列  . Model: [https://schema.org/Text](https://schema.org/Text)- `turbidity[number]`: 断面における水の濁り。  - `type[string]`: NGSI-LD Entity Type。CrossSectionでなければならない。  - `waterFlow[number]`: 断面における水の流れ。  - `waterLevel[number]`: 断面図での水位。  - `waterTemperature[number]`: 断面の水温。  - `waterVelocity[number]`: 断面での水流速度。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 CrossSection:    
@@ -430,11 +446,22 @@ CrossSection:
     - id    
     - type    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/CrossSection/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models.OpenChannelManagement/CrossSection/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### CrossSection NGSI-v2 key-values 例  
-CrossSectionをkey-valuesとしてJSON-LD形式で出力した例です。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### CrossSection NGSI-v2 key-value Example  
+以下は、CrossSectionをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:CrossSection:id:COGE:70479090",  
@@ -495,8 +522,10 @@ CrossSection:
   "inheritsFrom": "urn:ngsi-ld:CrossSection:inheritsFrom:JXFD:60487647"  
 }  
 ```  
-#### 断面図 NGSI-v2 正規化例  
-正常化されたJSON-LD形式のCrossSectionの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### クロスセクション NGSI-v2 正規化例  
+以下は、正規化された JSON-LD 形式の CrossSection の例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:CrossSection:id:COGE:70479090",  
@@ -650,233 +679,245 @@ CrossSection:
   }  
 }  
 ```  
-#### 断面図 NGSI-LDのキーバリューの例  
-CrossSectionをkey-valuesとしてJSON-LD形式で表現した例を示します。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### CrossSection NGSI-LD key-value Example  
+ここでは、CrossSectionをJSON-LD形式でkey-valuesにした例を示す。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:CrossSection:id:COGE:70479090",  
-  "type": "CrossSection",  
-  "dateCreated": "1990-11-25T18:54:15Z",  
-  "dateModified": "1999-04-24T10:03:17Z",  
-  "source": "",  
-  "name": "L3",  
-  "alternateName": "Giona",  
-  "description": "Giona 1",  
-  "dataProvider": "",  
-  "owner": [  
-    "urn:ngsi-ld:CrossSection:items:ILNP:15826171",  
-    "urn:ngsi-ld:CrossSection:items:RUEP:96519173"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:CrossSection:items:GEPQ:35001404",  
-    "urn:ngsi-ld:CrossSection:items:YRBN:14719571"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      28.7415145,  
-      -31.163341  
+    "id": "urn:ngsi-ld:CrossSection:id:COGE:70479090",  
+    "type": "CrossSection",  
+    "address": {  
+        "streetAddress": "",  
+        "addressLocality": "",  
+        "addressRegion": "",  
+        "addressCountry": "",  
+        "postalCode": "",  
+        "postOfficeBoxNumber": "",  
+        "areaServed": ""  
+    },  
+    "alternateName": "Giona",  
+    "areaServed": "",  
+    "attachedTo": "urn:ngsi-ld:CrossSection:attachedTo:CTHP:74683243",  
+    "bottomSlope": 0.02,  
+    "bottomWidth": 5,  
+    "crossSectionGeometry": "Trapezoidal",  
+    "dataProvider": "",  
+    "dateCreated": "1990-11-25T18:54:15Z",  
+    "dateModified": "1999-04-24T10:03:17Z",  
+    "description": "Giona 1",  
+    "diameter": 0,  
+    "energyHead": 0.032,  
+    "inheritsFrom": "urn:ngsi-ld:CrossSection:inheritsFrom:JXFD:60487647",  
+    "leftSideSlope": 0.02,  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            28.7415145,  
+            -31.163341  
+        ]  
+    },  
+    "maxWaterDepth": 4,  
+    "name": "L3",  
+    "observedBy": "urn:ngsi-ld:CrossSection:observedBy:WJTI:74120377",  
+    "owner": [  
+        "urn:ngsi-ld:CrossSection:items:ILNP:15826171",  
+        "urn:ngsi-ld:CrossSection:items:RUEP:96519173"  
+    ],  
+    "position": {  
+        "distance": 864.6,  
+        "refPoint": "urn:ngsi-ld:CrossSection:refPoint:JXFD:60487647"  
+    },  
+    "rightSideSlope": 0.02,  
+    "seeAlso": [  
+        "urn:ngsi-ld:CrossSection:items:GEPQ:35001404",  
+        "urn:ngsi-ld:CrossSection:items:YRBN:14719571"  
+    ],  
+    "source": "",  
+    "specificConductivity": 260,  
+    "tag": "",  
+    "turbidity": 11.8,  
+    "waterFlow": 12,  
+    "waterLevel": 2.9,  
+    "waterTemperature": 9.6,  
+    "waterVelocity": 0.082,  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "",  
-    "addressLocality": "",  
-    "addressRegion": "",  
-    "addressCountry": "",  
-    "postalCode": "",  
-    "postOfficeBoxNumber": "",  
-    "areaServed": ""  
-  },  
-  "areaServed": "",  
-  "attachedTo": "urn:ngsi-ld:CrossSection:attachedTo:CTHP:74683243",  
-  "observedBy": "urn:ngsi-ld:CrossSection:observedBy:WJTI:74120377",  
-  "tag": "",  
-  "position": {  
-    "distance": 864.6,  
-    "refPoint": "urn:ngsi-ld:CrossSection:refPoint:JXFD:60487647"  
-  },  
-  "waterFlow": 12,  
-  "waterVelocity": 0.082,  
-  "waterTemperature": 9.6,  
-  "turbidity": 11.8,  
-  "specificConductivity": 260,  
-  "waterLevel": 2.9,  
-  "energyHead": 0.032,  
-  "crossSectionGeometry": "Trapezoidal",  
-  "bottomSlope": 0.02,  
-  "leftSideSlope": 0.02,  
-  "rightSideSlope": 0.02,  
-  "bottomWidth": 5,  
-  "diameter": 0,  
-  "maxWaterDepth": 4,  
-  "inheritsFrom": "urn:ngsi-ld:CrossSection:inheritsFrom:JXFD:60487647",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### 断面図 NGSI-LDの正規化例  
-正常化されたJSON-LD形式のCrossSectionの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### 断面図 NGSI-LD 正規化例  
+以下は、CrossSection を正規化した JSON-LD 形式の例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:CrossSection:id:COGE:70479090",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1990-11-25T18:54:15Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1999-04-24T10:03:17Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "L3"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Giona"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Giona 1"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:CrossSection:items:ILNP:15826171",  
-      "urn:ngsi-ld:CrossSection:items:RUEP:96519173"  
+    "id": "urn:ngsi-ld:CrossSection:id:COGE:70479090",  
+    "type": "CrossSection",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "",  
+            "addressLocality": "",  
+            "addressRegion": "",  
+            "addressCountry": "",  
+            "postalCode": "",  
+            "postOfficeBoxNumber": "",  
+            "areaServed": ""  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Giona"  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "attachedTo": {  
+        "type": "object",  
+        "value": "urn:ngsi-ld:CrossSection:attachedTo:CTHP:74683243"  
+    },  
+    "bottomSlope": {  
+        "type": "Property",  
+        "value": 0.02  
+    },  
+    "bottomWidth": {  
+        "type": "Property",  
+        "value": 5  
+    },  
+    "crossSectionGeometry": {  
+        "type": "Property",  
+        "value": "Trapezoidal"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1990-11-25T18:54:15Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1999-04-24T10:03:17Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Giona 1"  
+    },  
+    "diameter": {  
+        "type": "Property",  
+        "value": 0  
+    },  
+    "energyHead": {  
+        "type": "Property",  
+        "value": 0.032  
+    },  
+    "inheritsFrom": {  
+        "type": "object",  
+        "value": "urn:ngsi-ld:CrossSection:inheritsFrom:JXFD:60487647"  
+    },  
+    "leftSideSlope": {  
+        "type": "Property",  
+        "value": 0.02  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                28.7415145,  
+                -31.163341  
+            ]  
+        }  
+    },  
+    "maxWaterDepth": {  
+        "type": "Property",  
+        "value": 4  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "L3"  
+    },  
+    "observedBy": {  
+        "type": "object",  
+        "value": "urn:ngsi-ld:CrossSection:observedBy:WJTI:74120377"  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:CrossSection:items:ILNP:15826171",  
+            "urn:ngsi-ld:CrossSection:items:RUEP:96519173"  
+        ]  
+    },  
+    "position": {  
+        "type": "Property",  
+        "value": {  
+            "distance": 864.6,  
+            "refPoint": "urn:ngsi-ld:CrossSection:refPoint:JXFD:60487647"  
+        }  
+    },  
+    "rightSideSlope": {  
+        "type": "Property",  
+        "value": 0.02  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:CrossSection:items:GEPQ:35001404",  
+            "urn:ngsi-ld:CrossSection:items:YRBN:14719571"  
+        ]  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "specificConductivity": {  
+        "type": "Property",  
+        "value": 260  
+    },  
+    "tag": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "turbidity": {  
+        "type": "Property",  
+        "value": 11.8  
+    },  
+    "waterFlow": {  
+        "type": "Property",  
+        "value": 12  
+    },  
+    "waterLevel": {  
+        "type": "Property",  
+        "value": 2.9  
+    },  
+    "waterTemperature": {  
+        "type": "Property",  
+        "value": 9.6  
+    },  
+    "waterVelocity": {  
+        "type": "Property",  
+        "value": 0.082  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:CrossSection:items:GEPQ:35001404",  
-      "urn:ngsi-ld:CrossSection:items:YRBN:14719571"  
-    ]  
-  },  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        28.7415145,  
-        -31.163341  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "",  
-      "addressLocality": "",  
-      "addressRegion": "",  
-      "addressCountry": "",  
-      "postalCode": "",  
-      "postOfficeBoxNumber": "",  
-      "areaServed": ""  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "type": "CrossSection",  
-  "attachedTo": {  
-    "type": "object",  
-    "value": "urn:ngsi-ld:CrossSection:attachedTo:CTHP:74683243"  
-  },  
-  "observedBy": {  
-    "type": "object",  
-    "value": "urn:ngsi-ld:CrossSection:observedBy:WJTI:74120377"  
-  },  
-  "tag": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "position": {  
-    "type": "Property",  
-    "value": {  
-      "distance": 864.6,  
-      "refPoint": "urn:ngsi-ld:CrossSection:refPoint:JXFD:60487647"  
-    }  
-  },  
-  "waterFlow": {  
-    "type": "Property",  
-    "value": 12  
-  },  
-  "waterVelocity": {  
-    "type": "Property",  
-    "value": 0.082  
-  },  
-  "waterTemperature": {  
-    "type": "Property",  
-    "value": 9.6  
-  },  
-  "turbidity": {  
-    "type": "Property",  
-    "value": 11.8  
-  },  
-  "specificConductivity": {  
-    "type": "Property",  
-    "value": 260  
-  },  
-  "waterLevel": {  
-    "type": "Property",  
-    "value": 2.9  
-  },  
-  "energyHead": {  
-    "type": "Property",  
-    "value": 0.032  
-  },  
-  "crossSectionGeometry": {  
-    "type": "Property",  
-    "value": "Trapezoidal"  
-  },  
-  "bottomSlope": {  
-    "type": "Property",  
-    "value": 0.02  
-  },  
-  "leftSideSlope": {  
-    "type": "Property",  
-    "value": 0.02  
-  },  
-  "rightSideSlope": {  
-    "type": "Property",  
-    "value": 0.02  
-  },  
-  "bottomWidth": {  
-    "type": "Property",  
-    "value": 5  
-  },  
-  "diameter": {  
-    "type": "Property",  
-    "value": 0  
-  },  
-  "maxWaterDepth": {  
-    "type": "Property",  
-    "value": 4  
-  },  
-  "inheritsFrom": {  
-    "type": "object",  
-    "value": "urn:ngsi-ld:CrossSection:inheritsFrom:JXFD:60487647"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
