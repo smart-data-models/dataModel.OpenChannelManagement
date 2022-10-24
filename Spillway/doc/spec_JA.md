@@ -1,16 +1,31 @@
-エンティティスピルウェイ  
-============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティ放水路  
+=========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OpenChannelManagement/blob/master/Spillway/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このエンティティは、Raw-Water (Open Channels) System Managementドメインで作成された一般的なSpillwayに関する調和のとれた記述を含む。Spillwayはジャンクションタイプのオブジェクトで、下流のダムや規制構造物からの放水を制御する。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**このエンティティは、原水（開水路）システム管理領域で作成された一般的な Spillway の調和された記述を含んでいる。Spillway はジャンクションタイプのオブジェクトを表し、下流のダムや調節構造物からの放水を制御する**。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `apronElevation`: 放水路のすぐ上流にあるオジー放水路構造の底部（P）の標高。  - `apronLength`: 放水路底部の総延長  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `controlCrossSection`: Cross SectionタイプのエンティティのIDを示す関係で、Spillway上の流れを制御する断面を示しています。  - `crestElevation`: Spillwayのクレストの高さ。Broad-Crested」、「Ogee」、「Sharp-Crested」の場合のみ必要です。  - `crestLength`: 放水路の長さは、水が通過する総延長に等しい。Broad-Crested」、「Ogee」、「Sharp-Crested」の場合のみ必要です。  - `curveDesignDischargeCoefficient`: エプロンの高さと上流の設計揚程の関数としての設計排出係数(Co)を表すOpenChannelCurveエンティティのURIです。  - `curveDischargeCoefficient`: 上流水頭(H)と放水路形状の関数としての排出係数(C)を表す OpenChannelCurve エンティティの URI です。例えば、放流係数を上流の水頭と放水路の幅の関数として表したもの（C-H/L）や、C/Co-H/Hoなどがある。  - `curveElevationDischarge`: 水位(H)の関数としての排出量(Q)を表すOpenChannelCurveエンティティのURIです。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `designDischarge`: 放水路の設計流量（Qo  - `designDischargeCoefficient`: 設計放流量（Ho）に対するエネルギー損失の放流係数（Co）です。  - `designHead`: Ogee Spillway」の場合、放水路が設計されている上流側のエネルギーヘッドの合計（Ho）。  - `dischargeCoefficient`: 水が放水路に入り、流れ、出るときのエネルギー損失を表す放水係数  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `maxFloodElevation`: 放水路を通過することができる水の最大標高。  - `name`: このアイテムの名前です。  - `numberAbutments`: Ogee spillwayのアバットメントの数。Ogee」タイプのみ。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `spillwayType`: 放水路の種類です。指定放水路」の場合は、「標高-吐出量」の曲線のみが必要となる。Enum:'Broad-Crested, Ogee, Sharp-Crested, Specified Spillway'.  - `spillwayWidth`: 放水路の幅(m)です。Broad-Crested」タイプの場合のみ  - `tag`: アイテムを修飾するための任意のテキスト文字列  - `type`: NGSI エンティティタイプ。Spillwayでなければなりません。  - `waterDischarge`: 放水路上の流量（Q    
-必須項目  
-- `id`  - `location`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `apronElevation[number]`: 放水路のすぐ上流にあるオージ放水路構造（P）の底面の標高です。  - `apronLength[number]`: 放水路底部の全長  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `controlCrossSection[*]`: Cross Section 型のエンティティの ID を示すリレーションシップで、Spillway 上の流量を制御するクロ スセクションを示す。  - `crestElevation[number]`: Spillway の頂部標高。ブロードクレスト型」、「オージー型」、「シャープクレスト型」のみ必要です。  - `crestLength[number]`: Spillwayの長さは、水が通過する全長と同じです。Broad-Crested", "Ogee", "Sharp-Crested" の場合のみ必要です。  - `curveDesignDischargeCoefficient[*]`: 設計流量係数(Co)をエプロン高さ(Co-P/Ho)の関数として表現したOpenChannelCurveエンティティのURIです。  - `curveDischargeCoefficient[*]`: 上流水頭 (H) と放水路形状の関数としての流量係数 (C) を表す OpenChannelCurve エンティティの URI です。例えば、放水路幅(C-H/L)上の上流頭部の関数としての放流係数、または C/Co-H/Ho のようなもの。  - `curveElevationDischarge[*]`: 水位(H)の関数として流量(Q)を表現するOpenChannelCurveエンティティのURIです。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `designDischarge[number]`: 放水路の設計流量(Qo)  - `designDischargeCoefficient[number]`: 設計放電（Ho）に対するエネルギーロスの放電係数（Co）です。  - `designHead[number]`: オージースピルウェイ」の場合、スピルウェイが設計されている全上流エネルギーヘッド(Ho)  - `dischargeCoefficient[number]`: 放水路に水が入り、流れ、出る際のエネルギー損失に対する放水係数  - `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `maxFloodElevation[number]`: 放水路を通過できる水の最大標高。  - `name[string]`: このアイテムの名称です。  - `numberAbutments[number]`: オジー式放水路のアバットメントの数です。Ogee」タイプのみ。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `spillwayType[string]`: 放水路の種類を指定します。特定放水路」の場合、「標高-吐出量」曲線のみ必要です。Enum:'Broad-Crested, Ogee, Sharp-Crested, Specified Spillway'（ブロードクレスト、オージー、シャープクレスト、特定斜路）。  - `spillwayWidth[number]`: 放水路の幅(m)です。Broad-Crested」タイプのみ  - `tag[string]`: 項目を修飾するためのオプションのテキスト文字列  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI Entity Type。Spillwayである必要があります。  - `waterDischarge[number]`: 放水路からの流出量 (Q)  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `location`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Spillway:    
@@ -429,12 +444,22 @@ Spillway:
     - id    
     - location    
   type: object    
-  version: 0.0.1    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/Spillway/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models.OpenChannelManagement/Spillway/schema.json    
+  x-model-tags: FIWARE4WATER    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### Spillway NGSI-v2 key-valuesの例。  
-JSON-LD形式でkey-valuesとしてSpillwayの例を示します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### Spillway NGSI-v2 key-value の例  
+SpillwayをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Spillway:id:FFPG:06271993",  
@@ -491,8 +516,10 @@ Spillway:
   "curveDesignDischargeCoefficient": "urn:ngsi-ld:Spillway:curveDesignDischargeCoefficient:GIWE:80160975"  
 }  
 ```  
-#### Spillway NGSI-v2の正規化例  
-ここでは、正規化されたJSON-LD形式のSpillwayの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### Spillway NGSI-v2 正規化例  
+SpillwayをJSON-LD形式で正規化した例です。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Spillway:id:FFPG:06271993",  
@@ -642,222 +669,234 @@ Spillway:
   ]  
 }  
 ```  
-#### Spillway NGSI-LDのキーバリューの例  
-JSON-LD形式でkey-valuesとしてSpillwayの例を示します。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### NGSI-LD キー値の例  
+SpillwayをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Spillway:id:FFPG:06271993",  
-  "type": "Spillway",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      60.3603485,  
-      -129.682253  
+    "id": "urn:ngsi-ld:Spillway:id:FFPG:06271993",  
+    "type": "Spillway",  
+    "address": {  
+        "streetAddress": "",  
+        "addressLocality": "",  
+        "addressRegion": "",  
+        "addressCountry": "",  
+        "postalCode": "",  
+        "postOfficeBoxNumber": "",  
+        "areaServed": ""  
+    },  
+    "alternateName": "SP01 - Thivae",  
+    "apronElevation": 22,  
+    "apronLength": 5,  
+    "areaServed": "",  
+    "controlCrossSection": "urn:ngsi-ld:Spillway:controlCrossSection:JXFD:60487647",  
+    "crestElevation": 26.4,  
+    "crestLength": 5,  
+    "curveDesignDischargeCoefficient": "urn:ngsi-ld:Spillway:curveDesignDischargeCoefficient:GIWE:80160975",  
+    "curveDischargeCoefficient": "urn:ngsi-ld:Spillway:curveDischargeCoefficient:MWGU:81565938",  
+    "curveElevationDischarge": "urn:ngsi-ld:Spillway:curveElevationDischarge:CBWI:21948924",  
+    "dataProvider": "EYDAP",  
+    "dateCreated": "2020-10-12T04:27:47Z",  
+    "dateModified": "2021-09-26T16:22:05Z",  
+    "description": "Spillway 01 - Thivae",  
+    "designDischarge": 20,  
+    "designDischargeCoefficient": 0.4,  
+    "designHead": 30.4,  
+    "dischargeCoefficient": 5,  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            60.3603485,  
+            -129.682253  
+        ]  
+    },  
+    "maxFloodElevation": 4,  
+    "name": "SP01",  
+    "numberAbutments": 2,  
+    "owner": [  
+        "urn:ngsi-ld:Spillway:items:OFPV:04640010",  
+        "urn:ngsi-ld:Spillway:items:BFAT:33357858"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Spillway:items:VLIF:47226224",  
+        "urn:ngsi-ld:Spillway:items:BDSZ:68275691"  
+    ],  
+    "source": "",  
+    "spillwayType": "Ogee",  
+    "spillwayWidth": 5,  
+    "tag": "",  
+    "waterDischarge": 9,  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "",  
-    "addressLocality": "",  
-    "addressRegion": "",  
-    "addressCountry": "",  
-    "postalCode": "",  
-    "postOfficeBoxNumber": "",  
-    "areaServed": ""  
-  },  
-  "areaServed": "",  
-  "dateCreated": "2020-10-12T04:27:47Z",  
-  "dateModified": "2021-09-26T16:22:05Z",  
-  "source": "",  
-  "name": "SP01",  
-  "alternateName": "SP01 - Thivae",  
-  "description": "Spillway 01 - Thivae",  
-  "dataProvider": "EYDAP",  
-  "owner": [  
-    "urn:ngsi-ld:Spillway:items:OFPV:04640010",  
-    "urn:ngsi-ld:Spillway:items:BFAT:33357858"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Spillway:items:VLIF:47226224",  
-    "urn:ngsi-ld:Spillway:items:BDSZ:68275691"  
-  ],  
-  "tag": "",  
-  "spillwayType": "Ogee",  
-  "crestElevation": 26.4,  
-  "crestLength": 5,  
-  "spillwayWidth": 5,  
-  "numberAbutments": 2,  
-  "apronElevation": 22,  
-  "apronLength": 5,  
-  "dischargeCoefficient": 5,  
-  "designHead": 30.4,  
-  "designDischarge": 20,  
-  "designDischargeCoefficient": 0.4,  
-  "maxFloodElevation": 4,  
-  "waterDischarge": 9,  
-  "controlCrossSection": "urn:ngsi-ld:Spillway:controlCrossSection:JXFD:60487647",  
-  "curveElevationDischarge": "urn:ngsi-ld:Spillway:curveElevationDischarge:CBWI:21948924",  
-  "curveDischargeCoefficient": "urn:ngsi-ld:Spillway:curveDischargeCoefficient:MWGU:81565938",  
-  "curveDesignDischargeCoefficient": "urn:ngsi-ld:Spillway:curveDesignDischargeCoefficient:GIWE:80160975",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### Spillway NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のSpillwayの例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### NGSI-LDで正規化した例  
+SpillwayをJSON-LD形式で正規化した例です。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Spillway:id:FFPG:06271993",  
-  "type": "Spillway",  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        60.3603485,  
-        -129.682253  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "",  
-      "addressLocality": "",  
-      "addressRegion": "",  
-      "addressCountry": "",  
-      "postalCode": "",  
-      "postOfficeBoxNumber": "",  
-      "areaServed": ""  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2020-10-12T04:27:47Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-09-26T16:22:05Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "SP01"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "SP01 - Thivae"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Spillway 01 - Thivae"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "EYDAP"  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Spillway:items:OFPV:04640010",  
-      "urn:ngsi-ld:Spillway:items:BFAT:33357858"  
+    "id": "urn:ngsi-ld:Spillway:id:FFPG:06271993",  
+    "type": "Spillway",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "",  
+            "addressLocality": "",  
+            "addressRegion": "",  
+            "addressCountry": "",  
+            "postalCode": "",  
+            "postOfficeBoxNumber": "",  
+            "areaServed": ""  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "SP01 - Thivae"  
+    },  
+    "apronElevation": {  
+        "type": "Property",  
+        "value": 22  
+    },  
+    "apronLength": {  
+        "type": "Property",  
+        "value": 5  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "controlCrossSection": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Spillway:controlCrossSection:JXFD:60487647"  
+    },  
+    "crestElevation": {  
+        "type": "Property",  
+        "value": 26.4  
+    },  
+    "crestLength": {  
+        "type": "Property",  
+        "value": 5  
+    },  
+    "curveDesignDischargeCoefficient": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Spillway:curveDesignDischargeCoefficient:GIWE:80160975"  
+    },  
+    "curveDischargeCoefficient": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Spillway:curveDischargeCoefficient:MWGU:81565938"  
+    },  
+    "curveElevationDischarge": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Spillway:curveElevationDischarge:CBWI:21948924"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "EYDAP"  
+    },  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2020-10-12T04:27:47Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-09-26T16:22:05Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Spillway 01 - Thivae"  
+    },  
+    "designDischarge": {  
+        "type": "Property",  
+        "value": 20  
+    },  
+    "designDischargeCoefficient": {  
+        "type": "Property",  
+        "value": 0.4  
+    },  
+    "designHead": {  
+        "type": "Property",  
+        "value": 30.4  
+    },  
+    "dischargeCoefficient": {  
+        "type": "Property",  
+        "value": 5  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                60.3603485,  
+                -129.682253  
+            ]  
+        }  
+    },  
+    "maxFloodElevation": {  
+        "type": "Property",  
+        "value": 4  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "SP01"  
+    },  
+    "numberAbutments": {  
+        "type": "Property",  
+        "value": 2  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Spillway:items:OFPV:04640010",  
+            "urn:ngsi-ld:Spillway:items:BFAT:33357858"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Spillway:items:VLIF:47226224",  
+            "urn:ngsi-ld:Spillway:items:BDSZ:68275691"  
+        ]  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "spillwayType": {  
+        "type": "Property",  
+        "value": "Ogee"  
+    },  
+    "spillwayWidth": {  
+        "type": "Property",  
+        "value": 5  
+    },  
+    "tag": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "waterDischarge": {  
+        "type": "Property",  
+        "value": 9  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Spillway:items:VLIF:47226224",  
-      "urn:ngsi-ld:Spillway:items:BDSZ:68275691"  
-    ]  
-  },  
-  "tag": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "spillwayType": {  
-    "type": "Property",  
-    "value": "Ogee"  
-  },  
-  "crestElevation": {  
-    "type": "Property",  
-    "value": 26.4  
-  },  
-  "crestLength": {  
-    "type": "Property",  
-    "value": 5  
-  },  
-  "spillwayWidth": {  
-    "type": "Property",  
-    "value": 5  
-  },  
-  "numberAbutments": {  
-    "type": "Property",  
-    "value": 2  
-  },  
-  "apronElevation": {  
-    "type": "Property",  
-    "value": 22  
-  },  
-  "apronLength": {  
-    "type": "Property",  
-    "value": 5  
-  },  
-  "dischargeCoefficient": {  
-    "type": "Property",  
-    "value": 5  
-  },  
-  "designHead": {  
-    "type": "Property",  
-    "value": 30.4  
-  },  
-  "designDischarge": {  
-    "type": "Property",  
-    "value": 20  
-  },  
-  "designDischargeCoefficient": {  
-    "type": "Property",  
-    "value": 0.4  
-  },  
-  "maxFloodElevation": {  
-    "type": "Property",  
-    "value": 4  
-  },  
-  "waterDischarge": {  
-    "type": "Property",  
-    "value": 9  
-  },    
-  "controlCrossSection": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Spillway:controlCrossSection:JXFD:60487647"  
-  },  
-  "curveElevationDischarge": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Spillway:curveElevationDischarge:CBWI:21948924"  
-  },  
-  "curveDischargeCoefficient": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Spillway:curveDischargeCoefficient:MWGU:81565938"  
-  },  
-  "curveDesignDischargeCoefficient": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Spillway:curveDesignDischargeCoefficient:GIWE:80160975"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
