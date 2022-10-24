@@ -1,16 +1,31 @@
-Entité : Déversoir  
-==================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : Déversoir  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.OpenChannelManagement/blob/master/Spillway/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Cette entité contient une description harmonisée d'un déversoir générique réalisé pour le domaine de gestion des systèmes d'eau brute (canaux ouverts). Le déversoir représente un objet de type jonction, contrôlant la libération de l'eau d'un barrage ou d'une structure de régulation en aval**.  
 version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `apronElevation`: L'élévation au bas de la structure du déversoir ogive (P), juste en amont du déversoir.  - `apronLength`: La longueur totale du fond du déversoir  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `controlCrossSection`: Une relation indiquant l'ID d'une entité de type Section transversale, indiquant la section transversale qui contrôle l'écoulement sur le déversoir.  - `crestElevation`: L'altitude de la crête du déversoir. Nécessaire uniquement pour les bassins à crête large, à crête oblique et à crête aiguë.  - `crestLength`: La longueur du déversoir est égale à la longueur totale par laquelle l'eau passe. Nécessaire uniquement pour les modèles "à crête large", "Ogee" et "à crête aiguë".  - `curveDesignDischargeCoefficient`: L'URI d'une entité OpenChannelCurve qui représente le coefficient de débit de conception (Co) en fonction de l'élévation de l'aire de trafic par rapport à la hauteur de chute de conception (Co-P/Ho).  - `curveDischargeCoefficient`: L'URI d'une entité OpenChannelCurve qui représente le coefficient de décharge (C) en fonction de la hauteur de chute (H) et de la géométrie du déversoir. Par exemple, le coefficient de débit en fonction de la hauteur de chute amont sur la largeur du déversoir (C-H/L), ou C/Co-H/Ho.  - `curveElevationDischarge`: L'URI d'une entité OpenChannelCurve qui représente le débit (Q) en fonction de l'élévation de l'eau (H).  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `designDischarge`: Le débit de conception (Qo) du déversoir  - `designDischargeCoefficient`: Le coefficient de décharge (Co) pour les pertes d'énergie pour la décharge de conception (Ho).  - `designHead`: La hauteur d'énergie totale en amont pour laquelle le déversoir est conçu (Ho) pour le "déversoir Ogee".  - `dischargeCoefficient`: Le coefficient de décharge pour les pertes d'énergie lorsque l'eau entre, circule et sort du déversoir.  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `maxFloodElevation`: La hauteur maximale de l'eau qui peut passer le déversoir.  - `name`: Le nom de cet élément.  - `numberAbutments`: Le nombre de culées d'un déversoir ogee. Uniquement pour le type "Ogee".  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `spillwayType`: Le type de l'évacuateur de crues. Dans le cas d'un "Déversoir spécifié", seule la courbe "Élévation - Débit" est requise. Enum : 'Broad-Crested, Ogee, Sharp-Crested, Specified Spillway'.  - `spillwayWidth`: La largeur du déversoir (m). Seulement pour le type 'Broad-Crested'.  - `tag`: Une chaîne de texte facultative utilisée pour qualifier un élément  - `type`: Type d'entité NGSI. Ce doit être Spillway.  - `waterDischarge`: Le débit du déversoir (Q)    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `apronElevation[number]`: L'élévation au bas de la structure du déversoir ogive (P), juste en amont du déversoir.  - `apronLength[number]`: La longueur totale du fond du déversoir  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `controlCrossSection[*]`: Une relation indiquant l'ID d'une entité de type Section transversale, indiquant la section transversale qui contrôle l'écoulement sur le déversoir.  - `crestElevation[number]`: L'altitude de la crête du déversoir. Nécessaire uniquement pour les bassins à crête large, à crête oblique et à crête aiguë.  - `crestLength[number]`: La longueur du déversoir est égale à la longueur totale par laquelle l'eau passe. Nécessaire uniquement pour les modèles "à crête large", "Ogee" et "à crête aiguë".  - `curveDesignDischargeCoefficient[*]`: L'URI d'une entité OpenChannelCurve qui représente le coefficient de débit de conception (Co) en fonction de l'élévation de l'aire de trafic par rapport à la hauteur de chute de conception (Co-P/Ho).  - `curveDischargeCoefficient[*]`: L'URI d'une entité OpenChannelCurve qui représente le coefficient de décharge (C) en fonction de la hauteur de chute (H) et de la géométrie du déversoir. Par exemple, le coefficient de débit en fonction de la hauteur de chute amont sur la largeur du déversoir (C-H/L), ou C/Co-H/Ho.  - `curveElevationDischarge[*]`: L'URI d'une entité OpenChannelCurve qui représente le débit (Q) en fonction de l'élévation de l'eau (H).  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `designDischarge[number]`: Le débit de conception (Qo) du déversoir  - `designDischargeCoefficient[number]`: Le coefficient de décharge (Co) pour les pertes d'énergie pour la décharge de conception (Ho).  - `designHead[number]`: La hauteur d'énergie totale en amont pour laquelle le déversoir est conçu (Ho) pour le "déversoir Ogee".  - `dischargeCoefficient[number]`: Le coefficient de décharge pour les pertes d'énergie lorsque l'eau entre, circule et sort du déversoir.  - `id[*]`: Identifiant unique de l'entité  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `maxFloodElevation[number]`: La hauteur maximale de l'eau qui peut passer le déversoir.  - `name[string]`: Le nom de cet élément.  - `numberAbutments[number]`: Le nombre de culées d'un déversoir ogee. Uniquement pour le type "Ogee".  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `spillwayType[string]`: Le type de l'évacuateur de crues. Dans le cas d'un "Specified Spillway", seule la courbe "Elevation - discharge" est requise. Enum : 'Broad-Crested, Ogee, Sharp-Crested, Specified Spillway'.  - `spillwayWidth[number]`: La largeur du déversoir (m). Seulement pour le type 'Broad-Crested'.  - `tag[string]`: Une chaîne de texte facultative utilisée pour qualifier un élément  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Type d'entité NGSI. Ce doit être Spillway.  - `waterDischarge[number]`: Le débit du déversoir (Q)  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `id`  - `location`  ## Description des propriétés du modèle de données  
+- `id`  - `location`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Spillway:    
@@ -429,12 +444,22 @@ Spillway:
     - id    
     - location    
   type: object    
-  version: 0.0.1    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/Spillway/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models.OpenChannelManagement/Spillway/schema.json    
+  x-model-tags: FIWARE4WATER    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### Déversoir NGSI-v2 valeurs-clés Exemple  
 Voici un exemple de déversoir au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Spillway:id:FFPG:06271993",  
@@ -491,8 +516,10 @@ Spillway:
   "curveDesignDischargeCoefficient": "urn:ngsi-ld:Spillway:curveDesignDischargeCoefficient:GIWE:80160975"  
 }  
 ```  
+</details>  
 #### Déversoir NGSI-v2 normalisé Exemple  
 Voici un exemple d'un déversoir au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Spillway:id:FFPG:06271993",  
@@ -642,222 +669,234 @@ Spillway:
   ]  
 }  
 ```  
+</details>  
 #### Déversoir Valeurs-clés NGSI-LD Exemple  
 Voici un exemple de déversoir au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Spillway:id:FFPG:06271993",  
-  "type": "Spillway",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      60.3603485,  
-      -129.682253  
+    "id": "urn:ngsi-ld:Spillway:id:FFPG:06271993",  
+    "type": "Spillway",  
+    "address": {  
+        "streetAddress": "",  
+        "addressLocality": "",  
+        "addressRegion": "",  
+        "addressCountry": "",  
+        "postalCode": "",  
+        "postOfficeBoxNumber": "",  
+        "areaServed": ""  
+    },  
+    "alternateName": "SP01 - Thivae",  
+    "apronElevation": 22,  
+    "apronLength": 5,  
+    "areaServed": "",  
+    "controlCrossSection": "urn:ngsi-ld:Spillway:controlCrossSection:JXFD:60487647",  
+    "crestElevation": 26.4,  
+    "crestLength": 5,  
+    "curveDesignDischargeCoefficient": "urn:ngsi-ld:Spillway:curveDesignDischargeCoefficient:GIWE:80160975",  
+    "curveDischargeCoefficient": "urn:ngsi-ld:Spillway:curveDischargeCoefficient:MWGU:81565938",  
+    "curveElevationDischarge": "urn:ngsi-ld:Spillway:curveElevationDischarge:CBWI:21948924",  
+    "dataProvider": "EYDAP",  
+    "dateCreated": "2020-10-12T04:27:47Z",  
+    "dateModified": "2021-09-26T16:22:05Z",  
+    "description": "Spillway 01 - Thivae",  
+    "designDischarge": 20,  
+    "designDischargeCoefficient": 0.4,  
+    "designHead": 30.4,  
+    "dischargeCoefficient": 5,  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            60.3603485,  
+            -129.682253  
+        ]  
+    },  
+    "maxFloodElevation": 4,  
+    "name": "SP01",  
+    "numberAbutments": 2,  
+    "owner": [  
+        "urn:ngsi-ld:Spillway:items:OFPV:04640010",  
+        "urn:ngsi-ld:Spillway:items:BFAT:33357858"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Spillway:items:VLIF:47226224",  
+        "urn:ngsi-ld:Spillway:items:BDSZ:68275691"  
+    ],  
+    "source": "",  
+    "spillwayType": "Ogee",  
+    "spillwayWidth": 5,  
+    "tag": "",  
+    "waterDischarge": 9,  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "",  
-    "addressLocality": "",  
-    "addressRegion": "",  
-    "addressCountry": "",  
-    "postalCode": "",  
-    "postOfficeBoxNumber": "",  
-    "areaServed": ""  
-  },  
-  "areaServed": "",  
-  "dateCreated": "2020-10-12T04:27:47Z",  
-  "dateModified": "2021-09-26T16:22:05Z",  
-  "source": "",  
-  "name": "SP01",  
-  "alternateName": "SP01 - Thivae",  
-  "description": "Spillway 01 - Thivae",  
-  "dataProvider": "EYDAP",  
-  "owner": [  
-    "urn:ngsi-ld:Spillway:items:OFPV:04640010",  
-    "urn:ngsi-ld:Spillway:items:BFAT:33357858"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Spillway:items:VLIF:47226224",  
-    "urn:ngsi-ld:Spillway:items:BDSZ:68275691"  
-  ],  
-  "tag": "",  
-  "spillwayType": "Ogee",  
-  "crestElevation": 26.4,  
-  "crestLength": 5,  
-  "spillwayWidth": 5,  
-  "numberAbutments": 2,  
-  "apronElevation": 22,  
-  "apronLength": 5,  
-  "dischargeCoefficient": 5,  
-  "designHead": 30.4,  
-  "designDischarge": 20,  
-  "designDischargeCoefficient": 0.4,  
-  "maxFloodElevation": 4,  
-  "waterDischarge": 9,  
-  "controlCrossSection": "urn:ngsi-ld:Spillway:controlCrossSection:JXFD:60487647",  
-  "curveElevationDischarge": "urn:ngsi-ld:Spillway:curveElevationDischarge:CBWI:21948924",  
-  "curveDischargeCoefficient": "urn:ngsi-ld:Spillway:curveDischargeCoefficient:MWGU:81565938",  
-  "curveDesignDischargeCoefficient": "urn:ngsi-ld:Spillway:curveDesignDischargeCoefficient:GIWE:80160975",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### Déversoir NGSI-LD normalisé Exemple  
 Voici un exemple d'un déversoir au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Spillway:id:FFPG:06271993",  
-  "type": "Spillway",  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        60.3603485,  
-        -129.682253  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "",  
-      "addressLocality": "",  
-      "addressRegion": "",  
-      "addressCountry": "",  
-      "postalCode": "",  
-      "postOfficeBoxNumber": "",  
-      "areaServed": ""  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2020-10-12T04:27:47Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-09-26T16:22:05Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "SP01"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "SP01 - Thivae"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Spillway 01 - Thivae"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "EYDAP"  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Spillway:items:OFPV:04640010",  
-      "urn:ngsi-ld:Spillway:items:BFAT:33357858"  
+    "id": "urn:ngsi-ld:Spillway:id:FFPG:06271993",  
+    "type": "Spillway",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "",  
+            "addressLocality": "",  
+            "addressRegion": "",  
+            "addressCountry": "",  
+            "postalCode": "",  
+            "postOfficeBoxNumber": "",  
+            "areaServed": ""  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "SP01 - Thivae"  
+    },  
+    "apronElevation": {  
+        "type": "Property",  
+        "value": 22  
+    },  
+    "apronLength": {  
+        "type": "Property",  
+        "value": 5  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "controlCrossSection": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Spillway:controlCrossSection:JXFD:60487647"  
+    },  
+    "crestElevation": {  
+        "type": "Property",  
+        "value": 26.4  
+    },  
+    "crestLength": {  
+        "type": "Property",  
+        "value": 5  
+    },  
+    "curveDesignDischargeCoefficient": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Spillway:curveDesignDischargeCoefficient:GIWE:80160975"  
+    },  
+    "curveDischargeCoefficient": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Spillway:curveDischargeCoefficient:MWGU:81565938"  
+    },  
+    "curveElevationDischarge": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Spillway:curveElevationDischarge:CBWI:21948924"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "EYDAP"  
+    },  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2020-10-12T04:27:47Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-09-26T16:22:05Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Spillway 01 - Thivae"  
+    },  
+    "designDischarge": {  
+        "type": "Property",  
+        "value": 20  
+    },  
+    "designDischargeCoefficient": {  
+        "type": "Property",  
+        "value": 0.4  
+    },  
+    "designHead": {  
+        "type": "Property",  
+        "value": 30.4  
+    },  
+    "dischargeCoefficient": {  
+        "type": "Property",  
+        "value": 5  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                60.3603485,  
+                -129.682253  
+            ]  
+        }  
+    },  
+    "maxFloodElevation": {  
+        "type": "Property",  
+        "value": 4  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "SP01"  
+    },  
+    "numberAbutments": {  
+        "type": "Property",  
+        "value": 2  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Spillway:items:OFPV:04640010",  
+            "urn:ngsi-ld:Spillway:items:BFAT:33357858"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Spillway:items:VLIF:47226224",  
+            "urn:ngsi-ld:Spillway:items:BDSZ:68275691"  
+        ]  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "spillwayType": {  
+        "type": "Property",  
+        "value": "Ogee"  
+    },  
+    "spillwayWidth": {  
+        "type": "Property",  
+        "value": 5  
+    },  
+    "tag": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "waterDischarge": {  
+        "type": "Property",  
+        "value": 9  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Spillway:items:VLIF:47226224",  
-      "urn:ngsi-ld:Spillway:items:BDSZ:68275691"  
-    ]  
-  },  
-  "tag": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "spillwayType": {  
-    "type": "Property",  
-    "value": "Ogee"  
-  },  
-  "crestElevation": {  
-    "type": "Property",  
-    "value": 26.4  
-  },  
-  "crestLength": {  
-    "type": "Property",  
-    "value": 5  
-  },  
-  "spillwayWidth": {  
-    "type": "Property",  
-    "value": 5  
-  },  
-  "numberAbutments": {  
-    "type": "Property",  
-    "value": 2  
-  },  
-  "apronElevation": {  
-    "type": "Property",  
-    "value": 22  
-  },  
-  "apronLength": {  
-    "type": "Property",  
-    "value": 5  
-  },  
-  "dischargeCoefficient": {  
-    "type": "Property",  
-    "value": 5  
-  },  
-  "designHead": {  
-    "type": "Property",  
-    "value": 30.4  
-  },  
-  "designDischarge": {  
-    "type": "Property",  
-    "value": 20  
-  },  
-  "designDischargeCoefficient": {  
-    "type": "Property",  
-    "value": 0.4  
-  },  
-  "maxFloodElevation": {  
-    "type": "Property",  
-    "value": 4  
-  },  
-  "waterDischarge": {  
-    "type": "Property",  
-    "value": 9  
-  },    
-  "controlCrossSection": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Spillway:controlCrossSection:JXFD:60487647"  
-  },  
-  "curveElevationDischarge": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Spillway:curveElevationDischarge:CBWI:21948924"  
-  },  
-  "curveDischargeCoefficient": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Spillway:curveDischargeCoefficient:MWGU:81565938"  
-  },  
-  "curveDesignDischargeCoefficient": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Spillway:curveDesignDischargeCoefficient:GIWE:80160975"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
