@@ -52,7 +52,7 @@
         "object": "urn:ngsi-ld:OpenChannelSystem:isComposedOf:UMLF:11032914"
     },
     "location": {
-        "type": "Geoproperty",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
