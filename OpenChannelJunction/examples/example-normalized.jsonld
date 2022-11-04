@@ -48,7 +48,7 @@
         "object": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924"
     },
     "location": {
-        "type": "Geoproperty",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
