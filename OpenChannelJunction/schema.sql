@@ -1,0 +1,3 @@
+/* (Beta) Export of data model OpenChannelJunction of the subject dataModel.OpenChannelManagement for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE OpenChannelJunction_type AS ENUM ('OpenChannelJunction');
+CREATE TABLE OpenChannelJunction (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, downstreamNode text, id text, location json, name text, observedBy text, owner json, position json, seeAlso json, source text, tag text, type OpenChannelJunction_type, uniqueName text, upstreamNode text, waterInflow text, waterOutflow text);
