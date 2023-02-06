@@ -104,6 +104,10 @@
     "type": "Number",
     "value": 0.15
   },
+  "waterLevel": {
+    "type": "Number",
+    "value": 0.56
+  },
   "@context": [
     "https://smartdatamodels.org/context.jsonld"
   ]
