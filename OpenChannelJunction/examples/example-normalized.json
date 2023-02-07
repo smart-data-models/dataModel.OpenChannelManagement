@@ -107,8 +107,5 @@
   "waterLevel": {
     "type": "Number",
     "value": 0.56
-  },
-  "@context": [
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"
-  ]
+  }
 }
