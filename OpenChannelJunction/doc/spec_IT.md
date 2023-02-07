@@ -15,7 +15,7 @@
 ## Elenco delle proprietà  
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `downstreamNode[*]`: Una relazione che indica l'ID del nodo a valle (ad esempio, Giunzione, Struttura di regolazione), dove termina il canale.  - `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento.  - `observedBy[*]`: Una relazione con l'ID del dispositivo che monitora le proprietà dell'acqua grezza.  . Model: [https://smart-data-models.github.io/dataModel.Device/device-schema.json](https://smart-data-models.github.io/dataModel.Device/device-schema.json)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `position[object]`: Oggetto che fornisce informazioni sulla distanza con gli altri elementi e sulla relazione con essi.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `tag[string]`: Una stringa di testo opzionale utilizzata per qualificare un elemento.  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Tipo di entità NGSI. deve essere OpenChannelJunction.  - `uniqueName[string]`: Il nome della giunzione.  - `upstreamNode[*]`: Una relazione che indica l'ID del nodo a monte (ad es., nodo, struttura di regolazione), dove inizia il canale.  - `waterInflow[number]`: Flusso d'acqua inserito nella giunzione  - `waterOutflow[number]`: Flusso d'acqua prelevato dal raccordo o deviato verso un'altra fonte  <!-- /30-PropertiesList -->  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `downstreamNode[*]`: Una relazione che indica l'ID del nodo a valle (ad esempio, Giunzione, Struttura di regolazione), dove termina il canale.  - `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento.  - `observedBy[*]`: Una relazione con l'ID del dispositivo che monitora le proprietà dell'acqua grezza.  . Model: [https://smart-data-models.github.io/dataModel.Device/device-schema.json](https://smart-data-models.github.io/dataModel.Device/device-schema.json)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `position[object]`: Oggetto che fornisce informazioni sulla distanza con gli altri elementi e sulla relazione con essi.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `tag[string]`: Una stringa di testo facoltativa utilizzata per qualificare un elemento.  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Tipo di entità NGSI. deve essere OpenChannelJunction.  - `uniqueName[string]`: Il nome della giunzione.  - `upstreamNode[*]`: Una relazione che indica l'ID del nodo a monte (ad es., nodo, struttura di regolazione), dove inizia il canale.  - `waterInflow[number]`: Flusso d'acqua inserito nella giunzione  - `waterOutflow[number]`: Flusso d'acqua prelevato dal raccordo o deviato verso un'altra fonte  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,7 +32,7 @@ OpenChannelJunction:
   description: 'This entity contains a harmonised description of a generic Junction made for Raw-Water (Open Channels) System Management domain. A Junction defines a location where the characteristics of the channel changes, two or more channels come together or split apart, amounts of water are abstracted or inserted to the system etc.'    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
           description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
@@ -43,6 +43,9 @@ OpenChannelJunction:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          type: string    
         postOfficeBoxNumber:    
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
@@ -52,51 +55,54 @@ OpenChannelJunction:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
+        streetNr:    
+          description: Number identifying a specific property on a public street.    
+          type: string    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity.    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     downstreamNode:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           format: uri    
           type: string    
       description: 'A relationship indicating the ID of the downstream node (e.g., Junction, Regulation Structure), where the channel ends.'    
@@ -104,21 +110,21 @@ OpenChannelJunction:
         type: Relationship    
     id:    
       anyOf: &openchanneljunction_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geoproperty. Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -137,9 +143,9 @@ OpenChannelJunction:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+        - description: Geoproperty. Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -161,9 +167,9 @@ OpenChannelJunction:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+        - description: Geoproperty. Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -187,9 +193,9 @@ OpenChannelJunction:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+        - description: Geoproperty. Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -210,9 +216,9 @@ OpenChannelJunction:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+        - description: Geoproperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -236,9 +242,9 @@ OpenChannelJunction:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+        - description: Geoproperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -264,59 +270,59 @@ OpenChannelJunction:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
       x-ngsi:    
-        type: GeoProperty    
+        type: Geoproperty    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item.    
       type: string    
       x-ngsi:    
         type: Property    
     observedBy:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'A relationship to the ID of the device that monitors raw-water properties'    
+      description: A relationship to the ID of the device that monitors raw-water properties    
       x-ngsi:    
         model: https://smart-data-models.github.io/dataModel.Device/device-schema.json    
         type: Relationship    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
         anyOf: *openchanneljunction_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        description: Property. Unique identifier of the entity    
       type: array    
       x-ngsi:    
         type: Property    
     position:    
-      description: 'Object providing information about the distance with the rest of the elements and a relationship with them.'    
+      description: Object providing information about the distance with the rest of the elements and a relationship with them.    
       properties:    
         distance:    
           description: 'Property. The distance between this Entity and a reference point (e.g., the most upstream point of the system). Units: ''Km'''    
           type: number    
         refPoint:    
           anyOf:    
-            - description: 'Property. Identifier format of any NGSI entity.'    
+            - description: Property. Identifier format of any NGSI entity.    
               maxLength: 256    
               minLength: 1    
               pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
               type: string    
-            - description: 'Property. Identifier format of any NGSI entity.'    
+            - description: Property. Identifier format of any NGSI entity.    
               format: uri    
               type: string    
-          description: 'Relationship. The reference point distance is measured from.'    
+          description: Relationship. The reference point distance is measured from.    
       type: object    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -333,45 +339,52 @@ OpenChannelJunction:
       x-ngsi:    
         type: Property    
     tag:    
-      description: 'An optional text string used to qualify an item'    
+      description: An optional text string used to qualify an item    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     type:    
-      description: 'NGSI Entity Type. it has to be OpenChannelJunction'    
+      description: NGSI Entity Type. it has to be OpenChannelJunction    
       enum:    
         - OpenChannelJunction    
       type: string    
       x-ngsi:    
         type: Property    
     uniqueName:    
-      description: 'The name of the junction.'    
+      description: The name of the junction.    
       type: string    
       x-ngsi:    
         type: Property    
     upstreamNode:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           format: uri    
           type: string    
       description: 'A relationship indicating the ID of the upstream node (e.g., Junction, Regulation Structure), where the channel begins.'    
       x-ngsi:    
         type: Relationship    
     waterInflow:    
-      description: 'Water flow inserted to the junction'    
+      description: Water flow inserted to the junction    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
         units: m3/s    
+    waterLevel:    
+      description: Water level at the junction    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: m    
     waterOutflow:    
-      description: 'Water flow abstracted from the junction or diverted to another source'    
+      description: Water flow abstracted from the junction or diverted to another source    
       minimum: 0    
       type: number    
       x-ngsi:    
@@ -382,7 +395,7 @@ OpenChannelJunction:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/OpenChannelJunction/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/data-models.OpenChannelManagement/OpenChannelJunction/schema.json    
   x-model-tags: FIWARE4WATER    
@@ -433,15 +446,16 @@ OpenChannelJunction:
   ],  
   "position": {  
     "distance": 160.6,  
-    "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647",  
-    "downstreamNode": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924",  
-    "upstreamNode": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938",  
-    "observedBy": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975",  
-    "uniqueName": "J1",  
-    "tag": "",  
-    "waterOutflow": 0.12,  
-    "waterInflow": 0.15  
-  }  
+    "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647"  
+  },  
+  "downstreamNode": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924",  
+  "upstreamNode": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938",  
+  "observedBy": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975",  
+  "uniqueName": "J1",  
+  "tag": "",  
+  "waterOutflow": 0.12,  
+  "waterInflow": 0.15,  
+  "waterLevel": 0.85  
 }  
 ```  
 </details>  
@@ -555,9 +569,10 @@ OpenChannelJunction:
     "type": "Number",  
     "value": 0.15  
   },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+  "waterLevel": {  
+    "type": "Number",  
+    "value": 0.56  
+  }  
 }  
 ```  
 </details>  
@@ -595,15 +610,16 @@ OpenChannelJunction:
     ],  
     "position": {  
         "distance": 160.6,  
-        "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647",  
-        "downstreamNode": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924",  
-        "upstreamNode": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938",  
-        "observedBy": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975",  
-        "uniqueName": "J1",  
-        "tag": "",  
-        "waterOutflow": 0.12,  
-        "waterInflow": 0.15  
+        "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647"  
     },  
+    "downstreamNode": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924",  
+    "upstreamNode": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938",  
+    "observedBy": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975",  
+    "uniqueName": "J1",  
+    "tag": "",  
+    "waterOutflow": 0.12,  
+    "waterInflow": 0.15,  
+    "waterLevel": 0.85,  
     "seeAlso": [  
         "urn:ngsi-ld:OpenChannelJunction:items:KTWJ:61564622",  
         "urn:ngsi-ld:OpenChannelJunction:items:JOMY:24566116"  
@@ -730,6 +746,10 @@ OpenChannelJunction:
     "waterOutflow": {  
         "type": "Property",  
         "value": 0.12  
+    },  
+    "waterLevel": {  
+        "type": "Property",  
+        "value": 0.56  
     },  
     "@context": [  
         "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
