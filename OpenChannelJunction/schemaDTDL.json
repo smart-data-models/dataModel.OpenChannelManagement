@@ -115,6 +115,14 @@
             "comment": "Water flow inserted to the junction"
         },
         {
+            "name": "waterLevel",
+            "writable": true,
+            "displayName": "waterLevel",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Water level at the junction"
+        },
+        {
             "name": "waterOutflow",
             "writable": true,
             "displayName": "waterOutflow",
@@ -151,6 +159,10 @@
                     "schema": "string"
                 },
                 {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
                     "name": "postOfficeBoxNumber",
                     "schema": "string"
                 },
@@ -160,6 +172,10 @@
                 },
                 {
                     "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
                     "schema": "string"
                 }
             ]
