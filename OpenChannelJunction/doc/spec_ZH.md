@@ -15,7 +15,7 @@
 ##属性列表  
 
 <sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `downstreamNode[*]`: 表示下游节点（如结点、调节结构）的ID的关系，通道在这里结束。  - `id[*]`: 实体的唯一标识符  - `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `name[string]`: 这个项目的名称。  - `observedBy[*]`: 与监测原水特性的设备的ID的关系  . Model: [https://smart-data-models.github.io/dataModel.Device/device-schema.json](https://smart-data-models.github.io/dataModel.Device/device-schema.json)- `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `position[object]`: 提供与其他元素的距离信息和与它们的关系的对象。  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 提供实体数据原始来源的一连串字符，作为一个URL。建议为源提供者的完全合格域名，或源对象的URL。  - `tag[string]`: 一个可选的文本字符串，用于限定一个项目  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI实体类型。它必须是OpenChannelJunction。  - `uniqueName[string]`: 结点的名称。  - `upstreamNode[*]`: 表示上游节点的ID的关系（例如，交界处，调节结构），通道从那里开始。  - `waterInflow[number]`: 水流插入交界处  - `waterOutflow[number]`: 从交界处抽取的水流或改道至另一水源  <!-- /30-PropertiesList -->  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `downstreamNode[*]`: 表示下游节点（如结点、调节结构）的ID的关系，通道在这里结束。  - `id[*]`: 实体的唯一标识符  - `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `name[string]`: 这个项目的名称。  - `observedBy[*]`: 与监测原水特性的设备的ID的关系  . Model: [https://smart-data-models.github.io/dataModel.Device/device-schema.json](https://smart-data-models.github.io/dataModel.Device/device-schema.json)- `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `position[object]`: 提供与其他元素的距离信息和与它们的关系的对象。  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 提供实体数据原始来源的一连串字符，作为一个URL。建议为源提供者的完全合格域名，或源对象的URL。  - `tag[string]`: 一个可选的文本字符串，用于限定一个项目  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI实体类型。它必须是OpenChannelJunction。  - `uniqueName[string]`: 结点的名称。  - `upstreamNode[*]`: 表示上游节点（如结点、调节结构）的ID的关系，通道从这里开始。  - `waterInflow[number]`: 水流插入交界处  - `waterLevel[number]`: 交界处的水位  - `waterOutflow[number]`: 从交界处抽取的水流或改道至另一水源  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -631,7 +631,7 @@ OpenChannelJunction:
 }  
 ```  
 </details>  
-#### OpenChannelJunction NGSI-LD规范化实例  
+#### OpenChannelJunction NGSI-LD规范化示例  
 这里是一个以JSON-LD格式规范化的OpenChannelJunction的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
