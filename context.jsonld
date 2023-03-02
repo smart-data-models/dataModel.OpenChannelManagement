@@ -1,5 +1,15 @@
 {
     "@context": {
+        "CrossSection": "https://smartdatamodels.org/dataModel.OpenChannelManagement/CrossSection",
+        "OpenChannel": "https://smartdatamodels.org/dataModel.OpenChannelManagement/OpenChannel",
+        "OpenChannelCurve": "https://smartdatamodels.org/dataModel.OpenChannelManagement/OpenChannelCurve",
+        "OpenChannelFlowRegulation": "https://smartdatamodels.org/dataModel.OpenChannelManagement/OpenChannelFlowRegulation",
+        "OpenChannelJunction": "https://smartdatamodels.org/dataModel.OpenChannelManagement/OpenChannelJunction",
+        "OpenChannelSystem": "https://smartdatamodels.org/dataModel.OpenChannelManagement/OpenChannelSystem",
+        "RegulationStructure": "https://smartdatamodels.org/dataModel.OpenChannelManagement/RegulationStructure",
+        "RegulationStructureSimulation": "https://smartdatamodels.org/dataModel.OpenChannelManagement/RegulationStructureSimulation",
+        "SluiceGate": "https://smartdatamodels.org/dataModel.OpenChannelManagement/SluiceGate",
+        "Spillway": "https://smartdatamodels.org/dataModel.OpenChannelManagement/Spillway",
         "address": "https://smartdatamodels.org/address",
         "alternateName": "https://smartdatamodels.org/alternateName",
         "apronElevation": "https://smartdatamodels.org/dataModel.OpenChannelManagement/apronElevation",
