@@ -1,143 +1,145 @@
 {
-    "id": "urn:ngsi-ld:SluiceGate:id:OZDE:42332657",
-    "type": "SluiceGate",
-    "address": {
-        "type": "Property",
-        "value": {
-            "streetAddress": "",
-            "addressLocality": "",
-            "addressRegion": "",
-            "addressCountry": "",
-            "postalCode": "",
-            "postOfficeBoxNumber": "",
-            "areaServed": ""
-        }
-    },
-    "alternateName": {
-        "type": "Property",
-        "value": "SG01 - Thivae"
-    },
-    "areaServed": {
-        "type": "Property",
-        "value": ""
-    },
-    "curveDischargeCoefficient": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:SluiceGate:curveDischargeCoefficient:ZPPL:48418583"
-    },
-    "dataProvider": {
-        "type": "Property",
-        "value": "EYDAP"
-    },
-    "dateCreated": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "1972-01-13T19:49:28Z"
-        }
-    },
-    "dateModified": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2000-05-11T14:06:00Z"
-        }
-    },
-    "description": {
-        "type": "Property",
-        "value": "Sluice Gate 01 - Thivae"
-    },
-    "downstreamControlPoint": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:SluiceGate:downstreamControlPoint:GIWE:80160975"
-    },
-    "downstreamEndControlPoint": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:SluiceGate:downstreamEndControlPoint:CBWI:21948924"
-    },
-    "flowType": {
-        "type": "Property",
-        "value": "Submerged-Flow"
-    },
-    "gateBottomElevation": {
-        "type": "Property",
-        "value": 52.3
-    },
-    "gateDischargeCoefficient": {
-        "type": "Property",
-        "value": 0.5
-    },
-    "gateOpening": {
-        "type": "Property",
-        "value": 0.5
-    },
-    "gateType": {
-        "type": "Property",
-        "value": "Sluice Gate"
-    },
-    "gateWidth": {
-        "type": "Property",
-        "value": 2.5
-    },
-    "headDifference": {
-        "type": "Property",
-        "value": 1.5
-    },
-    "location": {
-        "type": "Geoproperty",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -7.578066,
-                -25.535857
-            ]
-        }
-    },
-    "name": {
-        "type": "Property",
-        "value": "SG01"
-    },
-    "observedBy": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:SluiceGate:observedBy:ZWZM:93328711"
-    },
-    "orificeDischargeCoefficient": {
-        "type": "Property",
-        "value": 0.5
-    },
-    "owner": {
-        "type": "Property",
-        "value": [
-            "urn:ngsi-ld:SluiceGate:items:LXOX:42416570",
-            "urn:ngsi-ld:SluiceGate:items:FSOL:83758025"
-        ]
-    },
-    "seeAlso": {
-        "type": "Property",
-        "value": [
-            "urn:ngsi-ld:SluiceGate:items:ETJS:41829811",
-            "urn:ngsi-ld:SluiceGate:items:IKTE:29167907"
-        ]
-    },
-    "source": {
-        "type": "Property",
-        "value": ""
-    },
-    "tag": {
-        "type": "Property",
-        "value": ""
-    },
-    "upstreamControlPoint": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:SluiceGate:upstreamControlPoint:MWGU:81565938"
-    },
-    "upstreamEndControlPoint": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:SluiceGate:upstreamEndControlPoint:JXFD:60487647"
-    },
-    "waterDischarge": {
-        "type": "Property",
-        "value": 9
-    },
-    "@context": []
+  "id": "urn:ngsi-ld:SluiceGate:id:OZDE:42332657",
+  "type": "SluiceGate",
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "",
+      "addressLocality": "",
+      "addressRegion": "",
+      "addressCountry": "",
+      "postalCode": "",
+      "postOfficeBoxNumber": "",
+      "areaServed": ""
+    }
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "SG01 - Thivae"
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": ""
+  },
+  "curveDischargeCoefficient": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:SluiceGate:curveDischargeCoefficient:ZPPL:48418583"
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "EYDAP"
+  },
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1972-01-13T19:49:28Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2000-05-11T14:06:00Z"
+    }
+  },
+  "description": {
+    "type": "Property",
+    "value": "Sluice Gate 01 - Thivae"
+  },
+  "downstreamControlPoint": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:SluiceGate:downstreamControlPoint:GIWE:80160975"
+  },
+  "downstreamEndControlPoint": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:SluiceGate:downstreamEndControlPoint:CBWI:21948924"
+  },
+  "flowType": {
+    "type": "Property",
+    "value": "Submerged-Flow"
+  },
+  "gateBottomElevation": {
+    "type": "Property",
+    "value": 52.3
+  },
+  "gateDischargeCoefficient": {
+    "type": "Property",
+    "value": 0.5
+  },
+  "gateOpening": {
+    "type": "Property",
+    "value": 0.5
+  },
+  "gateType": {
+    "type": "Property",
+    "value": "Sluice Gate"
+  },
+  "gateWidth": {
+    "type": "Property",
+    "value": 2.5
+  },
+  "headDifference": {
+    "type": "Property",
+    "value": 1.5
+  },
+  "location": {
+    "type": "Geoproperty",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -7.578066,
+        -25.535857
+      ]
+    }
+  },
+  "name": {
+    "type": "Property",
+    "value": "SG01"
+  },
+  "observedBy": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:SluiceGate:observedBy:ZWZM:93328711"
+  },
+  "orificeDischargeCoefficient": {
+    "type": "Property",
+    "value": 0.5
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:SluiceGate:items:LXOX:42416570",
+      "urn:ngsi-ld:SluiceGate:items:FSOL:83758025"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:SluiceGate:items:ETJS:41829811",
+      "urn:ngsi-ld:SluiceGate:items:IKTE:29167907"
+    ]
+  },
+  "source": {
+    "type": "Property",
+    "value": ""
+  },
+  "tag": {
+    "type": "Property",
+    "value": ""
+  },
+  "upstreamControlPoint": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:SluiceGate:upstreamControlPoint:MWGU:81565938"
+  },
+  "upstreamEndControlPoint": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:SluiceGate:upstreamEndControlPoint:JXFD:60487647"
+  },
+  "waterDischarge": {
+    "type": "Property",
+    "value": 9
+  },
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"
+  ]
 }

@@ -1,114 +1,116 @@
 {
-    "id": "urn:ngsi-ld:OpenChannelJunction:id:PTOM:78370074",
-    "type": "OpenChannelJunction",
-    "address": {
-        "type": "Property",
-        "value": {
-            "streetAddress": "",
-            "addressLocality": "",
-            "addressRegion": "",
-            "addressCountry": "",
-            "postalCode": "",
-            "postOfficeBoxNumber": "",
-            "areaServed": ""
-        }
-    },
-    "alternateName": {
-        "type": "Property",
-        "value": "Thivae"
-    },
-    "areaServed": {
-        "type": "Property",
-        "value": ""
-    },
-    "dataProvider": {
-        "type": "Property",
-        "value": "EYDAP"
-    },
-    "dateCreated": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "1983-10-11T21:04:39Z"
-        }
-    },
-    "dateModified": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "1982-03-03T08:37:57Z"
-        }
-    },
-    "description": {
-        "type": "Property",
-        "value": "Open Channel Junction"
-    },
-    "downstreamNode": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924"
-    },
-    "location": {
-        "type": "Geoproperty",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -65.2981945,
-                -22.649102
-            ]
-        }
-    },
-    "name": {
-        "type": "Property",
-        "value": "J1"
-    },
-    "observedBy": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975"
-    },
-    "owner": {
-        "type": "Property",
-        "value": [
-            "urn:ngsi-ld:OpenChannelJunction:items:QPEH:03184806",
-            "urn:ngsi-ld:OpenChannelJunction:items:PUHR:34031741"
-        ]
-    },
-    "position": {
-        "type": "Property",
-        "value": {
-            "distance": 160.6,
-            "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647"
-        }
-    },
-    "seeAlso": {
-        "type": "Property",
-        "value": [
-            "urn:ngsi-ld:OpenChannelJunction:items:KTWJ:61564622",
-            "urn:ngsi-ld:OpenChannelJunction:items:JOMY:24566116"
-        ]
-    },
-    "source": {
-        "type": "Property",
-        "value": ""
-    },
-    "tag": {
-        "type": "Property",
-        "value": ""
-    },
-    "uniqueName": {
-        "type": "Property",
-        "value": "J1"
-    },
-    "upstreamNode": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938"
-    },
-    "waterInflow": {
-        "type": "Property",
-        "value": 0.15
-    },
-    "waterOutflow": {
-        "type": "Property",
-        "value": 0.12
-    },
-    "@context": []
+  "id": "urn:ngsi-ld:OpenChannelJunction:id:PTOM:78370074",
+  "type": "OpenChannelJunction",
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "",
+      "addressLocality": "",
+      "addressRegion": "",
+      "addressCountry": "",
+      "postalCode": "",
+      "postOfficeBoxNumber": "",
+      "areaServed": ""
+    }
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Thivae"
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": ""
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "EYDAP"
+  },
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1983-10-11T21:04:39Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "1982-03-03T08:37:57Z"
+    }
+  },
+  "description": {
+    "type": "Property",
+    "value": "Open Channel Junction"
+  },
+  "downstreamNode": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924"
+  },
+  "location": {
+    "type": "Geoproperty",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -65.2981945,
+        -22.649102
+      ]
+    }
+  },
+  "name": {
+    "type": "Property",
+    "value": "J1"
+  },
+  "observedBy": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975"
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:OpenChannelJunction:items:QPEH:03184806",
+      "urn:ngsi-ld:OpenChannelJunction:items:PUHR:34031741"
+    ]
+  },
+  "position": {
+    "type": "Property",
+    "value": {
+      "distance": 160.6,
+      "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647"
+    }
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:OpenChannelJunction:items:KTWJ:61564622",
+      "urn:ngsi-ld:OpenChannelJunction:items:JOMY:24566116"
+    ]
+  },
+  "source": {
+    "type": "Property",
+    "value": ""
+  },
+  "tag": {
+    "type": "Property",
+    "value": ""
+  },
+  "uniqueName": {
+    "type": "Property",
+    "value": "J1"
+  },
+  "upstreamNode": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938"
+  },
+  "waterInflow": {
+    "type": "Property",
+    "value": 0.15
+  },
+  "waterOutflow": {
+    "type": "Property",
+    "value": 0.12
+  },
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"
+  ]
 }

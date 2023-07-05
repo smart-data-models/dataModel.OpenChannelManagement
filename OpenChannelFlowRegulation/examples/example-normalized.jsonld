@@ -1,98 +1,100 @@
 {
-    "id": "urn:ngsi-ld:OpenChannelFlowRegulation:id:YLKZ:61350129",
-    "type": "OpenChannelFlowRegulation",
-    "address": {
-        "type": "Property",
-        "value": {
-            "streetAddress": "",
-            "addressLocality": "",
-            "addressRegion": "",
-            "addressCountry": "",
-            "postalCode": "",
-            "postOfficeBoxNumber": ""
-        }
-    },
-    "alternateName": {
-        "type": "Property",
-        "value": "Simulation Scenario 1"
-    },
-    "areaServed": {
-        "type": "Property",
-        "value": ""
-    },
-    "dataProvider": {
-        "type": "Property",
-        "value": "NTUA"
-    },
-    "dateCreated": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2017-05-04T03:59:29Z"
-        }
-    },
-    "dateModified": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2005-01-20T20:06:38Z"
-        }
-    },
-    "description": {
-        "type": "Property",
-        "value": "Results of Simulation Scenario 1"
-    },
-    "hasRegulationStructures": {
-        "type": "Property",
-        "value": [
-            {
-                "targetUri": "urn:ngsi-ld:OpenChannelFlowRegulation:hasRegulationStructures:XWXB:83840274"
-            }
-        ]
-    },
-    "hasStructuresSimulations": {
-        "type": "Property",
-        "value": [
-            {
-                "targetUri": "urn:ngsi-ld:OpenChannelFlowRegulation:hasStructuresSimulations:VPDG:92530159"
-            }
-        ]
-    },
-    "location": {
-        "type": "Geoproperty",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                57.412865,
-                -128.395711
-            ]
-        }
-    },
-    "name": {
-        "type": "Property",
-        "value": "Simulation_Scenario_1"
-    },
-    "owner": {
-        "type": "Property",
-        "value": [
-            "urn:ngsi-ld:OpenChannelFlowRegulation:items:XTSQ:90231127",
-            "urn:ngsi-ld:OpenChannelFlowRegulation:items:ULWE:26707834"
-        ]
-    },
-    "runBy": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:OpenChannelFlowRegulation:runBy:CMJE:69885698"
-    },
-    "seeAlso": {
-        "type": "Property",
-        "value": [
-            "urn:ngsi-ld:OpenChannelFlowRegulation:items:HJOC:81615506",
-            "urn:ngsi-ld:OpenChannelFlowRegulation:items:BHCJ:50756499"
-        ]
-    },
-    "source": {
-        "type": "Property",
-        "value": ""
-    },
-    "@context": []
+  "id": "urn:ngsi-ld:OpenChannelFlowRegulation:id:YLKZ:61350129",
+  "type": "OpenChannelFlowRegulation",
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "",
+      "addressLocality": "",
+      "addressRegion": "",
+      "addressCountry": "",
+      "postalCode": "",
+      "postOfficeBoxNumber": ""
+    }
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "Simulation Scenario 1"
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": ""
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "NTUA"
+  },
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2017-05-04T03:59:29Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2005-01-20T20:06:38Z"
+    }
+  },
+  "description": {
+    "type": "Property",
+    "value": "Results of Simulation Scenario 1"
+  },
+  "hasRegulationStructures": {
+    "type": "Property",
+    "value": [
+      {
+        "targetUri": "urn:ngsi-ld:OpenChannelFlowRegulation:hasRegulationStructures:XWXB:83840274"
+      }
+    ]
+  },
+  "hasStructuresSimulations": {
+    "type": "Property",
+    "value": [
+      {
+        "targetUri": "urn:ngsi-ld:OpenChannelFlowRegulation:hasStructuresSimulations:VPDG:92530159"
+      }
+    ]
+  },
+  "location": {
+    "type": "Geoproperty",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        57.412865,
+        -128.395711
+      ]
+    }
+  },
+  "name": {
+    "type": "Property",
+    "value": "Simulation_Scenario_1"
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:OpenChannelFlowRegulation:items:XTSQ:90231127",
+      "urn:ngsi-ld:OpenChannelFlowRegulation:items:ULWE:26707834"
+    ]
+  },
+  "runBy": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:OpenChannelFlowRegulation:runBy:CMJE:69885698"
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:OpenChannelFlowRegulation:items:HJOC:81615506",
+      "urn:ngsi-ld:OpenChannelFlowRegulation:items:BHCJ:50756499"
+    ]
+  },
+  "source": {
+    "type": "Property",
+    "value": ""
+  },
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"
+  ]
 }

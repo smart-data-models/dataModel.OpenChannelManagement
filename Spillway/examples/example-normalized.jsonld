@@ -1,151 +1,153 @@
 {
-    "id": "urn:ngsi-ld:Spillway:id:FFPG:06271993",
-    "type": "Spillway",
-    "address": {
-        "type": "Property",
-        "value": {
-            "streetAddress": "",
-            "addressLocality": "",
-            "addressRegion": "",
-            "addressCountry": "",
-            "postalCode": "",
-            "postOfficeBoxNumber": "",
-            "areaServed": ""
-        }
-    },
-    "alternateName": {
-        "type": "Property",
-        "value": "SP01 - Thivae"
-    },
-    "apronElevation": {
-        "type": "Property",
-        "value": 22
-    },
-    "apronLength": {
-        "type": "Property",
-        "value": 5
-    },
-    "areaServed": {
-        "type": "Property",
-        "value": ""
-    },
-    "controlCrossSection": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:Spillway:controlCrossSection:JXFD:60487647"
-    },
-    "crestElevation": {
-        "type": "Property",
-        "value": 26.4
-    },
-    "crestLength": {
-        "type": "Property",
-        "value": 5
-    },
-    "curveDesignDischargeCoefficient": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:Spillway:curveDesignDischargeCoefficient:GIWE:80160975"
-    },
-    "curveDischargeCoefficient": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:Spillway:curveDischargeCoefficient:MWGU:81565938"
-    },
-    "curveElevationDischarge": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:Spillway:curveElevationDischarge:CBWI:21948924"
-    },
-    "dataProvider": {
-        "type": "Property",
-        "value": "EYDAP"
-    },
-    "dateCreated": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2020-10-12T04:27:47Z"
-        }
-    },
-    "dateModified": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2021-09-26T16:22:05Z"
-        }
-    },
-    "description": {
-        "type": "Property",
-        "value": "Spillway 01 - Thivae"
-    },
-    "designDischarge": {
-        "type": "Property",
-        "value": 20
-    },
-    "designDischargeCoefficient": {
-        "type": "Property",
-        "value": 0.4
-    },
-    "designHead": {
-        "type": "Property",
-        "value": 30.4
-    },
-    "dischargeCoefficient": {
-        "type": "Property",
-        "value": 5
-    },
-    "location": {
-        "type": "Geoproperty",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                60.3603485,
-                -129.682253
-            ]
-        }
-    },
-    "maxFloodElevation": {
-        "type": "Property",
-        "value": 4
-    },
-    "name": {
-        "type": "Property",
-        "value": "SP01"
-    },
-    "numberAbutments": {
-        "type": "Property",
-        "value": 2
-    },
-    "owner": {
-        "type": "Property",
-        "value": [
-            "urn:ngsi-ld:Spillway:items:OFPV:04640010",
-            "urn:ngsi-ld:Spillway:items:BFAT:33357858"
-        ]
-    },
-    "seeAlso": {
-        "type": "Property",
-        "value": [
-            "urn:ngsi-ld:Spillway:items:VLIF:47226224",
-            "urn:ngsi-ld:Spillway:items:BDSZ:68275691"
-        ]
-    },
-    "source": {
-        "type": "Property",
-        "value": ""
-    },
-    "spillwayType": {
-        "type": "Property",
-        "value": "Ogee"
-    },
-    "spillwayWidth": {
-        "type": "Property",
-        "value": 5
-    },
-    "tag": {
-        "type": "Property",
-        "value": ""
-    },
-    "waterDischarge": {
-        "type": "Property",
-        "value": 9
-    },
-    "@context": []
+  "id": "urn:ngsi-ld:Spillway:id:FFPG:06271993",
+  "type": "Spillway",
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "",
+      "addressLocality": "",
+      "addressRegion": "",
+      "addressCountry": "",
+      "postalCode": "",
+      "postOfficeBoxNumber": "",
+      "areaServed": ""
+    }
+  },
+  "alternateName": {
+    "type": "Property",
+    "value": "SP01 - Thivae"
+  },
+  "apronElevation": {
+    "type": "Property",
+    "value": 22
+  },
+  "apronLength": {
+    "type": "Property",
+    "value": 5
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": ""
+  },
+  "controlCrossSection": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Spillway:controlCrossSection:JXFD:60487647"
+  },
+  "crestElevation": {
+    "type": "Property",
+    "value": 26.4
+  },
+  "crestLength": {
+    "type": "Property",
+    "value": 5
+  },
+  "curveDesignDischargeCoefficient": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Spillway:curveDesignDischargeCoefficient:GIWE:80160975"
+  },
+  "curveDischargeCoefficient": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Spillway:curveDischargeCoefficient:MWGU:81565938"
+  },
+  "curveElevationDischarge": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Spillway:curveElevationDischarge:CBWI:21948924"
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "EYDAP"
+  },
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2020-10-12T04:27:47Z"
+    }
+  },
+  "dateModified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2021-09-26T16:22:05Z"
+    }
+  },
+  "description": {
+    "type": "Property",
+    "value": "Spillway 01 - Thivae"
+  },
+  "designDischarge": {
+    "type": "Property",
+    "value": 20
+  },
+  "designDischargeCoefficient": {
+    "type": "Property",
+    "value": 0.4
+  },
+  "designHead": {
+    "type": "Property",
+    "value": 30.4
+  },
+  "dischargeCoefficient": {
+    "type": "Property",
+    "value": 5
+  },
+  "location": {
+    "type": "Geoproperty",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        60.3603485,
+        -129.682253
+      ]
+    }
+  },
+  "maxFloodElevation": {
+    "type": "Property",
+    "value": 4
+  },
+  "name": {
+    "type": "Property",
+    "value": "SP01"
+  },
+  "numberAbutments": {
+    "type": "Property",
+    "value": 2
+  },
+  "owner": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Spillway:items:OFPV:04640010",
+      "urn:ngsi-ld:Spillway:items:BFAT:33357858"
+    ]
+  },
+  "seeAlso": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Spillway:items:VLIF:47226224",
+      "urn:ngsi-ld:Spillway:items:BDSZ:68275691"
+    ]
+  },
+  "source": {
+    "type": "Property",
+    "value": ""
+  },
+  "spillwayType": {
+    "type": "Property",
+    "value": "Ogee"
+  },
+  "spillwayWidth": {
+    "type": "Property",
+    "value": 5
+  },
+  "tag": {
+    "type": "Property",
+    "value": ""
+  },
+  "waterDischarge": {
+    "type": "Property",
+    "value": 9
+  },
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"
+  ]
 }
