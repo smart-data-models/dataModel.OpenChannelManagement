@@ -48,7 +48,7 @@
         "value": "Open Channel Curve for a/H ~ C"
     },
     "location": {
-        "type": "Geoproperty",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [

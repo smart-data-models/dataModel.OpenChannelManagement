@@ -1,16 +1,31 @@
-エンティティOpenChannelCurve  
-======================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティOpenChannelCurve  
+======================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OpenChannelManagement/blob/master/OpenChannelCurve/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このエンティティには、Raw-Water (Open Channels) System Managementドメインのために作成された一般的な曲線の調和された記述が含まれています。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**このエンティティは、原水（開放水路）システム管理領域のために作られた汎用曲線の調和された記述を含んでいる。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `curveType`: 放水路や調整構造物の曲線の種類。それは以下を表す曲線とすることができる。1) 相対的な堰の開度の関数としての排出係数（C）（a/H、a：水門開度、H:ここで、PはOGEE放水路のエプロン標高であり、Hoは設計上のアップストレインヘッドである。列挙:'C-a/H, H-Q, Co-P/Ho, C-H/L, C/Co-H/Ho'  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tag`: アイテムを修飾するための任意のテキスト文字列  - `type`: NGSI Entity Typeです。OpenChannelCurveである必要があります。  - `xData`: 曲線のXデータポイント  - `yData`: 曲線のYデータポイント    
-必須項目  
-- `id`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `curveType[string]`: 放水路や調節構造物の曲線の種類。を表す曲線とすることができる。1) 相対堰開度（a/H、a：水門開度、H：上流頭）の関数としての放流係数（C）、2) 水位（H）の関数としての放流量（Q）、3) 設計放流係数（Co）を表す曲線とすることができる。(2) 水位(H)の関数としての流量(Q)、(3) P/Hoの関数としての設計流量係数（Co）、ここでPはOGEE放水路のエプロン高、Hoは設計上昇流頭、4）H/Lの関数としての流量係数（C）、ここでHは上流頭、LはBROAD-CRESTED放水路の脚長、5） C/Co - H/Ho関数、があります。Enum:'C-a/H, H-Q, Co-P/Ho, C-H/L, C/Co-H/Ho'.  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tag[string]`: 項目を修飾するためのオプションのテキスト文字列  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI エンティティタイプ。OpenChannelCurveでなければならない。  - `xData[array]`: カーブのデータポイントをX個にする。  - `yData[array]`: 曲線のYデータ点。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 OpenChannelCurve:    
@@ -101,7 +116,7 @@ OpenChannelCurve:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'Geoproperty. Geojson reference to the item. Point'    
+        - description: 'GeoProperty. Geojson reference to the item. Point'    
           properties:    
             bbox:    
               items:    
@@ -122,7 +137,7 @@ OpenChannelCurve:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+        - description: 'GeoProperty. Geojson reference to the item. LineString'    
           properties:    
             bbox:    
               items:    
@@ -146,7 +161,7 @@ OpenChannelCurve:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
           properties:    
             bbox:    
               items:    
@@ -172,7 +187,7 @@ OpenChannelCurve:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
           properties:    
             bbox:    
               items:    
@@ -195,7 +210,7 @@ OpenChannelCurve:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -221,7 +236,7 @@ OpenChannelCurve:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -250,7 +265,7 @@ OpenChannelCurve:
           title: 'GeoJSON MultiPolygon'    
           type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     name:    
       description: 'The name of this item.'    
       type: string    
@@ -312,12 +327,22 @@ OpenChannelCurve:
     - id    
     - type    
   type: object    
-  version: 0.0.1    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/OpenChannelCurve/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models.OpenChannelManagement/OpenChannelCurve/schema.json    
+  x-model-tags: FIWARE4WATER    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### OpenChannelCurve NGSI-v2 のキーバリューの例。  
-OpenChannelCurveをkey-valuesとしてJSON-LD形式で出力した例です。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### OpenChannelCurve NGSI-v2 key-value の例です。  
+ここでは、OpenChannelCurveをJSON-LD形式でkey-valuesにした例を示します。これは `options=keyValues` を使ったときに NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OpenChannelCurve:id:FMCV:30717942",  
@@ -378,8 +403,10 @@ OpenChannelCurve:
   ]  
 }  
 ```  
-#### OpenChannelCurve NGSI-v2 正規化された例。  
-正規化されたJSON-LD形式のOpenChannelCurveの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### OpenChannelCurve NGSI-v2 正規化例  
+OpenChannelCurveを正規化したJSON-LD形式の例です。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OpenChannelCurve:id:FMCV:30717942",  
@@ -488,188 +515,200 @@ OpenChannelCurve:
   }  
 }  
 ```  
-#### OpenChannelCurve NGSI-LDのキーバリューの例。  
-OpenChannelCurveをkey-valuesとしてJSON-LD形式で出力した例です。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### OpenChannelCurve NGSI-LD key-value の例  
+OpenChannelCurveをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使った場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:OpenChannelCurve:id:FMCV:30717942",  
-  "type": "OpenChannelCurve",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -71.481035,  
-      -148.255307  
+    "id": "urn:ngsi-ld:OpenChannelCurve:id:FMCV:30717942",  
+    "type": "OpenChannelCurve",  
+    "address": {  
+        "streetAddress": "",  
+        "addressLocality": "",  
+        "addressRegion": "",  
+        "addressCountry": "",  
+        "postalCode": "",  
+        "postOfficeBoxNumber": "",  
+        "areaServed": ""  
+    },  
+    "alternateName": "",  
+    "areaServed": "",  
+    "curveType": "a/H ~ C",  
+    "dataProvider": "NTUA",  
+    "dateCreated": "2003-09-09T04:19:40Z",  
+    "dateModified": "2019-04-13T13:45:31Z",  
+    "description": "Open Channel Curve for a/H ~ C",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -71.481035,  
+            -148.255307  
+        ]  
+    },  
+    "name": "Curve_1",  
+    "owner": [  
+        "urn:ngsi-ld:OpenChannelCurve:items:EXUV:99745990",  
+        "urn:ngsi-ld:OpenChannelCurve:items:HXOV:60683026"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:OpenChannelCurve:items:IZFN:20714900",  
+        "urn:ngsi-ld:OpenChannelCurve:items:RDSS:63995745"  
+    ],  
+    "source": "",  
+    "tag": "a/H ~ C curve",  
+    "xData": [  
+        0.001,  
+        0.1,  
+        0.2,  
+        0.3,  
+        0.4,  
+        0.5,  
+        0.6,  
+        0.7  
+    ],  
+    "yData": [  
+        0.61,  
+        0.593,  
+        0.5942,  
+        0.5988,  
+        0.607,  
+        0.6209,  
+        0.6395,  
+        0.6628  
+    ],  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "",  
-    "addressLocality": "",  
-    "addressRegion": "",  
-    "addressCountry": "",  
-    "postalCode": "",  
-    "postOfficeBoxNumber": "",  
-    "areaServed": ""  
-  },  
-  "areaServed": "",  
-  "dateCreated": "2003-09-09T04:19:40Z",  
-  "dateModified": "2019-04-13T13:45:31Z",  
-  "source": "",  
-  "name": "Curve_1",  
-  "alternateName": "",  
-  "description": "Open Channel Curve for a/H ~ C",  
-  "dataProvider": "NTUA",  
-  "owner": [  
-    "urn:ngsi-ld:OpenChannelCurve:items:EXUV:99745990",  
-    "urn:ngsi-ld:OpenChannelCurve:items:HXOV:60683026"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:OpenChannelCurve:items:IZFN:20714900",  
-    "urn:ngsi-ld:OpenChannelCurve:items:RDSS:63995745"  
-  ],  
-  "tag": "a/H ~ C curve",  
-  "curveType": "a/H ~ C",  
-  "xData": [  
-    0.001,  
-    0.1,  
-    0.2,  
-    0.3,  
-    0.4,  
-    0.5,  
-    0.6,  
-    0.7  
-  ],  
-  "yData": [  
-    0.61,  
-    0.5930,  
-    0.5942,  
-    0.5988,  
-    0.6070,  
-    0.6209,  
-    0.6395,  
-    0.6628  
-  ],  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### OpenChannelCurve NGSI-LDの正規化例  
-正規化されたJSON-LD形式のOpenChannelCurveの例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### OpenChannelCurve NGSI-LD 正規化例  
+OpenChannelCurveをJSON-LD形式で正規化した例を示します。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -71.481035,  
-        -148.255307  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "",  
-      "addressLocality": "",  
-      "addressRegion": "",  
-      "addressCountry": "",  
-      "postalCode": "",  
-      "postOfficeBoxNumber": "",  
-      "areaServed": ""  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "id": "urn:ngsi-ld:OpenChannelCurve:id:FMCV:30717942",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2003-09-09T04:19:40Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2019-04-13T13:45:31Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Curve_1"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Open Channel Curve for a/H ~ C"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "NTUA"  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:OpenChannelCurve:items:EXUV:99745990",  
-      "urn:ngsi-ld:OpenChannelCurve:items:HXOV:60683026"  
+    "id": "urn:ngsi-ld:OpenChannelCurve:id:FMCV:30717942",  
+    "type": "OpenChannelCurve",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "",  
+            "addressLocality": "",  
+            "addressRegion": "",  
+            "addressCountry": "",  
+            "postalCode": "",  
+            "postOfficeBoxNumber": "",  
+            "areaServed": ""  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "curveType": {  
+        "type": "Property",  
+        "value": "a/H ~ C"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "NTUA"  
+    },  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2003-09-09T04:19:40Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2019-04-13T13:45:31Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Open Channel Curve for a/H ~ C"  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -71.481035,  
+                -148.255307  
+            ]  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Curve_1"  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:OpenChannelCurve:items:EXUV:99745990",  
+            "urn:ngsi-ld:OpenChannelCurve:items:HXOV:60683026"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:OpenChannelCurve:items:IZFN:20714900",  
+            "urn:ngsi-ld:OpenChannelCurve:items:RDSS:63995745"  
+        ]  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "tag": {  
+        "type": "Property",  
+        "value": "a/H ~ C curve"  
+    },  
+    "xData": {  
+        "type": "Property",  
+        "value": [  
+            0.001,  
+            0.1,  
+            0.2,  
+            0.3,  
+            0.4,  
+            0.5,  
+            0.6,  
+            0.7  
+        ]  
+    },  
+    "yData": {  
+        "type": "Property",  
+        "value": [  
+            0.61,  
+            0.593,  
+            0.5942,  
+            0.5988,  
+            0.607,  
+            0.6209,  
+            0.6395,  
+            0.6628  
+        ]  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:OpenChannelCurve:items:IZFN:20714900",  
-      "urn:ngsi-ld:OpenChannelCurve:items:RDSS:63995745"  
-    ]  
-  },  
-  "type": "OpenChannelCurve",  
-  "tag": {  
-    "type": "Property",  
-    "value": "a/H ~ C curve"  
-  },  
-  "curveType": {  
-    "type": "Property",  
-    "value": "a/H ~ C"  
-  },  
-  "xData": {  
-    "type": "Property",  
-    "value": [  
-      0.001,  
-      0.1,  
-      0.2,  
-      0.3,  
-      0.4,  
-      0.5,  
-      0.6,  
-      0.7  
-    ]  
-  },  
-  "yData": {  
-    "type": "Property",  
-    "value": [  
-      0.61,  
-      0.5930,  
-      0.5942,  
-      0.5988,  
-      0.6070,  
-      0.6209,  
-      0.6395,  
-      0.6628  
-    ]  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

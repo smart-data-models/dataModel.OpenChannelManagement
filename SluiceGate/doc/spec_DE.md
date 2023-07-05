@@ -1,16 +1,31 @@
-Entität: SluiceGate  
-===================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: SluiceGate  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.OpenChannelManagement/blob/master/SluiceGate/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Dieses Element enthält eine harmonisierte Beschreibung eines generischen Schleusentors für den Bereich Rohwasser (offene Kanäle) Systemmanagement**.  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Globale Beschreibung: **Diese Einheit enthält eine harmonisierte Beschreibung eines generischen Schleusentors für die Domäne Rohwasser (offene Kanäle) Systemmanagement**.  
 Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `curveDischargeCoefficient`: Die URI einer OpenChannelCurve-Entität, die den Abflusskoeffizienten (C) als Funktion der relativen Wehröffnung (Wehröffnung (a) über der stromaufwärts gelegenen Tiefe (H)) darstellt, C über a/H.  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `downstreamControlPoint`: Eine Beziehung, die die ID einer Entität vom Typ Querschnitt angibt, die einen Querschnitt in einer Strecke mit permanenten Strömungsverhältnissen stromabwärts der Schleuse darstellt.  - `downstreamEndControlPoint`: Eine Beziehung, die die ID einer Entität vom Typ Querschnitt angibt, die einen Querschnitt unmittelbar stromabwärts der Schleuse darstellt.  - `flowType`: Er definiert die Durchflussbedingungen im Tor. Er nimmt die Werte an: 'Overflow' (Wasserstand oberhalb der Wehrkrone), 'Free-Flow' (Wasserstand unterhalb der Schieberkante), 'Submerged Flow' (die Durchflussmenge durch das Wehr wird durch die Öffnung des Wehrs geregelt). Enum:'Overflow, Free-Flow, Submerged-Flow'.  - `gateBottomElevation`: Höhe der Unterseite (Scheitel) des Tores.  - `gateDischargeCoefficient`: Abflusskoeffizient des Tores, der die Energieverluste berücksichtigt, wenn das Wasser unter dem Tor hindurchfließt.  - `gateOpening`: Die Höhe der Toröffnung.  - `gateWidth`: Die Breite des Schleusentors  - `headDifference`: Die Differenz zwischen der Tiefe flussaufwärts und der Tiefe flussabwärts.  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `observedBy`: Eine Beziehung zur ID des Geräts, das die Rohwassereigenschaften überwacht  - `orificeDischargeCoefficient`: Abflusskoeffizient der Blende, der die Energieverluste berücksichtigt, die entstehen, wenn das Wasser unter der Blende hindurchfließt und das stromabwärts gelegene Unterwasser ansteigt, so dass die Blende nicht mehr frei fließt.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `tag`: Eine optionale Textzeichenfolge, die zur Qualifizierung einer Position verwendet wird  - `type`: NGSI-LD Entitätstyp. Es muss SluiceGate sein.  - `upstreamControlPoint`: Eine Beziehung, die die ID einer Entität vom Typ Querschnitt angibt, die einen Querschnitt in einer Strecke mit permanenten Strömungsverhältnissen stromaufwärts der Schleuse darstellt.  - `upstreamEndControlPoint`: Eine Beziehung, die die ID einer Entität des Typs Querschnitt angibt, die einen Querschnitt unmittelbar stromaufwärts der Schleuse darstellt.  - `waterDischarge`: Der Abfluss, der das Wehr passiert (Q).    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `curveDischargeCoefficient[*]`: Die URI einer OpenChannelCurve-Entität, die den Abflusskoeffizienten (C) als Funktion der relativen Wehröffnung (Wehröffnung (a) über der flussaufwärts gelegenen Tiefe (H)) darstellt, C über a/H.  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `downstreamControlPoint[*]`: Eine Beziehung, die die ID einer Entität vom Typ Querschnitt angibt, die einen Querschnitt in einer Strecke mit permanenten Strömungsverhältnissen stromabwärts der Schleuse darstellt.  - `downstreamEndControlPoint[*]`: Eine Beziehung, die die ID einer Entität vom Typ Querschnitt angibt, die einen Querschnitt unmittelbar stromabwärts der Schleuse darstellt.  - `flowType[string]`: Er definiert die Durchflussbedingungen im Tor. Er nimmt die Werte an: 'Overflow' (Wasserstand oberhalb der Wehrkrone), 'Free-Flow' (Wasserstand unterhalb der Schieberkante), 'Submerged Flow' (der Durchfluss durch den Schieber wird durch die Öffnung des Schiebers geregelt). Enum:'Overflow, Free-Flow, Submerged-Flow'.  - `gateBottomElevation[number]`: Höhe der Unterseite (Scheitel) des Tores.  - `gateDischargeCoefficient[number]`: Abflusskoeffizient des Tores, der die Energieverluste berücksichtigt, wenn das Wasser unter dem Tor hindurchfließt.  - `gateOpening[number]`: Die Höhe der Toröffnung.  - `gateWidth[number]`: Die Breite des Schleusentors  - `headDifference[number]`: Die Differenz zwischen der Tiefe flussaufwärts und der Tiefe flussabwärts.  - `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `observedBy[*]`: Eine Beziehung zur ID des Geräts, das die Rohwassereigenschaften überwacht  . Model: [https://smart-data-models.github.io/dataModel.Device/device-schema.json](https://smart-data-models.github.io/dataModel.Device/device-schema.json)- `orificeDischargeCoefficient[number]`: Abflusskoeffizient der Blende, der die Energieverluste berücksichtigt, die entstehen, wenn das Wasser unter der Blende hindurchfließt und das stromabwärts gelegene Unterwasser ansteigt, so dass die Blende nicht mehr frei fließt.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `tag[string]`: Eine optionale Textzeichenfolge, die zur Qualifizierung eines Artikels verwendet wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI-LD Entitätstyp. Es muss SluiceGate sein.  - `upstreamControlPoint[*]`: Eine Beziehung, die die ID einer Entität vom Typ Querschnitt angibt, die einen Querschnitt in einer Strecke mit permanenten Strömungsverhältnissen stromaufwärts der Schleuse darstellt.  - `upstreamEndControlPoint[*]`: Eine Beziehung, die die ID einer Entität des Typs Querschnitt angibt, die einen Querschnitt unmittelbar stromaufwärts der Schleuse darstellt.  - `waterDischarge[number]`: Der Abfluss, der das Wehr passiert (Q).  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `location`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
+- `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 SluiceGate:    
@@ -169,7 +184,7 @@ SluiceGate:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'Geoproperty. Geojson reference to the item. Point'    
+        - description: 'GeoProperty. Geojson reference to the item. Point'    
           properties:    
             bbox:    
               items:    
@@ -190,7 +205,7 @@ SluiceGate:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+        - description: 'GeoProperty. Geojson reference to the item. LineString'    
           properties:    
             bbox:    
               items:    
@@ -214,7 +229,7 @@ SluiceGate:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
           properties:    
             bbox:    
               items:    
@@ -240,7 +255,7 @@ SluiceGate:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
           properties:    
             bbox:    
               items:    
@@ -263,7 +278,7 @@ SluiceGate:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -289,7 +304,7 @@ SluiceGate:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -318,7 +333,7 @@ SluiceGate:
           title: 'GeoJSON MultiPolygon'    
           type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     name:    
       description: 'The name of this item.'    
       type: string    
@@ -419,12 +434,22 @@ SluiceGate:
     - type    
     - location    
   type: object    
-  version: 0.0.1    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/SluiceGate/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models.OpenChannelManagement/SluiceGate/schema.json    
+  x-model-tags: FIWARE4WATER    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### SluiceGate NGSI-v2 key-values Beispiel  
 Hier ist ein Beispiel für ein SluiceGate im JSON-LD Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:SluiceGate:id:OZDE:42332657",  
@@ -478,8 +503,10 @@ SluiceGate:
   "curveDischargeCoefficient": "urn:ngsi-ld:SluiceGate:curveDischargeCoefficient:ZPPL:48418583"  
 }  
 ```  
+</details>  
 #### SluiceGate NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für ein SluiceGate im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:SluiceGate:id:OZDE:42332657",  
@@ -618,211 +645,223 @@ SluiceGate:
   }  
 }  
 ```  
+</details>  
 #### SluiceGate NGSI-LD key-values Beispiel  
 Hier ist ein Beispiel für ein SluiceGate im JSON-LD Format als Key-Values. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:SluiceGate:id:OZDE:42332657",  
-  "type": "SluiceGate",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -7.578066,  
-      -25.535857  
+    "id": "urn:ngsi-ld:SluiceGate:id:OZDE:42332657",  
+    "type": "SluiceGate",  
+    "address": {  
+        "streetAddress": "",  
+        "addressLocality": "",  
+        "addressRegion": "",  
+        "addressCountry": "",  
+        "postalCode": "",  
+        "postOfficeBoxNumber": "",  
+        "areaServed": ""  
+    },  
+    "alternateName": "SG01 - Thivae",  
+    "areaServed": "",  
+    "curveDischargeCoefficient": "urn:ngsi-ld:SluiceGate:curveDischargeCoefficient:ZPPL:48418583",  
+    "dataProvider": "EYDAP",  
+    "dateCreated": "2021-01-13T19:49:28Z",  
+    "dateModified": "2021-05-11T14:06:00Z",  
+    "description": "Sluic Gate 01 - Thivae",  
+    "downstreamControlPoint": "urn:ngsi-ld:SluiceGate:downstreamControlPoint:GIWE:80160975",  
+    "downstreamEndControlPoint": "urn:ngsi-ld:SluiceGate:downstreamEndControlPoint:CBWI:21948924",  
+    "flowType": "Submerged-Flow",  
+    "gateBottomElevation": 52.3,  
+    "gateDischargeCoefficient": 0.5,  
+    "gateOpening": 0.5,  
+    "gateWidth": 2.5,  
+    "headDifference": 1.5,  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -7.578066,  
+            -25.535857  
+        ]  
+    },  
+    "name": "SG01",  
+    "observedBy": "urn:ngsi-ld:SluiceGate:observedBy:ZWZM:93328711",  
+    "orificeDischargeCoefficient": 0.5,  
+    "owner": [  
+        "urn:ngsi-ld:SluiceGate:items:LXOX:42416570",  
+        "urn:ngsi-ld:SluiceGate:items:FSOL:83758025"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:SluiceGate:items:ETJS:41829811",  
+        "urn:ngsi-ld:SluiceGate:items:IKTE:29167907"  
+    ],  
+    "source": "",  
+    "tag": "",  
+    "upstreamControlPoint": "urn:ngsi-ld:SluiceGate:upstreamControlPoint:MWGU:81565938",  
+    "upstreamEndControlPoint": "urn:ngsi-ld:SluiceGate:upstreamEndControlPoint:JXFD:60487647",  
+    "waterDischarge": 9,  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "",  
-    "addressLocality": "",  
-    "addressRegion": "",  
-    "addressCountry": "",  
-    "postalCode": "",  
-    "postOfficeBoxNumber": "",  
-    "areaServed": ""  
-  },  
-  "areaServed": "",  
-  "dateCreated": "2021-01-13T19:49:28Z",  
-  "dateModified": "2021-05-11T14:06:00Z",  
-  "source": "",  
-  "name": "SG01",  
-  "alternateName": "SG01 - Thivae",  
-  "description": "Sluic Gate 01 - Thivae",  
-  "dataProvider": "EYDAP",  
-  "owner": [  
-    "urn:ngsi-ld:SluiceGate:items:LXOX:42416570",  
-    "urn:ngsi-ld:SluiceGate:items:FSOL:83758025"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:SluiceGate:items:ETJS:41829811",  
-    "urn:ngsi-ld:SluiceGate:items:IKTE:29167907"  
-  ],  
-  "tag": "",  
-  "gateWidth": 2.5,  
-  "gateOpening": 0.5,  
-  "gateBottomElevation": 52.3,  
-  "gateDischargeCoefficient": 0.5,  
-  "orificeDischargeCoefficient": 0.5,  
-  "waterDischarge": 9,  
-  "headDifference": 1.5,  
-  "flowType": "Submerged-Flow",  
-  "upstreamEndControlPoint": "urn:ngsi-ld:SluiceGate:upstreamEndControlPoint:JXFD:60487647",  
-  "downstreamEndControlPoint": "urn:ngsi-ld:SluiceGate:downstreamEndControlPoint:CBWI:21948924",  
-  "upstreamControlPoint": "urn:ngsi-ld:SluiceGate:upstreamControlPoint:MWGU:81565938",  
-  "downstreamControlPoint": "urn:ngsi-ld:SluiceGate:downstreamControlPoint:GIWE:80160975",  
-  "observedBy": "urn:ngsi-ld:SluiceGate:observedBy:ZWZM:93328711",  
-  "curveDischargeCoefficient": "urn:ngsi-ld:SluiceGate:curveDischargeCoefficient:ZPPL:48418583",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### SluiceGate NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für ein SluiceGate im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:SluiceGate:id:OZDE:42332657",  
-  "type": "SluiceGate",  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -7.578066,  
-        -25.535857  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "",  
-      "addressLocality": "",  
-      "addressRegion": "",  
-      "addressCountry": "",  
-      "postalCode": "",  
-      "postOfficeBoxNumber": "",  
-      "areaServed": ""  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1972-01-13T19:49:28Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2000-05-11T14:06:00Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "SG01"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "SG01 - Thivae"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Sluice Gate 01 - Thivae"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "EYDAP"  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:SluiceGate:items:LXOX:42416570",  
-      "urn:ngsi-ld:SluiceGate:items:FSOL:83758025"  
+    "id": "urn:ngsi-ld:SluiceGate:id:OZDE:42332657",  
+    "type": "SluiceGate",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "",  
+            "addressLocality": "",  
+            "addressRegion": "",  
+            "addressCountry": "",  
+            "postalCode": "",  
+            "postOfficeBoxNumber": "",  
+            "areaServed": ""  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "SG01 - Thivae"  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "curveDischargeCoefficient": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:SluiceGate:curveDischargeCoefficient:ZPPL:48418583"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "EYDAP"  
+    },  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1972-01-13T19:49:28Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2000-05-11T14:06:00Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Sluice Gate 01 - Thivae"  
+    },  
+    "downstreamControlPoint": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:SluiceGate:downstreamControlPoint:GIWE:80160975"  
+    },  
+    "downstreamEndControlPoint": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:SluiceGate:downstreamEndControlPoint:CBWI:21948924"  
+    },  
+    "flowType": {  
+        "type": "Property",  
+        "value": "Submerged-Flow"  
+    },  
+    "gateBottomElevation": {  
+        "type": "Property",  
+        "value": 52.3  
+    },  
+    "gateDischargeCoefficient": {  
+        "type": "Property",  
+        "value": 0.5  
+    },  
+    "gateOpening": {  
+        "type": "Property",  
+        "value": 0.5  
+    },  
+    "gateType": {  
+        "type": "Property",  
+        "value": "Sluice Gate"  
+    },  
+    "gateWidth": {  
+        "type": "Property",  
+        "value": 2.5  
+    },  
+    "headDifference": {  
+        "type": "Property",  
+        "value": 1.5  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -7.578066,  
+                -25.535857  
+            ]  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "SG01"  
+    },  
+    "observedBy": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:SluiceGate:observedBy:ZWZM:93328711"  
+    },  
+    "orificeDischargeCoefficient": {  
+        "type": "Property",  
+        "value": 0.5  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:SluiceGate:items:LXOX:42416570",  
+            "urn:ngsi-ld:SluiceGate:items:FSOL:83758025"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:SluiceGate:items:ETJS:41829811",  
+            "urn:ngsi-ld:SluiceGate:items:IKTE:29167907"  
+        ]  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "tag": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "upstreamControlPoint": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:SluiceGate:upstreamControlPoint:MWGU:81565938"  
+    },  
+    "upstreamEndControlPoint": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:SluiceGate:upstreamEndControlPoint:JXFD:60487647"  
+    },  
+    "waterDischarge": {  
+        "type": "Property",  
+        "value": 9  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:SluiceGate:items:ETJS:41829811",  
-      "urn:ngsi-ld:SluiceGate:items:IKTE:29167907"  
-    ]  
-  },  
-  "tag": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "gateType": {  
-    "type": "Property",  
-    "value": "Sluice Gate"  
-  },  
-  "gateWidth": {  
-    "type": "Property",  
-    "value": 2.5  
-  },  
-  "gateOpening": {  
-    "type": "Property",  
-    "value": 0.5  
-  },  
-  "gateBottomElevation": {  
-    "type": "Property",  
-    "value": 52.3  
-  },  
-  "gateDischargeCoefficient": {  
-    "type": "Property",  
-    "value": 0.5  
-  },  
-  "orificeDischargeCoefficient": {  
-    "type": "Property",  
-    "value": 0.5  
-  },  
-  "waterDischarge": {  
-    "type": "Property",  
-    "value": 9  
-  },  
-  "headDifference": {  
-    "type": "Property",  
-    "value": 1.5  
-  },  
-  "flowType": {  
-    "type": "Property",  
-    "value": "Submerged-Flow"  
-  },  
-  "upstreamEndControlPoint": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:SluiceGate:upstreamEndControlPoint:JXFD:60487647"  
-  },  
-  "downstreamEndControlPoint": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:SluiceGate:downstreamEndControlPoint:CBWI:21948924"  
-  },  
-  "upstreamControlPoint": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:SluiceGate:upstreamControlPoint:MWGU:81565938"  
-  },  
-  "downstreamControlPoint": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:SluiceGate:downstreamControlPoint:GIWE:80160975"  
-  },  
-  "observedBy": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:SluiceGate:observedBy:ZWZM:93328711"  
-  },  
-  "curveDischargeCoefficient": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:SluiceGate:curveDischargeCoefficient:ZPPL:48418583"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

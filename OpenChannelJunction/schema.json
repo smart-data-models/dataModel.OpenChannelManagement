@@ -116,6 +116,11 @@
           "type": "number",
           "minimum": 0,
           "description": "Property. Water flow inserted to the junction. Units:'m3/s'"
+        },
+        "waterLevel": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Water level at the junction. Units:'m'"
         }
       }
     }

@@ -1,15 +1,31 @@
-エンティティOpenChannel  
-=================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティOpenChannel  
+=================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.OpenChannelManagement/blob/master/OpenChannel/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このエンティティには、生水（オープンチャンネル）システム管理ドメインのために作られた一般的なチャンネルの調和された記述が含まれています。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**このエンティティは、生水(オープンチャンネル)システム管理領域のために作られた汎用チャンネルの調和された記述を含んでいます。  
+バージョン: 0.0.3  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `bottomSlope`: 水路の底面の傾斜です。単位はすべてCEFACTコードで受け付けます。  - `bottomWidth`: 水路の底面の幅（「台形」形状の場合）。単位はすべてCEFACTコードで受け付けます。  - `celerity`: 水門の開閉後に水路に沿って伝わってくるサージの速さ。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `diameter`: 円形の水路の直径です。単位はすべてCEFACTコードで受け付けます。  - `downstreamNode`: チャネルが終了する下流のノード（Junction、Regulation Structureなど）のIDを示す関係。  - `flowType`: チャネル内の流れのタイプを定義するテキスト。Enum:'Fre-Surface flow'.  - `geometryType`: チャンネルの形状を表します。Enum:'Trapezoidal, Circular'].  - `id`: エンティティのユニークな識別子  - `leftSideSlope`: 水路の左岸の傾斜（「Trapezoidal」ジオメトリの場合）。単位はすべてCEFACTコードで受け付けます。  - `length`: チャンネルの長さです。単位はすべてCEFACTコードで受け付けます。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `maxWaterDepth`: 水路の最大許容水深。単位はすべてCEFACTコードで受け付けます。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `rightSideSlope`: 水路の右岸の傾斜（「Trapezoidal」ジオメトリの場合）。単位はすべてCEFACTコードで受け付けます。  - `roughnessCoefficient`: マニングの粗さ係数です。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tag`: アイテムを修飾するための任意のテキスト文字列  - `travelDuration`: 下流側のノード（Regulation Structure）から上流側のノードに伝わるサージの持続時間。  - `type`: NGSI-LDエンティティ・タイプ：OpenChannelでなければなりません。  - `upstreamNode`: チャネルの始点となる上流のノード（Junction、Regulation Structureなど）のIDを示す関係です。  - `waterLoss`: 水路からの水漏れ/損失 - 水路の流量に対する割合または数値（流量）。    
-必須項目  
-- `id`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `bottomSlope[number]`: 水路の底面勾配。単位はすべてCEFACTコードで受け付けています。  - `bottomWidth[number]`: チャンネルの底幅 (「台形」ジオメトリの場合)。すべての単位はCEFACTコードで受け入れられます。  - `celerity[number]`: 水門の開閉後に水路に沿って伝播するサージを速度で表したもの。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `diameter[number]`: 円形チャネルの直径。すべての単位はCEFACTコードで受け付けています。  - `downstreamNode[*]`: チャネルが終了する下流ノード（例：Junction、Regulation Structure）のIDを示す関係である。  - `flowType[string]`: 水路の流れの種類を定義するテキスト。Enum:'Free-Surface flow'.  - `geometryType[string]`: 水路の形状。Enum:'Trapezoidal, Circular'].  - `id[*]`: エンティティの一意な識別子  - `leftSideSlope[number]`: 水路の左岸の勾配（「台形」ジオメトリの場合）。すべての単位はCEFACTコードで受け入れられます。  - `length[number]`: チャンネルの長さ。単位はすべてCEFACTコードで受け付けます。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `maxWaterDepth[number]`: 水路の最大許容水深。単位はすべてCEFACTコードで受け付けます。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `rightSideSlope[number]`: 水路の右岸の勾配（「台形」ジオメトリの場合）。すべての単位はCEFACTコードで受け入れられます。  - `roughnessCoefficient[number]`: マニングの粗度係数を表す。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tag[string]`: 項目を修飾するためのオプションのテキスト文字列  . Model: [https://schema.org/Text](https://schema.org/Text)- `travelDuration[number]`: 下流側のノード（Regulation Structure）から上流側のノードに伝わるサージの継続時間。  - `type[string]`: NGSI-LD Entity Type。OpenChannelでなければならない。  - `upstreamNode[*]`: チャネルが始まる上流ノード（例：Junction、Regulation Structure）のIDを示す関係である。  - `waterLoss[number]`: 水路からの漏水／損失-水路の流量に対する割合または数値（流量）。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 OpenChannel:    
@@ -153,7 +169,7 @@ OpenChannel:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'Geoproperty. Geojson reference to the item. Point'    
+        - description: 'GeoProperty. Geojson reference to the item. Point'    
           properties:    
             bbox:    
               items:    
@@ -174,7 +190,7 @@ OpenChannel:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+        - description: 'GeoProperty. Geojson reference to the item. LineString'    
           properties:    
             bbox:    
               items:    
@@ -198,7 +214,7 @@ OpenChannel:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
           properties:    
             bbox:    
               items:    
@@ -224,7 +240,7 @@ OpenChannel:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
           properties:    
             bbox:    
               items:    
@@ -247,7 +263,7 @@ OpenChannel:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -273,7 +289,7 @@ OpenChannel:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -302,7 +318,7 @@ OpenChannel:
           title: 'GeoJSON MultiPolygon'    
           type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     maxWaterDepth:    
       description: 'The maximum allowable water depth in the channel. All units are accepted in CEFACT code.'    
       minimum: 0    
@@ -386,18 +402,29 @@ OpenChannel:
     waterLoss:    
       description: 'Water leakages/losses from the channel - percentage of flow of the channel or a number (flow).'    
       minimum: 0    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
   required:    
     - id    
     - type    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/OpenChannel/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models.OpenChannelManagement/Channel/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.3    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### OpenChannel NGSI-v2 のキーバリューの例。  
-ここでは、OpenChannelをkey-valuesとしてJSON-LD形式にした例を紹介します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### OpenChannel NGSI-v2 key-value の例です。  
+ここでは、OpenChannelをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使ったときにNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Channel:id:IXPY:98787462",  
@@ -454,8 +481,10 @@ OpenChannel:
   }  
 }  
 ```  
-#### OpenChannel NGSI-v2の正規化例  
-ここでは、正規化されたJSON-LD形式のOpenChannelの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### OpenChannel NGSI-v2 正規化例  
+以下は、正規化されたJSON-LD形式のOpenChannelの例です。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "IXPY.98787462",  
@@ -563,180 +592,192 @@ OpenChannel:
   ]  
 }  
 ```  
-#### OpenChannel NGSI-LDのキーバリューの例  
-ここでは、OpenChannelをkey-valuesとしてJSON-LD形式で表現した例を紹介します。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### OpenChannel NGSI-LD キー値の例  
+ここでは、OpenChannelをJSON-LD形式でkey-valuesにした例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Channel:id:IXPY:98787462",  
-  "type": "OpenChannel",  
-  "dateCreated": "2021-04-13T21:22:33Z",  
-  "dateModified": "2021-04-13T23:34:18Z",  
-  "source": "",  
-  "name": "Section 3",  
-  "alternateName": "S-3",  
-  "description": "Description of the channel S-3",  
-  "dataProvider": "",  
-  "owner": [  
-    "urn:ngsi-ld:Channel:items:ZOOU:49614637",  
-    "urn:ngsi-ld:Channel:items:ODUZ:33451005"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Channel:items:YJSD:41528487",  
-    "urn:ngsi-ld:Channel:items:MROT:86526209"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -14.2004135,  
-      -147.354695  
+    "id": "urn:ngsi-ld:Channel:id:IXPY:98787462",  
+    "type": "OpenChannel",  
+    "address": {  
+        "streetAddress": "",  
+        "addressLocality": "Thesalonikii",  
+        "addressRegion": "",  
+        "addressCountry": "HELLAS",  
+        "postalCode": "",  
+        "postOfficeBoxNumber": "",  
+        "areaServed": "."  
+    },  
+    "alternateName": "S-3",  
+    "areaServed": "",  
+    "dataProvider": "",  
+    "dateCreated": "2021-04-13T21:22:33Z",  
+    "dateModified": "2021-04-13T23:34:18Z",  
+    "description": "Description of the channel S-3",  
+    "downstreamNode": "urn:ngsi-ld:Channel:downstreamNode:DQUS:63966588",  
+    "geometry": {  
+        "geometryType": "Trapezoidal",  
+        "bottomSlope": 12,  
+        "leftSideSlope": 14,  
+        "rightSideSlope": 3,  
+        "bottomWidth": 5,  
+        "diameter": 0,  
+        "maxWaterDepth": 4,  
+        "roughnessCoefficient": 0.6,  
+        "flowType": "Free-Surface flow",  
+        "celerity": 5,  
+        "travelDuration": 22,  
+        "waterLoss": 0.12,  
+        "length": 15  
+    },  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -14.2004135,  
+            -147.354695  
+        ]  
+    },  
+    "name": "Section 3",  
+    "owner": [  
+        "urn:ngsi-ld:Channel:items:ZOOU:49614637",  
+        "urn:ngsi-ld:Channel:items:ODUZ:33451005"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:Channel:items:YJSD:41528487",  
+        "urn:ngsi-ld:Channel:items:MROT:86526209"  
+    ],  
+    "source": "",  
+    "tag": "Something special enjoy research institution past western. System spring clearly impact policy.",  
+    "upstreamNode": "urn:ngsi-ld:Channel:upstreamNode:MBQH:53312123",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "",  
-    "addressLocality": "Thesalonikii",  
-    "addressRegion": "",  
-    "addressCountry": "HELLAS",  
-    "postalCode": "",  
-    "postOfficeBoxNumber": "",  
-    "areaServed": "."  
-  },  
-  "areaServed": "",  
-  "downstreamNode": "urn:ngsi-ld:Channel:downstreamNode:DQUS:63966588",  
-  "upstreamNode": "urn:ngsi-ld:Channel:upstreamNode:MBQH:53312123",  
-  "tag": "Something special enjoy research institution past western. System spring clearly impact policy.",  
-  "geometry": {  
-    "geometryType": "Trapezoidal",  
-    "bottomSlope": 12,  
-    "leftSideSlope": 14,  
-    "rightSideSlope": 3,  
-    "bottomWidth": 5,  
-    "diameter": 0,  
-    "maxWaterDepth": 4,  
-    "roughnessCoefficient": 0.6,  
-    "flowType": "Free-Surface flow",  
-    "celerity": 5,  
-    "travelDuration": 22,  
-    "waterLoss": 0.12,  
-    "length": 15  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### OpenChannel NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のOpenChannelの例を示します。これはオプションを使わない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### OpenChannel NGSI-LD 正規化例  
+OpenChannelをJSON-LD形式で正規化した例を示します。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Channel:id:IXPY:98787462",  
-  "type": "OpenChannel",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-04-13T21:22:33Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-04-13T23:34:18Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Section 3"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "S-3"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Description of the channel S-3"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Channel:items:ZOOU:49614637",  
-      "urn:ngsi-ld:Channel:items:ODUZ:33451005"  
+    "id": "urn:ngsi-ld:Channel:id:IXPY:98787462",  
+    "type": "OpenChannel",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "",  
+            "addressLocality": "Thesalonikii",  
+            "addressRegion": "",  
+            "addressCountry": "HELLAS",  
+            "postalCode": "",  
+            "postOfficeBoxNumber": "",  
+            "areaServed": "."  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "S-3"  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-04-13T21:22:33Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-04-13T23:34:18Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Description of the channel S-3"  
+    },  
+    "downstreamNode": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Channel:downstreamNode:DQUS:63966588"  
+    },  
+    "geometry": {  
+        "type": "Property",  
+        "value": {  
+            "geometryType": "Trapezoidal",  
+            "bottomSlope": 12,  
+            "leftSideSlope": 14,  
+            "rightSideSlope": 3,  
+            "bottomWidth": 5,  
+            "diameter": 0,  
+            "maxWaterDepth": 4,  
+            "roughnessCoefficient": 0.6,  
+            "flowType": "Free-Surface flow",  
+            "celerity": 5,  
+            "travelDuration": 22,  
+            "waterLoss": 0.12,  
+            "length": 15  
+        }  
+    },  
+    "location": {  
+        "type": "Georoperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -14.2004135,  
+                -147.354695  
+            ]  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Section 3"  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Channel:items:ZOOU:49614637",  
+            "urn:ngsi-ld:Channel:items:ODUZ:33451005"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Channel:items:YJSD:41528487",  
+            "urn:ngsi-ld:Channel:items:MROT:86526209"  
+        ]  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "tag": {  
+        "type": "Property",  
+        "value": "Something special enjoy research institution past western. System spring clearly impact policy."  
+    },  
+    "upstreamNode": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Channel:upstreamNode:MBQH:53312123"  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Channel:items:YJSD:41528487",  
-      "urn:ngsi-ld:Channel:items:MROT:86526209"  
-    ]  
-  },  
-  "location": {  
-    "type": "Georoperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -14.2004135,  
-        -147.354695  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "",  
-      "addressLocality": "Thesalonikii",  
-      "addressRegion": "",  
-      "addressCountry": "HELLAS",  
-      "postalCode": "",  
-      "postOfficeBoxNumber": "",  
-      "areaServed": "."  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "downstreamNode": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Channel:downstreamNode:DQUS:63966588"  
-  },  
-  "upstreamNode": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Channel:upstreamNode:MBQH:53312123"  
-  },  
-  "tag": {  
-    "type": "Property",  
-    "value": "Something special enjoy research institution past western. System spring clearly impact policy."  
-  },  
-  "geometry": {  
-    "type": "Property",  
-    "value": {  
-      "geometryType": "Trapezoidal",  
-      "bottomSlope": 12,  
-      "leftSideSlope": 14,  
-      "rightSideSlope": 3,  
-      "bottomWidth": 5,  
-      "diameter": 0,  
-      "maxWaterDepth": 4,  
-      "roughnessCoefficient": 0.6,  
-      "flowType": "Free-Surface flow",  
-      "celerity": 5,  
-      "travelDuration": 22,  
-      "waterLoss": 0.12,  
-      "length": 15  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

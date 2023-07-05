@@ -33,13 +33,14 @@
   ],
   "position": {
     "distance": 160.6,
-    "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647",
-    "downstreamNode": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924",
-    "upstreamNode": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938",
-    "observedBy": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975",
-    "uniqueName": "J1",
-    "tag": "",
-    "waterOutflow": 0.12,
-    "waterInflow": 0.15
-  }
+    "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647"
+  },
+  "downstreamNode": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924",
+  "upstreamNode": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938",
+  "observedBy": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975",
+  "uniqueName": "J1",
+  "tag": "",
+  "waterOutflow": 0.12,
+  "waterInflow": 0.15,
+  "waterLevel": 0.85
 }
