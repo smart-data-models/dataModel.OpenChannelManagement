@@ -65,7 +65,7 @@
                     "properties": {
                         "distance": {
                             "type": "number",
-                            "description": "Property. The distance between this Entity and a reference point (e.g., the most upstream point of the system)."
+                            "description": "Property. The distance between this Entity and a reference point (e.g., the most upstream point of the system)"
                         },
                         "refPoint": {
                             "anyOf": [
@@ -74,15 +74,15 @@
                                     "minLength": 1,
                                     "maxLength": 256,
                                     "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-                                    "description": "Property. Identifier format of any NGSI entity."
+                                    "description": "Property. Identifier format of any NGSI entity"
                                 },
                                 {
                                     "type": "string",
                                     "format": "uri",
-                                    "description": "Property. Identifier format of any NGSI entity."
+                                    "description": "Property. Identifier format of any NGSI entity"
                                 }
                             ],
-                            "description": "Relationship. The reference point distance is measured from."
+                            "description": "Relationship. The reference point distance is measured from"
                         }
                     }
                 },
