@@ -83,7 +83,7 @@
                                     "travelDuration",
                                     "waterLevel"
                                 ],
-                                "description": "Property: An attribute issued from the data models for Open Channel Management. It follows fully this data model and it could be a property or a relationship. It contains the values for specified properties, as derive from the simulation."
+                                "description": "Property: An attribute issued from the data models for Open Channel Management. It follows fully this data model and it could be a property or a relationship. It contains the values for specified properties, as derive from the simulation"
                             },
                             "value": {
                                 "anyOf": [
@@ -113,7 +113,7 @@
                                         "description": "Property. Identifier format of any NGSI entity"
                                     }
                                 ],
-                                "description": "Relationship. A relationship indicating the network component with a simulated property value."
+                                "description": "Relationship. A relationship indicating the network component with a simulated property value"
                             }
                         }
                     }
@@ -126,7 +126,7 @@
                         "properties": {
                             "waterAttribute": {
                                 "type": "string",
-                                "description": "Property: An attribute issued from the data models for Open Channel Management. It follows fully this data model and it could be a property or a relationship. It contains the values for specified properties, as derive from the simulation."
+                                "description": "Property: An attribute issued from the data models for Open Channel Management. It follows fully this data model and it could be a property or a relationship. It contains the values for specified properties, as derive from the simulation"
                             },
                             "value": {
                                 "anyOf": [
@@ -156,7 +156,7 @@
                                         "description": "Property. Identifier format of any NGSI entity"
                                     }
                                 ],
-                                "description": "Relationship. A relationship indicating the network component with a simulated property value."
+                                "description": "Relationship. A relationship indicating the network component with a simulated property value"
                             }
                         }
                     }
@@ -169,7 +169,7 @@
                         "properties": {
                             "waterAttribute": {
                                 "type": "string",
-                                "description": "Property: An attribute issued from the data models for Open Channel Management. It follows fully this data model and it could be a property or a relationship. It contains the values for specified properties, as derive from the simulation."
+                                "description": "Property: An attribute issued from the data models for Open Channel Management. It follows fully this data model and it could be a property or a relationship. It contains the values for specified properties, as derive from the simulation"
                             },
                             "value": {
                                 "anyOf": [
@@ -199,7 +199,7 @@
                                         "description": "Property. Identifier format of any NGSI entity"
                                     }
                                 ],
-                                "description": "Relationship. A relationship indicating the network component with a simulated property value."
+                                "description": "Relationship. A relationship indicating the network component with a simulated property value"
                             }
                         }
                     }
