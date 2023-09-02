@@ -1,88 +1,70 @@
 Spillway:
-
-  description: This entity contains a harmonised description for a generic Spillway made for Raw-Water (Open Channels) System Management domain. Spillway represents a junction-type object, controlling the release of water from a dam or regulation structure downstream.
-
+  description: 'This entity contains a harmonised description for a generic Spillway made for Raw-Water (Open Channels) System Management domain. Spillway represents a junction-type object, controlling the release of water from a dam or regulation structure downstream.'
   properties:
-
     address:
-
       description: The mailing address
-
       properties:
-
         addressCountry:
-          description: The country. For example, Spain
+          description: 'The country. For example, Spain'
           type: string
           x-ngsi:
             model: https://schema.org/addressCountry
             type: Property
-
         addressLocality:
-          description: The locality in which the street address is, and which is in the region
+          description: 'The locality in which the street address is, and which is in the region'
           type: string
           x-ngsi:
             model: https://schema.org/addressLocality
             type: Property
-
         addressRegion:
-          description: The region in which the locality is, and which is in the country
+          description: 'The region in which the locality is, and which is in the country'
           type: string
           x-ngsi:
             model: https://schema.org/addressRegion
             type: Property
-
         district:
-          description: A district is a type of administrative division that, in some countries, is managed by the local government
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'
           type: string
           x-ngsi:
             type: Property
-
         postOfficeBoxNumber:
-          description: The post office box number for PO box addresses. For example, 03578
+          description: 'The post office box number for PO box addresses. For example, 03578'
           type: string
           x-ngsi:
             model: https://schema.org/postOfficeBoxNumber
             type: Property
-
         postalCode:
-          description: The postal code. For example, 24004
+          description: 'The postal code. For example, 24004'
           type: string
           x-ngsi:
             model: https://schema.org/https://schema.org/postalCode
             type: Property
-
         streetAddress:
           description: The street address
           type: string
           x-ngsi:
             model: https://schema.org/streetAddress
             type: Property
-
         streetNr:
           description: Number identifying a specific property on a public street
           type: string
           x-ngsi:
             type: Property
-
       type: object
-
       x-ngsi:
         model: https://schema.org/address
         type: Property
-
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
-
     apronElevation:
-      description: The elevation at the bottom of the ogee spillway structure (P), just upstream of the spillway
+      description: 'The elevation at the bottom of the ogee spillway structure (P), just upstream of the spillway'
       minimum: 0
       type: number
       x-ngsi:
         type: Property
-
     apronLength:
       description: The total length of the spillway bottom
       minimum: 0
@@ -90,14 +72,12 @@ Spillway:
       x-ngsi:
         type: Property
         units: meters
-
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     controlCrossSection:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -112,26 +92,23 @@ Spillway:
           type: string
           x-ngsi:
             type: Property
-      description: A relationship indicating the ID of an entity of type Cross Section, indicating the cross section that controls the flow over the Spillway
+      description: 'A relationship indicating the ID of an entity of type Cross Section, indicating the cross section that controls the flow over the Spillway'
       x-ngsi:
         type: Relationship
-
     crestElevation:
-      description: The crest elevation of the Spillway. Required only for 'Broad-Crested', 'Ogee' and 'Sharp-Crested'
+      description: 'The crest elevation of the Spillway. Required only for ''Broad-Crested'', ''Ogee'' and ''Sharp-Crested'''
       minimum: 0
       type: number
       x-ngsi:
         type: Property
         units: meters
-
     crestLength:
-      description: The length of the Spillway equals to the total length through which water passes. Required only for 'Broad-Crested', 'Ogee' and 'Sharp-Crested'
+      description: 'The length of the Spillway equals to the total length through which water passes. Required only for ''Broad-Crested'', ''Ogee'' and ''Sharp-Crested'''
       minimum: 0
       type: number
       x-ngsi:
         type: Property
         units: meters
-
     curveDesignDischargeCoefficient:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -149,7 +126,6 @@ Spillway:
       description: The URI of an OpenChannelCurve entity that represents the design discharge coefficient (Co) as a function of apron Elevation over design upstream head (Co-P/Ho)
       x-ngsi:
         type: Relationship
-
     curveDischargeCoefficient:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -164,10 +140,9 @@ Spillway:
           type: string
           x-ngsi:
             type: Property
-      description: The URI of an OpenChannelCurve entity that represents the discharge coefficient (C) as a function of upstream head (H) and spillway geometry. For instance, discharge coefficient as a function of upstream head over spillway width (C-H/L), or C/Co-H/Ho
+      description: 'The URI of an OpenChannelCurve entity that represents the discharge coefficient (C) as a function of upstream head (H) and spillway geometry. For instance, discharge coefficient as a function of upstream head over spillway width (C-H/L), or C/Co-H/Ho'
       x-ngsi:
         type: Relationship
-
     curveElevationDischarge:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -185,33 +160,28 @@ Spillway:
       description: The URI of an OpenChannelCurve entity that represents discharge (Q) as a function of water elevation (H)
       x-ngsi:
         type: Relationship
-
     dataProvider:
       description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
-
     dateCreated:
       description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     dateModified:
       description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
-
     designDischarge:
       description: The design discharge (Qo) of the Spillway
       minimum: 0
@@ -219,14 +189,12 @@ Spillway:
       x-ngsi:
         type: Property
         units: ' m^3/s'
-
     designDischargeCoefficient:
       description: The discharge coefficient (Co) for energy losses for the design discharge (Ho)
       minimum: 0
       type: number
       x-ngsi:
         type: Property
-
     designHead:
       description: The total upstream energy head for which the spillway is designed (Ho) for 'Ogee Spillway'
       minimum: 0
@@ -234,15 +202,13 @@ Spillway:
       x-ngsi:
         type: Property
         units: meters
-
     dischargeCoefficient:
-      description: The discharge coefficient for energy losses as water enters, flows and exits the spillway
+      description: 'The discharge coefficient for energy losses as water enters, flows and exits the spillway'
       minimum: 0
       type: number
       x-ngsi:
         type: Property
         units: m^0.5/s
-
     id:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -260,13 +226,9 @@ Spillway:
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
-
     location:
-
-      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
-
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-
         - description: Geojson reference to the item. Point
           properties:
             bbox:
@@ -290,7 +252,6 @@ Spillway:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. LineString
           properties:
             bbox:
@@ -317,7 +278,6 @@ Spillway:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. Polygon
           properties:
             bbox:
@@ -346,7 +306,6 @@ Spillway:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
@@ -372,7 +331,6 @@ Spillway:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -401,7 +359,6 @@ Spillway:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -432,30 +389,25 @@ Spillway:
           type: object
           x-ngsi:
             type: GeoProperty
-
       x-ngsi:
         type: GeoProperty
-
     maxFloodElevation:
       description: The maximum elevation of water that can pass the spillway
       minimum: 0
       type: number
       x-ngsi:
         type: Property
-
     name:
       description: The name of this item
       type: string
       x-ngsi:
         type: Property
-
     numberAbutments:
       description: The number of abutments of an ogee spillway. Only for 'Ogee' type
       minimum: 0
       type: number
       x-ngsi:
         type: Property
-
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
@@ -478,7 +430,6 @@ Spillway:
       type: array
       x-ngsi:
         type: Property
-
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -491,15 +442,13 @@ Spillway:
           type: string
       x-ngsi:
         type: Property
-
     source:
-      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'
       type: string
       x-ngsi:
         type: Property
-
     spillwayType:
-      description: The type of the spillway. In the case of “Specified Spillway”, only “Elevation – discharge” curve is required. Enum:'Broad-Crested, Ogee, Sharp-Crested, Specified Spillway'
+      description: 'The type of the spillway. In the case of “Specified Spillway”, only “Elevation – discharge” curve is required. Enum:''Broad-Crested, Ogee, Sharp-Crested, Specified Spillway'''
       enum:
         - Broad-Crested
         - Ogee
@@ -508,7 +457,6 @@ Spillway:
       type: string
       x-ngsi:
         type: Property
-
     spillwayWidth:
       description: The width of the spillway (m). Only for 'Broad-Crested' type
       minimum: 0
@@ -516,14 +464,12 @@ Spillway:
       x-ngsi:
         type: Property
         units: meters
-
     tag:
       description: An optional text string used to qualify an item
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     type:
       description: NGSI Entity Type. It has to be Spillway
       enum:
@@ -531,7 +477,6 @@ Spillway:
       type: string
       x-ngsi:
         type: Property
-
     waterDischarge:
       description: The discharge over the spillway (Q)
       minimum: 0
@@ -539,21 +484,13 @@ Spillway:
       x-ngsi:
         type: Property
         units: ' m^3/s'
-
   required:
     - id
     - location
-
   type: object
-
-  x-derived-from: ''
-
-  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
-
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/Spillway/LICENSE.md
-
   x-model-schema: https://smart-data-models.github.io/data-models.OpenChannelManagement/Spillway/schema.json
-
   x-model-tags: FIWARE4WATER
-
   x-version: 0.0.1
