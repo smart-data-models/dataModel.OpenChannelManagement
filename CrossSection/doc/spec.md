@@ -15,7 +15,15 @@
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `attachedTo[*]`: A relationship to the ID of the channel where the cross-section 'lives in'. Reference to an entity of type Channel.  - `bottomSlope[number]`: The bottom slope of the channel where the cross-section 'lives in'. All units are accepted in CEFACT code.  - `bottomWidth[number]`: The bottom width of the cross-section (for 'Trapezoidal' geometry). All units are accepted in CEFACT code.  - `crossSectionGeometry[string]`: The geometry of the cross-section. Enum:'Circular, Trapezoidal'.  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `diameter[number]`: The diameter of a circular cross-section.  - `energyHead[number]`: The total energy head at the cross-section.  - `id[*]`: Unique identifier of the entity  - `inheritsFrom[*]`: URI of a Channel component from which the value of a property is obtained.  - `leftSideSlope[number]`: The slope of the left bank of the cross-section (for 'Trapezoidal' geometry). All units are accepted in CEFACT code.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `maxWaterDepth[number]`: The maximum allowable water depth at the cross-section. All units are accepted in CEFACT code.  - `name[string]`: The name of this item.  - `observedBy[*]`: A relationship to the ID of the device that monitors raw-water properties  . Model: [https://smart-data-models.github.io/dataModel.Device/device-schema.json](https://smart-data-models.github.io/dataModel.Device/device-schema.json)- `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `position[object]`: Object providing information about the distance with the rest of the elements and a relationship with them.  - `rightSideSlope[number]`: The slope of the right bank of the cross-section (for 'Trapezoidal' geometry). All units are accepted in CEFACT code.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `specificConductivity[number]`: Water conductivity at the cross-section.  - `tag[string]`: An optional text string used to qualify an item  . Model: [https://schema.org/Text](https://schema.org/Text)- `turbidity[number]`: Water turbidity at the cross-section.  - `type[string]`: NGSI-LD Entity Type. It has to be CrossSection.  - `waterFlow[number]`: Water flow at the cross-section.  - `waterLevel[number]`: Water level at the cross-section.  - `waterTemperature[number]`: Water temperature at the cross-section.  - `waterVelocity[number]`: Water Velocity at the cross-section.  <!-- /30-PropertiesList -->  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government    
+	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `attachedTo[*]`: A relationship to the ID of the channel where the cross-section 'lives in'. Reference to an entity of type Channel  - `bottomSlope[number]`: The bottom slope of the channel where the cross-section 'lives in'. All units are accepted in CEFACT code  - `bottomWidth[number]`: The bottom width of the cross-section (for 'Trapezoidal' geometry). All units are accepted in CEFACT code  - `crossSectionGeometry[string]`: The geometry of the cross-section. Enum:'Circular, Trapezoidal'  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `diameter[number]`: The diameter of a circular cross-section  - `energyHead[number]`: The total energy head at the cross-section  - `id[*]`: Unique identifier of the entity  - `inheritsFrom[*]`: URI of a Channel component from which the value of a property is obtained  - `leftSideSlope[number]`: The slope of the left bank of the cross-section (for 'Trapezoidal' geometry). All units are accepted in CEFACT code  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `maxWaterDepth[number]`: The maximum allowable water depth at the cross-section. All units are accepted in CEFACT code  - `name[string]`: The name of this item  - `observedBy[*]`: A relationship to the ID of the device that monitors raw-water properties  . Model: [https://smart-data-models.github.io/dataModel.Device/device-schema.json](https://smart-data-models.github.io/dataModel.Device/device-schema.json)- `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `position[object]`: Object providing information about the distance with the rest of the elements and a relationship with them  	- `distance[number]`: The distance between this Entity and a reference point (e.g., the most upstream point of the system)    
+- `rightSideSlope[number]`: The slope of the right bank of the cross-section (for 'Trapezoidal' geometry). All units are accepted in CEFACT code  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `specificConductivity[number]`: Water conductivity at the cross-section  - `tag[string]`: An optional text string used to qualify an item  . Model: [https://schema.org/Text](https://schema.org/Text)- `turbidity[number]`: Water turbidity at the cross-section  - `type[string]`: NGSI-LD Entity Type. It has to be CrossSection  - `waterFlow[number]`: Water flow at the cross-section  - `waterLevel[number]`: Water level at the cross-section  - `waterTemperature[number]`: Water temperature at the cross-section  - `waterVelocity[number]`: Water Velocity at the cross-section  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -29,71 +37,103 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 CrossSection:    
-  description: 'This entity contains a harmonised description of a generic Cross-Section made for Raw-Water (Open Channels) System Management domain. A CrossSection defines any point of the system where raw-water properties are monitored by a device and/or computed via simulation.'    
+  description: This entity contains a harmonised description of a generic Cross-Section made for Raw-Water (Open Channels) System Management domain. A CrossSection defines any point of the system where raw-water properties are monitored by a device and/or computed via simulation.    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     attachedTo:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'A relationship to the ID of the channel where the cross-section ''lives in''. Reference to an entity of type Channel.'    
+          x-ngsi:    
+            type: Property    
+      description: A relationship to the ID of the channel where the cross-section 'lives in'. Reference to an entity of type Channel    
       x-ngsi:    
         type: Relationship    
     bottomSlope:    
-      description: 'The bottom slope of the channel where the cross-section ''lives in''. All units are accepted in CEFACT code.'    
+      description: The bottom slope of the channel where the cross-section 'lives in'. All units are accepted in CEFACT code    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     bottomWidth:    
-      description: 'The bottom width of the cross-section (for ''Trapezoidal'' geometry). All units are accepted in CEFACT code.'    
+      description: The bottom width of the cross-section (for 'Trapezoidal' geometry). All units are accepted in CEFACT code    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     crossSectionGeometry:    
-      description: 'The geometry of the cross-section. Enum:''Circular, Trapezoidal''.'    
+      description: 'The geometry of the cross-section. Enum:''Circular, Trapezoidal'''    
       enum:    
         - Circular    
         - Trapezoidal    
@@ -101,66 +141,74 @@ CrossSection:
       x-ngsi:    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     diameter:    
-      description: 'The diameter of a circular cross-section.'    
+      description: The diameter of a circular cross-section    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     energyHead:    
-      description: 'The total energy head at the cross-section.'    
+      description: The total energy head at the cross-section    
       type: number    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &crosssection_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     inheritsFrom:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'URI of a Channel component from which the value of a property is obtained.'    
+          x-ngsi:    
+            type: Property    
+      description: URI of a Channel component from which the value of a property is obtained    
       x-ngsi:    
         type: Relationship    
     leftSideSlope:    
-      description: 'The slope of the left bank of the cross-section (for ''Trapezoidal'' geometry). All units are accepted in CEFACT code.'    
+      description: The slope of the left bank of the cross-section (for 'Trapezoidal' geometry). All units are accepted in CEFACT code    
       minimum: 0    
       type: number    
       x-ngsi:    
@@ -168,7 +216,7 @@ CrossSection:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -187,9 +235,11 @@ CrossSection:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -211,9 +261,11 @@ CrossSection:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -237,9 +289,11 @@ CrossSection:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -260,9 +314,11 @@ CrossSection:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -286,9 +342,11 @@ CrossSection:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -314,71 +372,99 @@ CrossSection:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     maxWaterDepth:    
-      description: 'The maximum allowable water depth at the cross-section. All units are accepted in CEFACT code.'    
+      description: The maximum allowable water depth at the cross-section. All units are accepted in CEFACT code    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     observedBy:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'A relationship to the ID of the device that monitors raw-water properties'    
+          x-ngsi:    
+            type: Property    
+      description: A relationship to the ID of the device that monitors raw-water properties    
       x-ngsi:    
         model: https://smart-data-models.github.io/dataModel.Device/device-schema.json    
         type: Relationship    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *crosssection_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     position:    
-      description: 'Object providing information about the distance with the rest of the elements and a relationship with them.'    
+      description: Object providing information about the distance with the rest of the elements and a relationship with them    
       properties:    
         distance:    
-          description: 'Property. The distance between this Entity and a reference point (e.g., the most upstream point of the system).'    
+          description: 'The distance between this Entity and a reference point (e.g., the most upstream point of the system)'    
           type: number    
+          x-ngsi:    
+            type: Property    
         refPoint:    
           anyOf:    
-            - description: 'Property. Identifier format of any NGSI entity.'    
+            - description: Identifier format of any NGSI entity    
               maxLength: 256    
               minLength: 1    
               pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
               type: string    
-            - description: 'Property. Identifier format of any NGSI entity.'    
+              x-ngsi:    
+                type: Property    
+            - description: Identifier format of any NGSI entity    
               format: uri    
               type: string    
-          description: 'Relationship. The reference point distance is measured from.'    
+              x-ngsi:    
+                type: Property    
+          description: The reference point distance is measured from    
+          x-ngsi:    
+            type: Relationship    
       type: object    
       x-ngsi:    
         type: Property    
     rightSideSlope:    
-      description: 'The slope of the right bank of the cross-section (for ''Trapezoidal'' geometry). All units are accepted in CEFACT code.'    
+      description: The slope of the right bank of the cross-section (for 'Trapezoidal' geometry). All units are accepted in CEFACT code    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -390,54 +476,54 @@ CrossSection:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     specificConductivity:    
-      description: 'Water conductivity at the cross-section.'    
+      description: Water conductivity at the cross-section    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     tag:    
-      description: 'An optional text string used to qualify an item'    
+      description: An optional text string used to qualify an item    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     turbidity:    
-      description: 'Water turbidity at the cross-section.'    
+      description: Water turbidity at the cross-section    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI-LD Entity Type. It has to be CrossSection.'    
+      description: NGSI-LD Entity Type. It has to be CrossSection    
       enum:    
         - CrossSection    
       type: string    
       x-ngsi:    
         type: Property    
     waterFlow:    
-      description: 'Water flow at the cross-section.'    
+      description: Water flow at the cross-section    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     waterLevel:    
-      description: 'Water level at the cross-section.'    
+      description: Water level at the cross-section    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     waterTemperature:    
-      description: 'Water temperature at the cross-section.'    
+      description: Water temperature at the cross-section    
       type: number    
       x-ngsi:    
         type: Property    
     waterVelocity:    
-      description: 'Water Velocity at the cross-section.'    
+      description: Water Velocity at the cross-section    
       minimum: 0    
       type: number    
       x-ngsi:    
@@ -447,7 +533,7 @@ CrossSection:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/CrossSection/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/data-models.OpenChannelManagement/CrossSection/schema.json    
   x-model-tags: ""    
