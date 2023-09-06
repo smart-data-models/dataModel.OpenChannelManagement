@@ -3,27 +3,34 @@
 エンティティ放水路  
 =========<!-- /10-Header -->  
 <!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.OpenChannelManagement/blob/master/Spillway/LICENSE.md)  
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.OpenChannelManagement/blob/master/Spillway/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな記述。**このエンティティは、原水（開水路）システム管理領域で作成された一般的な Spillway の調和された記述を含んでいる。Spillway はジャンクションタイプのオブジェクトを表し、下流のダムや調節構造物からの放水を制御する**。  
+グローバルな記述：**このエンティティには、原水(開水路)システム管理領域用に作成された一般的な放水路の調和された記述が含まれる。Spillway は、下流のダムや調節構造からの放水を制御する、ジャンクションタイプのオブジェクトを表す。  
 バージョン: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+## プロパティのリスト  
 
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `apronElevation[number]`: 放水路のすぐ上流にあるオージ放水路構造（P）の底面の標高です。  - `apronLength[number]`: 放水路底部の全長  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `controlCrossSection[*]`: Cross Section 型のエンティティの ID を示すリレーションシップで、Spillway 上の流量を制御するクロ スセクションを示す。  - `crestElevation[number]`: Spillway の頂部標高。ブロードクレスト型」、「オージー型」、「シャープクレスト型」のみ必要です。  - `crestLength[number]`: Spillwayの長さは、水が通過する全長と同じです。Broad-Crested", "Ogee", "Sharp-Crested" の場合のみ必要です。  - `curveDesignDischargeCoefficient[*]`: 設計流量係数(Co)をエプロン高さ(Co-P/Ho)の関数として表現したOpenChannelCurveエンティティのURIです。  - `curveDischargeCoefficient[*]`: 上流水頭 (H) と放水路形状の関数としての流量係数 (C) を表す OpenChannelCurve エンティティの URI です。例えば、放水路幅(C-H/L)上の上流頭部の関数としての放流係数、または C/Co-H/Ho のようなもの。  - `curveElevationDischarge[*]`: 水位(H)の関数として流量(Q)を表現するOpenChannelCurveエンティティのURIです。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `designDischarge[number]`: 放水路の設計流量(Qo)  - `designDischargeCoefficient[number]`: 設計放電（Ho）に対するエネルギーロスの放電係数（Co）です。  - `designHead[number]`: オージースピルウェイ」の場合、スピルウェイが設計されている全上流エネルギーヘッド(Ho)  - `dischargeCoefficient[number]`: 放水路に水が入り、流れ、出る際のエネルギー損失に対する放水係数  - `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `maxFloodElevation[number]`: 放水路を通過できる水の最大標高。  - `name[string]`: このアイテムの名称です。  - `numberAbutments[number]`: オジー式放水路のアバットメントの数です。Ogee」タイプのみ。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `spillwayType[string]`: 放水路の種類を指定します。特定放水路」の場合、「標高-吐出量」曲線のみ必要です。Enum:'Broad-Crested, Ogee, Sharp-Crested, Specified Spillway'（ブロードクレスト、オージー、シャープクレスト、特定斜路）。  - `spillwayWidth[number]`: 放水路の幅(m)です。Broad-Crested」タイプのみ  - `tag[string]`: 項目を修飾するためのオプションのテキスト文字列  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI Entity Type。Spillwayである必要があります。  - `waterDischarge[number]`: 放水路からの流出量 (Q)  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
+	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: この項目の別名  - `apronElevation[number]`: 放水路のすぐ上流、オギー放水路構造物（P）の底の標高  - `apronLength[number]`: 放水路底部の全長  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `controlCrossSection[*]`: 横断面タイプのエンティティのIDを示すリレーションシップで、放水路上の流れを制御する横断面を示す。  - `crestElevation[number]`: 放水路の水位。Broad-Crested」、「Ogee」、「Sharp-Crested」のみ必要。  - `crestLength[number]`: 放水路の長さは、水が通過する全長に等しい。Broad-Crested」、「Ogee」、「Sharp-Crested」のみ必要。  - `curveDesignDischargeCoefficient[*]`: OpenChannelCurve エンティティの URI で、設計流出係数 (Co) を、設計上流水頭 (Co-P/Ho) 上のエプロン高度の関数として表す。  - `curveDischargeCoefficient[*]`: 上流水頭 (H) と放水路形状の関数としての放流係数 (C) を表す OpenChannelCurve エンティティの URI。例えば、放流係数を放水路幅に対する上流水頭の関数 (C-H/L)、または C/Co-H/Ho のように表す。  - `curveElevationDischarge[*]`: 水位(H)の関数として流出量(Q)を表すOpenChannelCurveエンティティのURI  - `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `designDischarge[number]`: 放水路の設計放流量（Qo）  - `designDischargeCoefficient[number]`: 設計吐出量（Ho）に対するエネルギー損失の吐出係数（Co）  - `designHead[number]`: Ogee Spillway」の場合、放水路が設計されている上流の全エネルギー水頭（Ho）。  - `dischargeCoefficient[number]`: 放水係数は、放水路への水の流入、流下、流出に伴うエネルギー損失を表す。  - `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `maxFloodElevation[number]`: 放水路を通過できる最大水位  - `name[string]`: このアイテムの名前  - `numberAbutments[number]`: オジー型放水路の橋台の数。オギー型のみ  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `spillwayType[string]`: 放水路の種類。特定放水路」の場合、「標高-放流量」曲線のみが必要です。Enum:'ブロードクレスト、オジー、シャープクレスト、特定放水路'  - `spillwayWidth[number]`: 放水路の幅（m）。ブロードクレステッド」タイプのみ  - `tag[string]`: オプションのテキスト文字列。  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSIエンティティタイプ。Spillway でなければならない。  - `waterDischarge[number]`: 放水路からの放流量 (Q)  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-必要なプロパティ  
+必須プロパティ  
 - `id`  - `location`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
-アルファベット順に並びます（クリックで詳細へ）  
+アルファベット順（クリックで詳細表示）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -32,65 +39,97 @@ Spillway:
   description: 'This entity contains a harmonised description for a generic Spillway made for Raw-Water (Open Channels) System Management domain. Spillway represents a junction-type object, controlling the release of water from a dam or regulation structure downstream.'    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     apronElevation:    
-      description: 'The elevation at the bottom of the ogee spillway structure (P), just upstream of the spillway.'    
+      description: 'The elevation at the bottom of the ogee spillway structure (P), just upstream of the spillway'    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     apronLength:    
-      description: 'The total length of the spillway bottom'    
+      description: The total length of the spillway bottom    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
         units: meters    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     controlCrossSection:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'A relationship indicating the ID of an entity of type Cross Section, indicating the cross section that controls the flow over the Spillway.'    
+          x-ngsi:    
+            type: Property    
+      description: 'A relationship indicating the ID of an entity of type Cross Section, indicating the cross section that controls the flow over the Spillway'    
       x-ngsi:    
         type: Relationship    
     crestElevation:    
@@ -109,80 +148,92 @@ Spillway:
         units: meters    
     curveDesignDischargeCoefficient:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'The URI of an OpenChannelCurve entity that represents the design discharge coefficient (Co) as a function of apron Elevation over design upstream head (Co-P/Ho).'    
+          x-ngsi:    
+            type: Property    
+      description: The URI of an OpenChannelCurve entity that represents the design discharge coefficient (Co) as a function of apron Elevation over design upstream head (Co-P/Ho)    
       x-ngsi:    
         type: Relationship    
     curveDischargeCoefficient:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'The URI of an OpenChannelCurve entity that represents the discharge coefficient (C) as a function of upstream head (H) and spillway geometry. For instance, discharge coefficient as a function of upstream head over spillway width (C-H/L), or C/Co-H/Ho.'    
+          x-ngsi:    
+            type: Property    
+      description: 'The URI of an OpenChannelCurve entity that represents the discharge coefficient (C) as a function of upstream head (H) and spillway geometry. For instance, discharge coefficient as a function of upstream head over spillway width (C-H/L), or C/Co-H/Ho'    
       x-ngsi:    
         type: Relationship    
     curveElevationDischarge:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'The URI of an OpenChannelCurve entity that represents discharge (Q) as a function of water elevation (H).'    
+          x-ngsi:    
+            type: Property    
+      description: The URI of an OpenChannelCurve entity that represents discharge (Q) as a function of water elevation (H)    
       x-ngsi:    
         type: Relationship    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     designDischarge:    
-      description: 'The design discharge (Qo) of the Spillway'    
+      description: The design discharge (Qo) of the Spillway    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
-        units: ' m^3/s.'    
+        units: ' m^3/s'    
     designDischargeCoefficient:    
-      description: 'The discharge coefficient (Co) for energy losses for the design discharge (Ho).'    
+      description: The discharge coefficient (Co) for energy losses for the design discharge (Ho)    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     designHead:    
-      description: 'The total upstream energy head for which the spillway is designed (Ho) for ''Ogee Spillway'''    
+      description: The total upstream energy head for which the spillway is designed (Ho) for 'Ogee Spillway'    
       minimum: 0    
       type: number    
       x-ngsi:    
@@ -194,24 +245,28 @@ Spillway:
       type: number    
       x-ngsi:    
         type: Property    
-        units: m^0.5/s.    
+        units: m^0.5/s    
     id:    
-      anyOf: &spillway_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -230,9 +285,11 @@ Spillway:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -254,9 +311,11 @@ Spillway:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -280,9 +339,11 @@ Spillway:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -303,9 +364,11 @@ Spillway:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -329,9 +392,11 @@ Spillway:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -357,37 +422,53 @@ Spillway:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     maxFloodElevation:    
-      description: 'The maximum elevation of water that can pass the spillway.'    
+      description: The maximum elevation of water that can pass the spillway    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     numberAbutments:    
-      description: 'The number of abutments of an ogee spillway. Only for ''Ogee'' type.'    
+      description: The number of abutments of an ogee spillway. Only for 'Ogee' type    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *spillway_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -399,42 +480,42 @@ Spillway:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     spillwayType:    
-      description: 'The type of the spillway. In the case of “Specified Spillway”, only “Elevation – discharge” curve is required. Enum:''Broad-Crested, Ogee, Sharp-Crested, Specified Spillway''.'    
+      description: 'The type of the spillway. In the case of “Specified Spillway”, only “Elevation – discharge” curve is required. Enum:''Broad-Crested, Ogee, Sharp-Crested, Specified Spillway'''    
       enum:    
         - Broad-Crested    
         - Ogee    
         - Sharp-Crested    
-        - 'Specified Spillway'    
+        - Specified Spillway    
       type: string    
       x-ngsi:    
         type: Property    
     spillwayWidth:    
-      description: 'The width of the spillway (m). Only for ''Broad-Crested'' type'    
+      description: The width of the spillway (m). Only for 'Broad-Crested' type    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
-        units: meters.    
+        units: meters    
     tag:    
-      description: 'An optional text string used to qualify an item'    
+      description: An optional text string used to qualify an item    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     type:    
-      description: 'NGSI Entity Type. It has to be Spillway.'    
+      description: NGSI Entity Type. It has to be Spillway    
       enum:    
         - Spillway    
       type: string    
       x-ngsi:    
         type: Property    
     waterDischarge:    
-      description: 'The discharge over the spillway (Q)'    
+      description: The discharge over the spillway (Q)    
       minimum: 0    
       type: number    
       x-ngsi:    
@@ -445,7 +526,7 @@ Spillway:
     - location    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/Spillway/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/data-models.OpenChannelManagement/Spillway/schema.json    
   x-model-tags: FIWARE4WATER    
@@ -457,8 +538,8 @@ Spillway:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ペイロードの例  
-#### Spillway NGSI-v2 key-value の例  
-SpillwayをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+#### NGSI-v2 キー値の例  
+以下は、JSON-LD形式のkey-valuesとしてのSpillwayの例である。これはNGSI-v2と互換性があり、`options=keyValues`を使用すると、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -517,8 +598,8 @@ Spillway:
 }  
 ```  
 </details>  
-#### Spillway NGSI-v2 正規化例  
-SpillwayをJSON-LD形式で正規化した例です。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### NGSI-v2 正規化例  
+以下は、正規化されたJSON-LD形式の放水路の例である。これはNGSI-v2と互換性があり、オプションを使用しない場合、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -671,7 +752,7 @@ Spillway:
 ```  
 </details>  
 #### NGSI-LD キー値の例  
-SpillwayをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+以下は、JSON-LD形式のkey-valuesとしてのSpillwayの例である。これはNGSI-LDと互換性があり、`options=keyValues`を使うと個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -733,8 +814,8 @@ Spillway:
 }  
 ```  
 </details>  
-#### NGSI-LDで正規化した例  
-SpillwayをJSON-LD形式で正規化した例です。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### NGSI-LD 正規化例  
+以下は、正規化されたJSON-LD形式の放水路の例である。これは、オプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -895,7 +976,7 @@ Spillway:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
