@@ -15,7 +15,14 @@
 ## Liste der Eigenschaften  
 
 <sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `curveDischargeCoefficient[*]`: Die URI einer OpenChannelCurve-Entität, die den Abflusskoeffizienten (C) als Funktion der relativen Wehröffnung (Wehröffnung (a) über der flussaufwärts gelegenen Tiefe (H)) darstellt, C über a/H.  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `downstreamControlPoint[*]`: Eine Beziehung, die die ID einer Entität vom Typ Querschnitt angibt, die einen Querschnitt in einer Strecke mit permanenten Strömungsverhältnissen stromabwärts der Schleuse darstellt.  - `downstreamEndControlPoint[*]`: Eine Beziehung, die die ID einer Entität vom Typ Querschnitt angibt, die einen Querschnitt unmittelbar stromabwärts der Schleuse darstellt.  - `flowType[string]`: Er definiert die Durchflussbedingungen im Tor. Er nimmt die Werte an: 'Overflow' (Wasserstand oberhalb der Wehrkrone), 'Free-Flow' (Wasserstand unterhalb der Schieberkante), 'Submerged Flow' (der Durchfluss durch den Schieber wird durch die Öffnung des Schiebers geregelt). Enum:'Overflow, Free-Flow, Submerged-Flow'.  - `gateBottomElevation[number]`: Höhe der Unterseite (Scheitel) des Tores.  - `gateDischargeCoefficient[number]`: Abflusskoeffizient des Tores, der die Energieverluste berücksichtigt, wenn das Wasser unter dem Tor hindurchfließt.  - `gateOpening[number]`: Die Höhe der Toröffnung.  - `gateWidth[number]`: Die Breite des Schleusentors  - `headDifference[number]`: Die Differenz zwischen der Tiefe flussaufwärts und der Tiefe flussabwärts.  - `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `observedBy[*]`: Eine Beziehung zur ID des Geräts, das die Rohwassereigenschaften überwacht  . Model: [https://smart-data-models.github.io/dataModel.Device/device-schema.json](https://smart-data-models.github.io/dataModel.Device/device-schema.json)- `orificeDischargeCoefficient[number]`: Abflusskoeffizient der Blende, der die Energieverluste berücksichtigt, die entstehen, wenn das Wasser unter der Blende hindurchfließt und das stromabwärts gelegene Unterwasser ansteigt, so dass die Blende nicht mehr frei fließt.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `tag[string]`: Eine optionale Textzeichenfolge, die zur Qualifizierung eines Artikels verwendet wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI-LD Entitätstyp. Es muss SluiceGate sein.  - `upstreamControlPoint[*]`: Eine Beziehung, die die ID einer Entität vom Typ Querschnitt angibt, die einen Querschnitt in einer Strecke mit permanenten Strömungsverhältnissen stromaufwärts der Schleuse darstellt.  - `upstreamEndControlPoint[*]`: Eine Beziehung, die die ID einer Entität des Typs Querschnitt angibt, die einen Querschnitt unmittelbar stromaufwärts der Schleuse darstellt.  - `waterDischarge[number]`: Der Abfluss, der das Wehr passiert (Q).  <!-- /30-PropertiesList -->  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `curveDischargeCoefficient[*]`: Die URI einer OpenChannelCurve-Entität, die den Abflusskoeffizienten (C) als Funktion der relativen Wehröffnung (Wehröffnung (a) über der flussaufwärts gelegenen Tiefe (H)) darstellt, C über a/H  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `downstreamControlPoint[*]`: Eine Beziehung, die die ID einer Entität des Typs Querschnitt angibt, die einen Querschnitt in einer Strecke mit permanenten Strömungsverhältnissen stromabwärts der Schleuse darstellt  - `downstreamEndControlPoint[*]`: Eine Beziehung, die die ID einer Entität vom Typ Querschnitt angibt, die einen Querschnitt unmittelbar stromabwärts der Schleuse darstellt  - `flowType[string]`: Er definiert die Durchflussbedingungen im Tor. Er nimmt die Werte an: 'Overflow' (Wasserstand oberhalb der Wehrkrone), 'Free-Flow' (Wasserstand unterhalb der Schieberkante), 'Submerged Flow' (die Durchflussmenge durch den Schieber wird durch die Öffnung des Schiebers geregelt). Enum:'Überlauf, freier Durchfluss, untergetauchter Durchfluss'  - `gateBottomElevation[number]`: Höhe der Unterseite (Scheitel) des Tores  - `gateDischargeCoefficient[number]`: Abflusskoeffizient des Tores, der die Energieverluste beim Durchgang des Wassers unter dem Tor berücksichtigt  - `gateOpening[number]`: Die Höhe der Toröffnung  - `gateWidth[number]`: Die Breite des Schleusentors  - `headDifference[number]`: Die Differenz zwischen der stromaufwärts gelegenen Tiefe und der unmittelbar stromabwärts gelegenen Tiefe  - `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels  - `observedBy[*]`: Eine Beziehung zur ID des Geräts, das die Rohwassereigenschaften überwacht  . Model: [https://smart-data-models.github.io/dataModel.Device/device-schema.json](https://smart-data-models.github.io/dataModel.Device/device-schema.json)- `orificeDischargeCoefficient[number]`: Abflusskoeffizient der Blende, der die Energieverluste berücksichtigt, wenn das Wasser unter der Blende hindurchfließt und das stromabwärts gelegene Unterwasser ansteigt, so dass die Blende nicht mehr frei fließt  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `tag[string]`: Eine optionale Textzeichenfolge, die zur Qualifizierung einer Position verwendet wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI-LD-Entitätstyp. Es muss SluiceGate sein  - `upstreamControlPoint[*]`: Eine Beziehung, die die ID einer Entität des Typs Querschnitt angibt, die einen Querschnitt in einer Strecke mit permanenten Strömungsverhältnissen stromaufwärts der Schleuse darstellt  - `upstreamEndControlPoint[*]`: Eine Beziehung, die die ID einer Entität des Typs Querschnitt angibt, die einen Querschnitt unmittelbar stromaufwärts der Schleuse darstellt  - `waterDischarge[number]`: Der Abfluss, der das Wehr passiert (Q)  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
@@ -29,107 +36,147 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 SluiceGate:    
-  description: 'This entity contains a harmonised description of a generic Sluice Gate made for Raw-Water (Open Channels) System Management domain.'    
+  description: This entity contains a harmonised description of a generic Sluice Gate made for Raw-Water (Open Channels) System Management domain.    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     curveDischargeCoefficient:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'The URI of an OpenChannelCurve entity that represents the Discharge Coefficient (C) as a function of relative weir opening (weir opening (a) over upstream depth(H)), C over a/H.'    
+          x-ngsi:    
+            type: Property    
+      description: 'The URI of an OpenChannelCurve entity that represents the Discharge Coefficient (C) as a function of relative weir opening (weir opening (a) over upstream depth(H)), C over a/H'    
       x-ngsi:    
         type: Relationship    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     downstreamControlPoint:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'A relationship indicating the ID of an entity of type Cross Section, representing a cross section in a distance where the flow conditions are permanent, downstream of the sluice gate.'    
+          x-ngsi:    
+            type: Property    
+      description: 'A relationship indicating the ID of an entity of type Cross Section, representing a cross section in a distance where the flow conditions are permanent, downstream of the sluice gate'    
       x-ngsi:    
         type: Relationship    
     downstreamEndControlPoint:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'A relationship indicating the ID of an entity of type Cross Section, representing a cross section just downstream of the sluice gate.'    
+          x-ngsi:    
+            type: Property    
+      description: 'A relationship indicating the ID of an entity of type Cross Section, representing a cross section just downstream of the sluice gate'    
       x-ngsi:    
         type: Relationship    
     flowType:    
-      description: 'It defines the flow conditions in the gate. It takes the values: ''Overflow'' (upstream water level exceeds the weir crest level), ''Free-Flow'' (water level is lower than gate edge), ''Submerged Flow'' (the rate of flow passing through the gate is regulated by the opening of the gate). Enum:''Overflow, Free-Flow, Submerged-Flow''.'    
+      description: 'It defines the flow conditions in the gate. It takes the values: ''Overflow'' (upstream water level exceeds the weir crest level), ''Free-Flow'' (water level is lower than gate edge), ''Submerged Flow'' (the rate of flow passing through the gate is regulated by the opening of the gate). Enum:''Overflow, Free-Flow, Submerged-Flow'''    
       enum:    
         - Free-Flow    
         - Overflow    
@@ -138,53 +185,57 @@ SluiceGate:
       x-ngsi:    
         type: Property    
     gateBottomElevation:    
-      description: 'Elevation of the bottom (crest) of the gate.'    
+      description: Elevation of the bottom (crest) of the gate    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     gateDischargeCoefficient:    
-      description: 'Discharge coefficient of the gate that accounts for energy losses as water passes under the gate.'    
+      description: Discharge coefficient of the gate that accounts for energy losses as water passes under the gate    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     gateOpening:    
-      description: 'The height of gate opening.'    
+      description: The height of gate opening    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     gateWidth:    
-      description: 'The width of the sluice gate'    
+      description: The width of the sluice gate    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
-        units: ' meters.'    
+        units: ' meters'    
     headDifference:    
-      description: 'The difference between the upstream depth and the depth just downstream.'    
+      description: The difference between the upstream depth and the depth just downstream    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &sluicegate_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -203,9 +254,11 @@ SluiceGate:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -227,9 +280,11 @@ SluiceGate:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -253,9 +308,11 @@ SluiceGate:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -276,9 +333,11 @@ SluiceGate:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -302,9 +361,11 @@ SluiceGate:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -330,45 +391,65 @@ SluiceGate:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     observedBy:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'A relationship to the ID of the device that monitors raw-water properties'    
+          x-ngsi:    
+            type: Property    
+      description: A relationship to the ID of the device that monitors raw-water properties    
       x-ngsi:    
         model: https://smart-data-models.github.io/dataModel.Device/device-schema.json    
         type: Relationship    
     orificeDischargeCoefficient:    
-      description: 'Orifice discharge coefficient that accounts for energy losses as water passes under the gate, and the downstream tailwater increases so that the gate is no longer flowing freely.'    
+      description: 'Orifice discharge coefficient that accounts for energy losses as water passes under the gate, and the downstream tailwater increases so that the gate is no longer flowing freely'    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *sluicegate_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -380,18 +461,18 @@ SluiceGate:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     tag:    
-      description: 'An optional text string used to qualify an item'    
+      description: An optional text string used to qualify an item    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     type:    
-      description: 'NGSI-LD Entity Type. It has to be SluiceGate.'    
+      description: NGSI-LD Entity Type. It has to be SluiceGate    
       enum:    
         - SluiceGate    
       type: string    
@@ -399,32 +480,40 @@ SluiceGate:
         type: Property    
     upstreamControlPoint:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'A relationship indicating the ID of an entity of type Cross Section, representing a cross section in a distance where the flow conditions are permanent, upstream of the sluice gate.'    
+          x-ngsi:    
+            type: Property    
+      description: 'A relationship indicating the ID of an entity of type Cross Section, representing a cross section in a distance where the flow conditions are permanent, upstream of the sluice gate'    
       x-ngsi:    
         type: Relationship    
     upstreamEndControlPoint:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'A relationship indicating the ID of an entity of type Cross Section, representing a cross section just upstream of the sluice gate.'    
+          x-ngsi:    
+            type: Property    
+      description: 'A relationship indicating the ID of an entity of type Cross Section, representing a cross section just upstream of the sluice gate'    
       x-ngsi:    
         type: Relationship    
     waterDischarge:    
-      description: 'The discharge that passes the weir (Q).'    
+      description: The discharge that passes the weir (Q)    
       minimum: 0    
       type: number    
       x-ngsi:    
@@ -435,7 +524,7 @@ SluiceGate:
     - location    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.OpenChannelManagement/blob/master/SluiceGate/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/data-models.OpenChannelManagement/SluiceGate/schema.json    
   x-model-tags: FIWARE4WATER    
