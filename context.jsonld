@@ -19,10 +19,18 @@
         "apronLength": "https://smartdatamodels.org/dataModel.OpenChannelManagement/apronLength",
         "areaServed": "https://smartdatamodels.org/areaServed",
         "attachedTo": "https://smartdatamodels.org/dataModel.OpenChannelManagement/attachedTo",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "bottomSlope": "https://smartdatamodels.org/dataModel.OpenChannelManagement/bottomSlope",
         "bottomWidth": "https://smartdatamodels.org/dataModel.OpenChannelManagement/bottomWidth",
         "celerity": "https://smartdatamodels.org/dataModel.OpenChannelManagement/celerity",
         "controlCrossSection": "https://smartdatamodels.org/dataModel.OpenChannelManagement/controlCrossSection",
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "crestElevation": "https://smartdatamodels.org/dataModel.OpenChannelManagement/crestElevation",
         "crestLength": "https://smartdatamodels.org/dataModel.OpenChannelManagement/crestLength",
         "crossSectionGeometry": "https://smartdatamodels.org/dataModel.OpenChannelManagement/crossSectionGeometry",
@@ -101,6 +109,7 @@
         "streetNr": "https://smartdatamodels.org/streetNr",
         "tag": "https://smartdatamodels.org/tag",
         "targetDischarge": "https://smartdatamodels.org/dataModel.OpenChannelManagement/targetDischarge",
+        "targetURI": "https://smartdatamodels.org/dataModel.OpenChannelManagement/targetURI",
         "teleCommand": "https://smartdatamodels.org/dataModel.OpenChannelManagement/teleCommand",
         "travelDuration": "https://smartdatamodels.org/dataModel.OpenChannelManagement/travelDuration",
         "turbidity": "https://smartdatamodels.org/dataModel.OpenChannelManagement/turbidity",
@@ -109,6 +118,7 @@
         "upstreamControlPoint": "https://smartdatamodels.org/dataModel.OpenChannelManagement/upstreamControlPoint",
         "upstreamEndControlPoint": "https://smartdatamodels.org/dataModel.OpenChannelManagement/upstreamEndControlPoint",
         "upstreamNode": "https://smartdatamodels.org/dataModel.OpenChannelManagement/upstreamNode",
+        "waterAttribute": "https://smartdatamodels.org/dataModel.OpenChannelManagement/waterAttribute",
         "waterDischarge": "https://smartdatamodels.org/dataModel.OpenChannelManagement/waterDischarge",
         "waterFlow": "https://smartdatamodels.org/dataModel.OpenChannelManagement/waterFlow",
         "waterInflow": "https://smartdatamodels.org/dataModel.OpenChannelManagement/waterInflow",
