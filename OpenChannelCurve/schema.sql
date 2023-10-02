@@ -1,3 +1,3 @@
-/* (Beta) Export of data model OpenChannelCurve of the subject dataModel.OpenChannelManagement for a postgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE curveType_type AS ENUM ('a/H-C', 'H-Q', 'Co-P/Ho', 'C-H/L', 'C/Co-H/Ho');CREATE TYPE OpenChannelCurve_type AS ENUM ('OpenChannelCurve');
-CREATE TABLE OpenChannelCurve (address json, alternateName text, areaServed text, curveType curveType_type, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, tag text, type OpenChannelCurve_type, xData json, yData json);
+/* (Beta) Export of data model OpenChannelCurve of the subject dataModel.OpenChannelManagement for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE curveType_type AS ENUM ('a/H-C','H-Q','Co-P/Ho','C-H/L','C/Co-H/Ho');CREATE TYPE OpenChannelCurve_type AS ENUM ('OpenChannelCurve');
+CREATE TABLE OpenChannelCurve (address JSON, alternateName TEXT, areaServed TEXT, curveType curveType_type, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, tag TEXT, type OpenChannelCurve_type, xData JSON, yData JSON);
