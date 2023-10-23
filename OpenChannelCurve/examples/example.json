@@ -23,7 +23,7 @@
   "source": "",
   "name": "Curve_1",
   "alternateName": "",
-  "description": "Open Channel Curve for a/H ~ C",
+  "description": "Open Channel Curve for a/H-C",
   "dataProvider": "NTUA",
   "owner": [
     "urn:ngsi-ld:OpenChannelCurve:items:EXUV:99745990",
@@ -33,8 +33,8 @@
     "urn:ngsi-ld:OpenChannelCurve:items:IZFN:20714900",
     "urn:ngsi-ld:OpenChannelCurve:items:RDSS:63995745"
   ],
-  "tag": "a/H ~ C curve",
-  "curveType": "a/H ~ C",
+  "tag": "a/H-C curve",
+  "curveType": "a/H-C",
   "xData": [
     0.001,
     0.1,
