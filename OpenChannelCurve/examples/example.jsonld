@@ -12,11 +12,11 @@
     },
     "alternateName": "",
     "areaServed": "",
-    "curveType": "a/H ~ C",
+    "curveType": "a/H-C",
     "dataProvider": "NTUA",
     "dateCreated": "2003-09-09T04:19:40Z",
     "dateModified": "2019-04-13T13:45:31Z",
-    "description": "Open Channel Curve for a/H ~ C",
+    "description": "Open Channel Curve for a/H-C",
     "location": {
         "type": "Point",
         "coordinates": [
@@ -34,7 +34,7 @@
         "urn:ngsi-ld:OpenChannelCurve:items:RDSS:63995745"
     ],
     "source": "",
-    "tag": "a/H ~ C curve",
+    "tag": "a/H-C curve",
     "xData": [
         0.001,
         0.1,
