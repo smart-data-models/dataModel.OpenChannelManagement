@@ -43,7 +43,7 @@
   "simulationOutput": [
     {
       "waterAttribute": "waterLevel",
-      "value": 3.50,
+      "value": 3.5,
       "targetURI": "urn:ngsi-ld:CrossSection:CS01"
     },
     {
