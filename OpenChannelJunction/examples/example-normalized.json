@@ -12,7 +12,7 @@
     }
   },
   "address": {
-    "type": "PostalAddress",
+    "type": "StructuredValue",
     "value": {
       "streetAddress": "",
       "addressLocality": "",
@@ -56,14 +56,14 @@
     "value": "EYDAP"
   },
   "owner": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:OpenChannelJunction:items:QPEH:03184806",
       "urn:ngsi-ld:OpenChannelJunction:items:PUHR:34031741"
     ]
   },
   "seeAlso": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:OpenChannelJunction:items:KTWJ:61564622",
       "urn:ngsi-ld:OpenChannelJunction:items:JOMY:24566116"
@@ -77,15 +77,15 @@
     }
   },
   "downstreamNode": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924"
   },
   "upstreamNode": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938"
   },
   "observedBy": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975"
   },
   "uniqueName": {
