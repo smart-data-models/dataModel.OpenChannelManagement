@@ -30,14 +30,14 @@
     "value": "NTUA"
   },
   "owner": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:RegulationStructureSimulation:items:XYXQ:62496984",
       "urn:ngsi-ld:RegulationStructureSimulation:items:ZHVH:90072950"
     ]
   },
   "seeAlso": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:RegulationStructureSimulation:items:HQQG:85737160",
       "urn:ngsi-ld:RegulationStructureSimulation:items:PCHL:09983431"
@@ -54,7 +54,7 @@
     }
   },
   "address": {
-    "type": "PostalAddress",
+    "type": "StructuredValue",
     "value": {
       "streetAddress": "",
       "addressLocality": "",
@@ -69,11 +69,11 @@
     "value": ""
   },
   "startSimulationTime": {
-    "type": "Datetime",
+    "type": "DateTime",
     "value": "2020-12-19T09:55:49Z"
   },
   "endSimulationTime": {
-    "type": "Datetime",
+    "type": "DateTime",
     "value": "2020-12-19T09:56:49Z"
   },
   "modelError": {
@@ -89,8 +89,8 @@
     "value": 14
   },
   "spillwayFlow": {
-    "type": "Number",
-    "value": 0
+    "type": "Boolean",
+    "value": false
   },
   "estimatedGateDischargeCoefficient": {
     "type": "Number",
@@ -101,11 +101,11 @@
     "value": 490
   },
   "simulationOutput": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       {
         "waterAttribute": "waterLevel",
-        "value": 3.50,
+        "value": 3.5,
         "targetURI": "urn:ngsi-ld:CrossSection:CS01"
       },
       {
@@ -116,7 +116,7 @@
     ]
   },
   "inputParameters": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       {
         "waterAttribute": "dischargeCoefficient",
@@ -131,7 +131,7 @@
     ]
   },
   "initialConditions": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       {
         "waterAttribute": "WaterFlow",
@@ -149,8 +149,5 @@
         "targetURI": "urn:ngsi-ld:SluiceGate:SG01"
       }
     ]
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
+  }
 }
