@@ -30,14 +30,14 @@
     "value": ""
   },
   "owner": {
-    "type": "Array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Channel:items:ZOOU:49614637",
       "urn:ngsi-ld:Channel:items:ODUZ:33451005"
     ]
   },
   "seeAlso": {
-    "type": "Array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Channel:items:YJSD:41528487",
       "urn:ngsi-ld:Channel:items:MROT:86526209"
@@ -70,11 +70,11 @@
     "value": ""
   },
   "downstreamNode": {
-    "type": "object",
+    "type": "Text",
     "value": "urn:ngsi-ld:Channel:downstreamNode:DQUS:63966588"
   },
   "upstreamNode": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:Channel:upstreamNode:MBQH:53312123"
   },
   "tag": {
@@ -98,8 +98,5 @@
       "waterLoss": 0.12,
       "length": 15
     }
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
+  }
 }
