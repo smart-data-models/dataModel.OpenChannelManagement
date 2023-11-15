@@ -12,7 +12,7 @@
     }
   },
   "address": {
-    "type": "PostalAddress",
+    "type": "StructuredValue",
     "value": {
       "streetAddress": "",
       "addressLocality": "",
@@ -24,18 +24,16 @@
     }
   },
   "areaServed": {
-    "type": "Property",
+    "type": "Text",
     "value": ""
   },
   "dateCreated": {
-      "type": "DateTime",
-      "value": "1972-01-13T19:49:28Z"
-
+    "type": "DateTime",
+    "value": "1972-01-13T19:49:28Z"
   },
-  "dateModified":  {
-      "type": "DateTime",
-      "value": "2000-05-11T14:06:00Z"
-
+  "dateModified": {
+    "type": "DateTime",
+    "value": "2000-05-11T14:06:00Z"
   },
   "source": {
     "type": "Text",
@@ -58,14 +56,14 @@
     "value": "EYDAP"
   },
   "owner": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:SluiceGate:items:LXOX:42416570",
       "urn:ngsi-ld:SluiceGate:items:FSOL:83758025"
     ]
   },
   "seeAlso": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:SluiceGate:items:ETJS:41829811",
       "urn:ngsi-ld:SluiceGate:items:IKTE:29167907"
@@ -112,27 +110,27 @@
     "value": "Submerged-Flow"
   },
   "upstreamEndControlPoint": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:SluiceGate:upstreamEndControlPoint:JXFD:60487647"
   },
   "downstreamEndControlPoint": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:SluiceGate:downstreamEndControlPoint:CBWI:21948924"
   },
   "upstreamControlPoint": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:SluiceGate:upstreamControlPoint:MWGU:81565938"
   },
   "downstreamControlPoint": {
-    "type": "Relationship",
-    "object": "urn:ngsi-ld:SluiceGate:downstreamControlPoint:GIWE:80160975"
+    "type": "Text",
+    "value": "urn:ngsi-ld:SluiceGate:downstreamControlPoint:GIWE:80160975"
   },
   "observedBy": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:SluiceGate:observedBy:ZWZM:93328711"
   },
   "curveDischargeCoefficient": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:SluiceGate:curveDischargeCoefficient:ZPPL:48418583"
   }
 }
