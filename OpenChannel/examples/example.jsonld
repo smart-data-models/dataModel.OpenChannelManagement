@@ -1,57 +1,57 @@
 {
-    "id": "urn:ngsi-ld:Channel:id:IXPY:98787462",
-    "type": "OpenChannel",
-    "address": {
-        "streetAddress": "",
-        "addressLocality": "Thesalonikii",
-        "addressRegion": "",
-        "addressCountry": "HELLAS",
-        "postalCode": "",
-        "postOfficeBoxNumber": "",
-        "areaServed": "."
-    },
-    "alternateName": "S-3",
-    "areaServed": "",
-    "dataProvider": "",
-    "dateCreated": "2021-04-13T21:22:33Z",
-    "dateModified": "2021-04-13T23:34:18Z",
-    "description": "Description of the channel S-3",
-    "downstreamNode": "urn:ngsi-ld:Channel:downstreamNode:DQUS:63966588",
-    "geometry": {
-        "geometryType": "Trapezoidal",
-        "bottomSlope": 12,
-        "leftSideSlope": 14,
-        "rightSideSlope": 3,
-        "bottomWidth": 5,
-        "diameter": 0,
-        "maxWaterDepth": 4,
-        "roughnessCoefficient": 0.6,
-        "flowType": "Free-Surface flow",
-        "celerity": 5,
-        "travelDuration": 22,
-        "waterLoss": 0.12,
-        "length": 15
-    },
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -14.2004135,
-            -147.354695
-        ]
-    },
-    "name": "Section 3",
-    "owner": [
-        "urn:ngsi-ld:Channel:items:ZOOU:49614637",
-        "urn:ngsi-ld:Channel:items:ODUZ:33451005"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:Channel:items:YJSD:41528487",
-        "urn:ngsi-ld:Channel:items:MROT:86526209"
-    ],
-    "source": "",
-    "tag": "Something special enjoy research institution past western. System spring clearly impact policy.",
-    "upstreamNode": "urn:ngsi-ld:Channel:upstreamNode:MBQH:53312123",
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"
+  "id": "urn:ngsi-ld:Channel:id:IXPY:98787462",
+  "type": "OpenChannel",
+  "address": {
+    "streetAddress": "",
+    "addressLocality": "Thesalonikii",
+    "addressRegion": "",
+    "addressCountry": "HELLAS",
+    "postalCode": "",
+    "postOfficeBoxNumber": "",
+    "areaServed": "."
+  },
+  "alternateName": "S-3",
+  "areaServed": "",
+  "dataProvider": "",
+  "dateCreated": "2021-04-13T21:22:33Z",
+  "dateModified": "2021-04-13T23:34:18Z",
+  "description": "Description of the channel S-3",
+  "downstreamNode": "urn:ngsi-ld:Channel:downstreamNode:DQUS:63966588",
+  "geometry": {
+    "geometryType": "Trapezoidal",
+    "bottomSlope": 12,
+    "leftSideSlope": 14,
+    "rightSideSlope": 3,
+    "bottomWidth": 5,
+    "diameter": 0,
+    "maxWaterDepth": 4,
+    "roughnessCoefficient": 0.6,
+    "flowType": "Free-Surface flow",
+    "celerity": 5,
+    "travelDuration": 22,
+    "waterLoss": 0.12,
+    "length": 15
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -14.2004135,
+      -147.354695
     ]
+  },
+  "name": "Section 3",
+  "owner": [
+    "urn:ngsi-ld:Channel:items:ZOOU:49614637",
+    "urn:ngsi-ld:Channel:items:ODUZ:33451005"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Channel:items:YJSD:41528487",
+    "urn:ngsi-ld:Channel:items:MROT:86526209"
+  ],
+  "source": "",
+  "tag": "Something special enjoy research institution past western. System spring clearly impact policy.",
+  "upstreamNode": "urn:ngsi-ld:Channel:upstreamNode:MBQH:53312123",
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"
+  ]
 }
