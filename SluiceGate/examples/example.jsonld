@@ -1,54 +1,54 @@
 {
-    "id": "urn:ngsi-ld:SluiceGate:id:OZDE:42332657",
-    "type": "SluiceGate",
-    "address": {
-        "streetAddress": "",
-        "addressLocality": "",
-        "addressRegion": "",
-        "addressCountry": "",
-        "postalCode": "",
-        "postOfficeBoxNumber": "",
-        "areaServed": ""
-    },
-    "alternateName": "SG01 - Thivae",
-    "areaServed": "",
-    "curveDischargeCoefficient": "urn:ngsi-ld:SluiceGate:curveDischargeCoefficient:ZPPL:48418583",
-    "dataProvider": "EYDAP",
-    "dateCreated": "2021-01-13T19:49:28Z",
-    "dateModified": "2021-05-11T14:06:00Z",
-    "description": "Sluic Gate 01 - Thivae",
-    "downstreamControlPoint": "urn:ngsi-ld:SluiceGate:downstreamControlPoint:GIWE:80160975",
-    "downstreamEndControlPoint": "urn:ngsi-ld:SluiceGate:downstreamEndControlPoint:CBWI:21948924",
-    "flowType": "Submerged-Flow",
-    "gateBottomElevation": 52.3,
-    "gateDischargeCoefficient": 0.5,
-    "gateOpening": 0.5,
-    "gateWidth": 2.5,
-    "headDifference": 1.5,
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -7.578066,
-            -25.535857
-        ]
-    },
-    "name": "SG01",
-    "observedBy": "urn:ngsi-ld:SluiceGate:observedBy:ZWZM:93328711",
-    "orificeDischargeCoefficient": 0.5,
-    "owner": [
-        "urn:ngsi-ld:SluiceGate:items:LXOX:42416570",
-        "urn:ngsi-ld:SluiceGate:items:FSOL:83758025"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:SluiceGate:items:ETJS:41829811",
-        "urn:ngsi-ld:SluiceGate:items:IKTE:29167907"
-    ],
-    "source": "",
-    "tag": "",
-    "upstreamControlPoint": "urn:ngsi-ld:SluiceGate:upstreamControlPoint:MWGU:81565938",
-    "upstreamEndControlPoint": "urn:ngsi-ld:SluiceGate:upstreamEndControlPoint:JXFD:60487647",
-    "waterDischarge": 9,
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"
+  "id": "urn:ngsi-ld:SluiceGate:id:OZDE:42332657",
+  "type": "SluiceGate",
+  "address": {
+    "streetAddress": "",
+    "addressLocality": "",
+    "addressRegion": "",
+    "addressCountry": "",
+    "postalCode": "",
+    "postOfficeBoxNumber": "",
+    "areaServed": ""
+  },
+  "alternateName": "SG01 - Thivae",
+  "areaServed": "",
+  "curveDischargeCoefficient": "urn:ngsi-ld:SluiceGate:curveDischargeCoefficient:ZPPL:48418583",
+  "dataProvider": "EYDAP",
+  "dateCreated": "2021-01-13T19:49:28Z",
+  "dateModified": "2021-05-11T14:06:00Z",
+  "description": "Sluic Gate 01 - Thivae",
+  "downstreamControlPoint": "urn:ngsi-ld:SluiceGate:downstreamControlPoint:GIWE:80160975",
+  "downstreamEndControlPoint": "urn:ngsi-ld:SluiceGate:downstreamEndControlPoint:CBWI:21948924",
+  "flowType": "Submerged-Flow",
+  "gateBottomElevation": 52.3,
+  "gateDischargeCoefficient": 0.5,
+  "gateOpening": 0.5,
+  "gateWidth": 2.5,
+  "headDifference": 1.5,
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -7.578066,
+      -25.535857
     ]
+  },
+  "name": "SG01",
+  "observedBy": "urn:ngsi-ld:SluiceGate:observedBy:ZWZM:93328711",
+  "orificeDischargeCoefficient": 0.5,
+  "owner": [
+    "urn:ngsi-ld:SluiceGate:items:LXOX:42416570",
+    "urn:ngsi-ld:SluiceGate:items:FSOL:83758025"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:SluiceGate:items:ETJS:41829811",
+    "urn:ngsi-ld:SluiceGate:items:IKTE:29167907"
+  ],
+  "source": "",
+  "tag": "",
+  "upstreamControlPoint": "urn:ngsi-ld:SluiceGate:upstreamControlPoint:MWGU:81565938",
+  "upstreamEndControlPoint": "urn:ngsi-ld:SluiceGate:upstreamEndControlPoint:JXFD:60487647",
+  "waterDischarge": 9,
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"
+  ]
 }
