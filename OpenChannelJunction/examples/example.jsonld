@@ -1,49 +1,49 @@
 {
-    "id": "urn:ngsi-ld:OpenChannelJunction:id:PTOM:78370074",
-    "type": "OpenChannelJunction",
-    "address": {
-        "streetAddress": "",
-        "addressLocality": "",
-        "addressRegion": "",
-        "addressCountry": "",
-        "postalCode": "",
-        "postOfficeBoxNumber": ""
-    },
-    "alternateName": "Thivae",
-    "areaServed": "",
-    "dataProvider": "EYDAP",
-    "dateCreated": "1983-10-11T21:04:39Z",
-    "dateModified": "1982-03-03T08:37:57Z",
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -65.2981945,
-            -22.649102
-        ]
-    },
-    "name": "J1",
-    "owner": [
-        "urn:ngsi-ld:OpenChannelJunction:items:QPEH:03184806",
-        "urn:ngsi-ld:OpenChannelJunction:items:PUHR:34031741"
-    ],
-    "position": {
-        "distance": 160.6,
-        "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647"
-    },
-    "downstreamNode": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924",
-    "upstreamNode": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938",
-    "observedBy": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975",
-    "uniqueName": "J1",
-    "tag": "",
-    "waterOutflow": 0.12,
-    "waterInflow": 0.15,
-    "waterLevel": 0.85,
-    "seeAlso": [
-        "urn:ngsi-ld:OpenChannelJunction:items:KTWJ:61564622",
-        "urn:ngsi-ld:OpenChannelJunction:items:JOMY:24566116"
-    ],
-    "source": "",
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"
+  "id": "urn:ngsi-ld:OpenChannelJunction:id:PTOM:78370074",
+  "type": "OpenChannelJunction",
+  "address": {
+    "streetAddress": "",
+    "addressLocality": "",
+    "addressRegion": "",
+    "addressCountry": "",
+    "postalCode": "",
+    "postOfficeBoxNumber": ""
+  },
+  "alternateName": "Thivae",
+  "areaServed": "",
+  "dataProvider": "EYDAP",
+  "dateCreated": "1983-10-11T21:04:39Z",
+  "dateModified": "1982-03-03T08:37:57Z",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -65.2981945,
+      -22.649102
     ]
+  },
+  "name": "J1",
+  "owner": [
+    "urn:ngsi-ld:OpenChannelJunction:items:QPEH:03184806",
+    "urn:ngsi-ld:OpenChannelJunction:items:PUHR:34031741"
+  ],
+  "position": {
+    "distance": 160.6,
+    "refPoint": "urn:ngsi-ld:OpenChannelJunction:refPoint:JXFD:60487647"
+  },
+  "downstreamNode": "urn:ngsi-ld:OpenChannelJunction:downstreamNode:CBWI:21948924",
+  "upstreamNode": "urn:ngsi-ld:OpenChannelJunction:upstreamNode:MWGU:81565938",
+  "observedBy": "urn:ngsi-ld:OpenChannelJunction:observedBy:GIWE:80160975",
+  "uniqueName": "J1",
+  "tag": "",
+  "waterOutflow": 0.12,
+  "waterInflow": 0.15,
+  "waterLevel": 0.85,
+  "seeAlso": [
+    "urn:ngsi-ld:OpenChannelJunction:items:KTWJ:61564622",
+    "urn:ngsi-ld:OpenChannelJunction:items:JOMY:24566116"
+  ],
+  "source": "",
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"
+  ]
 }
