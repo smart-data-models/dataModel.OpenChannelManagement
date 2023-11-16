@@ -1,57 +1,57 @@
 {
-    "id": "urn:ngsi-ld:Spillway:id:FFPG:06271993",
-    "type": "Spillway",
-    "address": {
-        "streetAddress": "",
-        "addressLocality": "",
-        "addressRegion": "",
-        "addressCountry": "",
-        "postalCode": "",
-        "postOfficeBoxNumber": "",
-        "areaServed": ""
-    },
-    "alternateName": "SP01 - Thivae",
-    "apronElevation": 22,
-    "apronLength": 5,
-    "areaServed": "",
-    "controlCrossSection": "urn:ngsi-ld:Spillway:controlCrossSection:JXFD:60487647",
-    "crestElevation": 26.4,
-    "crestLength": 5,
-    "curveDesignDischargeCoefficient": "urn:ngsi-ld:Spillway:curveDesignDischargeCoefficient:GIWE:80160975",
-    "curveDischargeCoefficient": "urn:ngsi-ld:Spillway:curveDischargeCoefficient:MWGU:81565938",
-    "curveElevationDischarge": "urn:ngsi-ld:Spillway:curveElevationDischarge:CBWI:21948924",
-    "dataProvider": "EYDAP",
-    "dateCreated": "2020-10-12T04:27:47Z",
-    "dateModified": "2021-09-26T16:22:05Z",
-    "description": "Spillway 01 - Thivae",
-    "designDischarge": 20,
-    "designDischargeCoefficient": 0.4,
-    "designHead": 30.4,
-    "dischargeCoefficient": 5,
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            60.3603485,
-            -129.682253
-        ]
-    },
-    "maxFloodElevation": 4,
-    "name": "SP01",
-    "numberAbutments": 2,
-    "owner": [
-        "urn:ngsi-ld:Spillway:items:OFPV:04640010",
-        "urn:ngsi-ld:Spillway:items:BFAT:33357858"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:Spillway:items:VLIF:47226224",
-        "urn:ngsi-ld:Spillway:items:BDSZ:68275691"
-    ],
-    "source": "",
-    "spillwayType": "Ogee",
-    "spillwayWidth": 5,
-    "tag": "",
-    "waterDischarge": 9,
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"
+  "id": "urn:ngsi-ld:Spillway:id:FFPG:06271993",
+  "type": "Spillway",
+  "address": {
+    "streetAddress": "",
+    "addressLocality": "",
+    "addressRegion": "",
+    "addressCountry": "",
+    "postalCode": "",
+    "postOfficeBoxNumber": "",
+    "areaServed": ""
+  },
+  "alternateName": "SP01 - Thivae",
+  "apronElevation": 22,
+  "apronLength": 5,
+  "areaServed": "",
+  "controlCrossSection": "urn:ngsi-ld:Spillway:controlCrossSection:JXFD:60487647",
+  "crestElevation": 26.4,
+  "crestLength": 5,
+  "curveDesignDischargeCoefficient": "urn:ngsi-ld:Spillway:curveDesignDischargeCoefficient:GIWE:80160975",
+  "curveDischargeCoefficient": "urn:ngsi-ld:Spillway:curveDischargeCoefficient:MWGU:81565938",
+  "curveElevationDischarge": "urn:ngsi-ld:Spillway:curveElevationDischarge:CBWI:21948924",
+  "dataProvider": "EYDAP",
+  "dateCreated": "2020-10-12T04:27:47Z",
+  "dateModified": "2021-09-26T16:22:05Z",
+  "description": "Spillway 01 - Thivae",
+  "designDischarge": 20,
+  "designDischargeCoefficient": 0.4,
+  "designHead": 30.4,
+  "dischargeCoefficient": 5,
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      60.3603485,
+      -129.682253
     ]
+  },
+  "maxFloodElevation": 4,
+  "name": "SP01",
+  "numberAbutments": 2,
+  "owner": [
+    "urn:ngsi-ld:Spillway:items:OFPV:04640010",
+    "urn:ngsi-ld:Spillway:items:BFAT:33357858"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Spillway:items:VLIF:47226224",
+    "urn:ngsi-ld:Spillway:items:BDSZ:68275691"
+  ],
+  "source": "",
+  "spillwayType": "Ogee",
+  "spillwayWidth": 5,
+  "tag": "",
+  "waterDischarge": 9,
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"
+  ]
 }
