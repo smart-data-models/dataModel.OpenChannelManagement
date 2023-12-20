@@ -73,10 +73,6 @@
     "type": "Text",
     "value": ""
   },
-  "gateType": {
-    "type": "Text",
-    "value": "Sluice Gate"
-  },
   "gateWidth": {
     "type": "Number",
     "value": 2.5
