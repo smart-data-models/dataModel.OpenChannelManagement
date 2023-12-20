@@ -71,10 +71,6 @@
         "type": "Property",
         "value": 0.5
     },
-    "gateType": {
-        "type": "Property",
-        "value": "Sluice Gate"
-    },
     "gateWidth": {
         "type": "Property",
         "value": 2.5
