@@ -12,7 +12,7 @@
     }
   },
   "address": {
-    "type": "PostalAddress",
+    "type": "StructuredValue",
     "value": {
       "streetAddress": "",
       "addressLocality": "",
@@ -52,18 +52,18 @@
     "value": "Regulation Structure Thivae"
   },
   "dataProvider": {
-    "type": "Property",
+    "type": "Text",
     "value": "EYDAP"
   },
   "owner": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:RegulationStructure:items:ASWJ:21246595",
       "urn:ngsi-ld:RegulationStructure:items:NHFZ:56673870"
     ]
   },
   "seeAlso": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:RegulationStructure:items:PLEL:78574823",
       "urn:ngsi-ld:RegulationStructure:items:IZVF:62633698"
@@ -74,23 +74,23 @@
     "value": ""
   },
   "numberOfGates": {
-    "type": "Number",
-    "value": 1
+    "type": "Boolean",
+    "value": true
   },
   "numberOfSpillways": {
-    "type": "Number",
-    "value": 1
+    "type": "Boolean",
+    "value": true
   },
   "teleCommand": {
     "type": "Boolean",
-    "value": "true"
+    "value": true
   },
   "hasSluiceGate": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:RegulationStructure:hasSluiceGate:JXFD:60487647"
   },
   "hasSpillway": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:RegulationStructure:hasSpillway:CBWI:21948924"
   },
   "position": {

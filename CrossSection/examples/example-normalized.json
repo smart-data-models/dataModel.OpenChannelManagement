@@ -29,14 +29,14 @@
     "value": ""
   },
   "owner": {
-    "type": "Array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:CrossSection:items:ILNP:15826171",
       "urn:ngsi-ld:CrossSection:items:RUEP:96519173"
     ]
   },
   "seeAlso": {
-    "type": "Array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:CrossSection:items:GEPQ:35001404",
       "urn:ngsi-ld:CrossSection:items:YRBN:14719571"
@@ -53,7 +53,7 @@
     }
   },
   "address": {
-    "type": "StructuredObject",
+    "type": "StructuredValue",
     "value": {
       "streetAddress": "",
       "addressLocality": "",
@@ -70,11 +70,11 @@
   },
   "type": "CrossSection",
   "attachedTo": {
-    "type": "object",
+    "type": "Text",
     "value": "urn:ngsi-ld:CrossSection:attachedTo:CTHP:74683243"
   },
   "observedBy": {
-    "type": "object",
+    "type": "Text",
     "value": "urn:ngsi-ld:CrossSection:observedBy:WJTI:74120377"
   },
   "tag": {
@@ -82,7 +82,7 @@
     "value": ""
   },
   "position": {
-    "type": "StructuredObject",
+    "type": "StructuredValue",
     "value": {
       "distance": 864.6,
       "refPoint": "urn:ngsi-ld:CrossSection:refPoint:JXFD:60487647"
@@ -137,15 +137,15 @@
     "value": 5
   },
   "diameter": {
-    "type": "Number",
-    "value": 0
+    "type": "Boolean",
+    "value": false
   },
   "maxWaterDepth": {
     "type": "Number",
     "value": 4
   },
   "inheritsFrom": {
-    "type": "object",
+    "type": "Text",
     "value": "urn:ngsi-ld:CrossSection:inheritsFrom:JXFD:60487647"
   }
 }

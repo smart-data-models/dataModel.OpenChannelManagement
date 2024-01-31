@@ -1,49 +1,49 @@
 {
-    "id": "urn:ngsi-ld:RegulationStructure:id:IXHN:40075061",
-    "type": "RegulationStructure",
-    "address": {
-        "streetAddress": "",
-        "addressLocality": "",
-        "addressRegion": "",
-        "addressCountry": "",
-        "postalCode": "",
-        "postOfficeBoxNumber": "",
-        "areaServed": ""
-    },
-    "alternateName": "RS01 Thivae",
-    "areaServed": "",
-    "dataProvider": "EYDAP",
-    "dateCreated": "1986-07-26T02:43:28Z",
-    "dateModified": "2021-03-21T17:56:26Z",
-    "description": "Regulation Structure Thivae",
-    "hasSluiceGate": "urn:ngsi-ld:RegulationStructure:hasSluiceGate:JXFD:60487647",
-    "hasSpillway": "urn:ngsi-ld:RegulationStructure:hasSpillway:CBWI:21948924",
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -72.3447045,
-            44.679442
-        ]
-    },
-    "name": "RS01",
-    "numberOfGates": 1,
-    "numberOfSpillways": 1,
-    "owner": [
-        "urn:ngsi-ld:RegulationStructure:items:ASWJ:21246595",
-        "urn:ngsi-ld:RegulationStructure:items:NHFZ:56673870"
-    ],
-    "position": {
-        "distance": 160.6,
-        "refPoint": "urn:ngsi-ld:RegulationStructure:refPoint:JXFD:60487647"
-    },
-    "seeAlso": [
-        "urn:ngsi-ld:RegulationStructure:items:PLEL:78574823",
-        "urn:ngsi-ld:RegulationStructure:items:IZVF:62633698"
-    ],
-    "source": "",
-    "tag": "",
-    "teleCommand": true,
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"
+  "id": "urn:ngsi-ld:RegulationStructure:id:IXHN:40075061",
+  "type": "RegulationStructure",
+  "address": {
+    "streetAddress": "",
+    "addressLocality": "",
+    "addressRegion": "",
+    "addressCountry": "",
+    "postalCode": "",
+    "postOfficeBoxNumber": "",
+    "areaServed": ""
+  },
+  "alternateName": "RS01 Thivae",
+  "areaServed": "",
+  "dataProvider": "EYDAP",
+  "dateCreated": "1986-07-26T02:43:28Z",
+  "dateModified": "2021-03-21T17:56:26Z",
+  "description": "Regulation Structure Thivae",
+  "hasSluiceGate": "urn:ngsi-ld:RegulationStructure:hasSluiceGate:JXFD:60487647",
+  "hasSpillway": "urn:ngsi-ld:RegulationStructure:hasSpillway:CBWI:21948924",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -72.3447045,
+      44.679442
     ]
+  },
+  "name": "RS01",
+  "numberOfGates": 1,
+  "numberOfSpillways": 1,
+  "owner": [
+    "urn:ngsi-ld:RegulationStructure:items:ASWJ:21246595",
+    "urn:ngsi-ld:RegulationStructure:items:NHFZ:56673870"
+  ],
+  "position": {
+    "distance": 160.6,
+    "refPoint": "urn:ngsi-ld:RegulationStructure:refPoint:JXFD:60487647"
+  },
+  "seeAlso": [
+    "urn:ngsi-ld:RegulationStructure:items:PLEL:78574823",
+    "urn:ngsi-ld:RegulationStructure:items:IZVF:62633698"
+  ],
+  "source": "",
+  "tag": "",
+  "teleCommand": true,
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"
+  ]
 }

@@ -12,7 +12,7 @@
     }
   },
   "address": {
-    "type": "PostalAddress",
+    "type": "StructuredValue",
     "value": {
       "streetAddress": "",
       "addressLocality": "",
@@ -56,14 +56,14 @@
     "value": "NTUA"
   },
   "owner": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:OpenChannelCurve:items:EXUV:99745990",
       "urn:ngsi-ld:OpenChannelCurve:items:HXOV:60683026"
     ]
   },
   "seeAlso": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:OpenChannelCurve:items:IZFN:20714900",
       "urn:ngsi-ld:OpenChannelCurve:items:RDSS:63995745"
@@ -78,7 +78,7 @@
     "value": "a/H-C"
   },
   "xData": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       0.001,
       0.1,
@@ -91,13 +91,13 @@
     ]
   },
   "yData": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       0.61,
-      0.5930,
+      0.593,
       0.5942,
       0.5988,
-      0.6070,
+      0.607,
       0.6209,
       0.6395,
       0.6628

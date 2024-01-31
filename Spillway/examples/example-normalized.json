@@ -12,7 +12,7 @@
     }
   },
   "address": {
-    "type": "PostalAddress",
+    "type": "StructuredValue",
     "value": {
       "streetAddress": "",
       "addressLocality": "",
@@ -24,19 +24,16 @@
     }
   },
   "areaServed": {
-    "type": "Property",
+    "type": "Text",
     "value": ""
   },
-  "dateCreated":{
-      "type": "DateTime",
-      "value": "2020-10-12T04:27:47Z"
-
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "2020-10-12T04:27:47Z"
   },
   "dateModified": {
-
-      "type": "DateTime",
-      "value": "2021-09-26T16:22:05Z"
-
+    "type": "DateTime",
+    "value": "2021-09-26T16:22:05Z"
   },
   "source": {
     "type": "Text",
@@ -59,14 +56,14 @@
     "value": "EYDAP"
   },
   "owner": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Spillway:items:OFPV:04640010",
       "urn:ngsi-ld:Spillway:items:BFAT:33357858"
     ]
   },
   "seeAlso": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Spillway:items:VLIF:47226224",
       "urn:ngsi-ld:Spillway:items:BDSZ:68275691"
@@ -127,24 +124,21 @@
   "waterDischarge": {
     "type": "Number",
     "value": 9
-  },  
+  },
   "controlCrossSection": {
-    "type": "Relationship",
-    "object": "urn:ngsi-ld:Spillway:controlCrossSection:JXFD:60487647"
+    "type": "Text",
+    "value": "urn:ngsi-ld:Spillway:controlCrossSection:JXFD:60487647"
   },
   "curveElevationDischarge": {
-    "type": "Relationship",
-    "object": "urn:ngsi-ld:Spillway:curveElevationDischarge:CBWI:21948924"
+    "type": "Text",
+    "value": "urn:ngsi-ld:Spillway:curveElevationDischarge:CBWI:21948924"
   },
   "curveDischargeCoefficient": {
-    "type": "Relationship",
-    "object": "urn:ngsi-ld:Spillway:curveDischargeCoefficient:MWGU:81565938"
+    "type": "Text",
+    "value": "urn:ngsi-ld:Spillway:curveDischargeCoefficient:MWGU:81565938"
   },
   "curveDesignDischargeCoefficient": {
-    "type": "Relationship",
-    "object": "urn:ngsi-ld:Spillway:curveDesignDischargeCoefficient:GIWE:80160975"
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
+    "type": "Text",
+    "value": "urn:ngsi-ld:Spillway:curveDesignDischargeCoefficient:GIWE:80160975"
+  }
 }

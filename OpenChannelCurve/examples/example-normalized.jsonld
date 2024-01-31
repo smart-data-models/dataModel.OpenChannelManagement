@@ -23,7 +23,7 @@
     },
     "curveType": {
         "type": "Property",
-        "value": "a/H ~ C"
+        "value": "a/H-C"
     },
     "dataProvider": {
         "type": "Property",
@@ -45,7 +45,7 @@
     },
     "description": {
         "type": "Property",
-        "value": "Open Channel Curve for a/H ~ C"
+        "value": "Open Channel Curve for a/H-C"
     },
     "location": {
         "type": "GeoProperty",
@@ -81,7 +81,7 @@
     },
     "tag": {
         "type": "Property",
-        "value": "a/H ~ C curve"
+        "value": "a/H-C curve"
     },
     "xData": {
         "type": "Property",

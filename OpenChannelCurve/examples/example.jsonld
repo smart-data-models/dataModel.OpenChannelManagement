@@ -1,61 +1,61 @@
 {
-    "id": "urn:ngsi-ld:OpenChannelCurve:id:FMCV:30717942",
-    "type": "OpenChannelCurve",
-    "address": {
-        "streetAddress": "",
-        "addressLocality": "",
-        "addressRegion": "",
-        "addressCountry": "",
-        "postalCode": "",
-        "postOfficeBoxNumber": "",
-        "areaServed": ""
-    },
-    "alternateName": "",
-    "areaServed": "",
-    "curveType": "a/H ~ C",
-    "dataProvider": "NTUA",
-    "dateCreated": "2003-09-09T04:19:40Z",
-    "dateModified": "2019-04-13T13:45:31Z",
-    "description": "Open Channel Curve for a/H ~ C",
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -71.481035,
-            -148.255307
-        ]
-    },
-    "name": "Curve_1",
-    "owner": [
-        "urn:ngsi-ld:OpenChannelCurve:items:EXUV:99745990",
-        "urn:ngsi-ld:OpenChannelCurve:items:HXOV:60683026"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:OpenChannelCurve:items:IZFN:20714900",
-        "urn:ngsi-ld:OpenChannelCurve:items:RDSS:63995745"
-    ],
-    "source": "",
-    "tag": "a/H ~ C curve",
-    "xData": [
-        0.001,
-        0.1,
-        0.2,
-        0.3,
-        0.4,
-        0.5,
-        0.6,
-        0.7
-    ],
-    "yData": [
-        0.61,
-        0.593,
-        0.5942,
-        0.5988,
-        0.607,
-        0.6209,
-        0.6395,
-        0.6628
-    ],
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"
+  "id": "urn:ngsi-ld:OpenChannelCurve:id:FMCV:30717942",
+  "type": "OpenChannelCurve",
+  "address": {
+    "streetAddress": "",
+    "addressLocality": "",
+    "addressRegion": "",
+    "addressCountry": "",
+    "postalCode": "",
+    "postOfficeBoxNumber": "",
+    "areaServed": ""
+  },
+  "alternateName": "",
+  "areaServed": "",
+  "curveType": "a/H-C",
+  "dataProvider": "NTUA",
+  "dateCreated": "2003-09-09T04:19:40Z",
+  "dateModified": "2019-04-13T13:45:31Z",
+  "description": "Open Channel Curve for a/H-C",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -71.481035,
+      -148.255307
     ]
+  },
+  "name": "Curve_1",
+  "owner": [
+    "urn:ngsi-ld:OpenChannelCurve:items:EXUV:99745990",
+    "urn:ngsi-ld:OpenChannelCurve:items:HXOV:60683026"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:OpenChannelCurve:items:IZFN:20714900",
+    "urn:ngsi-ld:OpenChannelCurve:items:RDSS:63995745"
+  ],
+  "source": "",
+  "tag": "a/H-C curve",
+  "xData": [
+    0.001,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7
+  ],
+  "yData": [
+    0.61,
+    0.593,
+    0.5942,
+    0.5988,
+    0.607,
+    0.6209,
+    0.6395,
+    0.6628
+  ],
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenChannelManagement/master/context.jsonld"
+  ]
 }
