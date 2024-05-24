@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "OpenChannelCurve"
 subject = "dataModel.OpenChannelManagement"
-curveType = "{'type': 'Property', 'value': 'a/H-C'}"
+curveType = "a/H-C"
 attribute = "curveType"
 value = curveType
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-tag = "{'type': 'Property', 'value': 'a/H-C curve'}"
+tag = "a/H-C curve"
 attribute = "tag"
 value = tag
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-xData = {'type': 'Property', 'value': [0.001, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7]}
+xData = [0.001, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7]
 attribute = "xData"
 value = xData
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-yData = {'type': 'Property', 'value': [0.61, 0.593, 0.5942, 0.5988, 0.607, 0.6209, 0.6395, 0.6628]}
+yData = [0.61, 0.593, 0.5942, 0.5988, 0.607, 0.6209, 0.6395, 0.6628]
 attribute = "yData"
 value = yData
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
