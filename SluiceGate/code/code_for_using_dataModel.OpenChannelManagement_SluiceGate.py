@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "SluiceGate"
 subject = "dataModel.OpenChannelManagement"
-curveDischargeCoefficient = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:SluiceGate:curveDischargeCoefficient:ZPPL:48418583'}"
+curveDischargeCoefficient = "urn:ngsi-ld:SluiceGate:curveDischargeCoefficient:ZPPL:48418583"
 attribute = "curveDischargeCoefficient"
 value = curveDischargeCoefficient
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-downstreamControlPoint = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:SluiceGate:downstreamControlPoint:GIWE:80160975'}"
+downstreamControlPoint = "urn:ngsi-ld:SluiceGate:downstreamControlPoint:GIWE:80160975"
 attribute = "downstreamControlPoint"
 value = downstreamControlPoint
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-downstreamEndControlPoint = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:SluiceGate:downstreamEndControlPoint:CBWI:21948924'}"
+downstreamEndControlPoint = "urn:ngsi-ld:SluiceGate:downstreamEndControlPoint:CBWI:21948924"
 attribute = "downstreamEndControlPoint"
 value = downstreamEndControlPoint
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-flowType = "{'type': 'Property', 'value': 'Submerged-Flow'}"
+flowType = "Submerged-Flow"
 attribute = "flowType"
 value = flowType
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
