@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "RegulationStructureSimulation"
 subject = "dataModel.OpenChannelManagement"
-endSimulationTime = "{'type': 'Property', 'value': {'@type': 'Datetime', '@value': '2020-12-19T09:56:49Z'}}"
+endSimulationTime = "2020-12-19T09:56:49Z"
 attribute = "endSimulationTime"
 value = endSimulationTime
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-equivalentSluiceOpening = {'type': 'Property', 'value': 490}
+equivalentSluiceOpening = 490
 attribute = "equivalentSluiceOpening"
 value = equivalentSluiceOpening
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-estimatedGateDischargeCoefficient = {'type': 'Property', 'value': 0.401}
+estimatedGateDischargeCoefficient = 0.401
 attribute = "estimatedGateDischargeCoefficient"
 value = estimatedGateDischargeCoefficient
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-initialConditions = {'type': 'Property', 'value': [{'waterAttribute': 'WaterFlow', 'value': 13.29, 'targetURI': 'urn:ngsi-ld:CrossSection:CS01'}, {'waterAttribute': 'Upstream Depth', 'value': 21, 'targetURI': 'urn:ngsi-ld:CrossSection:CS02'}, {'waterAttribute': 'GateOpening', 'value': 515, 'targetURI': 'urn:ngsi-ld:SluiceGate:SG01'}]}
+initialConditions = [{'waterAttribute': 'WaterFlow', 'value': 13.29, 'targetURI': 'urn:ngsi-ld:CrossSection:CS01'}, {'waterAttribute': 'Upstream Depth', 'value': 21, 'targetURI': 'urn:ngsi-ld:CrossSection:CS02'}, {'waterAttribute': 'GateOpening', 'value': 515, 'targetURI': 'urn:ngsi-ld:SluiceGate:SG01'}]
 attribute = "initialConditions"
 value = initialConditions
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
