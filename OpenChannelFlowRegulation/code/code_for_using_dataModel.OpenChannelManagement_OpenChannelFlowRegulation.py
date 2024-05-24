@@ -24,25 +24,30 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "OpenChannelFlowRegulation"
 subject = "dataModel.OpenChannelManagement"
-hasRegulationStructures = {'type': 'Property', 'value': [{'targetUri': 'urn:ngsi-ld:OpenChannelFlowRegulation:hasRegulationStructures:XWXB:83840274'}]}
+hasRegulationStructures = [{'targetUri': 'urn:ngsi-ld:OpenChannelFlowRegulation:hasRegulationStructures:XWXB:83840274'}]
 attribute = "hasRegulationStructures"
 value = hasRegulationStructures
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-hasStructuresSimulations = {'type': 'Property', 'value': [{'targetUri': 'urn:ngsi-ld:OpenChannelFlowRegulation:hasStructuresSimulations:VPDG:92530159'}]}
+hasStructuresSimulations = [{'targetUri': 'urn:ngsi-ld:OpenChannelFlowRegulation:hasStructuresSimulations:VPDG:92530159'}]
 attribute = "hasStructuresSimulations"
 value = hasStructuresSimulations
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-runBy = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:OpenChannelFlowRegulation:runBy:CMJE:69885698'}"
+runBy = "urn:ngsi-ld:OpenChannelFlowRegulation:runBy:CMJE:69885698"
 attribute = "runBy"
 value = runBy
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
