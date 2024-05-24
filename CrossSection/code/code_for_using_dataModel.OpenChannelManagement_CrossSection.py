@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "CrossSection"
 subject = "dataModel.OpenChannelManagement"
-attachedTo = "{'type': 'object', 'value': 'urn:ngsi-ld:CrossSection:attachedTo:CTHP:74683243'}"
+attachedTo = "urn:ngsi-ld:CrossSection:attachedTo:CTHP:74683243"
 attribute = "attachedTo"
 value = attachedTo
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-bottomSlope = {'type': 'Property', 'value': 0.02}
+bottomSlope = 0.02
 attribute = "bottomSlope"
 value = bottomSlope
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-bottomWidth = {'type': 'Property', 'value': 5}
+bottomWidth = 5
 attribute = "bottomWidth"
 value = bottomWidth
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-crossSectionGeometry = "{'type': 'Property', 'value': 'Trapezoidal'}"
+crossSectionGeometry = "Trapezoidal"
 attribute = "crossSectionGeometry"
 value = crossSectionGeometry
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
