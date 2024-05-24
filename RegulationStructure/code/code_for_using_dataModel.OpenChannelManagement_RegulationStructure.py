@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "RegulationStructure"
 subject = "dataModel.OpenChannelManagement"
-hasSluiceGate = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:RegulationStructure:hasSluiceGate:JXFD:60487647'}"
+hasSluiceGate = "urn:ngsi-ld:RegulationStructure:hasSluiceGate:JXFD:60487647"
 attribute = "hasSluiceGate"
 value = hasSluiceGate
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-hasSpillway = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:RegulationStructure:hasSpillway:CBWI:21948924'}"
+hasSpillway = "urn:ngsi-ld:RegulationStructure:hasSpillway:CBWI:21948924"
 attribute = "hasSpillway"
 value = hasSpillway
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-numberOfGates = {'type': 'Property', 'value': 1}
+numberOfGates = 1
 attribute = "numberOfGates"
 value = numberOfGates
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-numberOfSpillways = {'type': 'Property', 'value': 1}
+numberOfSpillways = 1
 attribute = "numberOfSpillways"
 value = numberOfSpillways
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
