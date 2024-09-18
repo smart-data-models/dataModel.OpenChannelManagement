@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://smart-data-models.github.io/data-models.OpenChannelManagement/Channel/schema.json",
   "title": "Open Channel Management - Channel",
   "description": "This entity contains a harmonised description of a generic Channel made for Raw-Water (Open Channels) System Management domain.",
