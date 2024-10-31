@@ -21,7 +21,7 @@
         "attachedTo": "https://smartdatamodels.org/dataModel.OpenChannelManagement/attachedTo",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "bottomSlope": "https://smartdatamodels.org/dataModel.OpenChannelManagement/bottomSlope",
         "bottomWidth": "https://smartdatamodels.org/dataModel.OpenChannelManagement/bottomWidth",
@@ -29,7 +29,7 @@
         "controlCrossSection": "https://smartdatamodels.org/dataModel.OpenChannelManagement/controlCrossSection",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "crestElevation": "https://smartdatamodels.org/dataModel.OpenChannelManagement/crestElevation",
         "crestLength": "https://smartdatamodels.org/dataModel.OpenChannelManagement/crestLength",
@@ -61,6 +61,7 @@
         "gateDischargeCoefficient": "https://smartdatamodels.org/dataModel.OpenChannelManagement/gateDischargeCoefficient",
         "gateOpening": "https://smartdatamodels.org/dataModel.OpenChannelManagement/gateOpening",
         "gateWidth": "https://smartdatamodels.org/dataModel.OpenChannelManagement/gateWidth",
+        "geometry": "https://purl.org/geojson/vocab#geometry",
         "geometryType": "https://smartdatamodels.org/dataModel.OpenChannelManagement/geometryType",
         "hasRegulationStructures": "https://smartdatamodels.org/dataModel.OpenChannelManagement/hasRegulationStructures",
         "hasSluiceGate": "https://smartdatamodels.org/dataModel.OpenChannelManagement/hasSluiceGate",
@@ -75,7 +76,7 @@
         "isComposedOf": "https://smartdatamodels.org/dataModel.OpenChannelManagement/isComposedOf",
         "leftSideSlope": "https://smartdatamodels.org/dataModel.OpenChannelManagement/leftSideSlope",
         "length": "https://smartdatamodels.org/dataModel.OpenChannelManagement/length",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "maxFloodElevation": "https://smartdatamodels.org/dataModel.OpenChannelManagement/maxFloodElevation",
         "maxWaterDepth": "https://smartdatamodels.org/dataModel.OpenChannelManagement/maxWaterDepth",
         "modelError": "https://smartdatamodels.org/dataModel.OpenChannelManagement/modelError",
