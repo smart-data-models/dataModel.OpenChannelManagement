@@ -1,3 +1,38 @@
 /* (Beta) Export of data model CrossSection of the subject dataModel.OpenChannelManagement for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE crossSectionGeometry_type AS ENUM ('Circular','Trapezoidal');CREATE TYPE CrossSection_type AS ENUM ('CrossSection');
-CREATE TABLE CrossSection (address JSON, alternateName TEXT, areaServed TEXT, bottomSlope NUMERIC, bottomWidth NUMERIC, crossSectionGeometry crossSectionGeometry_type, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, diameter NUMERIC, energyHead NUMERIC, id TEXT PRIMARY KEY, leftSideSlope NUMERIC, location JSON, maxWaterDepth NUMERIC, name TEXT, owner JSON, position JSON, rightSideSlope NUMERIC, seeAlso JSON, source TEXT, specificConductivity NUMERIC, tag TEXT, turbidity NUMERIC, type CrossSection_type, waterFlow NUMERIC, waterLevel NUMERIC, waterTemperature NUMERIC, waterVelocity NUMERIC);
+CREATE TYPE crossSectionGeometry_type AS ENUM ('Circular', 'Trapezoidal');
+CREATE TYPE CrossSection_type AS ENUM ('CrossSection');
+CREATE TABLE CrossSection (
+  "address" JSON,
+  "alternateName" TEXT,
+  "areaServed" TEXT,
+  "attachedTo" JSON,
+  "bottomSlope" NUMERIC,
+  "bottomWidth" NUMERIC,
+  "crossSectionGeometry" crossSectionGeometry_type,
+  "dataProvider" TEXT,
+  "dateCreated" TIMESTAMP,
+  "dateModified" TIMESTAMP,
+  "description" TEXT,
+  "diameter" NUMERIC,
+  "energyHead" NUMERIC,
+  "id" TEXT PRIMARY KEY,
+  "inheritsFrom" JSON,
+  "leftSideSlope" NUMERIC,
+  "location" JSON,
+  "maxWaterDepth" NUMERIC,
+  "name" TEXT,
+  "observedBy" JSON,
+  "owner" JSON,
+  "position" JSON,
+  "rightSideSlope" NUMERIC,
+  "seeAlso" JSON,
+  "source" TEXT,
+  "specificConductivity" NUMERIC,
+  "tag" TEXT,
+  "turbidity" NUMERIC,
+  "type" CrossSection_type,
+  "waterFlow" NUMERIC,
+  "waterLevel" NUMERIC,
+  "waterTemperature" NUMERIC,
+  "waterVelocity" NUMERIC
+);
