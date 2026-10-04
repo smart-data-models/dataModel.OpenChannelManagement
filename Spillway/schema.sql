@@ -1,3 +1,37 @@
 /* (Beta) Export of data model Spillway of the subject dataModel.OpenChannelManagement for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE spillwayType_type AS ENUM ('Broad-Crested','Ogee','Sharp-Crested','Specified Spillway');CREATE TYPE Spillway_type AS ENUM ('Spillway');
-CREATE TABLE Spillway (address JSON, alternateName TEXT, apronElevation NUMERIC, apronLength NUMERIC, areaServed TEXT, crestElevation NUMERIC, crestLength NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, designDischarge NUMERIC, designDischargeCoefficient NUMERIC, designHead NUMERIC, dischargeCoefficient NUMERIC, id TEXT PRIMARY KEY, location JSON, maxFloodElevation NUMERIC, name TEXT, numberAbutments NUMERIC, owner JSON, seeAlso JSON, source TEXT, spillwayType spillwayType_type, spillwayWidth NUMERIC, tag TEXT, type Spillway_type, waterDischarge NUMERIC);
+CREATE TYPE spillwayType_type AS ENUM ('Broad-Crested', 'Ogee', 'Sharp-Crested', 'Specified Spillway');
+CREATE TYPE Spillway_type AS ENUM ('Spillway');
+CREATE TABLE Spillway (
+  "address" JSON,
+  "alternateName" TEXT,
+  "apronElevation" NUMERIC,
+  "apronLength" NUMERIC,
+  "areaServed" TEXT,
+  "controlCrossSection" JSON,
+  "crestElevation" NUMERIC,
+  "crestLength" NUMERIC,
+  "curveDesignDischargeCoefficient" JSON,
+  "curveDischargeCoefficient" JSON,
+  "curveElevationDischarge" JSON,
+  "dataProvider" TEXT,
+  "dateCreated" TIMESTAMP,
+  "dateModified" TIMESTAMP,
+  "description" TEXT,
+  "designDischarge" NUMERIC,
+  "designDischargeCoefficient" NUMERIC,
+  "designHead" NUMERIC,
+  "dischargeCoefficient" NUMERIC,
+  "id" TEXT PRIMARY KEY,
+  "location" JSON,
+  "maxFloodElevation" NUMERIC,
+  "name" TEXT,
+  "numberAbutments" NUMERIC,
+  "owner" JSON,
+  "seeAlso" JSON,
+  "source" TEXT,
+  "spillwayType" spillwayType_type,
+  "spillwayWidth" NUMERIC,
+  "tag" TEXT,
+  "type" Spillway_type,
+  "waterDischarge" NUMERIC
+);
