@@ -1,5 +1,5 @@
 /* (Beta) Export of data model SluiceGate of the subject dataModel.OpenChannelManagement for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE flowType_type AS ENUM ('Free-Flow', 'Overflow', 'Submerged-Flow');
+CREATE TYPE SluiceGate_flowType_type AS ENUM ('Free-Flow', 'Overflow', 'Submerged-Flow');
 CREATE TYPE SluiceGate_type AS ENUM ('SluiceGate');
 CREATE TABLE SluiceGate (
   "address" JSON,
@@ -12,7 +12,7 @@ CREATE TABLE SluiceGate (
   "description" TEXT,
   "downstreamControlPoint" JSON,
   "downstreamEndControlPoint" JSON,
-  "flowType" flowType_type,
+  "flowType" SluiceGate_flowType_type,
   "gateBottomElevation" NUMERIC,
   "gateDischargeCoefficient" NUMERIC,
   "gateOpening" NUMERIC,
