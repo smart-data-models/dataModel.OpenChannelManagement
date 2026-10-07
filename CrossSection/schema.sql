@@ -1,5 +1,5 @@
 /* (Beta) Export of data model CrossSection of the subject dataModel.OpenChannelManagement for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE crossSectionGeometry_type AS ENUM ('Circular', 'Trapezoidal');
+CREATE TYPE CrossSection_crossSectionGeometry_type AS ENUM ('Circular', 'Trapezoidal');
 CREATE TYPE CrossSection_type AS ENUM ('CrossSection');
 CREATE TABLE CrossSection (
   "address" JSON,
@@ -8,7 +8,7 @@ CREATE TABLE CrossSection (
   "attachedTo" JSON,
   "bottomSlope" NUMERIC,
   "bottomWidth" NUMERIC,
-  "crossSectionGeometry" crossSectionGeometry_type,
+  "crossSectionGeometry" CrossSection_crossSectionGeometry_type,
   "dataProvider" TEXT,
   "dateCreated" TIMESTAMP,
   "dateModified" TIMESTAMP,
