@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Spillway of the subject dataModel.OpenChannelManagement for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE spillwayType_type AS ENUM ('Broad-Crested', 'Ogee', 'Sharp-Crested', 'Specified Spillway');
+CREATE TYPE Spillway_spillwayType_type AS ENUM ('Broad-Crested', 'Ogee', 'Sharp-Crested', 'Specified Spillway');
 CREATE TYPE Spillway_type AS ENUM ('Spillway');
 CREATE TABLE Spillway (
   "address" JSON,
@@ -29,7 +29,7 @@ CREATE TABLE Spillway (
   "owner" JSON,
   "seeAlso" JSON,
   "source" TEXT,
-  "spillwayType" spillwayType_type,
+  "spillwayType" Spillway_spillwayType_type,
   "spillwayWidth" NUMERIC,
   "tag" TEXT,
   "type" Spillway_type,
